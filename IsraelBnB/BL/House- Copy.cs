@@ -40,11 +40,17 @@ namespace ClientSahar.BL
         private int m_Size;
         public int Size { get => m_Size; set => m_Size = value; }
 
+        private int m_StreetNo;
+        public int StreetNo { get => m_StreetNo; set => m_StreetNo = value; }
+
+        private int m_Floors;
+        public int Floors { get => m_Floors; set => m_Floors = value; }
+
         #endregion
 
         public bool Insert()
         {
-            return Houses_Dal.Insert(m_Adress, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size);
+            return Houses_Dal.Insert(m_Adress, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size,m_StreetNo,m_Floors);
         }
 
         public House() { }
@@ -61,8 +67,10 @@ namespace ClientSahar.BL
             this.m_Picture2 = dataRow["Picture2"].ToString();
             this.m_Picture3 = dataRow["Picture3"].ToString();
             this.m_Descreption = dataRow["Descreption"].ToString();
-            this.m_City = new City(dataRow.GetParentRow("ProductCity"));
+            this.m_City = new City(dataRow.GetParentRow("HouseCity"));
             this.m_Size = (int)dataRow["Size"];
+            this.m_StreetNo = (int)dataRow["Street.No"];
+            this.m_Floors = (int)dataRow["Floors"];
         }
 
         public override string ToString()
@@ -72,7 +80,7 @@ namespace ClientSahar.BL
 
         public bool Update()
         {
-            return Houses_Dal.Update(m_Adress, m_ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID,m_Size);
+            return Houses_Dal.Update(m_Adress, m_ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size,m_StreetNo,m_Floors);
 
         }
         public bool Delete()

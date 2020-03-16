@@ -14,10 +14,17 @@ namespace IsraelBnB
 {
     public partial class FormToRent : Form
     {
-        public FormToRent(Client client, Product product)
+        public FormToRent(Client client,/* Product product,*/ House house, Apartment apartment)
         {
             InitializeComponent();
-            CurrentProductToForm(client, product);
+            if (house != null)
+            {
+                CurrentHouseToForm(client, house);
+            }
+            if (apartment != null)
+            {
+                CurrentApartmentToForm(client, apartment);
+            }
         }
 
         private void FormToRent_Load(object sender, EventArgs e)
@@ -57,6 +64,56 @@ namespace IsraelBnB
             labelClientID.Text = Convert.ToString(clientWantToBuy.ID);
 
             client = ReturnClientThrewID(product.Client);
+            labelCleintEmail.Text = client.Mail;
+            labelCleintName.Text = client.FirstName + " " + client.LastName;
+            labelCleintPhone.Text = client.CellPhone_AreaCode + client.PhoneNumber;
+
+        }
+
+        private void CurrentApartmentToForm(Client clientWantToBuy, Apartment apartment)
+        {
+            Client client = new Client();
+
+            pictureBoxProperty0.ImageLocation = FindPicturePath() + apartment.Picture1;
+            pictureBoxProperty1.ImageLocation = FindPicturePath() + apartment.Picture1;
+            pictureBoxProperty2.ImageLocation = FindPicturePath() + apartment.Picture2;
+            pictureBoxProperty3.ImageLocation = FindPicturePath() + apartment.Picture3;
+
+            label1.Text = "כתובת:" + " " + apartment.Adress + " מספר רחוב:" + Convert.ToInt32(apartment.StreetNo) + " מספר דירה:" + Convert.ToInt32(apartment.AptNo) + " מספר קומה:" + Convert.ToInt32(apartment.Floor);
+            // labelAdress.Text = apartment.Adress;
+            labelCity.Text = apartment.City.Name;
+            // label2.Text = "תיאור:" + " " + apartment.Descreption;
+            richTextBox1.Text = apartment.Descreption;
+            labelProductID.Text = Convert.ToString(apartment.ID);
+            labelClientID.Text = Convert.ToString(clientWantToBuy.ID);
+            labelSize.Text = " מ''ר " + Convert.ToString(apartment.Size);
+
+            client = ReturnClientThrewID(apartment.Client);
+            labelCleintEmail.Text = client.Mail;
+            labelCleintName.Text = client.FirstName + " " + client.LastName;
+            labelCleintPhone.Text = client.CellPhone_AreaCode + client.PhoneNumber;
+
+        }
+
+        private void CurrentHouseToForm(Client clientWantToBuy, House house)
+        {
+            Client client = new Client();
+
+            pictureBoxProperty0.ImageLocation = FindPicturePath() + house.Picture1;
+            pictureBoxProperty1.ImageLocation = FindPicturePath() + house.Picture1;
+            pictureBoxProperty2.ImageLocation = FindPicturePath() + house.Picture2;
+            pictureBoxProperty3.ImageLocation = FindPicturePath() + house.Picture3;
+
+            label1.Text = "כתובת:" + " " + house.Adress + " מספר רחוב:" + Convert.ToInt32(house.StreetNo) + " מספר קומות:" + Convert.ToInt32(house.Floors);
+            // labelAdress.Text = house.Adress;
+            labelCity.Text = house.City.Name;
+            // label2.Text = "תיאור:" + " " + house.Descreption;
+            richTextBox1.Text = house.Descreption;
+            labelProductID.Text = Convert.ToString(house.ID);
+            labelClientID.Text = Convert.ToString(clientWantToBuy.ID);
+            labelSize.Text = " מ''ר " + Convert.ToString(house.Size);
+
+            client = ReturnClientThrewID(house.Client);
             labelCleintEmail.Text = client.Mail;
             labelCleintName.Text = client.FirstName + " " + client.LastName;
             labelCleintPhone.Text = client.CellPhone_AreaCode + client.PhoneNumber;
@@ -134,7 +191,7 @@ namespace IsraelBnB
             product = GetProductFromForm();
             Client client = new Client();
             client = GetClientFromForm();
-            FormAgreement formAgreement = new FormAgreement(client,product);
+            FormAgreement formAgreement = new FormAgreement(client, product);
 
             formAgreement.ShowDialog();
         }

@@ -93,6 +93,9 @@
             this.pictureBoxApr2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxApr1 = new System.Windows.Forms.PictureBox();
             this.tabPageWantToHost = new System.Windows.Forms.TabPage();
+            this.changePic3 = new System.Windows.Forms.Button();
+            this.changePic2 = new System.Windows.Forms.Button();
+            this.changePic1 = new System.Windows.Forms.Button();
             this.buttonAddCity = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -123,9 +126,6 @@
             this.pictureBoxHouse2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxHouse1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog_Picture1 = new System.Windows.Forms.OpenFileDialog();
-            this.changePic1 = new System.Windows.Forms.Button();
-            this.changePic2 = new System.Windows.Forms.Button();
-            this.changePic3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -435,7 +435,7 @@
             this.tabPageSignIn.Location = new System.Drawing.Point(4, 28);
             this.tabPageSignIn.Name = "tabPageSignIn";
             this.tabPageSignIn.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSignIn.Size = new System.Drawing.Size(926, 251);
+            this.tabPageSignIn.Size = new System.Drawing.Size(926, 250);
             this.tabPageSignIn.TabIndex = 0;
             this.tabPageSignIn.Text = "tabPage1";
             this.tabPageSignIn.UseVisualStyleBackColor = true;
@@ -579,7 +579,7 @@
             this.tabPageSignUp.Name = "tabPageSignUp";
             this.tabPageSignUp.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageSignUp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabPageSignUp.Size = new System.Drawing.Size(926, 251);
+            this.tabPageSignUp.Size = new System.Drawing.Size(926, 250);
             this.tabPageSignUp.TabIndex = 1;
             this.tabPageSignUp.Text = "tabPage2";
             this.tabPageSignUp.UseVisualStyleBackColor = true;
@@ -846,7 +846,7 @@
             this.tabPageApartments.Controls.Add(this.panelApartments);
             this.tabPageApartments.Location = new System.Drawing.Point(4, 28);
             this.tabPageApartments.Name = "tabPageApartments";
-            this.tabPageApartments.Size = new System.Drawing.Size(926, 251);
+            this.tabPageApartments.Size = new System.Drawing.Size(926, 250);
             this.tabPageApartments.TabIndex = 2;
             this.tabPageApartments.Text = "tabPage1";
             this.tabPageApartments.UseVisualStyleBackColor = true;
@@ -873,7 +873,7 @@
             this.pictureBoxApr3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxApr3.TabIndex = 4;
             this.pictureBoxApr3.TabStop = false;
-            this.pictureBoxApr3.Click += new System.EventHandler(this.pictureBoxApr_Click);
+            this.pictureBoxApr3.Click += new System.EventHandler(this.pictureBoxAprt_Click);
             // 
             // pictureBoxApr2
             // 
@@ -884,7 +884,7 @@
             this.pictureBoxApr2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxApr2.TabIndex = 3;
             this.pictureBoxApr2.TabStop = false;
-            this.pictureBoxApr2.Click += new System.EventHandler(this.pictureBoxApr_Click);
+            this.pictureBoxApr2.Click += new System.EventHandler(this.pictureBoxAprt_Click);
             // 
             // pictureBoxApr1
             // 
@@ -896,7 +896,7 @@
             this.pictureBoxApr1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxApr1.TabIndex = 2;
             this.pictureBoxApr1.TabStop = false;
-            this.pictureBoxApr1.Click += new System.EventHandler(this.pictureBoxApr_Click);
+            this.pictureBoxApr1.Click += new System.EventHandler(this.pictureBoxAprt_Click);
             // 
             // tabPageWantToHost
             // 
@@ -933,6 +933,48 @@
             this.tabPageWantToHost.TabIndex = 3;
             this.tabPageWantToHost.Text = "tabPageWantToRent";
             this.tabPageWantToHost.UseVisualStyleBackColor = true;
+            // 
+            // changePic3
+            // 
+            this.changePic3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.changePic3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changePic3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.changePic3.Location = new System.Drawing.Point(81, 192);
+            this.changePic3.Name = "changePic3";
+            this.changePic3.Size = new System.Drawing.Size(94, 34);
+            this.changePic3.TabIndex = 79;
+            this.changePic3.Text = "שנה תמונה";
+            this.changePic3.UseVisualStyleBackColor = false;
+            this.changePic3.Visible = false;
+            this.changePic3.Click += new System.EventHandler(this.changePic3_Click);
+            // 
+            // changePic2
+            // 
+            this.changePic2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
+            this.changePic2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changePic2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.changePic2.Location = new System.Drawing.Point(290, 192);
+            this.changePic2.Name = "changePic2";
+            this.changePic2.Size = new System.Drawing.Size(94, 34);
+            this.changePic2.TabIndex = 78;
+            this.changePic2.Text = "שנה תמונה";
+            this.changePic2.UseVisualStyleBackColor = false;
+            this.changePic2.Visible = false;
+            this.changePic2.Click += new System.EventHandler(this.changePic2_Click);
+            // 
+            // changePic1
+            // 
+            this.changePic1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.changePic1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changePic1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.changePic1.Location = new System.Drawing.Point(495, 192);
+            this.changePic1.Name = "changePic1";
+            this.changePic1.Size = new System.Drawing.Size(94, 34);
+            this.changePic1.TabIndex = 77;
+            this.changePic1.Text = "שנה תמונה";
+            this.changePic1.UseVisualStyleBackColor = false;
+            this.changePic1.Visible = false;
+            this.changePic1.Click += new System.EventHandler(this.changePic1_Click);
             // 
             // buttonAddCity
             // 
@@ -1172,7 +1214,7 @@
             this.tabPageHouses.Location = new System.Drawing.Point(4, 28);
             this.tabPageHouses.Name = "tabPageHouses";
             this.tabPageHouses.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHouses.Size = new System.Drawing.Size(926, 251);
+            this.tabPageHouses.Size = new System.Drawing.Size(926, 250);
             this.tabPageHouses.TabIndex = 4;
             this.tabPageHouses.Text = "tabPageHouse";
             this.tabPageHouses.UseVisualStyleBackColor = true;
@@ -1199,7 +1241,7 @@
             this.pictureBoxHouse3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxHouse3.TabIndex = 4;
             this.pictureBoxHouse3.TabStop = false;
-            this.pictureBoxHouse3.Click += new System.EventHandler(this.pictureBoxApr_Click);
+            this.pictureBoxHouse3.Click += new System.EventHandler(this.pictureBoxHouses_Click);
             // 
             // pictureBoxHouse2
             // 
@@ -1210,7 +1252,7 @@
             this.pictureBoxHouse2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxHouse2.TabIndex = 3;
             this.pictureBoxHouse2.TabStop = false;
-            this.pictureBoxHouse2.Click += new System.EventHandler(this.pictureBoxApr_Click);
+            this.pictureBoxHouse2.Click += new System.EventHandler(this.pictureBoxHouses_Click);
             // 
             // pictureBoxHouse1
             // 
@@ -1222,53 +1264,11 @@
             this.pictureBoxHouse1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxHouse1.TabIndex = 2;
             this.pictureBoxHouse1.TabStop = false;
-            this.pictureBoxHouse1.Click += new System.EventHandler(this.pictureBoxApr_Click);
+            this.pictureBoxHouse1.Click += new System.EventHandler(this.pictureBoxHouses_Click);
             // 
             // openFileDialog_Picture1
             // 
             this.openFileDialog_Picture1.FileName = "openFileDialog1";
-            // 
-            // changePic1
-            // 
-            this.changePic1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.changePic1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changePic1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.changePic1.Location = new System.Drawing.Point(495, 192);
-            this.changePic1.Name = "changePic1";
-            this.changePic1.Size = new System.Drawing.Size(94, 34);
-            this.changePic1.TabIndex = 77;
-            this.changePic1.Text = "שנה תמונה";
-            this.changePic1.UseVisualStyleBackColor = false;
-            this.changePic1.Visible = false;
-            this.changePic1.Click += new System.EventHandler(this.changePic1_Click);
-            // 
-            // changePic2
-            // 
-            this.changePic2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
-            this.changePic2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changePic2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.changePic2.Location = new System.Drawing.Point(290, 192);
-            this.changePic2.Name = "changePic2";
-            this.changePic2.Size = new System.Drawing.Size(94, 34);
-            this.changePic2.TabIndex = 78;
-            this.changePic2.Text = "שנה תמונה";
-            this.changePic2.UseVisualStyleBackColor = false;
-            this.changePic2.Visible = false;
-            this.changePic2.Click += new System.EventHandler(this.changePic2_Click);
-            // 
-            // changePic3
-            // 
-            this.changePic3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.changePic3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changePic3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.changePic3.Location = new System.Drawing.Point(81, 192);
-            this.changePic3.Name = "changePic3";
-            this.changePic3.Size = new System.Drawing.Size(94, 34);
-            this.changePic3.TabIndex = 79;
-            this.changePic3.Text = "שנה תמונה";
-            this.changePic3.UseVisualStyleBackColor = false;
-            this.changePic3.Visible = false;
-            this.changePic3.Click += new System.EventHandler(this.changePic3_Click);
             // 
             // FormIBnBFirst
             // 

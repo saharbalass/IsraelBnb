@@ -10,13 +10,13 @@ namespace ProductSahar.DAL
 {
     class Houses_Dal
     {
-        public static bool Insert(string adress, int client, string picture1, string picture2, string picture3, string descreption, int city,int size)
+        public static bool Insert(string adress, int client, string picture1, string picture2, string picture3, string descreption, int city, int size, int streetNo, int floors)
         {
 
             //מוסיפה את הלקוח למסד הנתונים
             //בניית הוראת ה-SQL
 
-            string str = "INSERT INTO Table_Product"
+            string str = "INSERT INTO Table_Houses"
             + "("
             + " [Adress]"
             + ",[Client]"
@@ -26,6 +26,8 @@ namespace ProductSahar.DAL
             + ",[Descreption]"
             + ",[City]"
             + ",[Size]"
+            + ",[Street.No]"
+            + ",[Floors]"
             + ")"
             + " VALUES "
             + "("
@@ -37,6 +39,8 @@ namespace ProductSahar.DAL
                   + "," + "N'" + descreption + "'"
                   + "," + "" + city + ""
                   + "," + "" + size + ""
+                  + "," + "" + streetNo + ""
+                  + "," + "" + floors + ""
             + ")";
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה
             return Dal.ExecuteSql(str);
@@ -47,15 +51,15 @@ namespace ProductSahar.DAL
             DataTable dataTable = null;
             DataSet dataSet = new DataSet();
             FillDataSet(dataSet);
-            dataTable = dataSet.Tables["Table_Product"];
+            dataTable = dataSet.Tables["Table_Houses"];
             return dataTable;
         }
         public static void FillDataSet(DataSet dataSet)
         {
-            if (!dataSet.Tables.Contains("Table_Product"))
+            if (!dataSet.Tables.Contains("Table_Houses"))
             {
                 //ממלאת את אוסף הטבלאות בטבלת הלקוחות
-                Dal.FillDataSet(dataSet, "Table_Product", "[Adress]");/*"[LastName],[FirstName]"*/
+                Dal.FillDataSet(dataSet, "Table_Houses", "[Adress]");/*"[LastName],[FirstName]"*/
 
                 DataRelation dataRelation = null;
 
@@ -67,7 +71,7 @@ namespace ProductSahar.DAL
 
                 //שם קשר הגומלין
 
-                "ProductCity"
+                "HouseCity"
 
                 //עמודת הקשר בטבלת האב )המפתח הראשי של טבלת האב(
 
@@ -75,7 +79,7 @@ namespace ProductSahar.DAL
 
                 //עמודת הקשר בטבלת הבן )המפתח הזר בטבלת הבן(
 
-                , dataSet.Tables["Table_Product"].Columns["City"]);
+                , dataSet.Tables["Table_Houses"].Columns["City"]);
 
                 //הוספת קשר הגומלין לאוסף הטבלאות
 
@@ -89,7 +93,7 @@ namespace ProductSahar.DAL
 
                 //שם קשר הגומלין
 
-                "ProductClient"
+                "HouseClient"
 
                 //עמודת הקשר בטבלת האב )המפתח הראשי של טבלת האב(
 
@@ -97,7 +101,7 @@ namespace ProductSahar.DAL
 
                 //עמודת הקשר בטבלת הבן )המפתח הזר בטבלת הבן(
 
-                , dataSet.Tables["Table_Product"].Columns["Client"]);
+                , dataSet.Tables["Table_Houses"].Columns["Client"]);
 
                 //הוספת קשר הגומלין לאוסף הטבלאות
 
@@ -105,12 +109,12 @@ namespace ProductSahar.DAL
             }
         }
 
-        public static bool Update(string adress, int id, int client, string picture1, string picture2, string picture3, string descreption, int city,int size)
+        public static bool Update(string adress, int id, int client, string picture1, string picture2, string picture3, string descreption, int city, int size, int streetNo, int floors)
         {
 
             //מעדכנת את הלקוח במסד הנתונים
 
-            string str = "UPDATE Table_Product SET"
+            string str = "UPDATE Table_Houses SET"
             + " " + "[Adress] = " + "'" + adress + "'"
             + "," + "[Client] = " + "" + client + ""
             + " " + "[Picture1] = " + "'" + picture1 + "'"
@@ -119,6 +123,8 @@ namespace ProductSahar.DAL
             + " " + "[Descreption] = " + "'" + descreption + "'"
             + "," + "[City] = " + "" + city + ""
             + "," + "[Size] = " + "" + size + ""
+            + "," + "[Street.No] = " + "" + streetNo+ ""
+            + "," + "[Floors] = " + "" + floors + ""
             + " WHERE ID = " + id;
 
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה
@@ -129,7 +135,7 @@ namespace ProductSahar.DAL
         public static bool Delete(int id)
         {
             //מוחקת את הלקוח ממסד הנתונים
-            string str = "DELETE FROM Table_Product"
+            string str = "DELETE FROM Table_Houses"
                 + " Where ID = " + id;
 
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה

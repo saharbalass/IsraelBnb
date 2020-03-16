@@ -1,6 +1,6 @@
 ﻿namespace IsraelBnB
 {
-    partial class FormToRent
+    partial class FormToRentAparment
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormToRent));
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelApartments = new System.Windows.Forms.Panel();
-            this.labelSize = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormToRentAparment));
             this.button2 = new System.Windows.Forms.Button();
             this.labelClientID = new System.Windows.Forms.Label();
             this.labelProductID = new System.Windows.Forms.Label();
@@ -58,101 +52,15 @@
             this.pictureBoxProperty1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty0 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelApartments.SuspendLayout();
+            this.panelApartments = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperty2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperty1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperty3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperty0)).BeginInit();
+            this.panelApartments.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(826, 483);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(176, 151);
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(532, 483);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(176, 151);
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(248, 483);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(176, 151);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(423, 131);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(400, 336);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panelApartments
-            // 
-            this.panelApartments.AutoScroll = true;
-            this.panelApartments.AutoScrollMargin = new System.Drawing.Size(0, 35);
-            this.panelApartments.Controls.Add(this.label9);
-            this.panelApartments.Controls.Add(this.labelSize);
-            this.panelApartments.Controls.Add(this.button2);
-            this.panelApartments.Controls.Add(this.labelClientID);
-            this.panelApartments.Controls.Add(this.labelProductID);
-            this.panelApartments.Controls.Add(this.richTextBox1);
-            this.panelApartments.Controls.Add(this.panel1);
-            this.panelApartments.Controls.Add(this.Forword1);
-            this.panelApartments.Controls.Add(this.backWords2);
-            this.panelApartments.Controls.Add(this.label8);
-            this.panelApartments.Controls.Add(this.labelCleintEmail);
-            this.panelApartments.Controls.Add(this.label7);
-            this.panelApartments.Controls.Add(this.label6);
-            this.panelApartments.Controls.Add(this.labelCleintPhone);
-            this.panelApartments.Controls.Add(this.labelCleintName);
-            this.panelApartments.Controls.Add(this.labelCity);
-            this.panelApartments.Controls.Add(this.label4);
-            this.panelApartments.Controls.Add(this.label3);
-            this.panelApartments.Controls.Add(this.label2);
-            this.panelApartments.Controls.Add(this.label1);
-            this.panelApartments.Controls.Add(this.pictureBoxProperty2);
-            this.panelApartments.Controls.Add(this.pictureBoxProperty1);
-            this.panelApartments.Controls.Add(this.pictureBoxProperty3);
-            this.panelApartments.Controls.Add(this.pictureBoxProperty0);
-            this.panelApartments.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panelApartments.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelApartments.Location = new System.Drawing.Point(0, 0);
-            this.panelApartments.Margin = new System.Windows.Forms.Padding(4);
-            this.panelApartments.Name = "panelApartments";
-            this.panelApartments.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelApartments.Size = new System.Drawing.Size(945, 573);
-            this.panelApartments.TabIndex = 8;
-            // 
-            // labelSize
-            // 
-            this.labelSize.AutoSize = true;
-            this.labelSize.Location = new System.Drawing.Point(672, 674);
-            this.labelSize.Name = "labelSize";
-            this.labelSize.Size = new System.Drawing.Size(72, 23);
-            this.labelSize.TabIndex = 30;
-            this.labelSize.Text = "label5";
             // 
             // button2
             // 
@@ -162,18 +70,17 @@
             this.button2.Location = new System.Drawing.Point(156, 459);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(123, 689);
+            this.button2.Size = new System.Drawing.Size(103, 742);
             this.button2.TabIndex = 29;
             this.button2.Text = "רוצה להשכיר!";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // labelClientID
             // 
             this.labelClientID.AutoSize = true;
             this.labelClientID.Location = new System.Drawing.Point(273, 674);
             this.labelClientID.Name = "labelClientID";
-            this.labelClientID.Size = new System.Drawing.Size(72, 23);
+            this.labelClientID.Size = new System.Drawing.Size(46, 17);
             this.labelClientID.TabIndex = 28;
             this.labelClientID.Text = "label5";
             this.labelClientID.Visible = false;
@@ -183,7 +90,7 @@
             this.labelProductID.AutoSize = true;
             this.labelProductID.Location = new System.Drawing.Point(273, 651);
             this.labelProductID.Name = "labelProductID";
-            this.labelProductID.Size = new System.Drawing.Size(72, 23);
+            this.labelProductID.Size = new System.Drawing.Size(46, 17);
             this.labelProductID.TabIndex = 27;
             this.labelProductID.Text = "label5";
             this.labelProductID.Visible = false;
@@ -191,7 +98,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.richTextBox1.Location = new System.Drawing.Point(468, 505);
+            this.richTextBox1.Location = new System.Drawing.Point(468, 584);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -206,7 +113,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(107, 889);
+            this.panel1.Size = new System.Drawing.Size(107, 942);
             this.panel1.TabIndex = 25;
             // 
             // pictureBox5
@@ -230,7 +137,6 @@
             this.Forword1.TabIndex = 24;
             this.Forword1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Forword1.UseVisualStyleBackColor = false;
-            this.Forword1.Click += new System.EventHandler(this.Forword1_Click);
             // 
             // backWords2
             // 
@@ -243,13 +149,12 @@
             this.backWords2.TabIndex = 23;
             this.backWords2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.backWords2.UseVisualStyleBackColor = false;
-            this.backWords2.Click += new System.EventHandler(this.Forword1_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(766, 823);
+            this.label8.Location = new System.Drawing.Point(766, 876);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 31);
@@ -259,10 +164,10 @@
             // labelCleintEmail
             // 
             this.labelCleintEmail.AutoSize = true;
-            this.labelCleintEmail.Location = new System.Drawing.Point(638, 823);
+            this.labelCleintEmail.Location = new System.Drawing.Point(638, 876);
             this.labelCleintEmail.Name = "labelCleintEmail";
             this.labelCleintEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelCleintEmail.Size = new System.Drawing.Size(72, 23);
+            this.labelCleintEmail.Size = new System.Drawing.Size(46, 17);
             this.labelCleintEmail.TabIndex = 17;
             this.labelCleintEmail.Text = "label8";
             // 
@@ -270,7 +175,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(766, 783);
+            this.label7.Location = new System.Drawing.Point(766, 836);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 31);
@@ -281,7 +186,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(766, 744);
+            this.label6.Location = new System.Drawing.Point(766, 797);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 31);
@@ -291,30 +196,30 @@
             // labelCleintPhone
             // 
             this.labelCleintPhone.AutoSize = true;
-            this.labelCleintPhone.Location = new System.Drawing.Point(661, 787);
+            this.labelCleintPhone.Location = new System.Drawing.Point(661, 840);
             this.labelCleintPhone.Name = "labelCleintPhone";
             this.labelCleintPhone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelCleintPhone.Size = new System.Drawing.Size(72, 23);
+            this.labelCleintPhone.Size = new System.Drawing.Size(46, 17);
             this.labelCleintPhone.TabIndex = 14;
             this.labelCleintPhone.Text = "label8";
             // 
             // labelCleintName
             // 
             this.labelCleintName.AutoSize = true;
-            this.labelCleintName.Location = new System.Drawing.Point(690, 745);
+            this.labelCleintName.Location = new System.Drawing.Point(690, 798);
             this.labelCleintName.Name = "labelCleintName";
             this.labelCleintName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelCleintName.Size = new System.Drawing.Size(72, 23);
+            this.labelCleintName.Size = new System.Drawing.Size(46, 17);
             this.labelCleintName.TabIndex = 13;
             this.labelCleintName.Text = "label8";
             // 
             // labelCity
             // 
             this.labelCity.AutoSize = true;
-            this.labelCity.Location = new System.Drawing.Point(672, 631);
+            this.labelCity.Location = new System.Drawing.Point(672, 710);
             this.labelCity.Name = "labelCity";
             this.labelCity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelCity.Size = new System.Drawing.Size(72, 23);
+            this.labelCity.Size = new System.Drawing.Size(46, 17);
             this.labelCity.TabIndex = 12;
             this.labelCity.Text = "label7";
             // 
@@ -322,7 +227,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(751, 699);
+            this.label4.Location = new System.Drawing.Point(751, 752);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(170, 31);
@@ -333,7 +238,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(751, 628);
+            this.label3.Location = new System.Drawing.Point(751, 707);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 31);
@@ -344,7 +249,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(751, 535);
+            this.label2.Location = new System.Drawing.Point(751, 614);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -405,79 +310,86 @@
             this.pictureBoxProperty0.TabIndex = 2;
             this.pictureBoxProperty0.TabStop = false;
             // 
-            // label9
+            // panelApartments
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(751, 668);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 31);
-            this.label9.TabIndex = 32;
-            this.label9.Text = ":גודל";
+            this.panelApartments.AutoScroll = true;
+            this.panelApartments.AutoScrollMargin = new System.Drawing.Size(0, 35);
+            this.panelApartments.Controls.Add(this.button2);
+            this.panelApartments.Controls.Add(this.labelClientID);
+            this.panelApartments.Controls.Add(this.labelProductID);
+            this.panelApartments.Controls.Add(this.richTextBox1);
+            this.panelApartments.Controls.Add(this.panel1);
+            this.panelApartments.Controls.Add(this.Forword1);
+            this.panelApartments.Controls.Add(this.backWords2);
+            this.panelApartments.Controls.Add(this.label8);
+            this.panelApartments.Controls.Add(this.labelCleintEmail);
+            this.panelApartments.Controls.Add(this.label7);
+            this.panelApartments.Controls.Add(this.label6);
+            this.panelApartments.Controls.Add(this.labelCleintPhone);
+            this.panelApartments.Controls.Add(this.labelCleintName);
+            this.panelApartments.Controls.Add(this.labelCity);
+            this.panelApartments.Controls.Add(this.label4);
+            this.panelApartments.Controls.Add(this.label3);
+            this.panelApartments.Controls.Add(this.label2);
+            this.panelApartments.Controls.Add(this.label1);
+            this.panelApartments.Controls.Add(this.pictureBoxProperty2);
+            this.panelApartments.Controls.Add(this.pictureBoxProperty1);
+            this.panelApartments.Controls.Add(this.pictureBoxProperty3);
+            this.panelApartments.Controls.Add(this.pictureBoxProperty0);
+            this.panelApartments.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panelApartments.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelApartments.Location = new System.Drawing.Point(0, 0);
+            this.panelApartments.Margin = new System.Windows.Forms.Padding(4);
+            this.panelApartments.Name = "panelApartments";
+            this.panelApartments.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panelApartments.Size = new System.Drawing.Size(946, 486);
+            this.panelApartments.TabIndex = 13;
             // 
-            // FormToRent
+            // FormToRentAparment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 573);
+            this.ClientSize = new System.Drawing.Size(946, 486);
             this.Controls.Add(this.panelApartments);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormToRent";
-            this.Text = "FormToRent";
-            this.Load += new System.EventHandler(this.FormToRent_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelApartments.ResumeLayout(false);
-            this.panelApartments.PerformLayout();
+            this.Name = "FormToRentAparment";
+            this.Text = "FormToRentAparment";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperty2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperty1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperty3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperty0)).EndInit();
+            this.panelApartments.ResumeLayout(false);
+            this.panelApartments.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panelApartments;
-        private System.Windows.Forms.PictureBox pictureBoxProperty3;
-        private System.Windows.Forms.PictureBox pictureBoxProperty0;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBoxProperty2;
-        private System.Windows.Forms.PictureBox pictureBoxProperty1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelCleintName;
-        private System.Windows.Forms.Label labelCity;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label labelClientID;
+        private System.Windows.Forms.Label labelProductID;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button Forword1;
+        private System.Windows.Forms.Button backWords2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label labelCleintEmail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label labelCleintPhone;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button backWords2;
-        private System.Windows.Forms.Button Forword1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label labelProductID;
-        private System.Windows.Forms.Label labelClientID;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label labelSize;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelCleintName;
+        private System.Windows.Forms.Label labelCity;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBoxProperty2;
+        private System.Windows.Forms.PictureBox pictureBoxProperty1;
+        private System.Windows.Forms.PictureBox pictureBoxProperty3;
+        private System.Windows.Forms.PictureBox pictureBoxProperty0;
+        private System.Windows.Forms.Panel panelApartments;
     }
 }

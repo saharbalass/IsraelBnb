@@ -27,7 +27,7 @@ namespace ClientSahar.BL
         public City(DataRow dataRow)
         {
 
-            //מייצרת לקוח מתוך שורת לקוח
+            //מייצרת עיר מתוך שורת עיר
 
             this.m_Name = dataRow["Name"].ToString();
             this.m_ID = (int)dataRow["ID"];
