@@ -48,7 +48,13 @@ namespace IsraelBnB
                 return false;
             }
         }
-
+        private void OnlyNumbers(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.KeyChar = char.MinValue;
+            }
+        }
         public bool CheckWantToRent()
         {
             //ClientArr clientArr = new ClientArr();
@@ -87,11 +93,72 @@ namespace IsraelBnB
             if (richTextBoxDescreptionToRent.Text.Length < 4)
             {
                 flag = false;
-                label23.Visible = true;
+                label24.Visible = true;
             }
             else
             {
                 label24.Visible = false;
+            }
+            //אם נבחר קטגוריית דירות
+            if ((int)comboBoxCatagoryToRent.SelectedValue == 2)
+            {
+                if (textBoxAprtNo.Text.Length < 1)
+                {
+                    flag = false;
+                    label29.Visible = true;
+                }
+                else
+                {
+                    label29.Visible = false;
+                }
+            }
+            if (textBoxSize.Text.Length < 2)
+            {
+                flag = false;
+                label25.Visible = true;
+            }
+            else
+            {
+                label25.Visible = false;
+            }
+            if (textBoxFloor.Text.Length < 1)
+            {
+                flag = false;
+                label31.Visible = true;
+            }
+            else
+            {
+                label31.Visible = false;
+            }
+            if (richTextBoxDescreptionToRent.Text.Length < 5)
+            {
+                flag = false;
+                label24.Visible = true;
+            }
+            else
+            {
+                label24.Visible = false;
+            }
+            if ((int)comboBoxCatagoryToRent.SelectedValue == 2)
+            {
+                if (textBoxAprtNo.Text.Length < 1)
+                {
+                    flag = false;
+                    label29.Visible = true;
+                }
+                else
+                {
+                    label29.Visible = false;
+                }
+            }
+            if (textBoxStreetNo.Text.Length < 1)
+            {
+                flag = false;
+                label27.Visible = true;
+            }
+            else
+            {
+                label27.Visible = false;
             }
             return flag;
         }
@@ -121,7 +188,7 @@ namespace IsraelBnB
             if (curCity != null)
                 comobox.SelectedValue = curCity.ID;
         }
-        private bool CheckForm()
+        private bool CheckFormForClient()
         {
 
             //מחזירה האם הטופס תקין מבחינת שדות החובה
@@ -322,9 +389,10 @@ namespace IsraelBnB
         //buttons and textchange
         private void buttonSaveSignUp_Click(object sender, EventArgs e)
         {
+            //ToDo: (int)comboBoxCatagoryToRent.SelectedValue לבדוק איזו קטגוריה שייך
             if (tabHouses.SelectedTab == tabPageSignUp)
             {
-                if (!CheckForm())
+                if (!CheckFormForClient())
                 {
                     MessageBox.Show("נא מלא את הפרטים החסרים", "השלמת פרטים", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                 }
@@ -495,6 +563,24 @@ namespace IsraelBnB
 
             return product;
         }
+
+        private House FormToHouse()
+        {
+            House house = new House();
+            ClientArr clientArr = new ClientArr();
+            clientArr.Fill();
+
+            house.Adress = textBoxAdressToRent.Text;
+            house.Client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text).ID;
+            house.Picture1 = GetPicfileName(pictureBox7);
+            house.Picture2 = GetPicfileName(pictureBox6);
+            house.Picture3 = GetPicfileName(pictureBox5);
+            house.Descreption = richTextBoxDescreptionToRent.Text;
+            house.City = comboBoxCityToRent.SelectedItem as City;
+
+
+            return house;
+        }
         //private Product fdsfs()
         //{
         //    Product product = new Product();
@@ -507,6 +593,7 @@ namespace IsraelBnB
         //}
         public void CatagoryArrToForm(Catagory curCatagory, ComboBox comboBox, bool isMustChoose)
         {
+            //כדי להבדיל באיזו קטגוריה מדובר להשכרה
             CatagoryArr catagoryArr = new CatagoryArr();
 
             //הוספת חברת ברירת מחדל - בחר חברה/ כל החברות
@@ -819,7 +906,7 @@ namespace IsraelBnB
             else
             {
                 //שולח את הנכס ואת הלקוח שרוצה להשכיר
-                FormToRent formToRent = new FormToRent(client,null ,apartment);
+                FormToRent formToRent = new FormToRent(client, null, apartment);
                 formToRent.ShowDialog();
             }
 
@@ -873,6 +960,24 @@ namespace IsraelBnB
         private void changePic3_Click(object sender, EventArgs e)
         {
             Add_Picture_Click(pictureBoxAdd3, null);
+        }
+
+        private void comboBoxCatagoryToRent_TextChanged(object sender, EventArgs e)
+        {
+            if (comboBoxCatagoryToRent.Text == "בתים")
+            {
+                label29.Visible = false;
+                label30.Visible = false;
+                textBoxAprtNo.Visible = false;
+                labelFloor.Text = "מספר קומות";
+            }
+            if (comboBoxCatagoryToRent.Text == "דירות")
+            {
+                label28.Visible = true;
+                label30.Visible = true;
+                textBoxAprtNo.Visible = true;
+                labelFloor.Text = "מספר קומה";
+            }
         }
     }
 }

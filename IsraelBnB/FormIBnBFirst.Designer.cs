@@ -93,6 +93,15 @@
             this.pictureBoxApr2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxApr1 = new System.Windows.Forms.PictureBox();
             this.tabPageWantToHost = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textBoxAprtNo = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBoxStreetNo = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBoxSize = new System.Windows.Forms.TextBox();
             this.changePic3 = new System.Windows.Forms.Button();
             this.changePic2 = new System.Windows.Forms.Button();
             this.changePic1 = new System.Windows.Forms.Button();
@@ -126,6 +135,9 @@
             this.pictureBoxHouse2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxHouse1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog_Picture1 = new System.Windows.Forms.OpenFileDialog();
+            this.label31 = new System.Windows.Forms.Label();
+            this.labelFloor = new System.Windows.Forms.Label();
+            this.textBoxFloor = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -166,7 +178,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(934, 49);
+            this.panel1.Size = new System.Drawing.Size(1009, 49);
             this.panel1.TabIndex = 0;
             // 
             // buttonExit
@@ -176,7 +188,7 @@
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.ForeColor = System.Drawing.Color.White;
             this.buttonExit.Image = ((System.Drawing.Image)(resources.GetObject("buttonExit.Image")));
-            this.buttonExit.Location = new System.Drawing.Point(884, 0);
+            this.buttonExit.Location = new System.Drawing.Point(956, 0);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(50, 49);
             this.buttonExit.TabIndex = 9;
@@ -198,7 +210,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 49);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(934, 93);
+            this.panel2.Size = new System.Drawing.Size(1009, 93);
             this.panel2.TabIndex = 1;
             // 
             // buttonExitLogIn
@@ -309,9 +321,9 @@
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.buttonSaveSignUp);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 424);
+            this.panel3.Location = new System.Drawing.Point(0, 558);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(934, 130);
+            this.panel3.Size = new System.Drawing.Size(1009, 130);
             this.panel3.TabIndex = 2;
             // 
             // button10
@@ -320,7 +332,7 @@
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(731, 0);
+            this.button10.Location = new System.Drawing.Point(806, 0);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(203, 130);
             this.button10.TabIndex = 8;
@@ -333,9 +345,9 @@
             this.buttontApartments.FlatAppearance.BorderSize = 0;
             this.buttontApartments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttontApartments.ForeColor = System.Drawing.Color.White;
-            this.buttontApartments.Location = new System.Drawing.Point(581, 0);
+            this.buttontApartments.Location = new System.Drawing.Point(644, 0);
             this.buttontApartments.Name = "buttontApartments";
-            this.buttontApartments.Size = new System.Drawing.Size(153, 130);
+            this.buttontApartments.Size = new System.Drawing.Size(166, 130);
             this.buttontApartments.TabIndex = 7;
             this.buttontApartments.Text = "דירות";
             this.buttontApartments.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -348,9 +360,9 @@
             this.buttonHouses.FlatAppearance.BorderSize = 0;
             this.buttonHouses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHouses.ForeColor = System.Drawing.Color.White;
-            this.buttonHouses.Location = new System.Drawing.Point(446, 0);
+            this.buttonHouses.Location = new System.Drawing.Point(480, 2);
             this.buttonHouses.Name = "buttonHouses";
-            this.buttonHouses.Size = new System.Drawing.Size(136, 127);
+            this.buttonHouses.Size = new System.Drawing.Size(158, 127);
             this.buttonHouses.TabIndex = 6;
             this.buttonHouses.Text = "בתים";
             this.buttonHouses.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -362,7 +374,7 @@
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(293, 0);
+            this.button7.Location = new System.Drawing.Point(322, 0);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(156, 130);
             this.button7.TabIndex = 5;
@@ -377,9 +389,9 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(162, 0);
+            this.button6.Location = new System.Drawing.Point(168, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(136, 130);
+            this.button6.Size = new System.Drawing.Size(154, 130);
             this.button6.TabIndex = 4;
             this.button6.Text = "רוצה להשכיר";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -395,7 +407,7 @@
             this.buttonSaveSignUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonSaveSignUp.Image")));
             this.buttonSaveSignUp.Location = new System.Drawing.Point(0, 0);
             this.buttonSaveSignUp.Name = "buttonSaveSignUp";
-            this.buttonSaveSignUp.Size = new System.Drawing.Size(162, 130);
+            this.buttonSaveSignUp.Size = new System.Drawing.Size(170, 130);
             this.buttonSaveSignUp.TabIndex = 3;
             this.buttonSaveSignUp.Text = "שמור";
             this.buttonSaveSignUp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -409,6 +421,7 @@
             this.tabHouses.Controls.Add(this.tabPageApartments);
             this.tabHouses.Controls.Add(this.tabPageWantToHost);
             this.tabHouses.Controls.Add(this.tabPageHouses);
+            this.tabHouses.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabHouses.ItemSize = new System.Drawing.Size(100, 24);
             this.tabHouses.Location = new System.Drawing.Point(0, 142);
             this.tabHouses.Name = "tabHouses";
@@ -416,7 +429,7 @@
             this.tabHouses.RightToLeftLayout = true;
             this.tabHouses.SelectedIndex = 0;
             this.tabHouses.ShowToolTips = true;
-            this.tabHouses.Size = new System.Drawing.Size(934, 282);
+            this.tabHouses.Size = new System.Drawing.Size(1009, 416);
             this.tabHouses.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabHouses.TabIndex = 3;
             // 
@@ -435,7 +448,7 @@
             this.tabPageSignIn.Location = new System.Drawing.Point(4, 28);
             this.tabPageSignIn.Name = "tabPageSignIn";
             this.tabPageSignIn.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSignIn.Size = new System.Drawing.Size(926, 250);
+            this.tabPageSignIn.Size = new System.Drawing.Size(1001, 384);
             this.tabPageSignIn.TabIndex = 0;
             this.tabPageSignIn.Text = "tabPage1";
             this.tabPageSignIn.UseVisualStyleBackColor = true;
@@ -443,7 +456,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(675, 138);
+            this.pictureBox3.Location = new System.Drawing.Point(731, 198);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -454,7 +467,7 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(869, 136);
+            this.pictureBox2.Location = new System.Drawing.Point(925, 196);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(56, 31);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -465,7 +478,7 @@
             // MailPicture
             // 
             this.MailPicture.Image = ((System.Drawing.Image)(resources.GetObject("MailPicture.Image")));
-            this.MailPicture.Location = new System.Drawing.Point(675, 73);
+            this.MailPicture.Location = new System.Drawing.Point(731, 133);
             this.MailPicture.Name = "MailPicture";
             this.MailPicture.Size = new System.Drawing.Size(44, 25);
             this.MailPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -475,7 +488,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(745, 224);
+            this.label11.Location = new System.Drawing.Point(801, 284);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(48, 23);
             this.label11.TabIndex = 6;
@@ -485,7 +498,7 @@
             // 
             this.pictureBoxEnterSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxEnterSignIn.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEnterSignIn.Image")));
-            this.pictureBoxEnterSignIn.Location = new System.Drawing.Point(734, 179);
+            this.pictureBoxEnterSignIn.Location = new System.Drawing.Point(790, 239);
             this.pictureBoxEnterSignIn.Name = "pictureBoxEnterSignIn";
             this.pictureBoxEnterSignIn.Size = new System.Drawing.Size(68, 42);
             this.pictureBoxEnterSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -496,7 +509,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(734, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(790, 69);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(67, 43);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -508,7 +521,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox1.Location = new System.Drawing.Point(687, 138);
+            this.textBox1.Location = new System.Drawing.Point(743, 198);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 25);
             this.textBox1.TabIndex = 3;
@@ -520,7 +533,7 @@
             this.textBoxSignInMail.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBoxSignInMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxSignInMail.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxSignInMail.Location = new System.Drawing.Point(687, 73);
+            this.textBoxSignInMail.Location = new System.Drawing.Point(743, 133);
             this.textBoxSignInMail.Name = "textBoxSignInMail";
             this.textBoxSignInMail.Size = new System.Drawing.Size(157, 25);
             this.textBoxSignInMail.TabIndex = 2;
@@ -529,7 +542,7 @@
             // txtIconPassWord
             // 
             this.txtIconPassWord.Image = ((System.Drawing.Image)(resources.GetObject("txtIconPassWord.Image")));
-            this.txtIconPassWord.Location = new System.Drawing.Point(668, 121);
+            this.txtIconPassWord.Location = new System.Drawing.Point(724, 181);
             this.txtIconPassWord.Name = "txtIconPassWord";
             this.txtIconPassWord.Size = new System.Drawing.Size(195, 57);
             this.txtIconPassWord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -539,7 +552,7 @@
             // txtIconMail
             // 
             this.txtIconMail.Image = ((System.Drawing.Image)(resources.GetObject("txtIconMail.Image")));
-            this.txtIconMail.Location = new System.Drawing.Point(668, 58);
+            this.txtIconMail.Location = new System.Drawing.Point(724, 118);
             this.txtIconMail.Name = "txtIconMail";
             this.txtIconMail.Size = new System.Drawing.Size(195, 57);
             this.txtIconMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -579,7 +592,7 @@
             this.tabPageSignUp.Name = "tabPageSignUp";
             this.tabPageSignUp.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageSignUp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabPageSignUp.Size = new System.Drawing.Size(926, 250);
+            this.tabPageSignUp.Size = new System.Drawing.Size(1001, 384);
             this.tabPageSignUp.TabIndex = 1;
             this.tabPageSignUp.Text = "tabPage2";
             this.tabPageSignUp.UseVisualStyleBackColor = true;
@@ -588,7 +601,7 @@
             // 
             this.labelPassTrue.AutoSize = true;
             this.labelPassTrue.ForeColor = System.Drawing.Color.Red;
-            this.labelPassTrue.Location = new System.Drawing.Point(856, 150);
+            this.labelPassTrue.Location = new System.Drawing.Point(954, 176);
             this.labelPassTrue.Name = "labelPassTrue";
             this.labelPassTrue.Size = new System.Drawing.Size(19, 23);
             this.labelPassTrue.TabIndex = 84;
@@ -598,7 +611,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(796, 156);
+            this.label13.Location = new System.Drawing.Point(894, 182);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(54, 23);
             this.label13.TabIndex = 83;
@@ -606,7 +619,7 @@
             // 
             // textBoxPassWordNew
             // 
-            this.textBoxPassWordNew.Location = new System.Drawing.Point(618, 147);
+            this.textBoxPassWordNew.Location = new System.Drawing.Point(716, 173);
             this.textBoxPassWordNew.MaxLength = 9;
             this.textBoxPassWordNew.Name = "textBoxPassWordNew";
             this.textBoxPassWordNew.Size = new System.Drawing.Size(100, 32);
@@ -615,7 +628,7 @@
             // addCityButton
             // 
             this.addCityButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCityButton.Location = new System.Drawing.Point(577, 212);
+            this.addCityButton.Location = new System.Drawing.Point(675, 238);
             this.addCityButton.Name = "addCityButton";
             this.addCityButton.Size = new System.Drawing.Size(23, 24);
             this.addCityButton.TabIndex = 81;
@@ -629,7 +642,7 @@
             this.comboBox_City.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox_City.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_City.FormattingEnabled = true;
-            this.comboBox_City.Location = new System.Drawing.Point(618, 208);
+            this.comboBox_City.Location = new System.Drawing.Point(716, 234);
             this.comboBox_City.Name = "comboBox_City";
             this.comboBox_City.Size = new System.Drawing.Size(116, 31);
             this.comboBox_City.TabIndex = 80;
@@ -638,7 +651,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(856, 208);
+            this.label8.Location = new System.Drawing.Point(954, 234);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(19, 23);
             this.label8.TabIndex = 79;
@@ -648,7 +661,7 @@
             // AreaCodeLabel
             // 
             this.AreaCodeLabel.AutoSize = true;
-            this.AreaCodeLabel.Location = new System.Drawing.Point(815, 213);
+            this.AreaCodeLabel.Location = new System.Drawing.Point(913, 239);
             this.AreaCodeLabel.Name = "AreaCodeLabel";
             this.AreaCodeLabel.Size = new System.Drawing.Size(39, 23);
             this.AreaCodeLabel.TabIndex = 78;
@@ -657,7 +670,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(657, 3);
+            this.label2.Location = new System.Drawing.Point(764, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 23);
             this.label2.TabIndex = 77;
@@ -667,7 +680,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(741, 3);
+            this.label5.Location = new System.Drawing.Point(848, 16);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 23);
             this.label5.TabIndex = 76;
@@ -678,7 +691,7 @@
             // 
             this.errorIDLabel.AutoSize = true;
             this.errorIDLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorIDLabel.Location = new System.Drawing.Point(856, 181);
+            this.errorIDLabel.Location = new System.Drawing.Point(954, 207);
             this.errorIDLabel.Name = "errorIDLabel";
             this.errorIDLabel.Size = new System.Drawing.Size(19, 23);
             this.errorIDLabel.TabIndex = 75;
@@ -689,7 +702,7 @@
             // 
             this.errorEmailLabel.AutoSize = true;
             this.errorEmailLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorEmailLabel.Location = new System.Drawing.Point(856, 116);
+            this.errorEmailLabel.Location = new System.Drawing.Point(954, 142);
             this.errorEmailLabel.Name = "errorEmailLabel";
             this.errorEmailLabel.Size = new System.Drawing.Size(19, 23);
             this.errorEmailLabel.TabIndex = 74;
@@ -700,7 +713,7 @@
             // 
             this.errorPhoneNumLabel.AutoSize = true;
             this.errorPhoneNumLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorPhoneNumLabel.Location = new System.Drawing.Point(855, 88);
+            this.errorPhoneNumLabel.Location = new System.Drawing.Point(953, 114);
             this.errorPhoneNumLabel.Name = "errorPhoneNumLabel";
             this.errorPhoneNumLabel.Size = new System.Drawing.Size(19, 23);
             this.errorPhoneNumLabel.TabIndex = 73;
@@ -711,7 +724,7 @@
             // 
             this.errorLastNameLabel.AutoSize = true;
             this.errorLastNameLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorLastNameLabel.Location = new System.Drawing.Point(855, 60);
+            this.errorLastNameLabel.Location = new System.Drawing.Point(953, 86);
             this.errorLastNameLabel.Name = "errorLastNameLabel";
             this.errorLastNameLabel.Size = new System.Drawing.Size(19, 23);
             this.errorLastNameLabel.TabIndex = 72;
@@ -722,7 +735,7 @@
             // 
             this.errorFirstNameLabel.AutoSize = true;
             this.errorFirstNameLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorFirstNameLabel.Location = new System.Drawing.Point(855, 32);
+            this.errorFirstNameLabel.Location = new System.Drawing.Point(953, 58);
             this.errorFirstNameLabel.Name = "errorFirstNameLabel";
             this.errorFirstNameLabel.Size = new System.Drawing.Size(19, 23);
             this.errorFirstNameLabel.TabIndex = 71;
@@ -732,7 +745,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(822, 187);
+            this.label7.Location = new System.Drawing.Point(920, 213);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 23);
             this.label7.TabIndex = 70;
@@ -740,16 +753,17 @@
             // 
             // IDtextBox1
             // 
-            this.IDtextBox1.Location = new System.Drawing.Point(618, 178);
+            this.IDtextBox1.Location = new System.Drawing.Point(716, 204);
             this.IDtextBox1.MaxLength = 9;
             this.IDtextBox1.Name = "IDtextBox1";
             this.IDtextBox1.Size = new System.Drawing.Size(100, 32);
             this.IDtextBox1.TabIndex = 69;
+            this.IDtextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(601, 89);
+            this.label6.Location = new System.Drawing.Point(699, 115);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 23);
             this.label6.TabIndex = 68;
@@ -762,7 +776,7 @@
             "052",
             "054",
             "050"});
-            this.comboBox_CellPhone.Location = new System.Drawing.Point(542, 85);
+            this.comboBox_CellPhone.Location = new System.Drawing.Point(640, 111);
             this.comboBox_CellPhone.Name = "comboBox_CellPhone";
             this.comboBox_CellPhone.Size = new System.Drawing.Size(58, 31);
             this.comboBox_CellPhone.TabIndex = 67;
@@ -770,7 +784,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(751, 116);
+            this.label4.Location = new System.Drawing.Point(849, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 23);
             this.label4.TabIndex = 66;
@@ -779,7 +793,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(782, 93);
+            this.label3.Location = new System.Drawing.Point(880, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 23);
             this.label3.TabIndex = 65;
@@ -788,7 +802,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(767, 69);
+            this.label9.Location = new System.Drawing.Point(865, 95);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 23);
             this.label9.TabIndex = 64;
@@ -797,7 +811,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(787, 41);
+            this.label10.Location = new System.Drawing.Point(885, 67);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 23);
             this.label10.TabIndex = 63;
@@ -805,14 +819,14 @@
             // 
             // emailTextBox4
             // 
-            this.emailTextBox4.Location = new System.Drawing.Point(618, 116);
+            this.emailTextBox4.Location = new System.Drawing.Point(716, 142);
             this.emailTextBox4.Name = "emailTextBox4";
             this.emailTextBox4.Size = new System.Drawing.Size(100, 32);
             this.emailTextBox4.TabIndex = 62;
             // 
             // textBox_CellPhone
             // 
-            this.textBox_CellPhone.Location = new System.Drawing.Point(618, 88);
+            this.textBox_CellPhone.Location = new System.Drawing.Point(716, 114);
             this.textBox_CellPhone.MaxLength = 7;
             this.textBox_CellPhone.Name = "textBox_CellPhone";
             this.textBox_CellPhone.Size = new System.Drawing.Size(100, 32);
@@ -820,14 +834,14 @@
             // 
             // textBox_LastName
             // 
-            this.textBox_LastName.Location = new System.Drawing.Point(618, 60);
+            this.textBox_LastName.Location = new System.Drawing.Point(716, 86);
             this.textBox_LastName.Name = "textBox_LastName";
             this.textBox_LastName.Size = new System.Drawing.Size(100, 32);
             this.textBox_LastName.TabIndex = 60;
             // 
             // textBox_FirstName
             // 
-            this.textBox_FirstName.Location = new System.Drawing.Point(618, 32);
+            this.textBox_FirstName.Location = new System.Drawing.Point(716, 58);
             this.textBox_FirstName.Name = "textBox_FirstName";
             this.textBox_FirstName.Size = new System.Drawing.Size(100, 32);
             this.textBox_FirstName.TabIndex = 59;
@@ -846,7 +860,7 @@
             this.tabPageApartments.Controls.Add(this.panelApartments);
             this.tabPageApartments.Location = new System.Drawing.Point(4, 28);
             this.tabPageApartments.Name = "tabPageApartments";
-            this.tabPageApartments.Size = new System.Drawing.Size(926, 250);
+            this.tabPageApartments.Size = new System.Drawing.Size(1001, 384);
             this.tabPageApartments.TabIndex = 2;
             this.tabPageApartments.Text = "tabPage1";
             this.tabPageApartments.UseVisualStyleBackColor = true;
@@ -858,10 +872,11 @@
             this.panelApartments.Controls.Add(this.pictureBoxApr3);
             this.panelApartments.Controls.Add(this.pictureBoxApr2);
             this.panelApartments.Controls.Add(this.pictureBoxApr1);
-            this.panelApartments.Location = new System.Drawing.Point(0, 3);
+            this.panelApartments.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelApartments.Location = new System.Drawing.Point(0, 0);
             this.panelApartments.Name = "panelApartments";
             this.panelApartments.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelApartments.Size = new System.Drawing.Size(926, 252);
+            this.panelApartments.Size = new System.Drawing.Size(1001, 384);
             this.panelApartments.TabIndex = 0;
             // 
             // pictureBoxApr3
@@ -900,6 +915,18 @@
             // 
             // tabPageWantToHost
             // 
+            this.tabPageWantToHost.Controls.Add(this.label31);
+            this.tabPageWantToHost.Controls.Add(this.labelFloor);
+            this.tabPageWantToHost.Controls.Add(this.textBoxFloor);
+            this.tabPageWantToHost.Controls.Add(this.label29);
+            this.tabPageWantToHost.Controls.Add(this.label30);
+            this.tabPageWantToHost.Controls.Add(this.textBoxAprtNo);
+            this.tabPageWantToHost.Controls.Add(this.label27);
+            this.tabPageWantToHost.Controls.Add(this.label28);
+            this.tabPageWantToHost.Controls.Add(this.textBoxStreetNo);
+            this.tabPageWantToHost.Controls.Add(this.label25);
+            this.tabPageWantToHost.Controls.Add(this.label26);
+            this.tabPageWantToHost.Controls.Add(this.textBoxSize);
             this.tabPageWantToHost.Controls.Add(this.changePic3);
             this.tabPageWantToHost.Controls.Add(this.changePic2);
             this.tabPageWantToHost.Controls.Add(this.changePic1);
@@ -929,10 +956,94 @@
             this.tabPageWantToHost.Controls.Add(this.textBoxAdressToRent);
             this.tabPageWantToHost.Location = new System.Drawing.Point(4, 28);
             this.tabPageWantToHost.Name = "tabPageWantToHost";
-            this.tabPageWantToHost.Size = new System.Drawing.Size(926, 250);
+            this.tabPageWantToHost.Size = new System.Drawing.Size(1001, 384);
             this.tabPageWantToHost.TabIndex = 3;
             this.tabPageWantToHost.Text = "tabPageWantToRent";
             this.tabPageWantToHost.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.Red;
+            this.label29.Location = new System.Drawing.Point(921, 179);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(19, 23);
+            this.label29.TabIndex = 88;
+            this.label29.Text = "*";
+            this.label29.Visible = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(841, 179);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(80, 23);
+            this.label30.TabIndex = 87;
+            this.label30.Text = "מספר דירה";
+            // 
+            // textBoxAprtNo
+            // 
+            this.textBoxAprtNo.Location = new System.Drawing.Point(696, 176);
+            this.textBoxAprtNo.Name = "textBoxAprtNo";
+            this.textBoxAprtNo.Size = new System.Drawing.Size(139, 32);
+            this.textBoxAprtNo.TabIndex = 86;
+            this.textBoxAprtNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(922, 138);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(19, 23);
+            this.label27.TabIndex = 85;
+            this.label27.Text = "*";
+            this.label27.Visible = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(841, 138);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(82, 23);
+            this.label28.TabIndex = 84;
+            this.label28.Text = "מספר רחוב";
+            // 
+            // textBoxStreetNo
+            // 
+            this.textBoxStreetNo.Location = new System.Drawing.Point(696, 135);
+            this.textBoxStreetNo.Name = "textBoxStreetNo";
+            this.textBoxStreetNo.Size = new System.Drawing.Size(139, 32);
+            this.textBoxStreetNo.TabIndex = 83;
+            this.textBoxStreetNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(922, 297);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(19, 23);
+            this.label25.TabIndex = 82;
+            this.label25.Text = "*";
+            this.label25.Visible = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(861, 297);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(36, 23);
+            this.label26.TabIndex = 81;
+            this.label26.Text = "גודל";
+            // 
+            // textBoxSize
+            // 
+            this.textBoxSize.Location = new System.Drawing.Point(696, 294);
+            this.textBoxSize.Name = "textBoxSize";
+            this.textBoxSize.Size = new System.Drawing.Size(139, 32);
+            this.textBoxSize.TabIndex = 80;
+            this.textBoxSize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
             // 
             // changePic3
             // 
@@ -978,7 +1089,7 @@
             // 
             // buttonAddCity
             // 
-            this.buttonAddCity.Location = new System.Drawing.Point(656, 28);
+            this.buttonAddCity.Location = new System.Drawing.Point(656, 59);
             this.buttonAddCity.Name = "buttonAddCity";
             this.buttonAddCity.Size = new System.Drawing.Size(34, 29);
             this.buttonAddCity.TabIndex = 76;
@@ -990,7 +1101,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.ForeColor = System.Drawing.Color.Red;
-            this.label24.Location = new System.Drawing.Point(902, 163);
+            this.label24.Location = new System.Drawing.Point(902, 241);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(19, 23);
             this.label24.TabIndex = 75;
@@ -1001,7 +1112,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.ForeColor = System.Drawing.Color.Red;
-            this.label23.Location = new System.Drawing.Point(902, 104);
+            this.label23.Location = new System.Drawing.Point(902, 19);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(19, 23);
             this.label23.TabIndex = 74;
@@ -1012,7 +1123,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(902, 66);
+            this.label22.Location = new System.Drawing.Point(902, 99);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(19, 23);
             this.label22.TabIndex = 73;
@@ -1023,7 +1134,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(902, 26);
+            this.label21.Location = new System.Drawing.Point(902, 57);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(19, 23);
             this.label21.TabIndex = 72;
@@ -1033,7 +1144,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(849, 219);
+            this.label20.Location = new System.Drawing.Point(579, 338);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(61, 23);
             this.label20.TabIndex = 24;
@@ -1042,7 +1153,7 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(632, 216);
+            this.dateTimePicker2.Location = new System.Drawing.Point(362, 335);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 32);
             this.dateTimePicker2.TabIndex = 23;
@@ -1051,7 +1162,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(841, 26);
+            this.label19.Location = new System.Drawing.Point(841, 57);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(31, 23);
             this.label19.TabIndex = 21;
@@ -1060,7 +1171,7 @@
             // comboBoxCityToRent
             // 
             this.comboBoxCityToRent.FormattingEnabled = true;
-            this.comboBoxCityToRent.Location = new System.Drawing.Point(696, 26);
+            this.comboBoxCityToRent.Location = new System.Drawing.Point(696, 53);
             this.comboBoxCityToRent.Name = "comboBoxCityToRent";
             this.comboBoxCityToRent.Size = new System.Drawing.Size(139, 31);
             this.comboBoxCityToRent.TabIndex = 20;
@@ -1094,7 +1205,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(837, 163);
+            this.label18.Location = new System.Drawing.Point(837, 241);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(47, 23);
             this.label18.TabIndex = 17;
@@ -1102,7 +1213,7 @@
             // 
             // richTextBoxDescreptionToRent
             // 
-            this.richTextBoxDescreptionToRent.Location = new System.Drawing.Point(696, 138);
+            this.richTextBoxDescreptionToRent.Location = new System.Drawing.Point(696, 216);
             this.richTextBoxDescreptionToRent.Name = "richTextBoxDescreptionToRent";
             this.richTextBoxDescreptionToRent.Size = new System.Drawing.Size(139, 72);
             this.richTextBoxDescreptionToRent.TabIndex = 16;
@@ -1169,7 +1280,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(841, 101);
+            this.label14.Location = new System.Drawing.Point(841, 16);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(63, 23);
             this.label14.TabIndex = 7;
@@ -1178,7 +1289,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(841, 66);
+            this.label12.Location = new System.Drawing.Point(841, 99);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 23);
             this.label12.TabIndex = 6;
@@ -1196,14 +1307,15 @@
             // comboBoxCatagoryToRent
             // 
             this.comboBoxCatagoryToRent.FormattingEnabled = true;
-            this.comboBoxCatagoryToRent.Location = new System.Drawing.Point(696, 101);
+            this.comboBoxCatagoryToRent.Location = new System.Drawing.Point(696, 16);
             this.comboBoxCatagoryToRent.Name = "comboBoxCatagoryToRent";
             this.comboBoxCatagoryToRent.Size = new System.Drawing.Size(139, 31);
             this.comboBoxCatagoryToRent.TabIndex = 1;
+            this.comboBoxCatagoryToRent.TextChanged += new System.EventHandler(this.comboBoxCatagoryToRent_TextChanged);
             // 
             // textBoxAdressToRent
             // 
-            this.textBoxAdressToRent.Location = new System.Drawing.Point(696, 63);
+            this.textBoxAdressToRent.Location = new System.Drawing.Point(696, 94);
             this.textBoxAdressToRent.Name = "textBoxAdressToRent";
             this.textBoxAdressToRent.Size = new System.Drawing.Size(139, 32);
             this.textBoxAdressToRent.TabIndex = 0;
@@ -1214,7 +1326,7 @@
             this.tabPageHouses.Location = new System.Drawing.Point(4, 28);
             this.tabPageHouses.Name = "tabPageHouses";
             this.tabPageHouses.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHouses.Size = new System.Drawing.Size(926, 250);
+            this.tabPageHouses.Size = new System.Drawing.Size(1001, 384);
             this.tabPageHouses.TabIndex = 4;
             this.tabPageHouses.Text = "tabPageHouse";
             this.tabPageHouses.UseVisualStyleBackColor = true;
@@ -1226,10 +1338,11 @@
             this.panelHouses.Controls.Add(this.pictureBoxHouse3);
             this.panelHouses.Controls.Add(this.pictureBoxHouse2);
             this.panelHouses.Controls.Add(this.pictureBoxHouse1);
-            this.panelHouses.Location = new System.Drawing.Point(0, 0);
+            this.panelHouses.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHouses.Location = new System.Drawing.Point(3, 3);
             this.panelHouses.Name = "panelHouses";
             this.panelHouses.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelHouses.Size = new System.Drawing.Size(926, 251);
+            this.panelHouses.Size = new System.Drawing.Size(995, 378);
             this.panelHouses.TabIndex = 1;
             // 
             // pictureBoxHouse3
@@ -1270,10 +1383,38 @@
             // 
             this.openFileDialog_Picture1.FileName = "openFileDialog1";
             // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.Red;
+            this.label31.Location = new System.Drawing.Point(934, 335);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(19, 23);
+            this.label31.TabIndex = 91;
+            this.label31.Text = "*";
+            this.label31.Visible = false;
+            // 
+            // labelFloor
+            // 
+            this.labelFloor.AutoSize = true;
+            this.labelFloor.Location = new System.Drawing.Point(841, 335);
+            this.labelFloor.Name = "labelFloor";
+            this.labelFloor.Size = new System.Drawing.Size(85, 23);
+            this.labelFloor.TabIndex = 90;
+            this.labelFloor.Text = "מספר קומה";
+            // 
+            // textBoxFloor
+            // 
+            this.textBoxFloor.Location = new System.Drawing.Point(696, 332);
+            this.textBoxFloor.Name = "textBoxFloor";
+            this.textBoxFloor.Size = new System.Drawing.Size(139, 32);
+            this.textBoxFloor.TabIndex = 89;
+            this.textBoxFloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
             // FormIBnBFirst
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(934, 554);
+            this.ClientSize = new System.Drawing.Size(1009, 688);
             this.Controls.Add(this.tabHouses);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
@@ -1421,6 +1562,18 @@
         private System.Windows.Forms.Button changePic3;
         private System.Windows.Forms.Button changePic2;
         private System.Windows.Forms.Button changePic1;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textBoxAprtNo;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox textBoxStreetNo;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBoxSize;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label labelFloor;
+        private System.Windows.Forms.TextBox textBoxFloor;
     }
 }
 
