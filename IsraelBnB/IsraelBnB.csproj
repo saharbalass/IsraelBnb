@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\HouseArr.cs" />
     <Compile Include="BL\Catagory.cs" />
     <Compile Include="BL\CatagoryArr.cs" />
     <Compile Include="BL\City.cs" />
@@ -69,19 +70,24 @@
     <Compile Include="BL\ClientArr.cs" />
     <Compile Include="BL\Company.cs" />
     <Compile Include="BL\CompanyArr.cs" />
+    <Compile Include="BL\Apartment.cs" />
     <Compile Include="BL\Order.cs" />
     <Compile Include="BL\OrderArr.cs" />
     <Compile Include="BL\OrderProduct.cs" />
     <Compile Include="BL\OrderProductArr.cs" />
+    <Compile Include="BL\House- Copy.cs" />
     <Compile Include="BL\Product.cs" />
+    <Compile Include="BL\ApartmentArr.cs" />
     <Compile Include="BL\ProductArr.cs" />
     <Compile Include="Dal\Catagory_Dal.cs" />
     <Compile Include="Dal\City_Dal.cs" />
     <Compile Include="Dal\Client_Dal.cs" />
     <Compile Include="Dal\Company_Dal.cs" />
     <Compile Include="Dal\Dal.cs" />
+    <Compile Include="Dal\Apartments_Dal.cs" />
     <Compile Include="Dal\OrderProduct_Dal.cs" />
     <Compile Include="Dal\Order_Dal.cs" />
+    <Compile Include="Dal\Houses_Dal.cs" />
     <Compile Include="Dal\Product_Dal.cs" />
     <Compile Include="FormAddCity.cs">
       <SubType>Form</SubType>
