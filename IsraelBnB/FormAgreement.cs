@@ -15,13 +15,62 @@ namespace IsraelBnB
     public partial class FormAgreement : Form
     {
         Bitmap m_bitmap;
-        public FormAgreement(Client client, Product product)
+        public FormAgreement(Client client, /*Product product,*/House house, Apartment apartment)
         {
             InitializeComponent();
-            FillListView(client, product);
+            if (house != null)
+            {
+                FillListViewHouse(client, house);
+            }
+            else if(apartment != null)
+            {
+                FillListViewApartment(client, apartment);
+            }
+        }
+        private void FillListViewHouse(Client client, House house)
+        {
+            ClientArr clientArr = new ClientArr();
+            clientArr.Fill();
+
+            Client client1 = new Client();
+            client1 = clientArr.ReturnClientWithID(house.Client);
+            //מוסיף נתונים לפקד תיבת התצוגה
+            //יצירת מקור הנתונים
+
+            ListViewItem listViewItem;
+
+            //יצירת פריט-תיבת-תצוגה
+            listViewItem = new ListViewItem(new[] { client.FullName, "", client.City.Name, "" });
+            //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
+            listViewProducts.Items.Add(listViewItem);
+            listViewItem = new ListViewItem(new[] { client1.FullName, "בית", house.City.Name, house.Adress +" "+house.StreetNo, Convert.ToString(house.Size) });
+            listViewProducts.Items.Add(listViewItem);
+
+
         }
 
-        private void FillListView(Client client,Product product)
+        private void FillListViewApartment(Client client, Apartment apartment)
+        {
+            ClientArr clientArr = new ClientArr();
+            clientArr.Fill();
+
+            Client client1 = new Client();
+            client1 = clientArr.ReturnClientWithID(apartment.Client);
+            //מוסיף נתונים לפקד תיבת התצוגה
+            //יצירת מקור הנתונים
+
+            ListViewItem listViewItem;
+
+            //יצירת פריט-תיבת-תצוגה
+            listViewItem = new ListViewItem(new[] { client.FullName, "", client.City.Name, "" });
+            //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
+            listViewProducts.Items.Add(listViewItem);
+            listViewItem = new ListViewItem(new[] { client1.FullName, "דירה", apartment.City.Name, apartment.Adress + " " + apartment.StreetNo+ " מספר דירה:"+ apartment.AptNo,Convert.ToString(apartment.Size) });
+            listViewProducts.Items.Add(listViewItem);
+
+
+        }
+        private void FillListView(Client client, Product product)
         {
             ClientArr clientArr = new ClientArr();
             clientArr.Fill();
@@ -33,11 +82,11 @@ namespace IsraelBnB
 
             ListViewItem listViewItem;
 
-                //יצירת פריט-תיבת-תצוגה
-                listViewItem = new ListViewItem(new[] {client.FullName,"",client.City.Name,""});
-                //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
-                listViewProducts.Items.Add(listViewItem);
-            listViewItem = new ListViewItem(new[] {client1.FullName , product.Catagory.Name, product.City.Name,product.Adress});
+            //יצירת פריט-תיבת-תצוגה
+            listViewItem = new ListViewItem(new[] { client.FullName, "", client.City.Name, "" });
+            //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
+            listViewProducts.Items.Add(listViewItem);
+            listViewItem = new ListViewItem(new[] { client1.FullName, product.Catagory.Name, product.City.Name, product.Adress });
             listViewProducts.Items.Add(listViewItem);
 
 

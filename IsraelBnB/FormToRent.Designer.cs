@@ -34,8 +34,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelApartments = new System.Windows.Forms.Panel();
+            this.labelCatagory = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.labelSize = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.labelClientID = new System.Windows.Forms.Label();
             this.labelProductID = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -58,7 +60,6 @@
             this.pictureBoxProperty1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty0 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -112,9 +113,10 @@
             // 
             this.panelApartments.AutoScroll = true;
             this.panelApartments.AutoScrollMargin = new System.Drawing.Size(0, 35);
+            this.panelApartments.Controls.Add(this.labelCatagory);
+            this.panelApartments.Controls.Add(this.button1);
             this.panelApartments.Controls.Add(this.label9);
             this.panelApartments.Controls.Add(this.labelSize);
-            this.panelApartments.Controls.Add(this.button2);
             this.panelApartments.Controls.Add(this.labelClientID);
             this.panelApartments.Controls.Add(this.labelProductID);
             this.panelApartments.Controls.Add(this.richTextBox1);
@@ -145,6 +147,37 @@
             this.panelApartments.Size = new System.Drawing.Size(945, 573);
             this.panelApartments.TabIndex = 8;
             // 
+            // labelCatagory
+            // 
+            this.labelCatagory.AutoSize = true;
+            this.labelCatagory.Location = new System.Drawing.Point(277, 701);
+            this.labelCatagory.Name = "labelCatagory";
+            this.labelCatagory.Size = new System.Drawing.Size(63, 23);
+            this.labelCatagory.TabIndex = 34;
+            this.labelCatagory.Text = "קטגוריה";
+            this.labelCatagory.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(146, 508);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 38);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "! רוצה להשכיר";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(751, 668);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(58, 31);
+            this.label9.TabIndex = 32;
+            this.label9.Text = ":גודל";
+            // 
             // labelSize
             // 
             this.labelSize.AutoSize = true;
@@ -154,28 +187,14 @@
             this.labelSize.TabIndex = 30;
             this.labelSize.Text = "label5";
             // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(156, 459);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(123, 689);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "רוצה להשכיר!";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button1_Click);
-            // 
             // labelClientID
             // 
             this.labelClientID.AutoSize = true;
             this.labelClientID.Location = new System.Drawing.Point(273, 674);
             this.labelClientID.Name = "labelClientID";
-            this.labelClientID.Size = new System.Drawing.Size(72, 23);
+            this.labelClientID.Size = new System.Drawing.Size(42, 23);
             this.labelClientID.TabIndex = 28;
-            this.labelClientID.Text = "label5";
+            this.labelClientID.Text = "לקוח";
             this.labelClientID.Visible = false;
             // 
             // labelProductID
@@ -183,9 +202,9 @@
             this.labelProductID.AutoSize = true;
             this.labelProductID.Location = new System.Drawing.Point(273, 651);
             this.labelProductID.Name = "labelProductID";
-            this.labelProductID.Size = new System.Drawing.Size(72, 23);
+            this.labelProductID.Size = new System.Drawing.Size(74, 23);
             this.labelProductID.TabIndex = 27;
-            this.labelProductID.Text = "label5";
+            this.labelProductID.Text = "בעל הנכס";
             this.labelProductID.Visible = false;
             // 
             // richTextBox1
@@ -405,17 +424,6 @@
             this.pictureBoxProperty0.TabIndex = 2;
             this.pictureBoxProperty0.TabStop = false;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(751, 668);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 31);
-            this.label9.TabIndex = 32;
-            this.label9.Text = ":גודל";
-            // 
             // FormToRent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -476,8 +484,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label labelProductID;
         private System.Windows.Forms.Label labelClientID;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label labelSize;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelCatagory;
     }
 }

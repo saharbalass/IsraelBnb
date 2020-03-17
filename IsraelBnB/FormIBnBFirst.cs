@@ -310,12 +310,7 @@ namespace IsraelBnB
             return pictureBox.ImageLocation.Substring(k);
         }
         //מסדר את השמות של התמונות כדי למצוא תמונות לפי ערך
-        public void ChangeNameToSeries(Product product)
-        {
-            product.Picture1 = "A" + product.ID.ToString();
-            product.Picture2 = "B" + product.ID.ToString();
-            product.Picture3 = "C" + product.ID.ToString();
-        }
+
         private int FindLastIntInName(string name)
         {
             //מציאת המספר שהוא התו האחרון בשם תמונת הקלף
@@ -431,48 +426,120 @@ namespace IsraelBnB
             }
             else if (tabHouses.SelectedTab == tabPageWantToHost)
             {
+
                 if (!CheckWantToRent())
                 {
                     MessageBox.Show("נא מלא את הפרטים החסרים", "השלמת פרטים", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                 }
                 else
                 {
-                    Product product = FormToProduct();
-                    if (product.ID == 0)
+                    if ((int)comboBoxCatagoryToRent.SelectedValue == 1)
                     {
-                        if (product.Insert())
+                        House house = FormToHouse();
+                        if (house.ID == 0)
                         {
-                            //העתקת קובץ התמונה - אם לא תקינה הפסקת הפעולה ואי ביצוע השמירה 
-                            if (!SaveFile(GetPicfileName(pictureBox5), "", pictureBox5.ImageLocation))
-                                return;
-                            if (!SaveFile(GetPicfileName(pictureBox6), "", pictureBox6.ImageLocation))
-                                return;
-                            if (!SaveFile(GetPicfileName(pictureBox7), "", pictureBox7.ImageLocation))
-                                return;
-                            //לשנות את השם לפי הסידור
-                            ChangeNameToSeries(product);
-                            MessageBox.Show("הוסף בהצלחה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                            if (house.Insert())
+                            {
+                                //העתקת קובץ התמונה - אם לא תקינה הפסקת הפעולה ואי ביצוע השמירה 
+                                if (!SaveFile(GetPicfileName(pictureBox5), "", pictureBox5.ImageLocation))
+                                    return;
+                                if (!SaveFile(GetPicfileName(pictureBox6), "", pictureBox6.ImageLocation))
+                                    return;
+                                if (!SaveFile(GetPicfileName(pictureBox7), "", pictureBox7.ImageLocation))
+                                    return;
+
+                                MessageBox.Show("הוסף בהצלחה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                            }
+                            else
+                                MessageBox.Show("בעיה בהוספה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                         }
                         else
-                            MessageBox.Show("בעיה בהוספה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                        {
+                            if (house.Update())
+                            {
+                                MessageBox.Show("עודכן בהצלחה", "עידכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                                //כיוון שמדובר על ישוב חדש, ניעזר במזהה הגבוה ביותר = הישוב האחרון שנוסף לטבלה
+                                HouseArr houseArr = new HouseArr();
+                                houseArr.Fill();
+                                house = houseArr.GethouseWithMaxID();
+                            }
+                            else
+                                MessageBox.Show("בעיה בעידכון", "עדכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                        }
 
                     }
-                    else
+                    else if ((int)comboBoxCatagoryToRent.SelectedValue == 2)
                     {
-                        if (product.Update())
+                        Apartment apartment = FormToApartment();
+                        if (apartment.ID == 0)
                         {
-                            //אם העלו תמונה חדשה ושינו את שם הקובץ
-                            ChangeNameToSeries(product);
-                            MessageBox.Show("עודכן בהצלחה", "עידכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                            //כיוון שמדובר על ישוב חדש, ניעזר במזהה הגבוה ביותר = הישוב האחרון שנוסף לטבלה
-                            ProductArr productArr = new ProductArr();
-                            productArr.Fill();
-                            product = productArr.GetproductWithMaxID();
+                            if (apartment.Insert())
+                            {
+                                //העתקת קובץ התמונה - אם לא תקינה הפסקת הפעולה ואי ביצוע השמירה 
+                                if (!SaveFile(GetPicfileName(pictureBox5), "", pictureBox5.ImageLocation))
+                                    return;
+                                if (!SaveFile(GetPicfileName(pictureBox6), "", pictureBox6.ImageLocation))
+                                    return;
+                                if (!SaveFile(GetPicfileName(pictureBox7), "", pictureBox7.ImageLocation))
+                                    return;
+
+                                MessageBox.Show("הוסף בהצלחה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                            }
+                            else
+                                MessageBox.Show("בעיה בהוספה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                         }
                         else
-                            MessageBox.Show("בעיה בעידכון", "עדכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                        {
+                            if (apartment.Update())
+                            {
+                                MessageBox.Show("עודכן בהצלחה", "עידכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                                //כיוון שמדובר על ישוב חדש, ניעזר במזהה הגבוה ביותר = הישוב האחרון שנוסף לטבלה
+                                ApartmentArr apartmentArr = new ApartmentArr();
+                                apartmentArr.Fill();
+                                apartment = apartmentArr.GetapartmentWithMaxID();
+                            }
+                            else
+                                MessageBox.Show("בעיה בעידכון", "עדכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                        }
                     }
                 }
+                //    Product product = FormToProduct();
+                //    if (product.ID == 0)
+                //    {
+                //        if (product.Insert())
+                //        {
+                //            //העתקת קובץ התמונה - אם לא תקינה הפסקת הפעולה ואי ביצוע השמירה 
+                //            if (!SaveFile(GetPicfileName(pictureBox5), "", pictureBox5.ImageLocation))
+                //                return;
+                //            if (!SaveFile(GetPicfileName(pictureBox6), "", pictureBox6.ImageLocation))
+                //                return;
+                //            if (!SaveFile(GetPicfileName(pictureBox7), "", pictureBox7.ImageLocation))
+                //                return;
+                //            //לשנות את השם לפי הסידור
+                //            ChangeNameToSeries(product);
+                //            MessageBox.Show("הוסף בהצלחה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                //        }
+                //        else
+                //            MessageBox.Show("בעיה בהוספה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+
+                //    }
+                //    else
+                //    {
+                //        if (product.Update())
+                //        {
+                //            //אם העלו תמונה חדשה ושינו את שם הקובץ
+                //            ChangeNameToSeries(product);
+                //            MessageBox.Show("עודכן בהצלחה", "עידכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                //            //כיוון שמדובר על ישוב חדש, ניעזר במזהה הגבוה ביותר = הישוב האחרון שנוסף לטבלה
+                //            ProductArr productArr = new ProductArr();
+                //            productArr.Fill();
+                //            product = productArr.GetproductWithMaxID();
+                //        }
+                //        else
+                //            MessageBox.Show("בעיה בעידכון", "עדכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                //    }
+                //}
+
             }
 
         }
@@ -577,9 +644,34 @@ namespace IsraelBnB
             house.Picture3 = GetPicfileName(pictureBox5);
             house.Descreption = richTextBoxDescreptionToRent.Text;
             house.City = comboBoxCityToRent.SelectedItem as City;
+            house.StreetNo = Convert.ToInt32(textBoxStreetNo.Text);
+            house.Size = Convert.ToInt32(textBoxSize.Text);
+            house.Floors = Convert.ToInt32(textBoxFloor.Text);
 
 
             return house;
+        }
+
+        private Apartment FormToApartment()
+        {
+            Apartment apartment = new Apartment();
+            ClientArr clientArr = new ClientArr();
+            clientArr.Fill();
+
+            apartment.Adress = textBoxAdressToRent.Text;
+            apartment.Client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text).ID;
+            apartment.Picture1 = GetPicfileName(pictureBox7);
+            apartment.Picture2 = GetPicfileName(pictureBox6);
+            apartment.Picture3 = GetPicfileName(pictureBox5);
+            apartment.Descreption = richTextBoxDescreptionToRent.Text;
+            apartment.City = comboBoxCityToRent.SelectedItem as City;
+            apartment.StreetNo = Convert.ToInt32(textBoxStreetNo.Text);
+            apartment.Size = Convert.ToInt32(textBoxSize.Text);
+            apartment.Floor = Convert.ToInt32(textBoxFloor.Text);
+            apartment.AptNo = Convert.ToInt32(textBoxAprtNo.Text);
+
+
+            return apartment;
         }
         //private Product fdsfs()
         //{
@@ -899,7 +991,7 @@ namespace IsraelBnB
             //מציאת הזהות לפי הטאג שמכניסים 
             apartment = apartmentArr.FilterWithID(Convert.ToInt32(((PictureBox)sender).Tag));
 
-            if (labelWelcome.Visible == false)
+            if (labelWelcome.Text == "")
             {
                 MessageBox.Show("חובה להירשם לפני השכרה", "רישום", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
             }
@@ -927,7 +1019,7 @@ namespace IsraelBnB
             //מציאת הזהות לפי הטאג שמכניסים 
             house = houseArr.FilterWithID(Convert.ToInt32(((PictureBox)sender).Tag));
 
-            if (labelWelcome.Visible == false)
+            if (labelWelcome.Text == "")
             {
                 MessageBox.Show("חובה להירשם לפני השכרה", "רישום", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
             }

@@ -88,6 +88,8 @@ namespace IsraelBnB
             labelClientID.Text = Convert.ToString(clientWantToBuy.ID);
             labelSize.Text = " מ''ר " + Convert.ToString(apartment.Size);
 
+            labelCatagory.Text = "2";
+
             client = ReturnClientThrewID(apartment.Client);
             labelCleintEmail.Text = client.Mail;
             labelCleintName.Text = client.FirstName + " " + client.LastName;
@@ -112,6 +114,8 @@ namespace IsraelBnB
             labelProductID.Text = Convert.ToString(house.ID);
             labelClientID.Text = Convert.ToString(clientWantToBuy.ID);
             labelSize.Text = " מ''ר " + Convert.ToString(house.Size);
+
+            labelCatagory.Text = "1";
 
             client = ReturnClientThrewID(house.Client);
             labelCleintEmail.Text = client.Mail;
@@ -187,13 +191,28 @@ namespace IsraelBnB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Product product = new Product();
-            product = GetProductFromForm();
-            Client client = new Client();
-            client = GetClientFromForm();
-            FormAgreement formAgreement = new FormAgreement(client, product);
+            Client client = GetClientFromForm();
 
-            formAgreement.ShowDialog();
+            if (IsHouse(Convert.ToInt32(labelCatagory.Text)))
+            {
+                House house = GetHouseFromForm();
+                FormAgreement formAgreement = new FormAgreement(client, house,null);
+                formAgreement.ShowDialog();
+
+            }
+            else if (!IsHouse(Convert.ToInt32(labelCatagory.Text)))
+            {
+                Apartment apartment= GetApartmentFromForm();
+                FormAgreement formAgreement = new FormAgreement(client, null, apartment);
+                formAgreement.ShowDialog();
+
+            }
+           
+        }
+
+        private bool IsHouse(int number)
+        {
+            return (number == 1);
         }
         //because To open the formAgreement i needed the product from current form, but the function is a button type so i needed to do another function to get current product.(threw the Id Label)
         private Product GetProductFromForm()
@@ -211,6 +230,40 @@ namespace IsraelBnB
                 }
             }
             return product;
+        }
+
+        private House GetHouseFromForm()
+        {
+            HouseArr houseArr= new HouseArr();
+            houseArr.Fill();
+
+            House house = new House();
+
+            for (int i = 0; i < houseArr.Count; i++)
+            {
+                if ((houseArr[i] as House).ID == Convert.ToInt32(labelProductID.Text))
+                {
+                    house = houseArr[i] as House;
+                }
+            }
+            return house;
+        }
+
+        private Apartment GetApartmentFromForm()
+        {
+            ApartmentArr apartmentArr = new ApartmentArr();
+            apartmentArr.Fill();
+
+            Apartment apartment = new Apartment();
+
+            for (int i = 0; i < apartmentArr.Count; i++)
+            {
+                if ((apartmentArr[i] as Apartment).ID == Convert.ToInt32(labelProductID.Text))
+                {
+                    apartment = apartmentArr[i] as Apartment;
+                }
+            }
+            return apartment;
         }
         private Client GetClientFromForm()
         {

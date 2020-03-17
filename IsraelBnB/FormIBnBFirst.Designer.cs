@@ -36,8 +36,6 @@
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonSignIn = new System.Windows.Forms.Button();
             this.buttonSignUp = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -93,6 +91,9 @@
             this.pictureBoxApr2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxApr1 = new System.Windows.Forms.PictureBox();
             this.tabPageWantToHost = new System.Windows.Forms.TabPage();
+            this.label31 = new System.Windows.Forms.Label();
+            this.labelFloor = new System.Windows.Forms.Label();
+            this.textBoxFloor = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.textBoxAprtNo = new System.Windows.Forms.TextBox();
@@ -135,9 +136,7 @@
             this.pictureBoxHouse2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxHouse1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog_Picture1 = new System.Windows.Forms.OpenFileDialog();
-            this.label31 = new System.Windows.Forms.Label();
-            this.labelFloor = new System.Windows.Forms.Label();
-            this.textBoxFloor = new System.Windows.Forms.TextBox();
+            this.firstUC1 = new IsraelBnB.UserControls.FirstUC();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -203,8 +202,6 @@
             this.panel2.Controls.Add(this.labelWelcome);
             this.panel2.Controls.Add(this.buttonSignIn);
             this.panel2.Controls.Add(this.buttonSignUp);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -218,7 +215,7 @@
             this.buttonExitLogIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonExitLogIn.FlatAppearance.BorderSize = 0;
             this.buttonExitLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExitLogIn.Location = new System.Drawing.Point(626, 0);
+            this.buttonExitLogIn.Location = new System.Drawing.Point(740, 4);
             this.buttonExitLogIn.Name = "buttonExitLogIn";
             this.buttonExitLogIn.Size = new System.Drawing.Size(136, 86);
             this.buttonExitLogIn.TabIndex = 5;
@@ -243,7 +240,7 @@
             this.buttonSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSignIn.FlatAppearance.BorderSize = 0;
             this.buttonSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSignIn.Location = new System.Drawing.Point(768, 0);
+            this.buttonSignIn.Location = new System.Drawing.Point(871, 4);
             this.buttonSignIn.Name = "buttonSignIn";
             this.buttonSignIn.Size = new System.Drawing.Size(136, 86);
             this.buttonSignIn.TabIndex = 3;
@@ -257,7 +254,7 @@
             this.buttonSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSignUp.FlatAppearance.BorderSize = 0;
             this.buttonSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSignUp.Location = new System.Drawing.Point(626, 0);
+            this.buttonSignUp.Location = new System.Drawing.Point(752, 4);
             this.buttonSignUp.Name = "buttonSignUp";
             this.buttonSignUp.Size = new System.Drawing.Size(136, 86);
             this.buttonSignUp.TabIndex = 3;
@@ -265,30 +262,6 @@
             this.buttonSignUp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonSignUp.UseVisualStyleBackColor = true;
             this.buttonSignUp.Click += new System.EventHandler(this.buttonSignUp_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(484, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 86);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(342, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 86);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -332,6 +305,7 @@
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.Location = new System.Drawing.Point(806, 0);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(203, 130);
@@ -345,6 +319,7 @@
             this.buttontApartments.FlatAppearance.BorderSize = 0;
             this.buttontApartments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttontApartments.ForeColor = System.Drawing.Color.White;
+            this.buttontApartments.Image = ((System.Drawing.Image)(resources.GetObject("buttontApartments.Image")));
             this.buttontApartments.Location = new System.Drawing.Point(644, 0);
             this.buttontApartments.Name = "buttontApartments";
             this.buttontApartments.Size = new System.Drawing.Size(166, 130);
@@ -360,9 +335,10 @@
             this.buttonHouses.FlatAppearance.BorderSize = 0;
             this.buttonHouses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHouses.ForeColor = System.Drawing.Color.White;
-            this.buttonHouses.Location = new System.Drawing.Point(480, 2);
+            this.buttonHouses.Image = ((System.Drawing.Image)(resources.GetObject("buttonHouses.Image")));
+            this.buttonHouses.Location = new System.Drawing.Point(484, 1);
             this.buttonHouses.Name = "buttonHouses";
-            this.buttonHouses.Size = new System.Drawing.Size(158, 127);
+            this.buttonHouses.Size = new System.Drawing.Size(159, 127);
             this.buttonHouses.TabIndex = 6;
             this.buttonHouses.Text = "בתים";
             this.buttonHouses.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -374,11 +350,12 @@
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(322, 0);
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(320, 0);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(156, 130);
+            this.button7.Size = new System.Drawing.Size(163, 130);
             this.button7.TabIndex = 5;
-            this.button7.Text = "רוצה לשכור";
+            this.button7.Text = "!חפש נכס";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -389,9 +366,10 @@
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(168, 0);
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(171, 0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(154, 130);
+            this.button6.Size = new System.Drawing.Size(150, 130);
             this.button6.TabIndex = 4;
             this.button6.Text = "רוצה להשכיר";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -407,7 +385,7 @@
             this.buttonSaveSignUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonSaveSignUp.Image")));
             this.buttonSaveSignUp.Location = new System.Drawing.Point(0, 0);
             this.buttonSaveSignUp.Name = "buttonSaveSignUp";
-            this.buttonSaveSignUp.Size = new System.Drawing.Size(170, 130);
+            this.buttonSaveSignUp.Size = new System.Drawing.Size(175, 130);
             this.buttonSaveSignUp.TabIndex = 3;
             this.buttonSaveSignUp.Text = "שמור";
             this.buttonSaveSignUp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -435,6 +413,7 @@
             // 
             // tabPageSignIn
             // 
+            this.tabPageSignIn.Controls.Add(this.firstUC1);
             this.tabPageSignIn.Controls.Add(this.pictureBox3);
             this.tabPageSignIn.Controls.Add(this.pictureBox2);
             this.tabPageSignIn.Controls.Add(this.MailPicture);
@@ -831,6 +810,7 @@
             this.textBox_CellPhone.Name = "textBox_CellPhone";
             this.textBox_CellPhone.Size = new System.Drawing.Size(100, 32);
             this.textBox_CellPhone.TabIndex = 61;
+            this.textBox_CellPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
             // 
             // textBox_LastName
             // 
@@ -960,6 +940,34 @@
             this.tabPageWantToHost.TabIndex = 3;
             this.tabPageWantToHost.Text = "tabPageWantToRent";
             this.tabPageWantToHost.UseVisualStyleBackColor = true;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.Red;
+            this.label31.Location = new System.Drawing.Point(934, 335);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(19, 23);
+            this.label31.TabIndex = 91;
+            this.label31.Text = "*";
+            this.label31.Visible = false;
+            // 
+            // labelFloor
+            // 
+            this.labelFloor.AutoSize = true;
+            this.labelFloor.Location = new System.Drawing.Point(841, 335);
+            this.labelFloor.Name = "labelFloor";
+            this.labelFloor.Size = new System.Drawing.Size(85, 23);
+            this.labelFloor.TabIndex = 90;
+            this.labelFloor.Text = "מספר קומה";
+            // 
+            // textBoxFloor
+            // 
+            this.textBoxFloor.Location = new System.Drawing.Point(696, 332);
+            this.textBoxFloor.Name = "textBoxFloor";
+            this.textBoxFloor.Size = new System.Drawing.Size(139, 32);
+            this.textBoxFloor.TabIndex = 89;
+            this.textBoxFloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
             // 
             // label29
             // 
@@ -1383,33 +1391,15 @@
             // 
             this.openFileDialog_Picture1.FileName = "openFileDialog1";
             // 
-            // label31
+            // firstUC1
             // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.Color.Red;
-            this.label31.Location = new System.Drawing.Point(934, 335);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(19, 23);
-            this.label31.TabIndex = 91;
-            this.label31.Text = "*";
-            this.label31.Visible = false;
-            // 
-            // labelFloor
-            // 
-            this.labelFloor.AutoSize = true;
-            this.labelFloor.Location = new System.Drawing.Point(841, 335);
-            this.labelFloor.Name = "labelFloor";
-            this.labelFloor.Size = new System.Drawing.Size(85, 23);
-            this.labelFloor.TabIndex = 90;
-            this.labelFloor.Text = "מספר קומה";
-            // 
-            // textBoxFloor
-            // 
-            this.textBoxFloor.Location = new System.Drawing.Point(696, 332);
-            this.textBoxFloor.Name = "textBoxFloor";
-            this.textBoxFloor.Size = new System.Drawing.Size(139, 32);
-            this.textBoxFloor.TabIndex = 89;
-            this.textBoxFloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            this.firstUC1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("firstUC1.BackgroundImage")));
+            this.firstUC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.firstUC1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.firstUC1.Location = new System.Drawing.Point(3, 3);
+            this.firstUC1.Name = "firstUC1";
+            this.firstUC1.Size = new System.Drawing.Size(665, 378);
+            this.firstUC1.TabIndex = 11;
             // 
             // FormIBnBFirst
             // 
@@ -1470,8 +1460,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonSignIn;
         private System.Windows.Forms.Button buttonSignUp;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
@@ -1574,6 +1562,7 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label labelFloor;
         private System.Windows.Forms.TextBox textBoxFloor;
+        private UserControls.FirstUC firstUC1;
     }
 }
 

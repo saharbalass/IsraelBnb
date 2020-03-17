@@ -38,6 +38,7 @@
             this.buttonPrint = new System.Windows.Forms.Button();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.columnHeaderSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,8 @@
             this.FullNamecolumnHeader,
             this.CatagorycolumnHeader2,
             this.CitycolumnHeader3,
-            this.AdresscolumnHeader4});
+            this.AdresscolumnHeader4,
+            this.columnHeaderSize});
             this.listViewProducts.Dock = System.Windows.Forms.DockStyle.Top;
             this.listViewProducts.HideSelection = false;
             this.listViewProducts.Location = new System.Drawing.Point(0, 0);
@@ -78,7 +80,7 @@
             // AdresscolumnHeader4
             // 
             this.AdresscolumnHeader4.Text = "כתובת";
-            this.AdresscolumnHeader4.Width = 170;
+            this.AdresscolumnHeader4.Width = 198;
             // 
             // panel1
             // 
@@ -101,7 +103,7 @@
             this.buttonPrint.Name = "buttonPrint";
             this.buttonPrint.Size = new System.Drawing.Size(162, 100);
             this.buttonPrint.TabIndex = 4;
-            this.buttonPrint.Text = "הדפס";
+            this.buttonPrint.Text = "הורד פרטים";
             this.buttonPrint.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonPrint.UseVisualStyleBackColor = true;
             this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
@@ -119,6 +121,10 @@
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage_1);
+            // 
+            // columnHeaderSize
+            // 
+            this.columnHeaderSize.Text = "גודל";
             // 
             // FormAgreement
             // 
@@ -149,5 +155,6 @@
         private System.Windows.Forms.Button buttonPrint;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.ColumnHeader columnHeaderSize;
     }
 }
