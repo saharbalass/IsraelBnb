@@ -68,6 +68,30 @@ namespace ClientSahar
             }
             return ApartmentArr;
         }
+
+        public ApartmentArr FilterByAdress(string adress)
+        {
+            ApartmentArr ApartmentArr = new ApartmentArr();
+
+            for (int i = 0; i < this.Count; i++)
+            {
+
+                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                Apartment apartment = (this[i] as Apartment);
+                if (
+                //סינון לפי שם המוצר
+                 apartment.Adress.StartsWith(adress)
+                )
+                {
+
+                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+                    ApartmentArr.Add(apartment);
+
+                }
+            }
+            return ApartmentArr;
+        }
         public Apartment FilterWithID(int id)
         {
             ApartmentArr ApartmentArr = new ApartmentArr();
@@ -81,10 +105,10 @@ namespace ClientSahar
                 }
             }
             return null;
-        } 
+        }
         public Apartment GetApartmentWithNumber(int place)
         {
-                return this[place] as Apartment;;
+            return this[place] as Apartment; ;
         }
         public bool IsContain(string apartmentName)
         {
@@ -92,8 +116,8 @@ namespace ClientSahar
             //בדיקה האם יש ישוב עם אותו שם
             //הסרת האותיות י', ו' משם היישוב לבדיקה - כדיי לשפר מניעת כפילות
 
-            apartmentName = apartmentName.Replace("י","");
-            apartmentName = apartmentName.Replace("ו","");
+            apartmentName = apartmentName.Replace("י", "");
+            apartmentName = apartmentName.Replace("ו", "");
             string curapartmentName;
             for (int i = 0; i < this.Count; i++)
             {

@@ -21,6 +21,7 @@ namespace IsraelBnB
             CityArrToForm(null, comboBox_City);
             CityArrToForm(null, comboBoxCityToRent);
             CatagoryArrToForm(null, comboBoxCatagoryToRent, true);
+            CatagoryArrToForm(null, comboBoxSearch, true);
             UploadAprtPics();
             UploadHousesPics();
         }
@@ -258,7 +259,10 @@ namespace IsraelBnB
                 comboBox_City.ForeColor = Color.Red;
             }
             else
+            {
                 label8.Visible = false;
+                comboBox_City.ForeColor = Color.White;
+            }
             if (textBoxPassWordNew.Text.Length < 4)
             {
                 flag = false;
@@ -309,7 +313,6 @@ namespace IsraelBnB
             int k = pictureBox.ImageLocation.LastIndexOf(@"\") + 1;
             return pictureBox.ImageLocation.Substring(k);
         }
-        //מסדר את השמות של התמונות כדי למצוא תמונות לפי ערך
 
         private int FindLastIntInName(string name)
         {
@@ -604,7 +607,7 @@ namespace IsraelBnB
         private void buttonWantToHost_Click(object sender, EventArgs e)
         {
             ClientArr clientArr = new ClientArr();
-            if (labelWelcome.Visible == false)
+            if (labelWelcome.Visible == false || labelWelcome.Text == "")
             {
                 MessageBox.Show("חובה להירשם לפני השכרה", "רישום", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
             }
@@ -711,7 +714,7 @@ namespace IsraelBnB
 
         private void button7_Click(object sender, EventArgs e)
         {
-            tabHouses.SelectedTab = tabPageApartments;
+            tabHouses.SelectedTab = tabPageSearch;
         }
 
         //tab apartments
@@ -785,7 +788,7 @@ namespace IsraelBnB
             for (int i = 0; i < 3; i++)
             {
                 pictureBox = NumberToPictureBoxAprt(i + 1);
-                AprtmentToForm(apartmentArr[i] as Apartment, pictureBox);
+                ApartmentToForm(apartmentArr[i] as Apartment, pictureBox);
             }
         }
 
@@ -847,7 +850,7 @@ namespace IsraelBnB
             }
         }
 
-        private void AprtmentToForm(Apartment apartment, PictureBox pictureBox)
+        private void ApartmentToForm(Apartment apartment, PictureBox pictureBox)
         {
             if (apartment != null)
             {
@@ -991,7 +994,7 @@ namespace IsraelBnB
             //מציאת הזהות לפי הטאג שמכניסים 
             apartment = apartmentArr.FilterWithID(Convert.ToInt32(((PictureBox)sender).Tag));
 
-            if (labelWelcome.Text == "")
+            if (labelWelcome.Visible == false || labelWelcome.Text == "")
             {
                 MessageBox.Show("חובה להירשם לפני השכרה", "רישום", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
             }
@@ -1019,7 +1022,7 @@ namespace IsraelBnB
             //מציאת הזהות לפי הטאג שמכניסים 
             house = houseArr.FilterWithID(Convert.ToInt32(((PictureBox)sender).Tag));
 
-            if (labelWelcome.Text == "")
+            if (labelWelcome.Visible == false || labelWelcome.Text == "")
             {
                 MessageBox.Show("חובה להירשם לפני השכרה", "רישום", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
             }
@@ -1070,6 +1073,143 @@ namespace IsraelBnB
                 textBoxAprtNo.Visible = true;
                 labelFloor.Text = "מספר קומה";
             }
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            if (!CheckFormToSearch())
+            {
+                MessageBox.Show("נא מלא את הפרטים החסרים", "השלמת פרטים", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+            }
+            else
+            {
+                //houses
+                if ((int)comboBoxSearch.SelectedValue == 1)
+                {
+                    HouseArr houseArr = new HouseArr();
+                    houseArr.Fill();
+                    listBoxApartments.Visible = false;
+                    listBoxHouses.Visible = true;
+
+                    houseArr = houseArr.FilterByAdress(textBoxSearch.Text);
+                    listBoxHouses.DataSource = houseArr;
+                    if (listBoxHouses.Items.Count < 1)
+                    {
+                        MessageBox.Show("אין בית מתאים", "סינון", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                    }
+                }
+                //apartments
+                else if ((int)comboBoxSearch.SelectedValue == 2)
+                {
+                    ApartmentArr apartmentArr = new ApartmentArr();
+                    apartmentArr.Fill();
+
+                    listBoxHouses.Visible = false;
+                    listBoxApartments.Visible = true;
+
+                    apartmentArr = apartmentArr.FilterByAdress(textBoxSearch.Text);
+                    listBoxApartments.DataSource = apartmentArr;
+                    if (listBoxApartments.Items.Count<1)
+                    {
+                        if (listBoxApartments.Items.Count < 1)
+                        {
+                            MessageBox.Show("אין דירה מתאימה", "סינון", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                        }
+                    }
+                }
+            }
+        }
+
+        private bool CheckFormToSearch()
+        {
+            bool flag = true;
+
+            if ((int)comboBoxSearch.SelectedValue < 1)
+            {
+                flag = false;
+                label34.Visible = true;
+            }
+            else
+            {
+                label34.Visible = false;
+            }
+            if (textBoxSearch.Text.Length < 2)
+            {
+                label35.Visible = true;
+                flag = false;
+            }
+            else
+            {
+                label35.Visible = false;
+            }
+
+            return flag;
+        }
+
+        private void listBoxHouseSearch_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBoxHouseSearch.Visible = true;
+            pictureBoxAprtSearch.Visible = false;
+            HousesToForm(listBoxHouses.SelectedItem as House,pictureBoxHouseSearch);
+
+        }
+
+        private void listBoxApartmentSearch_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBoxHouseSearch.Visible = false;
+            pictureBoxAprtSearch.Visible = true;
+            ApartmentToForm(listBoxApartments.SelectedItem as Apartment, pictureBoxAprtSearch);
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            tabHouses.SelectedTab = tabPageIntro;
+        }
+
+        private void labelShowAllHouses_Click(object sender, EventArgs e)
+        {
+            FormAllProperties formAllProperties = new FormAllProperties(true);
+            formAllProperties.ShowDialog();
+        }
+
+        private void labelShowAllAparments_Click(object sender, EventArgs e)
+        {
+            FormAllProperties formAllProperties = new FormAllProperties(false);
+            formAllProperties.ShowDialog();
+        }
+
+        private void labelDochForRent_Click(object sender, EventArgs e)
+        {
+            if (!CheckWantToRent())
+            {
+                MessageBox.Show("נא מלא את הפרטים החסרים", "השלמת פרטים", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+            }
+            else
+            {
+                if ((int)(comboBoxCatagoryToRent.SelectedValue) == 1)
+                {
+                    House house = FormToHouse();
+                    FormSumToProperty formSumToProperty = new FormSumToProperty(house, null);
+
+                    formSumToProperty.ShowDialog();
+                }
+                else
+                {
+                    Apartment apartment = FormToApartment();
+
+                    FormSumToProperty formSumToProperty = new FormSumToProperty(null,apartment);
+
+                    formSumToProperty.ShowDialog();
+
+                }
+            }
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+            FormChartHousesCity formChartHousesCity = new FormChartHousesCity();
+            formChartHousesCity.ShowDialog();
         }
     }
 }

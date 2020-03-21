@@ -2,6 +2,7 @@
 using System.Data;
 using ClientSahar.BL;
 using ProductSahar.DAL;
+using System.Collections.Generic;
 
 namespace ClientSahar
 {
@@ -68,6 +69,69 @@ namespace ClientSahar
             }
             return houseArr;
         }
+
+        public SortedDictionary<string, int> GetSortedDictionary()
+        {
+
+            // מחזירה משתנה מסוג מילון ממוין עם ערכים רלוונטיים לדוח
+            SortedDictionary<string, int> dictionary = new SortedDictionary<string, int>();
+            CityArr HousesclientsCityArr = this.GetCityArr();
+            foreach (City curCity in HousesclientsCityArr)
+                dictionary.Add(curCity.Name, this.Filter(curCity).Count);
+            return dictionary;
+        }
+
+        //מחזירה עבור אוסף הלקוחות את אוסף היישובים - ללא חזרות.
+        public CityArr GetCityArr()
+        {
+            City city = new City();
+            CityArr cityArr = new CityArr();
+            for (int i = 0; i < this.Count; i++)
+            {
+                city = (this[i] as House).City;
+                cityArr.Add(city);
+            }
+            return cityArr;
+        }
+        //שמקבלת יישוב ומחזירה רק את הלקוחות הגרים באותו ישוב )העמסה על פעולת הסינון הקיימת
+        public HouseArr Filter(City city)
+        {
+            HouseArr houseArr = new HouseArr();
+            for (int i = 0; i < this.Count; i++)
+            {
+                if ((this[i] as House).City == city)
+                {
+                    houseArr.Add((this[i] as House));
+                }
+            }
+            return houseArr;
+        }
+        public HouseArr FilterByAdress(string adress)
+        {
+            HouseArr houseArr = new HouseArr();
+
+            for (int i = 0; i < this.Count; i++)
+            {
+
+                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                House house = (this[i] as House);
+                if (
+
+                //סינון לפי שם המוצר
+                 house.Adress.StartsWith(adress)
+                )
+                {
+
+                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                    houseArr.Add(house);
+                    break;
+
+                }
+            }
+            return houseArr;
+        }
         public House FilterWithID(int id)
         {
             HouseArr houseArr = new HouseArr();
@@ -81,11 +145,11 @@ namespace ClientSahar
                 }
             }
             return null;
-        } 
+        }
 
         public House GetHouseWithNumber(int place)
         {
-                return this[place] as House;;
+            return this[place] as House; ;
         }
         public bool IsContain(string houseName)
         {
@@ -93,8 +157,8 @@ namespace ClientSahar
             //בדיקה האם יש ישוב עם אותו שם
             //הסרת האותיות י', ו' משם היישוב לבדיקה - כדיי לשפר מניעת כפילות
 
-            houseName = houseName.Replace("י","");
-            houseName = houseName.Replace("ו","");
+            houseName = houseName.Replace("י", "");
+            houseName = houseName.Replace("ו", "");
             string curhouseName;
             for (int i = 0; i < this.Count; i++)
             {
