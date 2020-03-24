@@ -35,8 +35,6 @@ namespace IsraelBnB
             curHousetArr.Fill();
             SortedDictionary<string, int> dictionary = curHousetArr.GetSortedDictionary();
             CityArr clientsCityArr = curHousetArr.GetCityArr();
-            foreach (City curCity in clientsCityArr)
-                dictionary.Add(curCity.Name, curHousetArr.Filter(curCity).Count);
             //הגדרת סדרה וערכיה - שם הסדרה מועבר למקרא - 2
 
             Series series = new Series("התפלגות ", 0);

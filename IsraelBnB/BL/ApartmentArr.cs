@@ -35,7 +35,50 @@ namespace ClientSahar
             for (int i = 0; i < ApartmentArr.Count; i++)
                 this.Remove(ApartmentArr[i] as Apartment);
         }
+        public ApartmentArr Filter(Client client)
+        {
+            ApartmentArr apartmentArr = new ApartmentArr();
+            //לבדוק למה צריך פה פיל (לבדוק דרך הרפרנס)כ
+            apartmentArr.Fill();
+            ApartmentArr apartmentArr1 = new ApartmentArr();
 
+            for (int i = 0; i < apartmentArr.Count; i++)
+            {
+
+                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                Apartment apartment= (apartmentArr[i] as Apartment);
+                ClientArr clientArr = new ClientArr();
+                clientArr.Fill();
+                Client client1 = clientArr.ReturnClientWithID(apartment.Client);
+                if (
+
+                //סינון לפי מזהה הקלוח
+
+                client1.ID == client.ID
+                )
+
+                {
+
+                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                    apartmentArr1.Add(apartment);
+
+                }
+            }
+            return apartmentArr1;
+        }
+        public bool DoesExist(City curCity)
+        {
+
+            //מחזירה האם לפחות לאחד מהלקוחות יש את היישוב
+
+            for (int i = 0; i < this.Count; i++)
+                if ((this[i] as Apartment).City.ID == curCity.ID)
+                    return true;
+
+            return false;
+        }
         public ApartmentArr Filter(int id, string adress)
         {
             ApartmentArr ApartmentArr = new ApartmentArr();

@@ -13,6 +13,7 @@ namespace IsraelBnB
 {
     public partial class FormSumToProperty : Form
     {
+        Bitmap m_bitmap;
         public FormSumToProperty(House house,Apartment apartment)
         {
             InitializeComponent();
@@ -35,9 +36,25 @@ namespace IsraelBnB
             listViewProducts.Columns[5].Text = "מספר קומות";
             listViewProducts.Items.Add(listViewItem);
 
-            pictureBox2.ImageLocation = house.Picture1;
-            pictureBox3.ImageLocation = house.Picture2;
-            pictureBox4.ImageLocation = house.Picture3;
+            pictureBox2.ImageLocation = FindPicturePath() + @"\" + house.Picture1;
+            pictureBox3.ImageLocation = FindPicturePath() + @"\" + house.Picture2;
+            pictureBox4.ImageLocation = FindPicturePath() + @"\" + house.Picture3;
+
+        }
+
+        private string FindPicturePath()
+        {
+
+            //מציאת הנתיב ממנו רץ היישום
+
+            string path = Application.StartupPath;
+
+            //מעבר לתיקייה בה שמורה התמונה
+
+            path = path.Replace(@"bin\Debug", "");
+            path = path.Replace(@"bin\Release", "");
+            path = path + @"\Pictures\";
+            return path;
         }
 
         private void InitializeListViewForApartment(Apartment apartment)
@@ -49,9 +66,9 @@ namespace IsraelBnB
             listViewProducts.Columns[5].Text = "מספר קומה";
             listViewProducts.Items.Add(listViewItem);
 
-            pictureBox2.ImageLocation = apartment.Picture1;
-            pictureBox3.ImageLocation = apartment.Picture2;
-            pictureBox4.ImageLocation = apartment.Picture3;
+            pictureBox2.ImageLocation = FindPicturePath() + @"\" + apartment.Picture1;
+            pictureBox3.ImageLocation = FindPicturePath() + @"\" + apartment.Picture2;
+            pictureBox4.ImageLocation = FindPicturePath() + @"\" + apartment.Picture3;
         }
     }
 }

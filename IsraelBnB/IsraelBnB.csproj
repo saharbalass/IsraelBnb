@@ -129,6 +129,12 @@
     <Compile Include="FormIBnBFirst.Designer.cs">
       <DependentUpon>FormIBnBFirst.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSumeryClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSumeryClient.Designer.cs">
+      <DependentUpon>FormSumeryClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSumToProperty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     </Compile>
     <Compile Include="FormToRent.Designer.cs">
       <DependentUpon>FormToRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateProperty.Designer.cs">
+      <DependentUpon>FormUpdateProperty.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,11 +188,17 @@
     <EmbeddedResource Include="FormIBnBFirst.resx">
       <DependentUpon>FormIBnBFirst.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSumeryClient.resx">
+      <DependentUpon>FormSumeryClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSumToProperty.resx">
       <DependentUpon>FormSumToProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormToRent.resx">
       <DependentUpon>FormToRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateProperty.resx">
+      <DependentUpon>FormUpdateProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

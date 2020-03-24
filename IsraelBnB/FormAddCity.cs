@@ -159,8 +159,12 @@ namespace IsraelBnB
 
                     ClientArr clientArr = new ClientArr();
                     clientArr.Fill();
-                    if (clientArr.DoesExist(city))
-                        MessageBox.Show("אי אפשר למחוק עיר שקשורה ללקוח קיים", "יש חיבור בין לקוח לעיר", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ApartmentArr apartmentArr = new ApartmentArr();
+                    apartmentArr.Fill();
+                    HouseArr houseArr = new HouseArr();
+                    houseArr.Fill();
+                    if (clientArr.DoesExist(city) || apartmentArr.DoesExist(city) || houseArr.DoesExist(city))
+                        MessageBox.Show("אי אפשר למחוק עיר שקשורה ליישות קיימת", "יש חיבור בין יישות לעיר", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     else
                     if (city.Delete())
                     {

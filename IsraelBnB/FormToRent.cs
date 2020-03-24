@@ -79,7 +79,7 @@ namespace IsraelBnB
             pictureBoxProperty2.ImageLocation = FindPicturePath() + apartment.Picture2;
             pictureBoxProperty3.ImageLocation = FindPicturePath() + apartment.Picture3;
 
-            label1.Text = "כתובת:" + " " + apartment.Adress + " מספר רחוב:" + Convert.ToInt32(apartment.StreetNo) + " מספר דירה:" + Convert.ToInt32(apartment.AptNo) + " מספר קומה:" + Convert.ToInt32(apartment.Floor);
+            richTextBox2.Text = apartment.Adress + " מספר רחוב:" + Convert.ToInt32(apartment.StreetNo) + " מספר דירה:" + Convert.ToInt32(apartment.AptNo) + " מספר קומה:" + Convert.ToInt32(apartment.Floor);
             // labelAdress.Text = apartment.Adress;
             labelCity.Text = apartment.City.Name;
             // label2.Text = "תיאור:" + " " + apartment.Descreption;
@@ -106,7 +106,7 @@ namespace IsraelBnB
             pictureBoxProperty2.ImageLocation = FindPicturePath() + house.Picture2;
             pictureBoxProperty3.ImageLocation = FindPicturePath() + house.Picture3;
 
-            label1.Text = "כתובת:" + " " + house.Adress + " מספר רחוב:" + Convert.ToInt32(house.StreetNo) + " מספר קומות:" + Convert.ToInt32(house.Floors);
+            richTextBox2.Text = house.Adress + " מספר רחוב:" + Convert.ToInt32(house.StreetNo) + " מספר קומות:" + Convert.ToInt32(house.Floors);
             // labelAdress.Text = house.Adress;
             labelCity.Text = house.City.Name;
             // label2.Text = "תיאור:" + " " + house.Descreption;
@@ -281,6 +281,21 @@ namespace IsraelBnB
             }
             return client;
 
+        }
+
+        private void pictureBoxProperty1_Click(object sender, EventArgs e)
+        {
+            pictureBoxProperty0.ImageLocation = pictureBoxProperty1.ImageLocation;
+        }
+
+        private void pictureBoxProperty2_Click(object sender, EventArgs e)
+        {
+            pictureBoxProperty0.ImageLocation = pictureBoxProperty2.ImageLocation;
+        }
+
+        private void pictureBoxProperty3_Click(object sender, EventArgs e)
+        {
+            pictureBoxProperty0.ImageLocation = pictureBoxProperty3.ImageLocation;
         }
     }
 }

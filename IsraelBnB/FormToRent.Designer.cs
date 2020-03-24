@@ -60,6 +60,7 @@
             this.pictureBoxProperty1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty0 = new System.Windows.Forms.PictureBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -113,6 +114,7 @@
             // 
             this.panelApartments.AutoScroll = true;
             this.panelApartments.AutoScrollMargin = new System.Drawing.Size(0, 35);
+            this.panelApartments.Controls.Add(this.richTextBox2);
             this.panelApartments.Controls.Add(this.labelCatagory);
             this.panelApartments.Controls.Add(this.button1);
             this.panelApartments.Controls.Add(this.label9);
@@ -375,7 +377,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(672, 447);
+            this.label1.Location = new System.Drawing.Point(757, 417);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -385,6 +387,7 @@
             // 
             // pictureBoxProperty2
             // 
+            this.pictureBoxProperty2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxProperty2.Location = new System.Drawing.Point(428, 283);
             this.pictureBoxProperty2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxProperty2.Name = "pictureBoxProperty2";
@@ -392,9 +395,11 @@
             this.pictureBoxProperty2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxProperty2.TabIndex = 5;
             this.pictureBoxProperty2.TabStop = false;
+            this.pictureBoxProperty2.Click += new System.EventHandler(this.pictureBoxProperty2_Click);
             // 
             // pictureBoxProperty1
             // 
+            this.pictureBoxProperty1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxProperty1.Location = new System.Drawing.Point(219, 283);
             this.pictureBoxProperty1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxProperty1.Name = "pictureBoxProperty1";
@@ -402,9 +407,11 @@
             this.pictureBoxProperty1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxProperty1.TabIndex = 4;
             this.pictureBoxProperty1.TabStop = false;
+            this.pictureBoxProperty1.Click += new System.EventHandler(this.pictureBoxProperty1_Click);
             // 
             // pictureBoxProperty3
             // 
+            this.pictureBoxProperty3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxProperty3.Location = new System.Drawing.Point(630, 283);
             this.pictureBoxProperty3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxProperty3.Name = "pictureBoxProperty3";
@@ -412,6 +419,7 @@
             this.pictureBoxProperty3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxProperty3.TabIndex = 3;
             this.pictureBoxProperty3.TabStop = false;
+            this.pictureBoxProperty3.Click += new System.EventHandler(this.pictureBoxProperty3_Click);
             // 
             // pictureBoxProperty0
             // 
@@ -423,6 +431,17 @@
             this.pictureBoxProperty0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxProperty0.TabIndex = 2;
             this.pictureBoxProperty0.TabStop = false;
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.richTextBox2.Location = new System.Drawing.Point(468, 394);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox2.Size = new System.Drawing.Size(276, 96);
+            this.richTextBox2.TabIndex = 35;
+            this.richTextBox2.Text = "";
             // 
             // FormToRent
             // 
@@ -488,5 +507,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelCatagory;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }

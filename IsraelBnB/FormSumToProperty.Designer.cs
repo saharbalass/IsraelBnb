@@ -72,7 +72,7 @@
             this.listViewProducts.Margin = new System.Windows.Forms.Padding(4);
             this.listViewProducts.Name = "listViewProducts";
             this.listViewProducts.RightToLeftLayout = true;
-            this.listViewProducts.Size = new System.Drawing.Size(570, 131);
+            this.listViewProducts.Size = new System.Drawing.Size(724, 131);
             this.listViewProducts.TabIndex = 64;
             this.listViewProducts.UseCompatibleStateImageBehavior = false;
             this.listViewProducts.View = System.Windows.Forms.View.Details;
@@ -133,7 +133,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(570, 86);
+            this.panel2.Size = new System.Drawing.Size(724, 86);
             this.panel2.TabIndex = 63;
             // 
             // label1
@@ -168,9 +168,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
             this.panel1.Controls.Add(this.buttonPrint);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 350);
+            this.panel1.Location = new System.Drawing.Point(0, 414);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(570, 100);
+            this.panel1.Size = new System.Drawing.Size(724, 100);
             this.panel1.TabIndex = 62;
             // 
             // columnHeaderSize
@@ -189,25 +189,28 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(433, 210);
+            this.pictureBox2.Location = new System.Drawing.Point(486, 210);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(137, 134);
+            this.pictureBox2.Size = new System.Drawing.Size(226, 198);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 65;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(236, 210);
+            this.pictureBox3.Location = new System.Drawing.Point(242, 210);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(137, 134);
+            this.pictureBox3.Size = new System.Drawing.Size(226, 198);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 66;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(23, 210);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 210);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(137, 134);
+            this.pictureBox4.Size = new System.Drawing.Size(226, 198);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 67;
             this.pictureBox4.TabStop = false;
             // 
@@ -215,7 +218,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 450);
+            this.ClientSize = new System.Drawing.Size(724, 514);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);

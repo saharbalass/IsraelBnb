@@ -70,6 +70,74 @@ namespace ClientSahar
             return houseArr;
         }
 
+        public bool DoesExist(City curCity)
+        {
+
+            //מחזירה האם לפחות לאחד מהלקוחות יש את היישוב
+
+            for (int i = 0; i < this.Count; i++)
+                if ((this[i] as House).City.ID == curCity.ID)
+                    return true;
+
+            return false;
+        }
+
+        public HouseArr Filter(Client client)
+        {
+            HouseArr houseArr = new HouseArr();
+            //לבדוק למה צריך פה פיל (לבדוק דרך הרפרנס)כ
+            houseArr.Fill();
+            HouseArr houseArr1 = new HouseArr(); 
+
+            for (int i = 0; i < houseArr.Count; i++)
+            {
+
+                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                House house = (houseArr[i] as House);
+                ClientArr clientArr = new ClientArr();
+                clientArr.Fill();
+                Client client1 = clientArr.ReturnClientWithID(house.Client);
+                if (
+
+                //סינון לפי מזהה הקלוח
+
+                client1.ID == client.ID
+                )
+                
+                {
+
+                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                    houseArr1.Add(house);
+
+                }
+            }
+            return houseArr1;
+        }
+        public bool IsContain(City city)
+        {
+            //בדיקה האם הישוב קיים באוסף
+            foreach (City curCity in this)
+            {
+                if (curCity.ID == city.ID)
+                    return true;
+            }
+
+            return false;
+        }
+
+        public CityArr GetCityArr()
+        {
+            //מחזירה את אוסף היישובים להם יש לקוח - ללא חזרות
+            CityArr curCityArr = new CityArr();
+
+            foreach (House curHouse in this)
+                if (!curCityArr.IsContain(curHouse.City.Name))
+                    curCityArr.Add(curHouse.City);
+
+            return curCityArr;
+        }
         public SortedDictionary<string, int> GetSortedDictionary()
         {
 
@@ -81,25 +149,13 @@ namespace ClientSahar
             return dictionary;
         }
 
-        //מחזירה עבור אוסף הלקוחות את אוסף היישובים - ללא חזרות.
-        public CityArr GetCityArr()
-        {
-            City city = new City();
-            CityArr cityArr = new CityArr();
-            for (int i = 0; i < this.Count; i++)
-            {
-                city = (this[i] as House).City;
-                cityArr.Add(city);
-            }
-            return cityArr;
-        }
         //שמקבלת יישוב ומחזירה רק את הלקוחות הגרים באותו ישוב )העמסה על פעולת הסינון הקיימת
         public HouseArr Filter(City city)
         {
             HouseArr houseArr = new HouseArr();
             for (int i = 0; i < this.Count; i++)
             {
-                if ((this[i] as House).City == city)
+                if ((this[i] as House).City.ID == city.ID)
                 {
                     houseArr.Add((this[i] as House));
                 }

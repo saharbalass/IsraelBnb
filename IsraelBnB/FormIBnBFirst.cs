@@ -283,7 +283,7 @@ namespace IsraelBnB
             client.CellPhone_AreaCode = comboBox_CellPhone.Text;
             client.ID_FromClient = IDtextBox1.Text;
             client.Mail = emailTextBox4.Text;
-            client.ID = int.Parse(label_Id.Text);
+            client.ID = int.Parse(labelIDClient.Text);
             client.City = (comboBox_City.SelectedItem as City);
             client.PassWord = textBoxPassWordNew.Text;
 
@@ -408,6 +408,7 @@ namespace IsraelBnB
                         if (client.Insert())
                         {
                             MessageBox.Show("הוסף בהצלחה", "הוספת משתמש", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                            tabHouses.SelectedTab = tabPageSignIn;
                         }
                         else
                             MessageBox.Show("בעיה בהוספה", "הוספת משתמש", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
@@ -452,6 +453,7 @@ namespace IsraelBnB
                                     return;
 
                                 MessageBox.Show("הוסף בהצלחה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                                label39.Text = Convert.ToString(house.ID);
                             }
                             else
                                 MessageBox.Show("בעיה בהוספה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
@@ -462,9 +464,9 @@ namespace IsraelBnB
                             {
                                 MessageBox.Show("עודכן בהצלחה", "עידכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                                 //כיוון שמדובר על ישוב חדש, ניעזר במזהה הגבוה ביותר = הישוב האחרון שנוסף לטבלה
-                                HouseArr houseArr = new HouseArr();
-                                houseArr.Fill();
-                                house = houseArr.GethouseWithMaxID();
+                                //HouseArr houseArr = new HouseArr();
+                                //houseArr.Fill();
+                                //house = houseArr.GethouseWithMaxID();
                             }
                             else
                                 MessageBox.Show("בעיה בעידכון", "עדכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
@@ -487,6 +489,7 @@ namespace IsraelBnB
                                     return;
 
                                 MessageBox.Show("הוסף בהצלחה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                                label39.Text = Convert.ToString(apartment.ID);
                             }
                             else
                                 MessageBox.Show("בעיה בהוספה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
@@ -573,6 +576,10 @@ namespace IsraelBnB
                 buttonSignUp.Visible = false;
                 buttonExitLogIn.Visible = true;
                 tabHouses.SelectedTab = tabPageApartments;
+                buttonUpdate.Visible = true;
+                buttonSignIn.Visible = false;
+                buttonUpdatePersenol.Visible = true;
+                label2.Visible = true;
             }
             else
             {
@@ -594,6 +601,19 @@ namespace IsraelBnB
         private void buttonExitLogIn_Click(object sender, EventArgs e)
         {
             LogOut();
+            ResetTabToRent();
+        }
+
+        private void ResetTabToRent()
+        {
+            comboBoxCatagoryToRent.SelectedValue = -1;
+            comboBoxCityToRent.SelectedValue = -1;
+            textBoxAdressToRent.Text = "";
+            textBoxStreetNo.Text = "";
+            textBoxAprtNo.Text = "";
+            richTextBoxDescreptionToRent.Text = "";
+            textBoxSize.Text = "";
+            textBoxFloor.Text = "";
         }
 
         private void LogOut()
@@ -602,6 +622,10 @@ namespace IsraelBnB
             labelWelcome.Text = "";
             buttonExitLogIn.Visible = false;
             buttonSignUp.Visible = true;
+            buttonUpdate.Visible = false;
+            buttonSignIn.Visible = true;
+            buttonUpdatePersenol.Visible = false;
+            label2.Visible = false;
         }
 
         private void buttonWantToHost_Click(object sender, EventArgs e)
@@ -640,6 +664,7 @@ namespace IsraelBnB
             ClientArr clientArr = new ClientArr();
             clientArr.Fill();
 
+            house.ID = Convert.ToInt32(label39.Text);
             house.Adress = textBoxAdressToRent.Text;
             house.Client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text).ID;
             house.Picture1 = GetPicfileName(pictureBox7);
@@ -788,7 +813,7 @@ namespace IsraelBnB
             for (int i = 0; i < 3; i++)
             {
                 pictureBox = NumberToPictureBoxAprt(i + 1);
-                ApartmentToForm(apartmentArr[i] as Apartment, pictureBox);
+                ApartmentToFormPictureOnly(apartmentArr[i] as Apartment, pictureBox);
             }
         }
 
@@ -802,7 +827,7 @@ namespace IsraelBnB
             for (int i = 0; i < 3; i++)
             {
                 pictureBox = NumberToPictureBoxHouses(i + 1);
-                HousesToForm(houseArr[i] as House, pictureBox);
+                HousesToFormPictureOnly(houseArr[i] as House, pictureBox);
             }
         }
         private void ProductToForm(Product product, PictureBox pictureBox)
@@ -826,7 +851,7 @@ namespace IsraelBnB
                 pictureBoxApr1.ImageLocation = FindPicturePath() + @"\" + DEFAULT_PIC;
             }
         }
-        private void HousesToForm(House house, PictureBox pictureBox)
+        private void HousesToFormPictureOnly(House house, PictureBox pictureBox)
         {
             if (house != null)
             {
@@ -850,7 +875,72 @@ namespace IsraelBnB
             }
         }
 
-        private void ApartmentToForm(Apartment apartment, PictureBox pictureBox)
+        private void HousesToForm(House house)
+        {
+            textBoxAdressToRent.Text = house.Adress;
+            //house.Client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text).ID;
+            pictureBox5.ImageLocation = FindPicturePath() + house.Picture1;
+            pictureBox6.ImageLocation = FindPicturePath() + house.Picture2;
+            pictureBox7.ImageLocation = FindPicturePath() + house.Picture3;
+            richTextBoxDescreptionToRent.Text = house.Descreption;
+            textBoxStreetNo.Text = Convert.ToString(house.StreetNo);
+             textBoxSize.Text = Convert.ToString(house.Size);
+            textBoxFloor.Text =Convert.ToString(house.Floors);
+            comboBoxCityToRent.SelectedValue = house.City.ID;
+            comboBoxCatagoryToRent.SelectedValue = 1;
+            pictureBoxAdd1.Visible = false;
+            pictureBoxAdd2.Visible = false;
+            pictureBoxAdd3.Visible = false;
+            changePic1.Visible = true;
+            changePic2.Visible = true;
+            changePic3.Visible = true;
+            labelFloor.Text = "מספר קומות";
+            textBoxAprtNo.Visible = false;
+            label30.Visible = false;
+            label15.Visible = false;
+            label16.Visible = false;
+            label17.Visible = false;
+            label39.Text = Convert.ToString(house.ID);
+        }
+        private void ClientToForm(Client client)
+        {
+            labelIDClient.Text = Convert.ToString(client.ID);
+            textBox_FirstName.Text = client.FirstName;
+            textBox_LastName.Text = client.LastName;
+            comboBox_CellPhone.Text = client.CellPhone_AreaCode;
+            textBox_CellPhone.Text = client.PhoneNumber;
+            emailTextBox4.Text = client.Mail;
+            textBoxPassWordNew.Text = client.PassWord;
+            IDtextBox1.Text = client.ID_FromClient;
+            comboBox_City.SelectedValue = client.City.ID;
+        }
+        private void ApartmentsToForm(Apartment apartment)
+        {
+            textBoxAdressToRent.Text = apartment.Adress;
+            //house.Client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text).ID;
+            pictureBox5.ImageLocation = FindPicturePath() + apartment.Picture1;
+            pictureBox6.ImageLocation = FindPicturePath() + apartment.Picture2;
+            pictureBox7.ImageLocation = FindPicturePath() + apartment.Picture3;
+            richTextBoxDescreptionToRent.Text = apartment.Descreption;
+            textBoxAprtNo.Text = Convert.ToString(apartment.AptNo);
+            textBoxStreetNo.Text = Convert.ToString(apartment.StreetNo);
+            textBoxSize.Text = Convert.ToString(apartment.Size);
+            textBoxFloor.Text = Convert.ToString(apartment.Floor);
+            comboBoxCityToRent.SelectedValue = apartment.City.ID;
+            comboBoxCatagoryToRent.SelectedValue = 2;
+            pictureBoxAdd1.Visible = false;
+            pictureBoxAdd2.Visible = false;
+            pictureBoxAdd3.Visible = false;
+            changePic1.Visible = true;
+            changePic2.Visible = true;
+            changePic3.Visible = true;
+            label15.Visible = false;
+            label16.Visible = false;
+            label17.Visible = false;
+            label39.Text = Convert.ToString(apartment.ID);
+        }
+
+        private void ApartmentToFormPictureOnly(Apartment apartment, PictureBox pictureBox)
         {
             if (apartment != null)
             {
@@ -949,6 +1039,7 @@ namespace IsraelBnB
             return pictureBox;
 
         }
+
         //בגלל שפעולת ה"מלא" משנה את הסדר בפרודקט, נסה לשלוח לתכונה הריקה את הזהות של אותו פרודקט.
         //private void pictureBoxApr_Click(object sender, EventArgs e)
         //{
@@ -1109,7 +1200,7 @@ namespace IsraelBnB
 
                     apartmentArr = apartmentArr.FilterByAdress(textBoxSearch.Text);
                     listBoxApartments.DataSource = apartmentArr;
-                    if (listBoxApartments.Items.Count<1)
+                    if (listBoxApartments.Items.Count < 1)
                     {
                         if (listBoxApartments.Items.Count < 1)
                         {
@@ -1150,7 +1241,7 @@ namespace IsraelBnB
         {
             pictureBoxHouseSearch.Visible = true;
             pictureBoxAprtSearch.Visible = false;
-            HousesToForm(listBoxHouses.SelectedItem as House,pictureBoxHouseSearch);
+            HousesToFormPictureOnly(listBoxHouses.SelectedItem as House, pictureBoxHouseSearch);
 
         }
 
@@ -1158,7 +1249,7 @@ namespace IsraelBnB
         {
             pictureBoxHouseSearch.Visible = false;
             pictureBoxAprtSearch.Visible = true;
-            ApartmentToForm(listBoxApartments.SelectedItem as Apartment, pictureBoxAprtSearch);
+            ApartmentToFormPictureOnly(listBoxApartments.SelectedItem as Apartment, pictureBoxAprtSearch);
 
         }
 
@@ -1187,21 +1278,29 @@ namespace IsraelBnB
             }
             else
             {
-                if ((int)(comboBoxCatagoryToRent.SelectedValue) == 1)
+                if (Convert.ToInt32(label39.Text) != 0)
                 {
-                    House house = FormToHouse();
-                    FormSumToProperty formSumToProperty = new FormSumToProperty(house, null);
 
-                    formSumToProperty.ShowDialog();
+                    if ((int)(comboBoxCatagoryToRent.SelectedValue) == 1)
+                    {
+                        House house = FormToHouse();
+                        FormSumToProperty formSumToProperty = new FormSumToProperty(house, null);
+
+                        formSumToProperty.ShowDialog();
+                    }
+                    else
+                    {
+                        Apartment apartment = FormToApartment();
+
+                        FormSumToProperty formSumToProperty = new FormSumToProperty(null, apartment);
+
+                        formSumToProperty.ShowDialog();
+
+                    }
                 }
                 else
                 {
-                    Apartment apartment = FormToApartment();
-
-                    FormSumToProperty formSumToProperty = new FormSumToProperty(null,apartment);
-
-                    formSumToProperty.ShowDialog();
-
+                    MessageBox.Show("חובה לסיים את תהליך הוספת הנכס!", "סיום תהליך", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                 }
             }
         }
@@ -1210,6 +1309,124 @@ namespace IsraelBnB
         {
             FormChartHousesCity formChartHousesCity = new FormChartHousesCity();
             formChartHousesCity.ShowDialog();
+        }
+
+        private void InitializeUpdateForClient()
+        {
+            ClientArr clientArr = new ClientArr();
+            clientArr.Fill();
+            Client client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text);
+
+            HouseArr houseArr = new HouseArr();
+            //houseArr.Fill();
+            houseArr = houseArr.Filter(client);
+
+            ApartmentArr apartmentArr = new ApartmentArr();
+            apartmentArr = apartmentArr.Filter(client);
+
+            //שש מקרים בגלל שיש שש מקומות לשים את התמונות של הדירות
+            for (int i = 0; i < houseArr.Count; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        HousesToFormPictureOnly(houseArr[i] as House, pictureBox8);
+                        //שם את הזהות של אותו בית כדי לייחד אותו בתמונה ולדעת באיזה בית מדובר
+                        pictureBox8.Tag = (houseArr[i] as House).ID;
+                        break;
+                    case 1:
+                        HousesToFormPictureOnly(houseArr[i] as House, pictureBox9);
+                        pictureBox9.Tag = (houseArr[i] as House).ID;
+                        break;
+                    case 2:
+                        HousesToFormPictureOnly(houseArr[i] as House, pictureBox10);
+                        pictureBox10.Tag = (houseArr[i] as House).ID;
+                        break;
+                }
+                for (int j = 0; j < apartmentArr.Count; j++)
+                {
+                    switch (j)
+                    {
+                        case 0:
+                            ApartmentToFormPictureOnly(apartmentArr[j] as Apartment, pictureBox13);
+                            pictureBox13.Tag = (apartmentArr[j] as Apartment).ID;
+                            break;
+                        case 1:
+                            ApartmentToFormPictureOnly(apartmentArr[j] as Apartment, pictureBox12);
+                            pictureBox12.Tag = (apartmentArr[j] as Apartment).ID;
+                            break;
+                        case 2:
+                            ApartmentToFormPictureOnly(apartmentArr[j] as Apartment, pictureBox11);
+                            pictureBox11.Tag = (apartmentArr[j] as Apartment).ID;
+                            break;
+                    }
+                }
+            }
+
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+            // InitializeUpdateForClient();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InitializeUpdateForClient();
+            tabHouses.SelectedTab = tabPageUpdate;
+        }
+        //להוסיף עידכון לדירה גם
+        private void pictureBoxUpdateHouses_Click(object sender, EventArgs e)
+        {
+            tabHouses.SelectedTab = tabPageWantToHost;
+            HouseArr houseArr = new HouseArr();
+            houseArr.Fill();
+
+            House house = houseArr.FilterWithID(Convert.ToInt32((sender as PictureBox).Tag));
+
+            HousesToForm(house);
+
+
+
+        }
+        private void pictureBoxUpdateApartments_Click(object sender, EventArgs e)
+        {
+            tabHouses.SelectedTab = tabPageWantToHost;
+            ApartmentArr apartmentArr= new ApartmentArr();
+            apartmentArr.Fill();
+
+            Apartment apartment= apartmentArr.FilterWithID(Convert.ToInt32((sender as PictureBox).Tag));
+
+            ApartmentsToForm(apartment);
+        }
+
+        private void buttonUpdatePersenol_Click(object sender, EventArgs e)
+        {
+            tabHouses.SelectedTab = tabPageSignUp;
+            ClientArr clientArr = new ClientArr();
+            clientArr.Fill();
+            Client client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text);
+            ClientToForm(client);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            ClientArr clientArr = new ClientArr();
+            clientArr.Fill();
+            Client client = new Client();
+            if (Convert.ToInt32(labelIDClient.Text) != 0)
+            {
+                client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text);
+
+                FormSumeryClient formSumeryClient = new FormSumeryClient(client);
+
+                formSumeryClient.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("חובה להירשם לפני", "רישום", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+            }
         }
     }
 }
