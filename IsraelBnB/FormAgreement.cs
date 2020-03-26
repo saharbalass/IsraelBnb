@@ -15,17 +15,12 @@ namespace IsraelBnB
     public partial class FormAgreement : Form
     {
         Bitmap m_bitmap;
-        public FormAgreement(Client client, /*Product product,*/House house, Apartment apartment)
+        public FormAgreement(Client client, Product product/*,House house, Apartment apartment*/)
         {
             InitializeComponent();
-            if (house != null)
-            {
-                FillListViewHouse(client, house);
-            }
-            else if(apartment != null)
-            {
-                FillListViewApartment(client, apartment);
-            }
+            FillListView(client, product);
+
+
         }
         private void FillListViewHouse(Client client, House house)
         {
@@ -86,7 +81,14 @@ namespace IsraelBnB
             listViewItem = new ListViewItem(new[] { client.FullName, "", client.City.Name, "" });
             //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
             listViewProducts.Items.Add(listViewItem);
-            listViewItem = new ListViewItem(new[] { client1.FullName, product.Catagory.Name, product.City.Name, product.Adress });
+            if (product.Catagory.ID == 1)
+            {
+                listViewItem = new ListViewItem(new[] { client1.FullName, "בית", product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size) });
+            }
+            else
+            {
+                listViewItem = new ListViewItem(new[] { client1.FullName, "דירה", product.City.Name, product.Adress + " " + product.StreetNo + " מספר דירה:" + product.AptNo, Convert.ToString(product.Size) });
+            }
             listViewProducts.Items.Add(listViewItem);
 
 

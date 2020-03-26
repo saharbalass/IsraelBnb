@@ -14,19 +14,35 @@ namespace IsraelBnB
     public partial class FormSumToProperty : Form
     {
         Bitmap m_bitmap;
-        public FormSumToProperty(House house,Apartment apartment)
+        public FormSumToProperty(Product product)
         {
             InitializeComponent();
-            if (house != null)
-            {
-                InitializeListViewForHouse(house);
-            }
-            if (apartment != null)
-            {
-                InitializeListViewForApartment(apartment);
-            }
+            InitializeListViewForProduct(product);
         }
 
+        private void InitializeListViewForProduct(Product product)
+        {
+            ListViewItem listViewItem;
+            if (product.Catagory.ID == 1)
+            {
+                //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
+                listViewItem = new ListViewItem(new[] { "בתים", product.City.Name, product.Adress + " " + product.StreetNo, product.Descreption, Convert.ToString(product.Size), Convert.ToString(product.Floor) });
+                //משנה את הטקסט בהתאם לנכס (אם מדובר בבית את כמה קומות) אם מדובר בדירה באיזו קומה
+                listViewProducts.Columns[5].Text = "מספר קומות";
+            }
+            else
+            {
+                listViewItem = new ListViewItem(new[] { "דירות", product.City.Name, product.Adress + " " + product.StreetNo, product.Descreption, Convert.ToString(product.Size), Convert.ToString(product.Floor) });
+                //משנה את הטקסט בהתאם לנכס (אם מדובר בבית את כמה קומות) אם מדובר בדירה באיזו קומה
+                listViewProducts.Columns[5].Text = "מספר קומה";
+            }
+           
+            listViewProducts.Items.Add(listViewItem);
+            pictureBox2.ImageLocation = FindPicturePath() + @"\" + product.Picture1;
+            pictureBox3.ImageLocation = FindPicturePath() + @"\" + product.Picture2;
+            pictureBox4.ImageLocation = FindPicturePath() + @"\" + product.Picture3;
+
+        }
         private void InitializeListViewForHouse(House house)
         {
             ListViewItem listViewItem;

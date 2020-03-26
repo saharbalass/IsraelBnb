@@ -39,11 +39,24 @@ namespace ClientSahar.BL
 
         private City m_City;
         public City City { get => m_City; set => m_City = value; }
+
+        private int m_Size;
+        public int Size { get => m_Size; set => m_Size = value; }
+
+        private int m_StreetNo;
+        public int StreetNo { get => m_StreetNo; set => m_StreetNo = value; }
+
+        private int m_Floor;
+        public int Floor { get => m_Floor; set => m_Floor = value; }
+
+        private int m_AptNo;
+        public int AptNo { get => m_AptNo; set => m_AptNo = value; }
+       
         #endregion
 
         public bool Insert()
         {
-            return Product_Dal.Insert(m_Adress, m_Catagory.ID,m_Client,m_Picture1, m_Picture2, m_Picture3,m_Descreption,m_City.ID);
+            return Product_Dal.Insert(m_Adress, m_Catagory.ID,m_Client,m_Picture1, m_Picture2, m_Picture3,m_Descreption,m_City.ID,m_Size, m_StreetNo, m_Floor, m_AptNo);
         }
 
         public Product() { }
@@ -62,6 +75,10 @@ namespace ClientSahar.BL
             this.m_Picture3 = dataRow["Picture3"].ToString();
             this.m_Descreption = dataRow["Descreption"].ToString();
             this.m_City = new City(dataRow.GetParentRow("ProductCity"));
+            this.m_Size = (int)dataRow["Size"];
+            this.m_StreetNo = (int)dataRow["Street.No"];
+            this.m_Floor = (int)dataRow["Floor"];
+            this.m_AptNo = (int)dataRow["Apt.No"];
         }
 
         public override string ToString()
@@ -71,7 +88,7 @@ namespace ClientSahar.BL
 
         public bool Update()
         {
-            return Product_Dal.Update(m_Adress, m_ID,m_Catagory.ID,m_Client,m_Picture1, m_Picture2, m_Picture3,m_Descreption,m_City.ID);
+            return Product_Dal.Update(m_ID,m_Adress, m_Catagory.ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size, m_StreetNo, m_Floor, m_AptNo);
 
         }
         public bool Delete()

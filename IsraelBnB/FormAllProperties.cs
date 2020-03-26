@@ -18,47 +18,71 @@ namespace IsraelBnB
         public FormAllProperties(bool isHouse)
         {
             InitializeComponent();
-            if (isHouse)
-            {
-                FilllistViewHouses();
-            }
-            else if (!isHouse)
-            {
-                FilllistViewApartments();
-            }
+            FilllistViewProducts(isHouse);
         }
 
-        public void FilllistViewHouses()
+        public void FilllistViewProducts(bool isHouse)
         {
-            HouseArr houseArr = new HouseArr();
-            houseArr.Fill();
+            ProductArr productArr = new ProductArr();
+            productArr.Fill();
 
-            House house;
+            Product product;
             ListViewItem listViewItem;
 
-            for (int i = 0; i < houseArr.Count; i++)
+            for (int i = 0; i < productArr.Count; i++)
             {
-                house = houseArr[i] as House;
-                listViewItem = new ListViewItem(new[] { house.City.Name, house.Adress + " " + house.StreetNo, Convert.ToString(house.Size) + " מ''ר "});
-                listViewProducts.Items.Add(listViewItem);
+                product = productArr[i] as Product;
+                if (!isHouse)
+                {
+                    if ((productArr[i] as Product).Catagory.ID == 2)
+                    {
+                        listViewItem = new ListViewItem(new[] { product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size) + " מ''ר " });
+                        listViewProducts.Items.Add(listViewItem);
+                    }
+
+                }
+                else
+                {
+                    if ((productArr[i] as Product).Catagory.ID == 1)
+                    {
+                        listViewItem = new ListViewItem(new[] { product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size) + " מ''ר " });
+                        listViewProducts.Items.Add(listViewItem);
+                    }
+                }
+
             }
         }
+        //public void FilllistViewHouses()
+        //{
+        //    HouseArr houseArr = new HouseArr();
+        //    houseArr.Fill();
 
-        public void FilllistViewApartments()
-        {
-            ApartmentArr apartmentArr = new ApartmentArr();
-            apartmentArr.Fill();
+        //    House house;
+        //    ListViewItem listViewItem;
 
-            Apartment apartment;
-            ListViewItem listViewItem;
+        //    for (int i = 0; i < houseArr.Count; i++)
+        //    {
+        //        house = houseArr[i] as House;
+        //        listViewItem = new ListViewItem(new[] { house.City.Name, house.Adress + " " + house.StreetNo, Convert.ToString(house.Size) + " מ''ר "});
+        //        listViewProducts.Items.Add(listViewItem);
+        //    }
+        //}
 
-            for (int i = 0; i < apartmentArr.Count; i++)
-            {
-                apartment = apartmentArr[i] as Apartment;
-                listViewItem = new ListViewItem(new[] { apartment.City.Name, apartment.Adress + " " + apartment.StreetNo, Convert.ToString(apartment.Size) + " מ''ר " });
-                listViewProducts.Items.Add(listViewItem);
-            }
-        }
+        //public void FilllistViewApartments()
+        //{
+        //    ApartmentArr apartmentArr = new ApartmentArr();
+        //    apartmentArr.Fill();
+
+        //    Apartment apartment;
+        //    ListViewItem listViewItem;
+
+        //    for (int i = 0; i < apartmentArr.Count; i++)
+        //    {
+        //        apartment = apartmentArr[i] as Apartment;
+        //        listViewItem = new ListViewItem(new[] { apartment.City.Name, apartment.Adress + " " + apartment.StreetNo, Convert.ToString(apartment.Size) + " מ''ר " });
+        //        listViewProducts.Items.Add(listViewItem);
+        //    }
+        //}
 
         private void document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {

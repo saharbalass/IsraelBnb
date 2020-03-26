@@ -10,7 +10,7 @@ namespace ProductSahar.DAL
 {
     class Product_Dal
     {
-        public static bool Insert(string adress, int catagory, int client, string picture1, string picture2, string picture3,string descreption,int city)
+        public static bool Insert(string adress, int catagory, int client, string picture1, string picture2, string picture3,string descreption,int city,int size,int streetNo,int floor,int aptNo)
         { 
 
             //מוסיפה את הלקוח למסד הנתונים
@@ -26,6 +26,10 @@ namespace ProductSahar.DAL
             + ",[Picture3]"
             + ",[Descreption]"
             + ",[City]"
+            + ",[Size]"
+            + ",[Street.No]"
+            + ",[Floor]"
+            + ",[Apt.No]"
             + ")"
             + " VALUES "
             + "("
@@ -37,6 +41,10 @@ namespace ProductSahar.DAL
                   + "," + "N'" + picture3 + "'"
                   + "," + "N'" + descreption + "'"
                   + "," + "" + city + ""
+                   + "," + "" + size + ""
+                    + "," + "" + streetNo + ""
+                     + "," + "" + floor + ""
+                      + "," + "" + aptNo + ""
             + ")";
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה
             return Dal.ExecuteSql(str);
@@ -128,7 +136,7 @@ namespace ProductSahar.DAL
             }
         }
 
-        public static bool Update(string adress, int id,int catagory,int client,string picture1, string picture2, string picture3,string descreption, int city)
+        public static bool Update(int id,string adress,int catagory,int client,string picture1, string picture2, string picture3,string descreption, int city, int size, int streetNo, int floor, int aptNo)
         {
 
             //מעדכנת את הלקוח במסד הנתונים
@@ -137,11 +145,15 @@ namespace ProductSahar.DAL
             + " " + "[Adress] = " + "'" + adress + "'"
             + "," + "[Catagory] = " + "" + catagory + ""            
             + "," + "[Client] = " + "" + client + ""
-            + " " + "[Picture1] = " + "'" + picture1 + "'"
-            + " " + "[Picture2] = " + "'" + picture2 + "'"
-            + " " + "[Picture3] = " + "'" + picture3 + "'"
-            + " " + "[Descreption] = " + "'" + descreption + "'"
+            + ", " + "[Picture1] = " + "'" + picture1 + "'"
+            + "," + "[Picture2] = " + "'" + picture2 + "'"
+            + "," + "[Picture3] = " + "'" + picture3 + "'"
+            + "," + "[Descreption] = " + "'" + descreption + "'"
             + "," + "[City] = " + "" + city+ ""
+            + "," + "[Size] = " + "" + size+ ""
+            + "," + "[Street.No] = " + "" + streetNo + ""
+            + "," + "[Floor] = " + "" + floor + ""
+            + "," + "[Apt.No] = " + "" + aptNo + ""
             + " WHERE ID = " + id;
 
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה

@@ -77,6 +77,66 @@ namespace ClientSahar
             }
             return productArr;
         }
+
+        public ProductArr Filter(Client client)
+        {
+            ProductArr productArr = new ProductArr();
+            //לבדוק למה צריך פה פיל (לבדוק דרך הרפרנס)כ
+            productArr.Fill();
+            ProductArr productArr1 = new ProductArr();
+
+            for (int i = 0; i < productArr.Count; i++)
+            {
+
+                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                Product product= (productArr[i] as Product);
+                ClientArr clientArr = new ClientArr();
+                clientArr.Fill();
+                Client client1 = clientArr.ReturnClientWithID(product.Client);
+                if (
+
+                //סינון לפי מזהה הקלוח
+
+                client1.ID == client.ID
+                )
+
+                {
+
+                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                    productArr1.Add(product);
+
+                }
+            }
+            return productArr1;
+        }
+        public ProductArr FilterByAdress(string adress)
+        {
+            ProductArr productArr = new ProductArr();
+
+            for (int i = 0; i < this.Count; i++)
+            {
+
+                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                Product product = (this[i] as Product);
+                if (
+
+                //סינון לפי שם המוצר
+                 product.Adress.StartsWith(adress)
+                )
+                {
+
+                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                    productArr.Add(product);
+                    break;
+
+                }
+            }
+            return productArr;
+        }
         public Product FilterWithID(int id)
         {
             ProductArr productArr = new ProductArr();
