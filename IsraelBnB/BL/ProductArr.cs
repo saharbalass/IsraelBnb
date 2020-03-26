@@ -42,6 +42,18 @@ namespace ClientSahar
                 this.Remove(productArr[i] as Product);
         }
 
+        public bool DoesExist(City curCity)
+        {
+
+            //מחזירה האם לפחות לאחד מהלקוחות יש את היישוב
+
+            for (int i = 0; i < this.Count; i++)
+                if ((this[i] as Client).City.ID == curCity.ID)
+                    return true;
+
+            return false;
+        }
+
         public ProductArr Filter(int id, string adress, Catagory category)
         {
             ProductArr productArr = new ProductArr();

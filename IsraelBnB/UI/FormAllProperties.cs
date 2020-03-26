@@ -52,38 +52,7 @@ namespace IsraelBnB
 
             }
         }
-        //public void FilllistViewHouses()
-        //{
-        //    HouseArr houseArr = new HouseArr();
-        //    houseArr.Fill();
-
-        //    House house;
-        //    ListViewItem listViewItem;
-
-        //    for (int i = 0; i < houseArr.Count; i++)
-        //    {
-        //        house = houseArr[i] as House;
-        //        listViewItem = new ListViewItem(new[] { house.City.Name, house.Adress + " " + house.StreetNo, Convert.ToString(house.Size) + " מ''ר "});
-        //        listViewProducts.Items.Add(listViewItem);
-        //    }
-        //}
-
-        //public void FilllistViewApartments()
-        //{
-        //    ApartmentArr apartmentArr = new ApartmentArr();
-        //    apartmentArr.Fill();
-
-        //    Apartment apartment;
-        //    ListViewItem listViewItem;
-
-        //    for (int i = 0; i < apartmentArr.Count; i++)
-        //    {
-        //        apartment = apartmentArr[i] as Apartment;
-        //        listViewItem = new ListViewItem(new[] { apartment.City.Name, apartment.Adress + " " + apartment.StreetNo, Convert.ToString(apartment.Size) + " מ''ר " });
-        //        listViewProducts.Items.Add(listViewItem);
-        //    }
-        //}
-
+     
         private void document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
 

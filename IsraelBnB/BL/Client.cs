@@ -30,8 +30,8 @@ namespace ClientSahar.BL
         private string m_Mail; // אימייל הלקוח
         public string Mail { get => m_Mail; set => m_Mail = value; }
 
-        private string m_ID_FromClient; //תעודת זהות של הלקוח
-        public string ID_FromClient { get => m_ID_FromClient; set => m_ID_FromClient = value; }
+        private string m_ID_Number; //תעודת זהות של הלקוח
+        public string ID_Number { get => m_ID_Number; set => m_ID_Number = value; }
         
         private City m_City;
         public City City { get => m_City; set => m_City = value; }
@@ -46,7 +46,7 @@ namespace ClientSahar.BL
 
         public bool Insert()
         {
-            return Client_Dal.Insert(m_FirstName, m_LastName, m_CellPhoneAreaCode, m_CellPhoneNumber,/*m_ZipCode*/ m_Mail, m_ID_FromClient,m_City.ID,m_PassWord);
+            return Client_Dal.Insert(m_FirstName, m_LastName, m_CellPhoneAreaCode, m_CellPhoneNumber,/*m_ZipCode*/ m_Mail, m_ID_Number, m_City.ID,m_PassWord);
         }
 
         public Client() { }
@@ -56,7 +56,7 @@ namespace ClientSahar.BL
 
             //מייצרת לקוח מתוך שורת לקוח
 
-            this.m_ID_FromClient = dataRow["ID_FromClient"].ToString();
+            this.m_ID_Number = dataRow["ID_Number"].ToString();
             this.m_FirstName = dataRow["FirstName"].ToString();
             this.m_LastName = dataRow["LastName"].ToString();
             this.m_CellPhoneNumber = dataRow["CellPhoneNumber"].ToString();
@@ -80,7 +80,7 @@ namespace ClientSahar.BL
         {
             return Client_Dal.Update(m_FirstName, m_LastName, m_CellPhoneAreaCode, m_CellPhoneNumber,/*m_ZipCode,*/
 
-            m_Mail,m_ID,m_ID_FromClient,m_City.ID,m_PassWord);
+            m_Mail,m_ID, m_ID_Number, m_City.ID,m_PassWord);
 
         }
         public bool Delete()

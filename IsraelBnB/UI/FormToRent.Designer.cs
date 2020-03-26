@@ -34,6 +34,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelApartments = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.labelCatagory = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -60,7 +62,7 @@
             this.pictureBoxProperty1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty0 = new System.Windows.Forms.PictureBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.labelClientProductID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -114,6 +116,8 @@
             // 
             this.panelApartments.AutoScroll = true;
             this.panelApartments.AutoScrollMargin = new System.Drawing.Size(0, 35);
+            this.panelApartments.Controls.Add(this.labelClientProductID);
+            this.panelApartments.Controls.Add(this.label5);
             this.panelApartments.Controls.Add(this.richTextBox2);
             this.panelApartments.Controls.Add(this.labelCatagory);
             this.panelApartments.Controls.Add(this.button1);
@@ -149,6 +153,28 @@
             this.panelApartments.Size = new System.Drawing.Size(945, 573);
             this.panelApartments.TabIndex = 8;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Location = new System.Drawing.Point(165, 478);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 23);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "מעוניין בנכס";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.richTextBox2.Location = new System.Drawing.Point(468, 394);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox2.Size = new System.Drawing.Size(276, 96);
+            this.richTextBox2.TabIndex = 35;
+            this.richTextBox2.Text = "";
+            // 
             // labelCatagory
             // 
             this.labelCatagory.AutoSize = true;
@@ -161,11 +187,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(146, 508);
+            this.button1.Location = new System.Drawing.Point(146, 571);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 38);
             this.button1.TabIndex = 33;
-            this.button1.Text = "! רוצה להשכיר";
+            this.button1.Text = "! רוצה לקנות";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -432,16 +458,15 @@
             this.pictureBoxProperty0.TabIndex = 2;
             this.pictureBoxProperty0.TabStop = false;
             // 
-            // richTextBox2
+            // labelClientProductID
             // 
-            this.richTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.richTextBox2.Location = new System.Drawing.Point(468, 394);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
-            this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox2.Size = new System.Drawing.Size(276, 96);
-            this.richTextBox2.TabIndex = 35;
-            this.richTextBox2.Text = "";
+            this.labelClientProductID.AutoSize = true;
+            this.labelClientProductID.Location = new System.Drawing.Point(169, 449);
+            this.labelClientProductID.Name = "labelClientProductID";
+            this.labelClientProductID.Size = new System.Drawing.Size(83, 23);
+            this.labelClientProductID.TabIndex = 37;
+            this.labelClientProductID.Text = "label10";
+            this.labelClientProductID.Visible = false;
             // 
             // FormToRent
             // 
@@ -508,5 +533,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelCatagory;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelClientProductID;
     }
 }

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using IsraelBnB.UI;
 
 namespace IsraelBnB
 {
@@ -18,6 +19,7 @@ namespace IsraelBnB
         {
             InitializeComponent();
             CurrentProductToForm(client, product);
+            InitializeClientProduct();
         }
 
         private void FormToRent_Load(object sender, EventArgs e)
@@ -38,6 +40,23 @@ namespace IsraelBnB
             path = path.Replace(@"bin\Release", "");
             path = path + @"\Pictures\";
             return path;
+        }
+        private void InitializeClientProduct()
+        {
+            ClientProductArr clientProductArr = new ClientProductArr();
+            Client client = GetClientFromForm();
+            Product product = GetProductFromForm();
+            ClientProduct clientProductForId = clientProductArr.FindClientProduct(client, product);
+
+            if (clientProductForId.Id != 0)
+            {
+                labelClientProductID.Text = Convert.ToString(clientProductForId.Id);
+            }
+            else
+            {
+                labelClientProductID.Text = "0";
+            }
+            
         }
         private void CurrentProductToForm(Client clientWantToBuy, Product product)
         {
@@ -73,79 +92,6 @@ namespace IsraelBnB
 
         }
 
-        //private void CurrentApartmentToForm(Client clientWantToBuy, Apartment apartment)
-        //{
-        //    Client client = new Client();
-
-        //    pictureBoxProperty0.ImageLocation = FindPicturePath() + apartment.Picture1;
-        //    pictureBoxProperty1.ImageLocation = FindPicturePath() + apartment.Picture1;
-        //    pictureBoxProperty2.ImageLocation = FindPicturePath() + apartment.Picture2;
-        //    pictureBoxProperty3.ImageLocation = FindPicturePath() + apartment.Picture3;
-
-        //    richTextBox2.Text = apartment.Adress + " מספר רחוב:" + Convert.ToInt32(apartment.StreetNo) + " מספר דירה:" + Convert.ToInt32(apartment.AptNo) + " מספר קומה:" + Convert.ToInt32(apartment.Floor);
-        //    // labelAdress.Text = apartment.Adress;
-        //    labelCity.Text = apartment.City.Name;
-        //    // label2.Text = "תיאור:" + " " + apartment.Descreption;
-        //    richTextBox1.Text = apartment.Descreption;
-        //    labelProductID.Text = Convert.ToString(apartment.ID);
-        //    labelClientID.Text = Convert.ToString(clientWantToBuy.ID);
-        //    labelSize.Text = " מ''ר " + Convert.ToString(apartment.Size);
-
-        //    labelCatagory.Text = "2";
-
-        //    client = ReturnClientThrewID(apartment.Client);
-        //    labelCleintEmail.Text = client.Mail;
-        //    labelCleintName.Text = client.FirstName + " " + client.LastName;
-        //    labelCleintPhone.Text = client.CellPhone_AreaCode + client.PhoneNumber;
-
-        //}
-
-        //private void CurrentHouseToForm(Client clientWantToBuy, House house)
-        //{
-        //    Client client = new Client();
-
-        //    pictureBoxProperty0.ImageLocation = FindPicturePath() + house.Picture1;
-        //    pictureBoxProperty1.ImageLocation = FindPicturePath() + house.Picture1;
-        //    pictureBoxProperty2.ImageLocation = FindPicturePath() + house.Picture2;
-        //    pictureBoxProperty3.ImageLocation = FindPicturePath() + house.Picture3;
-
-        //    richTextBox2.Text = house.Adress + " מספר רחוב:" + Convert.ToInt32(house.StreetNo) + " מספר קומות:" + Convert.ToInt32(house.Floors);
-        //    // labelAdress.Text = house.Adress;
-        //    labelCity.Text = house.City.Name;
-        //    // label2.Text = "תיאור:" + " " + house.Descreption;
-        //    richTextBox1.Text = house.Descreption;
-        //    labelProductID.Text = Convert.ToString(house.ID);
-        //    labelClientID.Text = Convert.ToString(clientWantToBuy.ID);
-        //    labelSize.Text = " מ''ר " + Convert.ToString(house.Size);
-
-        //    labelCatagory.Text = "1";
-
-        //    client = ReturnClientThrewID(house.Client);
-        //    labelCleintEmail.Text = client.Mail;
-        //    labelCleintName.Text = client.FirstName + " " + client.LastName;
-        //    labelCleintPhone.Text = client.CellPhone_AreaCode + client.PhoneNumber;
-
-        //}
-
-        //private Client ReturnClientThrewID(int id)
-        //{
-        //    ClientArr clientArr = new ClientArr();
-        //    clientArr.Fill();
-
-        //    Client client = new Client();
-        //    client = clientArr.ReturnClientWithID(id);
-
-        //    return client;
-        //}
-
-        //void removeBG(PictureBox pb, PictureBox pb2)
-        //{
-        //    var pos = this.PointToScreen(pb2.Location);
-        //    pos = pb.PointToClient(pos);
-        //    pb2.Parent = pb;
-        //    pb2.Location = pos;
-        //    pb2.BackColor = Color.Transparent;
-        //}
 
         private void Forword1_Click(object sender, EventArgs e)
         {
@@ -195,11 +141,11 @@ namespace IsraelBnB
         {
             Client client = GetClientFromForm();
 
-                Product product= GetProductFromForm();
-                FormAgreement formAgreement = new FormAgreement(client,product);
-                formAgreement.ShowDialog();
+            Product product = GetProductFromForm();
+            FormAgreement formAgreement = new FormAgreement(client, product);
+            formAgreement.ShowDialog();
 
-           
+
         }
         //because To open the formAgreement i needed the product from current form, but the function is a button type so i needed to do another function to get current product.(threw the Id Label)
         private Product GetProductFromForm()
@@ -219,39 +165,6 @@ namespace IsraelBnB
             return product;
         }
 
-        private House GetHouseFromForm()
-        {
-            HouseArr houseArr= new HouseArr();
-            houseArr.Fill();
-
-            House house = new House();
-
-            for (int i = 0; i < houseArr.Count; i++)
-            {
-                if ((houseArr[i] as House).ID == Convert.ToInt32(labelProductID.Text))
-                {
-                    house = houseArr[i] as House;
-                }
-            }
-            return house;
-        }
-
-        private Apartment GetApartmentFromForm()
-        {
-            ApartmentArr apartmentArr = new ApartmentArr();
-            apartmentArr.Fill();
-
-            Apartment apartment = new Apartment();
-
-            for (int i = 0; i < apartmentArr.Count; i++)
-            {
-                if ((apartmentArr[i] as Apartment).ID == Convert.ToInt32(labelProductID.Text))
-                {
-                    apartment = apartmentArr[i] as Apartment;
-                }
-            }
-            return apartment;
-        }
         private Client GetClientFromForm()
         {
             ClientArr clientArr = new ClientArr();
@@ -283,6 +196,64 @@ namespace IsraelBnB
         private void pictureBoxProperty3_Click(object sender, EventArgs e)
         {
             pictureBoxProperty0.ImageLocation = pictureBoxProperty3.ImageLocation;
+        }
+        private ClientProduct FormtoClientProduct()
+        {
+            ClientProduct clientProduct = new ClientProduct();
+            clientProduct.Id = Convert.ToInt32(labelClientProductID.Text);
+            clientProduct.Client = GetClientFromForm();
+            clientProduct.Product = GetProductFromForm();
+            clientProduct.DateIntrestedSince = DateTime.Now;
+
+            return clientProduct;
+        }
+        private void label5_Click(object sender, EventArgs e)
+        {
+            FormDialog formDialog = new FormDialog();
+
+            ClientProductArr clientProductArr = new ClientProductArr();
+            clientProductArr.Fill();
+            ClientProduct clientProduct = new ClientProduct();
+
+            //פותח את הדיאלוג ואז בודק האם סגר אותו
+            if (formDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+
+                clientProduct = FormtoClientProduct();
+                clientProduct.Intrest = formDialog.intrest;
+
+                if (Convert.ToInt32(labelClientProductID.Text) == 0)
+                {
+                    if (clientProduct.Intrest == 0)
+                    {
+                        clientProduct.ISIntrested = 1;
+                    }
+                    else
+                    {
+                        clientProduct.ISIntrested = 0;
+                    }
+                    if (clientProduct.Insert())
+                    {
+                        MessageBox.Show("הוסף בהצלחה", "הוספת משתמש", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                    }
+                    else
+                    {
+                        MessageBox.Show("בעיה בהוספה", "הוספת משתמש", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                    }
+
+                }
+                else
+                {
+
+                    //עדכון לקוח קיים
+                    if (clientProduct.Update())
+                    {
+                        MessageBox.Show("עודכן בהצלחה", "עידכון משתמש", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                    }
+                    else
+                        MessageBox.Show("בעיה בהוספה", "הוספת משתמש", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                }
+            }
         }
     }
 }

@@ -1951,7 +1951,6 @@
             this.tabPageUpdate.TabIndex = 7;
             this.tabPageUpdate.Text = "tabPage1";
             this.tabPageUpdate.UseVisualStyleBackColor = true;
-            this.tabPageUpdate.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // pictureBox11
             // 

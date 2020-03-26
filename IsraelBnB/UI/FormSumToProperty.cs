@@ -36,27 +36,14 @@ namespace IsraelBnB
                 //משנה את הטקסט בהתאם לנכס (אם מדובר בבית את כמה קומות) אם מדובר בדירה באיזו קומה
                 listViewProducts.Columns[5].Text = "מספר קומה";
             }
-           
+
             listViewProducts.Items.Add(listViewItem);
             pictureBox2.ImageLocation = FindPicturePath() + @"\" + product.Picture1;
             pictureBox3.ImageLocation = FindPicturePath() + @"\" + product.Picture2;
             pictureBox4.ImageLocation = FindPicturePath() + @"\" + product.Picture3;
 
         }
-        private void InitializeListViewForHouse(House house)
-        {
-            ListViewItem listViewItem;
-            //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
-            listViewItem = new ListViewItem(new[] { "בתים", house.City.Name, house.Adress + " " + house.StreetNo, house.Descreption,Convert.ToString(house.Size),Convert.ToString(house.Floors)});
-            //משנה את הטקסט בהתאם לנכס (אם מדובר בבית את כמה קומות) אם מדובר בדירה באיזו קומה
-            listViewProducts.Columns[5].Text = "מספר קומות";
-            listViewProducts.Items.Add(listViewItem);
 
-            pictureBox2.ImageLocation = FindPicturePath() + @"\" + house.Picture1;
-            pictureBox3.ImageLocation = FindPicturePath() + @"\" + house.Picture2;
-            pictureBox4.ImageLocation = FindPicturePath() + @"\" + house.Picture3;
-
-        }
 
         private string FindPicturePath()
         {
@@ -71,20 +58,6 @@ namespace IsraelBnB
             path = path.Replace(@"bin\Release", "");
             path = path + @"\Pictures\";
             return path;
-        }
-
-        private void InitializeListViewForApartment(Apartment apartment)
-        {
-            ListViewItem listViewItem;
-            //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
-            listViewItem = new ListViewItem(new[] { "דירות", apartment.City.Name, apartment.Adress + " " + apartment.StreetNo, apartment.Descreption, Convert.ToString(apartment.Size), Convert.ToString(apartment.Floor) });
-            //משנה את הטקסט בהתאם לנכס (אם מדובר בבית את כמה קומות) אם מדובר בדירה באיזו קומה
-            listViewProducts.Columns[5].Text = "מספר קומה";
-            listViewProducts.Items.Add(listViewItem);
-
-            pictureBox2.ImageLocation = FindPicturePath() + @"\" + apartment.Picture1;
-            pictureBox3.ImageLocation = FindPicturePath() + @"\" + apartment.Picture2;
-            pictureBox4.ImageLocation = FindPicturePath() + @"\" + apartment.Picture3;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace IsraelBnB
         {
             ListViewItem listViewItem;
             //הוספת פריט-תיבת-תצוגה לתיבת תצוגה
-            listViewItem = new ListViewItem(new[] {client.FirstName,client.LastName,client.CellPhone_AreaCode + client.PhoneNumber,client.Mail,client.PassWord,client.ID_FromClient,client.City.Name });
+            listViewItem = new ListViewItem(new[] {client.FirstName,client.LastName,client.CellPhone_AreaCode + client.PhoneNumber,client.Mail,client.PassWord,client.ID_Number,client.City.Name });
             listViewProducts.Items.Add(listViewItem);
 
         }

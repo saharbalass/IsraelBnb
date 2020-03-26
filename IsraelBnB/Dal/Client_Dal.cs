@@ -9,7 +9,7 @@ namespace ClientSahar.DAL
 {
     class Client_Dal
     {
-        public static bool Insert(string firstName, string lastName, string cellPhoneAreaCode, string cellPhoneNumber, /*int zipCode,*/ string email,string ID,int city,string passWord)
+        public static bool Insert(string firstName, string lastName, string cellPhoneAreaCode, string cellPhoneNumber, /*int zipCode,*/ string email,string ID_Number, int city,string passWord)
         {
 
             //מוסיפה את הלקוח למסד הנתונים
@@ -24,7 +24,7 @@ namespace ClientSahar.DAL
             + ",[CellPhoneNumber]"
             + ",[Email]"
             + ",[City]"
-            + ",[ID_FromClient]"
+            + ",[ID_Number]"
             + ",[PassWord]"
             + ")"
             + " VALUES "
@@ -35,7 +35,7 @@ namespace ClientSahar.DAL
             + "," + ""     + cellPhoneNumber     + ""
             + "," + "N'"    + email               + "'"
             + "," + ""     + city                + ""
-            + "," + "'"    + ID                  + "'"
+            + "," + "'"    + ID_Number + "'"
             + "," + "N'"   + passWord            + "'"
             + ")";
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה
@@ -83,7 +83,7 @@ namespace ClientSahar.DAL
 
 
 
-        public static bool Update(string firstName, string lastName, string cellPhoneAreaCode, string cellPhoneNumber, /*int zipCode,*/ string email, int id, string ID_FromClient,int city,string passWord)
+        public static bool Update(string firstName, string lastName, string cellPhoneAreaCode, string cellPhoneNumber, /*int zipCode,*/ string email, int id, string ID_Number, int city,string passWord)
         {
 
             //מעדכנת את הלקוח במסד הנתונים
@@ -93,7 +93,7 @@ namespace ClientSahar.DAL
             + "," + "[LastName] = " + "'" + lastName + "'"
             + "," + "[CellPhoneNumber] = " + "" + cellPhoneNumber + ""
             + "," + "[CellPhoneAreaCode] = " + "'" + cellPhoneAreaCode + "'"
-            + "," + "[ID_FromClient] =" + "'" + ID_FromClient + "'"
+            + "," + "[ID_Number] =" + "'" + ID_Number + "'"
             + "," + "[Email] =" + "'" + email + "'"
             + "," + "[City] = " + "" + city + ""
             + "," + "[PassWord] =" + "'" + passWord + "'"

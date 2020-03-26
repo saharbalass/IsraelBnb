@@ -71,7 +71,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\HouseArr.cs" />
     <Compile Include="BL\Catagory.cs" />
     <Compile Include="BL\CatagoryArr.cs" />
     <Compile Include="BL\City.cs" />
@@ -80,71 +79,75 @@
     <Compile Include="BL\ClientArr.cs" />
     <Compile Include="BL\Company.cs" />
     <Compile Include="BL\CompanyArr.cs" />
-    <Compile Include="BL\Apartment.cs" />
     <Compile Include="BL\Order.cs" />
     <Compile Include="BL\OrderArr.cs" />
+    <Compile Include="BL\ClientProduct.cs" />
     <Compile Include="BL\OrderProduct.cs" />
+    <Compile Include="BL\ClientProductArr.cs" />
     <Compile Include="BL\OrderProductArr.cs" />
-    <Compile Include="BL\House- Copy.cs" />
     <Compile Include="BL\Product.cs" />
-    <Compile Include="BL\ApartmentArr.cs" />
     <Compile Include="BL\ProductArr.cs" />
     <Compile Include="Dal\Catagory_Dal.cs" />
     <Compile Include="Dal\City_Dal.cs" />
     <Compile Include="Dal\Client_Dal.cs" />
     <Compile Include="Dal\Company_Dal.cs" />
     <Compile Include="Dal\Dal.cs" />
-    <Compile Include="Dal\Apartments_Dal.cs" />
-    <Compile Include="Dal\OrderProduct_Dal.cs" />
+    <Compile Include="Dal\.cs" />
+    <Compile Include="Dal\ClientProduct_Dal.cs" />
     <Compile Include="Dal\Order_Dal.cs" />
-    <Compile Include="Dal\Houses_Dal.cs" />
     <Compile Include="Dal\Product_Dal.cs" />
-    <Compile Include="FormAddCity.cs">
+    <Compile Include="UI\FormAddCity.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddCity.Designer.cs">
+    <Compile Include="UI\FormAddCity.Designer.cs">
       <DependentUpon>FormAddCity.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAgreement.cs">
+    <Compile Include="UI\FormAgreement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAgreement.Designer.cs">
+    <Compile Include="UI\FormAgreement.Designer.cs">
       <DependentUpon>FormAgreement.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAllProperties.cs">
+    <Compile Include="UI\FormAllProperties.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAllProperties.Designer.cs">
+    <Compile Include="UI\FormAllProperties.Designer.cs">
       <DependentUpon>FormAllProperties.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormChartHousesCity.cs">
+    <Compile Include="UI\FormChartHousesCity.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChartHousesCity.Designer.cs">
+    <Compile Include="UI\FormChartHousesCity.Designer.cs">
       <DependentUpon>FormChartHousesCity.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormIBnBFirst.cs">
+    <Compile Include="UI\FormDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormIBnBFirst.Designer.cs">
+    <Compile Include="UI\FormDialog.Designer.cs">
+      <DependentUpon>FormDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormIBnBFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormIBnBFirst.Designer.cs">
       <DependentUpon>FormIBnBFirst.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSumeryClient.cs">
+    <Compile Include="UI\FormSumeryClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSumeryClient.Designer.cs">
+    <Compile Include="UI\FormSumeryClient.Designer.cs">
       <DependentUpon>FormSumeryClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSumToProperty.cs">
+    <Compile Include="UI\FormSumToProperty.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSumToProperty.Designer.cs">
+    <Compile Include="UI\FormSumToProperty.Designer.cs">
       <DependentUpon>FormSumToProperty.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormToRent.cs">
+    <Compile Include="UI\FormToRent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormToRent.Designer.cs">
+    <Compile Include="UI\FormToRent.Designer.cs">
       <DependentUpon>FormToRent.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -167,28 +170,31 @@
     <Compile Include="UserControls\ThirdUC.Designer.cs">
       <DependentUpon>ThirdUC.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormAddCity.resx">
+    <EmbeddedResource Include="UI\FormAddCity.resx">
       <DependentUpon>FormAddCity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAgreement.resx">
+    <EmbeddedResource Include="UI\FormAgreement.resx">
       <DependentUpon>FormAgreement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAllProperties.resx">
+    <EmbeddedResource Include="UI\FormAllProperties.resx">
       <DependentUpon>FormAllProperties.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormChartHousesCity.resx">
+    <EmbeddedResource Include="UI\FormChartHousesCity.resx">
       <DependentUpon>FormChartHousesCity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormIBnBFirst.resx">
+    <EmbeddedResource Include="UI\FormDialog.resx">
+      <DependentUpon>FormDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormIBnBFirst.resx">
       <DependentUpon>FormIBnBFirst.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSumeryClient.resx">
+    <EmbeddedResource Include="UI\FormSumeryClient.resx">
       <DependentUpon>FormSumeryClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSumToProperty.resx">
+    <EmbeddedResource Include="UI\FormSumToProperty.resx">
       <DependentUpon>FormSumToProperty.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormToRent.resx">
+    <EmbeddedResource Include="UI\FormToRent.resx">
       <DependentUpon>FormToRent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -220,7 +226,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="UI\App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="IsraelBnBDataBase.mdf">
@@ -243,8 +249,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
