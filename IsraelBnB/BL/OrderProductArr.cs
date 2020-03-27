@@ -11,7 +11,7 @@ using ProductSahar.DAL;
 
 namespace ClientSahar
 {
-   public class OrderProductArr : ArrayList
+    public class OrderProductArr : ArrayList
     {
         public void Fill()
         {
@@ -33,7 +33,7 @@ namespace ClientSahar
             }
         }
 
-        public OrderProductArr Filter(int id,Order order, Product product)
+        public OrderProductArr Filter(int id, Order order, Product product)
         {
             OrderProductArr orderProductArr = new OrderProductArr();
 
@@ -67,7 +67,7 @@ namespace ClientSahar
             return orderProductArr;
         }
 
-         public OrderProductArr Filter(Order order)
+        public OrderProductArr Filter(Order order)
         {
             OrderProductArr orderProductArr = new OrderProductArr();
 

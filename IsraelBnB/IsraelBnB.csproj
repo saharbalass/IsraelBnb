@@ -114,12 +114,6 @@
     <Compile Include="UI\FormAllProperties.Designer.cs">
       <DependentUpon>FormAllProperties.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FormChartHousesCity.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\FormChartHousesCity.Designer.cs">
-      <DependentUpon>FormChartHousesCity.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\FormDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,9 +172,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormAllProperties.resx">
       <DependentUpon>FormAllProperties.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\FormChartHousesCity.resx">
-      <DependentUpon>FormChartHousesCity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormDialog.resx">
       <DependentUpon>FormDialog.cs</DependentUpon>

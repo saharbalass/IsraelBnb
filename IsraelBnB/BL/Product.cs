@@ -51,12 +51,15 @@ namespace ClientSahar.BL
 
         private int m_AptNo;
         public int AptNo { get => m_AptNo; set => m_AptNo = value; }
-       
+
+        private DateTime m_DateFrom;
+        public DateTime DateFrom { get => m_DateFrom; set => m_DateFrom = value; }
+
         #endregion
 
         public bool Insert()
         {
-            return Product_Dal.Insert(m_Adress, m_Catagory.ID,m_Client,m_Picture1, m_Picture2, m_Picture3,m_Descreption,m_City.ID,m_Size, m_StreetNo, m_Floor, m_AptNo);
+            return Product_Dal.Insert(m_Adress, m_Catagory.ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size, m_StreetNo, m_Floor, m_AptNo,m_DateFrom);
         }
 
         public Product() { }
@@ -68,7 +71,7 @@ namespace ClientSahar.BL
 
             this.m_Adress = dataRow["Adress"].ToString();
             this.m_ID = (int)dataRow["ID"];
-            this.m_Catagory = new Catagory(dataRow.GetParentRow("ProductCatagory")); 
+            this.m_Catagory = new Catagory(dataRow.GetParentRow("ProductCatagory"));
             this.m_Client = (int)dataRow["Client"];
             this.m_Picture1 = dataRow["Picture1"].ToString();
             this.m_Picture2 = dataRow["Picture2"].ToString();
@@ -79,6 +82,7 @@ namespace ClientSahar.BL
             this.m_StreetNo = (int)dataRow["Street.No"];
             this.m_Floor = (int)dataRow["Floor"];
             this.m_AptNo = (int)dataRow["Apt.No"];
+            this.m_DateFrom = (DateTime)dataRow["DateFrom"];
         }
 
         public override string ToString()
@@ -88,7 +92,7 @@ namespace ClientSahar.BL
 
         public bool Update()
         {
-            return Product_Dal.Update(m_ID,m_Adress, m_Catagory.ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size, m_StreetNo, m_Floor, m_AptNo);
+            return Product_Dal.Update(m_ID, m_Adress, m_Catagory.ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size, m_StreetNo, m_Floor, m_AptNo);
 
         }
         public bool Delete()

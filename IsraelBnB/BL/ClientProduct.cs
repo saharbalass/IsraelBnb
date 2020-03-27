@@ -40,6 +40,7 @@ namespace ClientSahar.BL
         {
 
             //מייצרת לקוח מתוך שורת לקוח
+            this.m_id = (int)dataRow["id"];
             this.m_Product = new Product(dataRow.GetParentRow("ClientProductProduct"));
             this.m_Client = new Client(dataRow.GetParentRow("ClientProductClient"));
             this.m_Intrest = (int)dataRow["Intrest"];

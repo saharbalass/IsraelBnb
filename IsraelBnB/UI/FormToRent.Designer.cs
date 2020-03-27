@@ -34,6 +34,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelApartments = new System.Windows.Forms.Panel();
+            this.labelClientProductID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.labelCatagory = new System.Windows.Forms.Label();
@@ -62,7 +63,6 @@
             this.pictureBoxProperty1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty0 = new System.Windows.Forms.PictureBox();
-            this.labelClientProductID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -152,6 +152,15 @@
             this.panelApartments.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panelApartments.Size = new System.Drawing.Size(945, 573);
             this.panelApartments.TabIndex = 8;
+            // 
+            // labelClientProductID
+            // 
+            this.labelClientProductID.AutoSize = true;
+            this.labelClientProductID.Location = new System.Drawing.Point(169, 449);
+            this.labelClientProductID.Name = "labelClientProductID";
+            this.labelClientProductID.Size = new System.Drawing.Size(83, 23);
+            this.labelClientProductID.TabIndex = 37;
+            this.labelClientProductID.Text = "label10";
             // 
             // label5
             // 
@@ -457,16 +466,6 @@
             this.pictureBoxProperty0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxProperty0.TabIndex = 2;
             this.pictureBoxProperty0.TabStop = false;
-            // 
-            // labelClientProductID
-            // 
-            this.labelClientProductID.AutoSize = true;
-            this.labelClientProductID.Location = new System.Drawing.Point(169, 449);
-            this.labelClientProductID.Name = "labelClientProductID";
-            this.labelClientProductID.Size = new System.Drawing.Size(83, 23);
-            this.labelClientProductID.TabIndex = 37;
-            this.labelClientProductID.Text = "label10";
-            this.labelClientProductID.Visible = false;
             // 
             // FormToRent
             // 

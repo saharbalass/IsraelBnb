@@ -29,7 +29,7 @@ namespace ProductSahar.DAL
             + "" + product + ""
             + "," + "" + client + ""
             + "," + "" + intrest + ""
-            + "," + "'" + dateIntrstSince + "'"
+            + "," + "'" + dateIntrstSince.ToString("yyyy-MM-dd") + "'"
             + "," + "" + isIntrested + ""
             + ")";
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה
@@ -67,31 +67,9 @@ namespace ProductSahar.DAL
             if (!dataSet.Tables.Contains("Table_ClientProduct"))
             {
                 //ממלאת את אוסף הטבלאות בטבלת הלקוחות
-                Dal.FillDataSet(dataSet, "", "");
+                Dal.FillDataSet(dataSet, "Table_ClientProduct", "");
 
                 DataRelation dataRelation = null;
-
-
-
-                Order_Dal.FillDataSet(dataSet);
-
-                dataRelation = new DataRelation(
-
-                //שם קשר הגומלין
-
-                "ClientProductProduct"
-
-                //עמודת הקשר בטבלת האב )המפתח הראשי של טבלת האב(
-
-                , dataSet.Tables["Table_Product"].Columns["ID"]
-
-                //עמודת הקשר בטבלת הבן )המפתח הזר בטבלת הבן(
-
-                , dataSet.Tables["Table_OrderProduct"].Columns["Product"]);
-
-                //הוספת קשר הגומלין לאוסף הטבלאות
-
-                dataSet.Relations.Add(dataRelation);
 
 
 
@@ -101,15 +79,37 @@ namespace ProductSahar.DAL
 
                 //שם קשר הגומלין
 
+                "ClientProductProduct"
+
+                //עמודת הקשר בטבלת האב )המפתח הראשי של טבלת האב(
+
+                , dataSet.Tables["Table_Product"].Columns["Id"]
+
+                //עמודת הקשר בטבלת הבן )המפתח הזר בטבלת הבן(
+
+                , dataSet.Tables["Table_ClientProduct"].Columns["Product"]);
+
+                //הוספת קשר הגומלין לאוסף הטבלאות
+
+                dataSet.Relations.Add(dataRelation);
+
+
+
+                Client_Dal.FillDataSet(dataSet);
+
+                dataRelation = new DataRelation(
+
+                //שם קשר הגומלין
+
                 "ClientProductClient"
 
                 //עמודת הקשר בטבלת האב )המפתח הראשי של טבלת האב(
 
-                , dataSet.Tables["Table_Client"].Columns["ID"]
+                , dataSet.Tables["Table_Client"].Columns["Id"]
 
                 //עמודת הקשר בטבלת הבן )המפתח הזר בטבלת הבן(
 
-                , dataSet.Tables["Table_OrderProduct"].Columns["Client"]);
+                , dataSet.Tables["Table_ClientProduct"].Columns["Client"]);
 
                 //הוספת קשר הגומלין לאוסף הטבלאות
 

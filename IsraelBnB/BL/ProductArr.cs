@@ -11,7 +11,7 @@ using ProductSahar.DAL;
 
 namespace ClientSahar
 {
-   public class ProductArr : ArrayList
+    public class ProductArr : ArrayList
     {
         public void Fill()
         {
@@ -102,7 +102,7 @@ namespace ClientSahar
 
                 //הצבת המוצר הנוכחי במשתנה עזר - מוצר
 
-                Product product= (productArr[i] as Product);
+                Product product = (productArr[i] as Product);
                 ClientArr clientArr = new ClientArr();
                 clientArr.Fill();
                 Client client1 = clientArr.ReturnClientWithID(product.Client);
@@ -149,6 +149,33 @@ namespace ClientSahar
             }
             return productArr;
         }
+
+        public ProductArr Filter(string adress, int catagory)
+        {
+            ProductArr productArr = new ProductArr();
+
+            for (int i = 0; i < this.Count; i++)
+            {
+
+                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                Product product = (this[i] as Product);
+                if (
+
+                //סינון לפי שם המוצר
+                 product.Adress.StartsWith(adress) && product.Catagory.ID == catagory
+                )
+                {
+
+                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                    productArr.Add(product);
+                    break;
+
+                }
+            }
+            return productArr;
+        }
         public Product FilterWithID(int id)
         {
             ProductArr productArr = new ProductArr();
@@ -162,7 +189,7 @@ namespace ClientSahar
                 }
             }
             return null;
-        } 
+        }
         public ProductArr GetProductArr()
         {
 
@@ -179,7 +206,7 @@ namespace ClientSahar
         }
         public Product GetProductWithNumber(int place)
         {
-                return this[place] as Product;;
+            return this[place] as Product; ;
         }
         public bool IsContain(string productName)
         {
@@ -187,8 +214,8 @@ namespace ClientSahar
             //בדיקה האם יש ישוב עם אותו שם
             //הסרת האותיות י', ו' משם היישוב לבדיקה - כדיי לשפר מניעת כפילות
 
-            productName = productName.Replace("י","");
-            productName = productName.Replace("ו","");
+            productName = productName.Replace("י", "");
+            productName = productName.Replace("ו", "");
             string curproductName;
             for (int i = 0; i < this.Count; i++)
             {
@@ -247,6 +274,41 @@ namespace ClientSahar
                     break;
                 }
 
+        }
+
+        public CityArr GetCityArr()
+        {
+            //מחזירה את אוסף היישובים להם יש לקוח - ללא חזרות
+            CityArr curCityArr = new CityArr();
+
+            foreach (Product curProduct in this)
+                if (!curCityArr.IsContain(curProduct.City))
+                    curCityArr.Add(curProduct.City);
+
+            return curCityArr;
+        }
+
+        public ProductArr Filter(City city)
+        {
+            ProductArr productArr = new ProductArr();
+            for (int i = 0; i < this.Count; i++)
+            {
+                if ((this[i] as Product).City.ID == city.ID)
+                {
+                    productArr.Add(this[i] as Product);
+                }
+            }
+            return productArr;
+        }
+        public SortedDictionary<string, int> GetSortedDictionary()
+        {
+
+            // מחזירה משתנה מסוג מילון ממוין עם ערכים רלוונטיים לדוח
+            SortedDictionary<string, int> dictionary = new SortedDictionary<string, int>();
+            CityArr clientsCityArr = this.GetCityArr();
+            foreach (City curCity in clientsCityArr)
+                dictionary.Add(curCity.Name, this.Filter(curCity).Count);
+            return dictionary;
         }
     }
 

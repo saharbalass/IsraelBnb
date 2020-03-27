@@ -29,9 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormIBnBFirst));
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -142,7 +148,6 @@
             this.textBoxAdressToRent = new System.Windows.Forms.TextBox();
             this.tabPageHouses = new System.Windows.Forms.TabPage();
             this.panelHouses = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
             this.labelShowAllHouses = new System.Windows.Forms.Label();
             this.pictureBoxHouse3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxHouse2 = new System.Windows.Forms.PictureBox();
@@ -170,6 +175,12 @@
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.tabPageDochot = new System.Windows.Forms.TabPage();
+            this.label40 = new System.Windows.Forms.Label();
+            this.chartPropertyCitys = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartIntrestForTime = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label41 = new System.Windows.Forms.Label();
+            this.buttonCharts = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -211,6 +222,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.tabPageDochot.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPropertyCitys)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartIntrestForTime)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -245,6 +259,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.buttonCharts);
             this.panel2.Controls.Add(this.buttonUpdatePersenol);
             this.panel2.Controls.Add(this.buttonUpdate);
             this.panel2.Controls.Add(this.buttonExitLogIn);
@@ -521,6 +536,7 @@
             this.tabHouses.Controls.Add(this.tabPageSearch);
             this.tabHouses.Controls.Add(this.tabPageIntro);
             this.tabHouses.Controls.Add(this.tabPageUpdate);
+            this.tabHouses.Controls.Add(this.tabPageDochot);
             this.bunifuTransition2.SetDecoration(this.tabHouses, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabHouses, BunifuAnimatorNS.DecorationType.None);
             this.tabHouses.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -643,7 +659,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 25);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "1234";
+            this.textBox1.Text = "12345";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBoxSignInMail
@@ -657,7 +673,7 @@
             this.textBoxSignInMail.Name = "textBoxSignInMail";
             this.textBoxSignInMail.Size = new System.Drawing.Size(157, 25);
             this.textBoxSignInMail.TabIndex = 2;
-            this.textBoxSignInMail.Text = "sprr@gmail.com";
+            this.textBoxSignInMail.Text = "gedon@gmail.com";
             // 
             // txtIconPassWord
             // 
@@ -1702,7 +1718,6 @@
             // 
             this.panelHouses.AutoScroll = true;
             this.panelHouses.AutoScrollMargin = new System.Drawing.Size(0, 35);
-            this.panelHouses.Controls.Add(this.label37);
             this.panelHouses.Controls.Add(this.labelShowAllHouses);
             this.panelHouses.Controls.Add(this.pictureBoxHouse3);
             this.panelHouses.Controls.Add(this.pictureBoxHouse2);
@@ -1715,18 +1730,6 @@
             this.panelHouses.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panelHouses.Size = new System.Drawing.Size(995, 378);
             this.panelHouses.TabIndex = 1;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label37, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label37, BunifuAnimatorNS.DecorationType.None);
-            this.label37.Location = new System.Drawing.Point(181, 99);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(46, 23);
-            this.label37.TabIndex = 6;
-            this.label37.Text = "ליחגד";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // labelShowAllHouses
             // 
@@ -2044,22 +2047,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 20;
-            animation1.Padding = new System.Windows.Forms.Padding(30);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 20;
+            animation4.Padding = new System.Windows.Forms.Padding(30);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation4;
             // 
             // bunifuElipse1
             // 
@@ -2070,22 +2073,118 @@
             // 
             this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlideAndRotate;
             this.bunifuTransition2.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(50);
-            animation2.RotateCoeff = 0.3F;
-            animation2.RotateLimit = 0.2F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition2.DefaultAnimation = animation2;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(50);
+            animation3.RotateCoeff = 0.3F;
+            animation3.RotateLimit = 0.2F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.bunifuTransition2.DefaultAnimation = animation3;
+            // 
+            // tabPageDochot
+            // 
+            this.tabPageDochot.AutoScroll = true;
+            this.tabPageDochot.AutoScrollMargin = new System.Drawing.Size(0, 1000);
+            this.tabPageDochot.Controls.Add(this.chartIntrestForTime);
+            this.tabPageDochot.Controls.Add(this.label41);
+            this.tabPageDochot.Controls.Add(this.chartPropertyCitys);
+            this.tabPageDochot.Controls.Add(this.label40);
+            this.bunifuTransition2.SetDecoration(this.tabPageDochot, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageDochot, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageDochot.Location = new System.Drawing.Point(4, 28);
+            this.tabPageDochot.Name = "tabPageDochot";
+            this.tabPageDochot.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDochot.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tabPageDochot.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageDochot.TabIndex = 8;
+            this.tabPageDochot.Text = "tabPageDochot";
+            this.tabPageDochot.UseVisualStyleBackColor = true;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label40, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label40, BunifuAnimatorNS.DecorationType.None);
+            this.label40.Location = new System.Drawing.Point(749, 23);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(176, 23);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "התפלגות הנכסים בכל עיר";
+            // 
+            // chartPropertyCitys
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chartPropertyCitys.ChartAreas.Add(chartArea3);
+            this.bunifuTransition2.SetDecoration(this.chartPropertyCitys, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.chartPropertyCitys, BunifuAnimatorNS.DecorationType.None);
+            legend3.Name = "Legend1";
+            this.chartPropertyCitys.Legends.Add(legend3);
+            this.chartPropertyCitys.Location = new System.Drawing.Point(506, 49);
+            this.chartPropertyCitys.Name = "chartPropertyCitys";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartPropertyCitys.Series.Add(series3);
+            this.chartPropertyCitys.Size = new System.Drawing.Size(451, 323);
+            this.chartPropertyCitys.TabIndex = 1;
+            this.chartPropertyCitys.Text = "chart1";
+            // 
+            // chartIntrestForTime
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chartIntrestForTime.ChartAreas.Add(chartArea4);
+            this.bunifuTransition2.SetDecoration(this.chartIntrestForTime, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.chartIntrestForTime, BunifuAnimatorNS.DecorationType.None);
+            legend4.Name = "Legend1";
+            this.chartIntrestForTime.Legends.Add(legend4);
+            this.chartIntrestForTime.Location = new System.Drawing.Point(506, 410);
+            this.chartIntrestForTime.Name = "chartIntrestForTime";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chartIntrestForTime.Series.Add(series4);
+            this.chartIntrestForTime.Size = new System.Drawing.Size(451, 323);
+            this.chartIntrestForTime.TabIndex = 3;
+            this.chartIntrestForTime.Text = "chart2";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label41, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label41, BunifuAnimatorNS.DecorationType.None);
+            this.label41.Location = new System.Drawing.Point(579, 384);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(331, 23);
+            this.label41.TabIndex = 2;
+            this.label41.Text = "רמת העתניינות ביחס לזמן בכל עיר שיש התעניינות";
+            // 
+            // buttonCharts
+            // 
+            this.buttonCharts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.buttonCharts, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.buttonCharts, BunifuAnimatorNS.DecorationType.None);
+            this.buttonCharts.FlatAppearance.BorderSize = 0;
+            this.buttonCharts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCharts.Image = ((System.Drawing.Image)(resources.GetObject("buttonCharts.Image")));
+            this.buttonCharts.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonCharts.Location = new System.Drawing.Point(436, -2);
+            this.buttonCharts.Name = "buttonCharts";
+            this.buttonCharts.Size = new System.Drawing.Size(145, 93);
+            this.buttonCharts.TabIndex = 8;
+            this.buttonCharts.Text = "טבלאות";
+            this.buttonCharts.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonCharts.UseVisualStyleBackColor = true;
+            this.buttonCharts.Visible = false;
+            this.buttonCharts.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // FormIBnBFirst
             // 
@@ -2151,6 +2250,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.tabPageDochot.ResumeLayout(false);
+            this.tabPageDochot.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPropertyCitys)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartIntrestForTime)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2282,7 +2385,6 @@
         private System.Windows.Forms.Label labelShowAllHouses;
         private System.Windows.Forms.Label labelShowAllAparments;
         private System.Windows.Forms.Label labelDochForRent;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TabPage tabPageUpdate;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox11;
@@ -2295,6 +2397,12 @@
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonUpdatePersenol;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage tabPageDochot;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartIntrestForTime;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPropertyCitys;
+        private System.Windows.Forms.Button buttonCharts;
     }
 }
 

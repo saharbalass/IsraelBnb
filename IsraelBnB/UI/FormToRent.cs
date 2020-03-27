@@ -44,6 +44,7 @@ namespace IsraelBnB
         private void InitializeClientProduct()
         {
             ClientProductArr clientProductArr = new ClientProductArr();
+            clientProductArr.Fill();
             Client client = GetClientFromForm();
             Product product = GetProductFromForm();
             ClientProduct clientProductForId = clientProductArr.FindClientProduct(client, product);
@@ -234,11 +235,11 @@ namespace IsraelBnB
                     }
                     if (clientProduct.Insert())
                     {
-                        MessageBox.Show("הוסף בהצלחה", "הוספת משתמש", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                        MessageBox.Show("הוסף בהצלחה", "הוספת עידוכן", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                     }
                     else
                     {
-                        MessageBox.Show("בעיה בהוספה", "הוספת משתמש", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                        MessageBox.Show("בעיה בהוספה", "הוספת עידכון", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                     }
 
                 }
@@ -251,7 +252,7 @@ namespace IsraelBnB
                         MessageBox.Show("עודכן בהצלחה", "עידכון משתמש", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                     }
                     else
-                        MessageBox.Show("בעיה בהוספה", "הוספת משתמש", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+                        MessageBox.Show("בעיה בעידכון", "עידכון פרטים", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                 }
             }
         }

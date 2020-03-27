@@ -10,7 +10,7 @@ namespace ProductSahar.DAL
 {
     class Product_Dal
     {
-        public static bool Insert(string adress, int catagory, int client, string picture1, string picture2, string picture3,string descreption,int city,int size,int streetNo,int floor,int aptNo)
+        public static bool Insert(string adress, int catagory, int client, string picture1, string picture2, string picture3,string descreption,int city,int size,int streetNo,int floor,int aptNo,DateTime dateFrom)
         { 
 
             //מוסיפה את הלקוח למסד הנתונים
@@ -26,6 +26,7 @@ namespace ProductSahar.DAL
             + ",[Picture3]"
             + ",[Descreption]"
             + ",[City]"
+            + ",[DateFrom]"
             + ",[Size]"
             + ",[Street.No]"
             + ",[Floor]"
@@ -41,6 +42,7 @@ namespace ProductSahar.DAL
                   + "," + "N'" + picture3 + "'"
                   + "," + "N'" + descreption + "'"
                   + "," + "" + city + ""
+                   + "," + "'" + dateFrom.ToString("yyyy-MM-dd") + "'"
                    + "," + "" + size + ""
                     + "," + "" + streetNo + ""
                      + "," + "" + floor + ""

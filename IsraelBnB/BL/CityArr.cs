@@ -57,6 +57,18 @@ namespace ClientSahar
             return cityArr;
         }
 
+        public bool IsContain(City city)
+        {
+            //בדיקה האם הישוב קיים באוסף
+            foreach (City curCity in this)
+            {
+                if (curCity.ID == city.ID)
+                    return true;
+            }
+
+            return false;
+        }
+
         public bool IsContain(string cityName)
         {
 

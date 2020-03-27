@@ -18,7 +18,7 @@ namespace ClientSahar
 
             //להביא מה-DAL טבלה מלאה בכל הלקוחות
 
-            DataTable dataTable = OrderProduct_Dal.GetDataTable();
+            DataTable dataTable = ClientProduct_Dal.GetDataTable();
 
             //להעביר את הערכים מהטבלה לתוך אוסף הלקוחות
             //להעביר כל שורה בטבלה ללקוח
@@ -101,9 +101,9 @@ namespace ClientSahar
 
                 ClientProduct clientProduct = (this[i] as ClientProduct);
                 if (
-                    (client == null || client.ID == -1 || clientProduct.Client.ID == client.ID)
+                    !(client == null || client.ID == -1 || clientProduct.Client.ID != client.ID)
                 //סינון לפי קטגוריה
-                && (product == null || product.ID == -1 || clientProduct.Product.ID == product.ID))
+                && !(product == null || product.ID == -1 || clientProduct.Product.ID != product.ID))
                 {
 
                     //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
@@ -115,69 +115,140 @@ namespace ClientSahar
         }
 
         public ClientProductArr Filter(Product product)
-    {
-        ClientProductArr clientProductArr = new ClientProductArr();
+        {
+            ClientProductArr clientProductArr = new ClientProductArr();
 
-        for (int i = 0; i < this.Count; i++)
+            for (int i = 0; i < this.Count; i++)
+            {
+
+                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                ClientProduct clientProduct = (this[i] as ClientProduct);
+                if (product == clientProduct.Product)
+                {
+                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+                    clientProductArr.Add(clientProduct);
+
+                }
+            }
+            return clientProductArr;
+        }
+        public Product GetorderProductWithMaxID()
         {
 
-            //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+            //מחזירה את הישוב עם המזהה הגבוה ביותר
 
-            ClientProduct clientProduct = (this[i] as ClientProduct);
-            if (product == clientProduct.Product)
+            Product maxorderProduct = new Product();
+            for (int i = 0; i < this.Count; i++)
             {
-                //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
-                clientProductArr.Add(clientProduct);
+                if ((this[i] as Product).ID > maxorderProduct.ID)
+                    maxorderProduct = (this[i] as Product);
 
             }
+            return maxorderProduct;
         }
-        return clientProductArr;
-    }
-    public Product GetorderProductWithMaxID()
-    {
-
-        //מחזירה את הישוב עם המזהה הגבוה ביותר
-
-        Product maxorderProduct = new Product();
-        for (int i = 0; i < this.Count; i++)
+        public bool Insert()
         {
-            if ((this[i] as Product).ID > maxorderProduct.ID)
-                maxorderProduct = (this[i] as Product);
 
+            //מוסיפה את אוסף המוצרים להזמנה למסד הנתונים
+
+            ClientProduct clientProduct = null;
+            for (int i = 0; i < this.Count; i++)
+            {
+                clientProduct = (this[i] as ClientProduct);
+                if (!clientProduct.Insert())
+                    return false;
+
+            }
+            return true;
         }
-        return maxorderProduct;
-    }
-    public bool Insert()
-    {
 
-        //מוסיפה את אוסף המוצרים להזמנה למסד הנתונים
-
-        ClientProduct clientProduct = null;
-        for (int i = 0; i < this.Count; i++)
+        public bool Delete()
         {
-            clientProduct = (this[i] as ClientProduct);
-            if (!clientProduct.Insert())
-                return false;
 
+            //מוחקת את אוסף המוצרים להזמנה מ מסד הנתונים
+
+            ClientProduct clientProduct = null;
+            for (int i = 0; i < this.Count; i++)
+            {
+                clientProduct = (this[i] as ClientProduct);
+                if (!clientProduct.Delete())
+                    return false;
+
+            }
+            return true;
         }
-        return true;
-    }
 
-    public bool Delete()
-    {
-
-        //מוחקת את אוסף המוצרים להזמנה מ מסד הנתונים
-
-        ClientProduct clientProduct = null;
-        for (int i = 0; i < this.Count; i++)
+        public int AvrageWaitingForIntrest(City city)
         {
-            clientProduct = (this[i] as ClientProduct);
-            if (!clientProduct.Delete())
-                return false;
+            int avrg = 0;
 
+            //current dattime of ClientProduct [DateIntrestedSince]
+            int yearIntrest;
+            int monthIntrest;
+            int dayntrest;
+
+            //Time since The product Signed in from
+            int yearProduct;
+            int monthProduct;
+            int dayProduct;
+
+
+            for (int i = 0; i < this.Count; i++)
+            {
+                if ((this[i] as ClientProduct).Product.City.ID == city.ID)
+                {
+                    yearIntrest = (this[i] as ClientProduct).DateIntrestedSince.Year;
+                    monthIntrest = (this[i] as ClientProduct).DateIntrestedSince.Month;
+                    dayntrest = (this[i] as ClientProduct).DateIntrestedSince.Day;
+
+                    yearProduct = (this[i] as ClientProduct).Product.DateFrom.Year;
+                    monthProduct = (this[i] as ClientProduct).Product.DateFrom.Month;
+                    dayProduct = (this[i] as ClientProduct).Product.DateFrom.Day;
+
+                    //the math
+                    avrg += (Math.Abs((yearIntrest - yearProduct) + (monthIntrest - monthProduct) + (dayntrest - dayProduct))) / (i+1);
+                    //בגלל שI מתחיל ב0 אז מוסיפים עוד אחד כדי שיהיה שווה לכמות
+                }
+            }
+            return avrg;
         }
-        return true;
+        public bool IsContain(City city)
+        {
+            //בדיקה האם הישוב קיים באוסף
+            foreach (City curCity in this)
+            {
+                if (curCity.ID == city.ID)
+                    return true;
+            }
+
+            return false;
+        }
+
+        public CityArr GetCityArr()
+        {
+            //מחזירה את אוסף היישובים להם יש לקוח - ללא חזרות
+            CityArr curCityArr = new CityArr();
+
+            foreach (ClientProduct curClientProduct in this)
+                if (!curCityArr.IsContain(curClientProduct.Product.City))
+                    curCityArr.Add(curClientProduct.Product.City);
+
+            return curCityArr;
+        }
+
+        public SortedDictionary<string, int> GetSortedDictionaryAvrgWaitForIntrest()
+        {
+
+            // מחזירה משתנה מסוג מילון ממוין עם ערכים רלוונטיים לדוח
+            SortedDictionary<string, int> dictionary = new SortedDictionary<string, int>();
+            CityArr clientsCityArr = this.GetCityArr();
+            foreach (City curCity in clientsCityArr)
+                //שם את העיר והממוצע
+                dictionary.Add(curCity.Name, AvrageWaitingForIntrest(curCity));
+            return dictionary;
+        }
+
     }
-}
 
 }

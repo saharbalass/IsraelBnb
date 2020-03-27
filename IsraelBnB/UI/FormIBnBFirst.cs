@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace IsraelBnB
 {
@@ -23,8 +24,8 @@ namespace IsraelBnB
             CatagoryArrToForm(null, comboBoxCatagoryToRent, true);
             CatagoryArrToForm(null, comboBoxSearch, true);
             UploadPictures();
-            //UploadAprtPics();
-            //UploadHousesPics();
+            InizializeChart1();
+            InizializeChart2();
         }
 
         const string DEFAULT_PIC = "DefaultPic.png";
@@ -479,79 +480,6 @@ namespace IsraelBnB
                             MessageBox.Show("בעיה בעידכון", "עדכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                     }
                 }
-                //{
-                //    if ((int)comboBoxCatagoryToRent.SelectedValue == 1)
-                //    {
-                //        House house = FormToHouse();
-                //        if (house.ID == 0)
-                //        {
-                //            if (house.Insert())
-                //            {
-                //                //העתקת קובץ התמונה - אם לא תקינה הפסקת הפעולה ואי ביצוע השמירה 
-                //                if (!SaveFile(GetPicfileName(pictureBox5), "", pictureBox5.ImageLocation))
-                //                    return;
-                //                if (!SaveFile(GetPicfileName(pictureBox6), "", pictureBox6.ImageLocation))
-                //                    return;
-                //                if (!SaveFile(GetPicfileName(pictureBox7), "", pictureBox7.ImageLocation))
-                //                    return;
-
-                //                MessageBox.Show("הוסף בהצלחה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                //                label39.Text = Convert.ToString(house.ID);
-                //            }
-                //            else
-                //                MessageBox.Show("בעיה בהוספה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                //        }
-                //        else
-                //        {
-                //            if (house.Update())
-                //            {
-                //                MessageBox.Show("עודכן בהצלחה", "עידכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                //                //כיוון שמדובר על ישוב חדש, ניעזר במזהה הגבוה ביותר = הישוב האחרון שנוסף לטבלה
-                //                //HouseArr houseArr = new HouseArr();
-                //                //houseArr.Fill();
-                //                //house = houseArr.GethouseWithMaxID();
-                //            }
-                //            else
-                //                MessageBox.Show("בעיה בעידכון", "עדכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                //        }
-
-                //    }
-                //    else if ((int)comboBoxCatagoryToRent.SelectedValue == 2)
-                //    {
-                //        Apartment apartment = FormToApartment();
-                //        if (apartment.ID == 0)
-                //        {
-                //            if (apartment.Insert())
-                //            {
-                //                //העתקת קובץ התמונה - אם לא תקינה הפסקת הפעולה ואי ביצוע השמירה 
-                //                if (!SaveFile(GetPicfileName(pictureBox5), "", pictureBox5.ImageLocation))
-                //                    return;
-                //                if (!SaveFile(GetPicfileName(pictureBox6), "", pictureBox6.ImageLocation))
-                //                    return;
-                //                if (!SaveFile(GetPicfileName(pictureBox7), "", pictureBox7.ImageLocation))
-                //                    return;
-
-                //                MessageBox.Show("הוסף בהצלחה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                //                label39.Text = Convert.ToString(apartment.ID);
-                //            }
-                //            else
-                //                MessageBox.Show("בעיה בהוספה", "הוספת פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                //        }
-                //        else
-                //        {
-                //            if (apartment.Update())
-                //            {
-                //                MessageBox.Show("עודכן בהצלחה", "עידכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                //                //כיוון שמדובר על ישוב חדש, ניעזר במזהה הגבוה ביותר = הישוב האחרון שנוסף לטבלה
-                //                ApartmentArr apartmentArr = new ApartmentArr();
-                //                apartmentArr.Fill();
-                //                apartment = apartmentArr.GetapartmentWithMaxID();
-                //            }
-                //            else
-                //                MessageBox.Show("בעיה בעידכון", "עדכון פריט", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
-                //        }
-                //    }
-                //}
             }
 
         }
@@ -586,6 +514,7 @@ namespace IsraelBnB
                 buttonSignIn.Visible = false;
                 buttonUpdatePersenol.Visible = true;
                 label2.Visible = true;
+                buttonCharts.Visible = true;
             }
             else
             {
@@ -627,7 +556,7 @@ namespace IsraelBnB
             pictureBox2.Visible = true;
             pictureBox3.Visible = true;
             pictureBox5.ImageLocation = "";
-            pictureBox6.ImageLocation = ""; 
+            pictureBox6.ImageLocation = "";
             pictureBox7.ImageLocation = "";
             pictureBoxAdd1.Visible = true;
             pictureBoxAdd2.Visible = true;
@@ -645,6 +574,7 @@ namespace IsraelBnB
             buttonSignIn.Visible = true;
             buttonUpdatePersenol.Visible = false;
             label2.Visible = false;
+            buttonCharts.Visible = true;
             ResetTabToRent();
         }
 
@@ -665,6 +595,8 @@ namespace IsraelBnB
             Product product = new Product();
             ClientArr clientArr = new ClientArr();
             clientArr.Fill();
+
+            product.DateFrom = DateTime.Now;
 
             product.ID = Convert.ToInt32(label39.Text);
             product.Adress = textBoxAdressToRent.Text;
@@ -799,9 +731,9 @@ namespace IsraelBnB
                 label30.Visible = true;
             }
         }
-        
-       
-       
+
+
+
         private void ProductToFormPictureOnly(Product product, PictureBox pictureBox)
         {
             if (product != null)
@@ -840,7 +772,7 @@ namespace IsraelBnB
             }
         }
 
-     
+
         private PictureBox NumberToPictureBox(int location, int catagory)
         {
 
@@ -905,7 +837,7 @@ namespace IsraelBnB
 
         }
 
-      
+
         private void buttonAddCity_Click_1(object sender, EventArgs e)
         {
             FormAddCity formAddCity = new FormAddCity();
@@ -956,9 +888,9 @@ namespace IsraelBnB
             {
                 ProductArr productArr = new ProductArr();
                 productArr.Fill();
-                Product product = new Product();
                 //houses
-                productArr = productArr.FilterByAdress(textBoxSearch.Text);
+
+                productArr = productArr.Filter(textBoxSearch.Text, (int)(comboBoxSearch.SelectedValue));
 
                 listBoxProperties.DataSource = productArr;
                 if (listBoxProperties.Items.Count < 1)
@@ -1039,12 +971,6 @@ namespace IsraelBnB
                     MessageBox.Show("חובה לסיים את תהליך הוספת הנכס!", "סיום תהליך", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
                 }
             }
-        }
-
-        private void label37_Click(object sender, EventArgs e)
-        {
-            FormChartHousesCity formChartHousesCity = new FormChartHousesCity();
-            formChartHousesCity.ShowDialog();
         }
 
         private void InitializeUpdateForClient()
@@ -1132,7 +1058,7 @@ namespace IsraelBnB
 
             ProductToForm(product);
         }
-      
+
 
         private void buttonUpdatePersenol_Click(object sender, EventArgs e)
         {
@@ -1165,6 +1091,93 @@ namespace IsraelBnB
         private void listBoxProperties_DoubleClick(object sender, EventArgs e)
         {
             ProductToFormPictureOnly(listBoxProperties.SelectedItem as Product, pictureBoxPropertySearch);
+        }
+
+        private void InizializeChart1()
+        {
+            //// פלטת הצבעים -אפשר גם להגדיר מראש במאפיינים )לא בקוד(
+            chartPropertyCitys.Palette = ChartColorPalette.SeaGreen;
+            // מחייב הצגת כל הערכים בציר האיקס, אם רוצים שיוצגו לסירוגין רושמים 2//
+            chartPropertyCitys.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
+            //     כותרת הגרף -1//
+            chartPropertyCitys.Titles.Clear();
+            chartPropertyCitys.Titles.Add("התפלגות");
+            //  הוספת הערכים למשתנה מסוג מילון ממוין//
+            ProductArr curProductArr = new ProductArr();
+            curProductArr.Fill();
+            SortedDictionary<string, int> dictionary = curProductArr.GetSortedDictionary();
+            //הגדרת סדרה וערכיה - שם הסדרה מועבר למקרא - 2
+
+            Series series = new Series("התפלגות ", 0);
+
+            //סוג הגרף
+
+            series.ChartType = SeriesChartType.Column;
+            
+            //המידע שיוצג לכל רכיב ערך בגרף - 3
+
+            //   שם - VALX//#
+            //הערך - VAL//#
+            //אחוז עם אפס אחרי הנקודה - {
+            //     P0{
+            //  PERCENT//#
+            series.Label = "#VALX [#VAL = #PERCENT{P0}]";
+            // הוספת הערכים מתוך משתנה המילון לסדרה//
+            series.Points.DataBindXY(dictionary.Keys, dictionary.Values);
+            //מחיקת סדרות קיימות - אם יש ולא בכוונה
+
+            chartPropertyCitys.Series.Clear();
+
+            //הוספת הסדרה לפקד הגרף
+
+            chartPropertyCitys.Series.Add(series);
+        }
+
+        private void InizializeChart2()
+        {
+            //// פלטת הצבעים -אפשר גם להגדיר מראש במאפיינים )לא בקוד(
+            chartIntrestForTime.Palette = ChartColorPalette.SeaGreen;
+            // מחייב הצגת כל הערכים בציר האיקס, אם רוצים שיוצגו לסירוגין רושמים 2//
+            chartIntrestForTime.ChartAreas[0].AxisX.LabelStyle.Interval = 1;
+            //     כותרת הגרף -1//
+            chartIntrestForTime.Titles.Clear();
+            chartIntrestForTime.Titles.Add("התפלגות");
+            //  הוספת הערכים למשתנה מסוג מילון ממוין//
+            ClientProductArr clientProductArr= new ClientProductArr();
+            clientProductArr.Fill();
+            SortedDictionary<string, int> dictionary = clientProductArr.GetSortedDictionaryAvrgWaitForIntrest();
+           // CityArr clientsCityArr = clientProductArr.GetCityArr();
+            //הגדרת סדרה וערכיה - שם הסדרה מועבר למקרא - 2
+
+            Series series = new Series("התפלגות ", 0);
+
+            //סוג הגרף
+
+            series.ChartType = SeriesChartType.Column;
+
+            //המידע שיוצג לכל רכיב ערך בגרף - 3
+
+            //   שם - VALX//#
+            //הערך - VAL//#
+            //אחוז עם אפס אחרי הנקודה - {
+            //     P0{
+            //  PERCENT//#
+            series.Label = "#VALX [#VAL = #Days{P0}]";
+            // הוספת הערכים מתוך משתנה המילון לסדרה//
+            series.Points.DataBindXY(dictionary.Keys, dictionary.Values);
+            //מחיקת סדרות קיימות - אם יש ולא בכוונה
+
+            chartIntrestForTime.Series.Clear();
+
+            //הוספת הסדרה לפקד הגרף
+
+            chartIntrestForTime.Series.Add(series);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("תוכן הטבלאות ניתנות רק לרשומים, ניתן לחשב מקום מומלץ למכור דירה לפי ערכים אלו!", "מידע ללקוחות", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+            tabHouses.SelectedTab = tabPageDochot;
         }
     }
 }
