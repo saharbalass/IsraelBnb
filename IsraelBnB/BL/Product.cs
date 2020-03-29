@@ -55,20 +55,27 @@ namespace ClientSahar.BL
         private DateTime m_DateFrom;
         public DateTime DateFrom { get => m_DateFrom; set => m_DateFrom = value; }
 
+        private int m_IsSold;
+        public int IsSold { get => m_IsSold; set => m_IsSold = value; }
+
+        private int m_Price;
+        public int Price { get => m_Price; set => m_Price = value; }
+
         #endregion
 
         public bool Insert()
         {
-            return Product_Dal.Insert(m_Adress, m_Catagory.ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size, m_StreetNo, m_Floor, m_AptNo,m_DateFrom);
+            return Product_Dal.Insert(m_Adress, m_Catagory.ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size, m_StreetNo, m_Floor, m_AptNo,m_DateFrom,IsSold, m_Price);
         }
 
+        //מייצר טנ"ם ריק
         public Product() { }
 
         public Product(DataRow dataRow)
         {
 
             //מייצרת לקוח מתוך שורת לקוח
-
+            //ממלאת את התכונות באופן ישיר או עקיף אם יש קשר גומלין
             this.m_Adress = dataRow["Adress"].ToString();
             this.m_ID = (int)dataRow["ID"];
             this.m_Catagory = new Catagory(dataRow.GetParentRow("ProductCatagory"));
@@ -83,6 +90,8 @@ namespace ClientSahar.BL
             this.m_Floor = (int)dataRow["Floor"];
             this.m_AptNo = (int)dataRow["Apt.No"];
             this.m_DateFrom = (DateTime)dataRow["DateFrom"];
+            this.m_IsSold = (int)dataRow["IsSold"];
+            this.m_Price = (int)dataRow["Price"];
         }
 
         public override string ToString()
@@ -92,7 +101,7 @@ namespace ClientSahar.BL
 
         public bool Update()
         {
-            return Product_Dal.Update(m_ID, m_Adress, m_Catagory.ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size, m_StreetNo, m_Floor, m_AptNo);
+            return Product_Dal.Update(m_ID, m_Adress, m_Catagory.ID, m_Client, m_Picture1, m_Picture2, m_Picture3, m_Descreption, m_City.ID, m_Size, m_StreetNo, m_Floor, m_AptNo,m_IsSold, m_Price);
 
         }
         public bool Delete()

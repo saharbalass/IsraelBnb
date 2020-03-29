@@ -10,8 +10,8 @@ namespace ProductSahar.DAL
 {
     class Product_Dal
     {
-        public static bool Insert(string adress, int catagory, int client, string picture1, string picture2, string picture3,string descreption,int city,int size,int streetNo,int floor,int aptNo,DateTime dateFrom)
-        { 
+        public static bool Insert(string adress, int catagory, int client, string picture1, string picture2, string picture3, string descreption, int city, int size, int streetNo, int floor, int aptNo, DateTime dateFrom, int IsSold, int price)
+        {
 
             //מוסיפה את הלקוח למסד הנתונים
             //בניית הוראת ה-SQL
@@ -31,6 +31,8 @@ namespace ProductSahar.DAL
             + ",[Street.No]"
             + ",[Floor]"
             + ",[Apt.No]"
+            + ",[IsSold]"
+             + ",[Price]"
             + ")"
             + " VALUES "
             + "("
@@ -42,11 +44,13 @@ namespace ProductSahar.DAL
                   + "," + "N'" + picture3 + "'"
                   + "," + "N'" + descreption + "'"
                   + "," + "" + city + ""
-                   + "," + "'" + dateFrom.ToString("yyyy-MM-dd") + "'"
-                   + "," + "" + size + ""
-                    + "," + "" + streetNo + ""
-                     + "," + "" + floor + ""
-                      + "," + "" + aptNo + ""
+                  + "," + "'" + dateFrom.ToString("yyyy-MM-dd") + "'"
+                  + "," + "" + size + ""
+                  + "," + "" + streetNo + ""
+                  + "," + "" + floor + ""
+                  + "," + "" + aptNo + ""
+                  + "," + "" + IsSold + ""
+                  + "," + "" + price + ""
             + ")";
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה
             return Dal.ExecuteSql(str);
@@ -60,6 +64,8 @@ namespace ProductSahar.DAL
             dataTable = dataSet.Tables["Table_Product"];
             return dataTable;
         }
+
+        // ממלא את הטבלאות (דאטא סט) אם יש קשר גומלין
         public static void FillDataSet(DataSet dataSet)
         {
             if (!dataSet.Tables.Contains("Table_Product"))
@@ -138,24 +144,26 @@ namespace ProductSahar.DAL
             }
         }
 
-        public static bool Update(int id,string adress,int catagory,int client,string picture1, string picture2, string picture3,string descreption, int city, int size, int streetNo, int floor, int aptNo)
+        public static bool Update(int id, string adress, int catagory, int client, string picture1, string picture2, string picture3, string descreption, int city, int size, int streetNo, int floor, int aptNo, int isSold, int price)
         {
 
             //מעדכנת את הלקוח במסד הנתונים
 
             string str = "UPDATE Table_Product SET"
-            + " " + "[Adress] = " + "'" + adress + "'"
-            + "," + "[Catagory] = " + "" + catagory + ""            
+            + " " + "[Adress] = " + "N'" + adress + "'"
+            + "," + "[Catagory] = " + "" + catagory + ""
             + "," + "[Client] = " + "" + client + ""
-            + ", " + "[Picture1] = " + "'" + picture1 + "'"
-            + "," + "[Picture2] = " + "'" + picture2 + "'"
-            + "," + "[Picture3] = " + "'" + picture3 + "'"
-            + "," + "[Descreption] = " + "'" + descreption + "'"
-            + "," + "[City] = " + "" + city+ ""
-            + "," + "[Size] = " + "" + size+ ""
+            + ", " + "[Picture1] = " + "N'" + picture1 + "'"
+            + "," + "[Picture2] = " + "N'" + picture2 + "'"
+            + "," + "[Picture3] = " + "N'" + picture3 + "'"
+            + "," + "[Descreption] = " + "N'" + descreption + "'"
+            + "," + "[City] = " + "" + city + ""
+            + "," + "[Size] = " + "" + size + ""
             + "," + "[Street.No] = " + "" + streetNo + ""
             + "," + "[Floor] = " + "" + floor + ""
             + "," + "[Apt.No] = " + "" + aptNo + ""
+            + "," + "[IsSold] = " + "" + isSold + ""
+            + "," + "[Price] = " + "" + price + ""
             + " WHERE ID = " + id;
 
             //הפעלת פעולת הSQL -תוך שימוש בפעולה המוכנה ExecuteSql במחלקה Dal והחזרה האם הפעולה הצליחה

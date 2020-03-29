@@ -36,7 +36,7 @@ namespace IsraelBnB
                 {
                     if ((productArr[i] as Product).Catagory.ID == 2)
                     {
-                        listViewItem = new ListViewItem(new[] { product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size) + " מ''ר " });
+                        listViewItem = new ListViewItem(new[] { product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size) + " מ''ר ", Convert.ToString(product.Price) });
                         listViewProducts.Items.Add(listViewItem);
                     }
 
@@ -45,14 +45,14 @@ namespace IsraelBnB
                 {
                     if ((productArr[i] as Product).Catagory.ID == 1)
                     {
-                        listViewItem = new ListViewItem(new[] { product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size) + " מ''ר " });
+                        listViewItem = new ListViewItem(new[] { product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size) + " מ''ר ", Convert.ToString(product.Price) });
                         listViewProducts.Items.Add(listViewItem);
                     }
                 }
 
             }
         }
-     
+
         private void document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
 

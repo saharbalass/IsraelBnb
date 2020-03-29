@@ -190,20 +190,7 @@ namespace ClientSahar
             }
             return null;
         }
-        public ProductArr GetProductArr()
-        {
 
-            //מחזירה את אוסף הפריטים מתוך אוסף הזוגות פריט -הזמנה
-
-            ProductArr productArr = new ProductArr();
-            OrderProduct orderProduct;
-            for (int i = 0; i < this.Count; i++)
-            {
-                orderProduct = (this[i] as OrderProduct);
-                productArr.Add(orderProduct.Product);
-            }
-            return productArr;
-        }
         public Product GetProductWithNumber(int place)
         {
             return this[place] as Product; ;
@@ -309,6 +296,44 @@ namespace ClientSahar
             foreach (City curCity in clientsCityArr)
                 dictionary.Add(curCity.Name, this.Filter(curCity).Count);
             return dictionary;
+        }
+
+        public SortedDictionary<string, int> GetSortedDictionaryForSales ()
+        {
+
+            // מחזירה משתנה מסוג מילון ממוין עם ערכים רלוונטיים לדוח
+            SortedDictionary<string, int> dictionary = new SortedDictionary<string, int>();
+            CityArr clientsCityArr = this.GetCityArrForSaled();
+            foreach (City curCity in clientsCityArr)
+                dictionary.Add(curCity.Name, this.FilterForSales(curCity).Count);
+            return dictionary;
+        }
+
+        public CityArr GetCityArrForSaled()
+        {
+            //מחזירה את אוסף היישובים להם יש לקוח - ללא חזרות
+            CityArr curCityArr = new CityArr();
+
+            //"הסופת תנאי של "האם נמכר
+            // כדי להראות את הערים שנמכר בהם ולא את כל הערים 
+            foreach (Product curProduct in this)
+                if (!curCityArr.IsContain(curProduct.City) && curProduct.IsSold == 1)
+                    curCityArr.Add(curProduct.City);
+
+            return curCityArr;
+        }
+
+        public ProductArr FilterForSales (City city)
+        {
+            ProductArr productArr = new ProductArr();
+            for (int i = 0; i < this.Count; i++)
+            {
+                if ((this[i] as Product).City.ID == city.ID && (this[i] as Product).IsSold == 1)
+                {
+                    productArr.Add(this[i] as Product);
+                }
+            }
+            return productArr;
         }
     }
 

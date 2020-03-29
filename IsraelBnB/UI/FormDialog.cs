@@ -20,7 +20,7 @@ namespace IsraelBnB.UI
 
         private bool CheckFormDialog()
         {
-            return radioButton1.Checked || radioButton2.Checked || radioButton3.Checked || radioButton4.Checked || radioButton5.Checked;
+            return radioButton1.Checked || radioButton2.Checked || radioButton3.Checked || radioButton4.Checked || radioButton5.Checked || radioButton0.Checked;
         }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {

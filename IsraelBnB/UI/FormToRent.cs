@@ -57,7 +57,7 @@ namespace IsraelBnB
             {
                 labelClientProductID.Text = "0";
             }
-            
+
         }
         private void CurrentProductToForm(Client clientWantToBuy, Product product)
         {
@@ -83,6 +83,7 @@ namespace IsraelBnB
             labelProductID.Text = Convert.ToString(product.ID);
             labelClientID.Text = Convert.ToString(clientWantToBuy.ID);
             labelSize.Text = " מ''ר " + Convert.ToString(product.Size);
+            labelPrice.Text = Convert.ToString(product.Price);
 
             client = clientArr.ReturnClientWithID(product.Client);
             labelCleintEmail.Text = client.Mail;
@@ -140,13 +141,26 @@ namespace IsraelBnB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Client client = GetClientFromForm();
+            DialogResult result;
 
-            Product product = GetProductFromForm();
-            FormAgreement formAgreement = new FormAgreement(client, product);
-            formAgreement.ShowDialog();
+            result = MessageBox.Show("האם אתה בטוח רוצה לקנות את הנכס?", "מכירת נכס", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+            if (result == DialogResult.Yes)
+            {
+                Client client = GetClientFromForm();
 
+                Product product = GetProductFromForm();
+                product.IsSold = 1;
+                if (product.Update())
+                {
+                    MessageBox.Show("עודכן בהצלחה", "עידכון משתמש", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
 
+                    FormAgreement formAgreement = new FormAgreement(client, product);
+                    formAgreement.ShowDialog();
+                }
+                else
+                    MessageBox.Show("בעיה בעידכון", "עידכון פרטים", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign | MessageBoxOptions.RtlReading);
+              
+            }
         }
         //because To open the formAgreement i needed the product from current form, but the function is a button type so i needed to do another function to get current product.(threw the Id Label)
         private Product GetProductFromForm()
@@ -227,11 +241,11 @@ namespace IsraelBnB
                 {
                     if (clientProduct.Intrest == 0)
                     {
-                        clientProduct.ISIntrested = 1;
+                        clientProduct.ISIntrested = 0;
                     }
                     else
                     {
-                        clientProduct.ISIntrested = 0;
+                        clientProduct.ISIntrested = 1;
                     }
                     if (clientProduct.Insert())
                     {

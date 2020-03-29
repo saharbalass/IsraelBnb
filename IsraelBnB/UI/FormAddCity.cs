@@ -118,6 +118,9 @@ namespace IsraelBnB
                     }
                     else
                         MessageBox.Show("שגיאה בהוספה", "הוספת עיר", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    CityArr cityArr = new CityArr();
+                    cityArr.Fill();
+                    city = cityArr.GetCityWithMaxId();
 
                 }
                 else
@@ -137,7 +140,7 @@ namespace IsraelBnB
                     else
                         MessageBox.Show("שגיאה בהוספה", "עידכון עיר", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                CityArrToForm(null);
+                CityArrToForm(city);
 
             }
         }

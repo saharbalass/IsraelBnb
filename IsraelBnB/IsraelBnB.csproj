@@ -79,12 +79,8 @@
     <Compile Include="BL\ClientArr.cs" />
     <Compile Include="BL\Company.cs" />
     <Compile Include="BL\CompanyArr.cs" />
-    <Compile Include="BL\Order.cs" />
-    <Compile Include="BL\OrderArr.cs" />
     <Compile Include="BL\ClientProduct.cs" />
-    <Compile Include="BL\OrderProduct.cs" />
     <Compile Include="BL\ClientProductArr.cs" />
-    <Compile Include="BL\OrderProductArr.cs" />
     <Compile Include="BL\Product.cs" />
     <Compile Include="BL\ProductArr.cs" />
     <Compile Include="Dal\Catagory_Dal.cs" />
@@ -92,9 +88,7 @@
     <Compile Include="Dal\Client_Dal.cs" />
     <Compile Include="Dal\Company_Dal.cs" />
     <Compile Include="Dal\Dal.cs" />
-    <Compile Include="Dal\.cs" />
     <Compile Include="Dal\ClientProduct_Dal.cs" />
-    <Compile Include="Dal\Order_Dal.cs" />
     <Compile Include="Dal\Product_Dal.cs" />
     <Compile Include="UI\FormAddCity.cs">
       <SubType>Form</SubType>
@@ -125,6 +119,12 @@
     </Compile>
     <Compile Include="UI\FormIBnBFirst.Designer.cs">
       <DependentUpon>FormIBnBFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormPersenolProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormPersenolProperty.Designer.cs">
+      <DependentUpon>FormPersenolProperty.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FormSumeryClient.cs">
       <SubType>Form</SubType>
@@ -178,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormIBnBFirst.resx">
       <DependentUpon>FormIBnBFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormPersenolProperty.resx">
+      <DependentUpon>FormPersenolProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormSumeryClient.resx">
       <DependentUpon>FormSumeryClient.cs</DependentUpon>

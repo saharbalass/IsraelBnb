@@ -41,11 +41,11 @@ namespace IsraelBnB
             listViewProducts.Items.Add(listViewItem);
             if (product.Catagory.ID == 1)
             {
-                listViewItem = new ListViewItem(new[] { client1.FullName, "בית", product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size) });
+                listViewItem = new ListViewItem(new[] { client1.FullName, "בית", product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size),Convert.ToString(product.Price)});
             }
             else
             {
-                listViewItem = new ListViewItem(new[] { client1.FullName, "דירה", product.City.Name, product.Adress + " " + product.StreetNo + " מספר דירה:" + product.AptNo, Convert.ToString(product.Size) });
+                listViewItem = new ListViewItem(new[] { client1.FullName, "דירה", product.City.Name, product.Adress + " " + product.StreetNo + " מספר דירה:" + product.AptNo, Convert.ToString(product.Size), Convert.ToString(product.Price) });
             }
             listViewProducts.Items.Add(listViewItem);
 

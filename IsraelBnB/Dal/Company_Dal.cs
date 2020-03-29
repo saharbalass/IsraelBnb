@@ -35,6 +35,8 @@ namespace ClientSahar.DAL
             dataTable = dataSet.Tables["Table_Company"];
             return dataTable;
         }
+
+        // ממלא את הטבלאות (דאטא סט) אם יש קשר גומלין
         public static void FillDataSet(DataSet dataSet)
         {
 

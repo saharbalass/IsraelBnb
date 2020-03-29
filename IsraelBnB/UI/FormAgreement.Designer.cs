@@ -40,9 +40,10 @@
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,7 +57,8 @@
             this.CatagorycolumnHeader2,
             this.CitycolumnHeader3,
             this.AdresscolumnHeader4,
-            this.columnHeaderSize});
+            this.columnHeaderSize,
+            this.columnHeader1});
             this.listViewProducts.HideSelection = false;
             this.listViewProducts.Location = new System.Drawing.Point(0, 88);
             this.listViewProducts.Margin = new System.Windows.Forms.Padding(4);
@@ -70,22 +72,22 @@
             // FullNamecolumnHeader
             // 
             this.FullNamecolumnHeader.Text = "שם מלא";
-            this.FullNamecolumnHeader.Width = 135;
+            this.FullNamecolumnHeader.Width = 120;
             // 
             // CatagorycolumnHeader2
             // 
             this.CatagorycolumnHeader2.Text = "סוג הנכס";
-            this.CatagorycolumnHeader2.Width = 93;
+            this.CatagorycolumnHeader2.Width = 75;
             // 
             // CitycolumnHeader3
             // 
             this.CitycolumnHeader3.Text = "עיר";
-            this.CitycolumnHeader3.Width = 95;
+            this.CitycolumnHeader3.Width = 87;
             // 
             // AdresscolumnHeader4
             // 
             this.AdresscolumnHeader4.Text = "כתובת";
-            this.AdresscolumnHeader4.Width = 198;
+            this.AdresscolumnHeader4.Width = 194;
             // 
             // columnHeaderSize
             // 
@@ -143,6 +145,18 @@
             this.panel2.Size = new System.Drawing.Size(628, 88);
             this.panel2.TabIndex = 59;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(105, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 57);
+            this.label1.TabIndex = 66;
+            this.label1.Text = "Israel BnB";
+            // 
             // buttonExit
             // 
             this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(116)))), ((int)(((byte)(216)))));
@@ -157,18 +171,6 @@
             this.buttonExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonExit.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(105, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 57);
-            this.label1.TabIndex = 66;
-            this.label1.Text = "Israel BnB";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -178,6 +180,11 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "מחיר";
+            this.columnHeader1.Width = 66;
             // 
             // FormAgreement
             // 
@@ -217,5 +224,6 @@
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
