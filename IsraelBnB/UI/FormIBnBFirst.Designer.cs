@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend22 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea23 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend23 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea24 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend24 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            BunifuAnimatorNS.Animation animation15 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormIBnBFirst));
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation16 = new BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -191,6 +191,12 @@
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.label20 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.textBoxPriceFrom = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBoxPriceTill = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -571,7 +577,7 @@
             this.bunifuTransition2.SetDecoration(this.tabHouses, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabHouses, BunifuAnimatorNS.DecorationType.None);
             this.tabHouses.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabHouses.ItemSize = new System.Drawing.Size(100, 24);
+            this.tabHouses.ItemSize = new System.Drawing.Size(50, 30);
             this.tabHouses.Location = new System.Drawing.Point(0, 142);
             this.tabHouses.Name = "tabHouses";
             this.tabHouses.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -596,10 +602,10 @@
             this.tabPageSignIn.Controls.Add(this.txtIconMail);
             this.bunifuTransition2.SetDecoration(this.tabPageSignIn, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageSignIn, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageSignIn.Location = new System.Drawing.Point(4, 28);
+            this.tabPageSignIn.Location = new System.Drawing.Point(4, 34);
             this.tabPageSignIn.Name = "tabPageSignIn";
             this.tabPageSignIn.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSignIn.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageSignIn.Size = new System.Drawing.Size(1001, 378);
             this.tabPageSignIn.TabIndex = 0;
             this.tabPageSignIn.Text = "tabPage1";
             this.tabPageSignIn.UseVisualStyleBackColor = true;
@@ -690,7 +696,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 25);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "12345";
+            this.textBox1.Text = "סיסמא";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBoxSignInMail
@@ -704,7 +710,7 @@
             this.textBoxSignInMail.Name = "textBoxSignInMail";
             this.textBoxSignInMail.Size = new System.Drawing.Size(157, 25);
             this.textBoxSignInMail.TabIndex = 2;
-            this.textBoxSignInMail.Text = "gedon@gmail.com";
+            this.textBoxSignInMail.Text = "אימייל";
             // 
             // txtIconPassWord
             // 
@@ -763,11 +769,11 @@
             this.tabPageSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition2.SetDecoration(this.tabPageSignUp, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageSignUp, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageSignUp.Location = new System.Drawing.Point(4, 28);
+            this.tabPageSignUp.Location = new System.Drawing.Point(4, 34);
             this.tabPageSignUp.Name = "tabPageSignUp";
             this.tabPageSignUp.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageSignUp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabPageSignUp.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageSignUp.Size = new System.Drawing.Size(1001, 378);
             this.tabPageSignUp.TabIndex = 1;
             this.tabPageSignUp.Text = "tabPage2";
             this.tabPageSignUp.UseVisualStyleBackColor = true;
@@ -1102,9 +1108,9 @@
             this.tabPageApartments.Controls.Add(this.panelApartments);
             this.bunifuTransition2.SetDecoration(this.tabPageApartments, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageApartments, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageApartments.Location = new System.Drawing.Point(4, 28);
+            this.tabPageApartments.Location = new System.Drawing.Point(4, 34);
             this.tabPageApartments.Name = "tabPageApartments";
-            this.tabPageApartments.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageApartments.Size = new System.Drawing.Size(1001, 378);
             this.tabPageApartments.TabIndex = 2;
             this.tabPageApartments.Text = "tabPage1";
             this.tabPageApartments.UseVisualStyleBackColor = true;
@@ -1123,7 +1129,7 @@
             this.panelApartments.Location = new System.Drawing.Point(0, 0);
             this.panelApartments.Name = "panelApartments";
             this.panelApartments.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelApartments.Size = new System.Drawing.Size(1001, 384);
+            this.panelApartments.Size = new System.Drawing.Size(1001, 378);
             this.panelApartments.TabIndex = 0;
             // 
             // labelShowAllAparments
@@ -1229,9 +1235,9 @@
             this.tabPageWantToHost.Controls.Add(this.textBoxAdressToRent);
             this.bunifuTransition2.SetDecoration(this.tabPageWantToHost, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageWantToHost, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageWantToHost.Location = new System.Drawing.Point(4, 28);
+            this.tabPageWantToHost.Location = new System.Drawing.Point(4, 34);
             this.tabPageWantToHost.Name = "tabPageWantToHost";
-            this.tabPageWantToHost.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageWantToHost.Size = new System.Drawing.Size(1001, 378);
             this.tabPageWantToHost.TabIndex = 3;
             this.tabPageWantToHost.Text = "tabPageWantToRent";
             this.tabPageWantToHost.UseVisualStyleBackColor = true;
@@ -1779,10 +1785,10 @@
             this.tabPageHouses.Controls.Add(this.panelHouses);
             this.bunifuTransition2.SetDecoration(this.tabPageHouses, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageHouses, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageHouses.Location = new System.Drawing.Point(4, 28);
+            this.tabPageHouses.Location = new System.Drawing.Point(4, 34);
             this.tabPageHouses.Name = "tabPageHouses";
             this.tabPageHouses.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHouses.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageHouses.Size = new System.Drawing.Size(1001, 378);
             this.tabPageHouses.TabIndex = 4;
             this.tabPageHouses.Text = "tabPageHouse";
             this.tabPageHouses.UseVisualStyleBackColor = true;
@@ -1801,7 +1807,7 @@
             this.panelHouses.Location = new System.Drawing.Point(3, 3);
             this.panelHouses.Name = "panelHouses";
             this.panelHouses.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelHouses.Size = new System.Drawing.Size(995, 378);
+            this.panelHouses.Size = new System.Drawing.Size(995, 372);
             this.panelHouses.TabIndex = 1;
             // 
             // labelShowAllHouses
@@ -1860,6 +1866,12 @@
             // 
             // tabPageSearch
             // 
+            this.tabPageSearch.Controls.Add(this.label47);
+            this.tabPageSearch.Controls.Add(this.label48);
+            this.tabPageSearch.Controls.Add(this.textBoxPriceTill);
+            this.tabPageSearch.Controls.Add(this.label20);
+            this.tabPageSearch.Controls.Add(this.label46);
+            this.tabPageSearch.Controls.Add(this.textBoxPriceFrom);
             this.tabPageSearch.Controls.Add(this.pictureBoxPropertySearch);
             this.tabPageSearch.Controls.Add(this.label35);
             this.tabPageSearch.Controls.Add(this.label34);
@@ -1871,10 +1883,10 @@
             this.tabPageSearch.Controls.Add(this.textBoxSearch);
             this.bunifuTransition2.SetDecoration(this.tabPageSearch, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageSearch, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageSearch.Location = new System.Drawing.Point(4, 28);
+            this.tabPageSearch.Location = new System.Drawing.Point(4, 34);
             this.tabPageSearch.Name = "tabPageSearch";
             this.tabPageSearch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSearch.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageSearch.Size = new System.Drawing.Size(1001, 378);
             this.tabPageSearch.TabIndex = 5;
             this.tabPageSearch.Text = "tabPage1";
             this.tabPageSearch.UseVisualStyleBackColor = true;
@@ -1966,7 +1978,7 @@
             // 
             this.bunifuTransition1.SetDecoration(this.buttonSearch, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.buttonSearch, BunifuAnimatorNS.DecorationType.None);
-            this.buttonSearch.Location = new System.Drawing.Point(640, 89);
+            this.buttonSearch.Location = new System.Drawing.Point(614, 133);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(101, 38);
             this.buttonSearch.TabIndex = 1;
@@ -1989,10 +2001,10 @@
             this.tabPageIntro.Controls.Add(this.label36);
             this.bunifuTransition2.SetDecoration(this.tabPageIntro, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageIntro, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageIntro.Location = new System.Drawing.Point(4, 28);
+            this.tabPageIntro.Location = new System.Drawing.Point(4, 34);
             this.tabPageIntro.Name = "tabPageIntro";
             this.tabPageIntro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageIntro.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageIntro.Size = new System.Drawing.Size(1001, 378);
             this.tabPageIntro.TabIndex = 6;
             this.tabPageIntro.Text = "tabPage1";
             this.tabPageIntro.UseVisualStyleBackColor = true;
@@ -2034,11 +2046,11 @@
             this.tabPageUpdate.Controls.Add(this.pictureBox8);
             this.bunifuTransition2.SetDecoration(this.tabPageUpdate, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageUpdate, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageUpdate.Location = new System.Drawing.Point(4, 28);
+            this.tabPageUpdate.Location = new System.Drawing.Point(4, 34);
             this.tabPageUpdate.Name = "tabPageUpdate";
             this.tabPageUpdate.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPageUpdate.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageUpdate.Size = new System.Drawing.Size(1001, 378);
             this.tabPageUpdate.TabIndex = 7;
             this.tabPageUpdate.Text = "tabPage1";
             this.tabPageUpdate.UseVisualStyleBackColor = true;
@@ -2152,29 +2164,29 @@
             this.tabPageDochot.Controls.Add(this.label40);
             this.bunifuTransition2.SetDecoration(this.tabPageDochot, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.tabPageDochot, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageDochot.Location = new System.Drawing.Point(4, 28);
+            this.tabPageDochot.Location = new System.Drawing.Point(4, 34);
             this.tabPageDochot.Name = "tabPageDochot";
             this.tabPageDochot.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageDochot.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPageDochot.Size = new System.Drawing.Size(1001, 384);
+            this.tabPageDochot.Size = new System.Drawing.Size(1001, 378);
             this.tabPageDochot.TabIndex = 8;
             this.tabPageDochot.Text = "tabPageDochot";
             this.tabPageDochot.UseVisualStyleBackColor = true;
             // 
             // chartSales
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartSales.ChartAreas.Add(chartArea1);
+            chartArea22.Name = "ChartArea1";
+            this.chartSales.ChartAreas.Add(chartArea22);
             this.bunifuTransition2.SetDecoration(this.chartSales, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.chartSales, BunifuAnimatorNS.DecorationType.None);
-            legend1.Name = "Legend1";
-            this.chartSales.Legends.Add(legend1);
+            legend22.Name = "Legend1";
+            this.chartSales.Legends.Add(legend22);
             this.chartSales.Location = new System.Drawing.Point(506, 794);
             this.chartSales.Name = "chartSales";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartSales.Series.Add(series1);
+            series22.ChartArea = "ChartArea1";
+            series22.Legend = "Legend1";
+            series22.Name = "Series1";
+            this.chartSales.Series.Add(series22);
             this.chartSales.Size = new System.Drawing.Size(451, 323);
             this.chartSales.TabIndex = 5;
             this.chartSales.Text = "chart2";
@@ -2192,18 +2204,18 @@
             // 
             // chartIntrestForTime
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartIntrestForTime.ChartAreas.Add(chartArea2);
+            chartArea23.Name = "ChartArea1";
+            this.chartIntrestForTime.ChartAreas.Add(chartArea23);
             this.bunifuTransition2.SetDecoration(this.chartIntrestForTime, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.chartIntrestForTime, BunifuAnimatorNS.DecorationType.None);
-            legend2.Name = "Legend1";
-            this.chartIntrestForTime.Legends.Add(legend2);
+            legend23.Name = "Legend1";
+            this.chartIntrestForTime.Legends.Add(legend23);
             this.chartIntrestForTime.Location = new System.Drawing.Point(506, 410);
             this.chartIntrestForTime.Name = "chartIntrestForTime";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartIntrestForTime.Series.Add(series2);
+            series23.ChartArea = "ChartArea1";
+            series23.Legend = "Legend1";
+            series23.Name = "Series1";
+            this.chartIntrestForTime.Series.Add(series23);
             this.chartIntrestForTime.Size = new System.Drawing.Size(451, 323);
             this.chartIntrestForTime.TabIndex = 3;
             this.chartIntrestForTime.Text = "chart2";
@@ -2221,18 +2233,18 @@
             // 
             // chartPropertyCitys
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartPropertyCitys.ChartAreas.Add(chartArea3);
+            chartArea24.Name = "ChartArea1";
+            this.chartPropertyCitys.ChartAreas.Add(chartArea24);
             this.bunifuTransition2.SetDecoration(this.chartPropertyCitys, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.chartPropertyCitys, BunifuAnimatorNS.DecorationType.None);
-            legend3.Name = "Legend1";
-            this.chartPropertyCitys.Legends.Add(legend3);
+            legend24.Name = "Legend1";
+            this.chartPropertyCitys.Legends.Add(legend24);
             this.chartPropertyCitys.Location = new System.Drawing.Point(506, 49);
             this.chartPropertyCitys.Name = "chartPropertyCitys";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartPropertyCitys.Series.Add(series3);
+            series24.ChartArea = "ChartArea1";
+            series24.Legend = "Legend1";
+            series24.Name = "Series1";
+            this.chartPropertyCitys.Series.Add(series24);
             this.chartPropertyCitys.Size = new System.Drawing.Size(451, 323);
             this.chartPropertyCitys.TabIndex = 1;
             this.chartPropertyCitys.Text = "chart1";
@@ -2256,22 +2268,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 20;
-            animation1.Padding = new System.Windows.Forms.Padding(30);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation15.AnimateOnlyDifferences = true;
+            animation15.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.BlindCoeff")));
+            animation15.LeafCoeff = 0F;
+            animation15.MaxTime = 1F;
+            animation15.MinTime = 0F;
+            animation15.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicCoeff")));
+            animation15.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicShift")));
+            animation15.MosaicSize = 20;
+            animation15.Padding = new System.Windows.Forms.Padding(30);
+            animation15.RotateCoeff = 0F;
+            animation15.RotateLimit = 0F;
+            animation15.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.ScaleCoeff")));
+            animation15.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.SlideCoeff")));
+            animation15.TimeCoeff = 0F;
+            animation15.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation15;
             // 
             // bunifuElipse1
             // 
@@ -2282,22 +2294,92 @@
             // 
             this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlideAndRotate;
             this.bunifuTransition2.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(50);
-            animation2.RotateCoeff = 0.3F;
-            animation2.RotateLimit = 0.2F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition2.DefaultAnimation = animation2;
+            animation16.AnimateOnlyDifferences = true;
+            animation16.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.BlindCoeff")));
+            animation16.LeafCoeff = 0F;
+            animation16.MaxTime = 1F;
+            animation16.MinTime = 0F;
+            animation16.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicCoeff")));
+            animation16.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicShift")));
+            animation16.MosaicSize = 0;
+            animation16.Padding = new System.Windows.Forms.Padding(50);
+            animation16.RotateCoeff = 0.3F;
+            animation16.RotateLimit = 0.2F;
+            animation16.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.ScaleCoeff")));
+            animation16.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.SlideCoeff")));
+            animation16.TimeCoeff = 0F;
+            animation16.TransparencyCoeff = 0F;
+            this.bunifuTransition2.DefaultAnimation = animation16;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(979, 92);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(19, 23);
+            this.label20.TabIndex = 77;
+            this.label20.Text = "*";
+            this.label20.Visible = false;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label46, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label46, BunifuAnimatorNS.DecorationType.None);
+            this.label46.Location = new System.Drawing.Point(918, 89);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(52, 23);
+            this.label46.TabIndex = 76;
+            this.label46.Text = "ממחיר";
+            // 
+            // textBoxPriceFrom
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxPriceFrom, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxPriceFrom, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxPriceFrom.Location = new System.Drawing.Point(773, 89);
+            this.textBoxPriceFrom.Name = "textBoxPriceFrom";
+            this.textBoxPriceFrom.Size = new System.Drawing.Size(139, 32);
+            this.textBoxPriceFrom.TabIndex = 75;
+            this.textBoxPriceFrom.Text = "0";
+            this.textBoxPriceFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label47, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label47, BunifuAnimatorNS.DecorationType.None);
+            this.label47.ForeColor = System.Drawing.Color.Red;
+            this.label47.Location = new System.Drawing.Point(744, 89);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(19, 23);
+            this.label47.TabIndex = 80;
+            this.label47.Text = "*";
+            this.label47.Visible = false;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label48, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label48, BunifuAnimatorNS.DecorationType.None);
+            this.label48.Location = new System.Drawing.Point(683, 86);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(62, 23);
+            this.label48.TabIndex = 79;
+            this.label48.Text = "עד מחיר";
+            // 
+            // textBoxPriceTill
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxPriceTill, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxPriceTill, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxPriceTill.Location = new System.Drawing.Point(538, 86);
+            this.textBoxPriceTill.Name = "textBoxPriceTill";
+            this.textBoxPriceTill.Size = new System.Drawing.Size(139, 32);
+            this.textBoxPriceTill.TabIndex = 78;
+            this.textBoxPriceTill.Text = "0";
+            this.textBoxPriceTill.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
             // 
             // FormIBnBFirst
             // 
@@ -2526,6 +2608,12 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox textBoxPriceTill;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox textBoxPriceFrom;
     }
 }
 

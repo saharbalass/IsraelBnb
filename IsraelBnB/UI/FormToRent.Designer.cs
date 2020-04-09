@@ -34,11 +34,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelApartments = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.labelPrice = new System.Windows.Forms.Label();
             this.labelClientProductID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.labelCatagory = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonWantToBuy = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.labelSize = new System.Windows.Forms.Label();
             this.labelClientID = new System.Windows.Forms.Label();
@@ -63,8 +65,6 @@
             this.pictureBoxProperty1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxProperty0 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.labelPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -124,7 +124,7 @@
             this.panelApartments.Controls.Add(this.label5);
             this.panelApartments.Controls.Add(this.richTextBox2);
             this.panelApartments.Controls.Add(this.labelCatagory);
-            this.panelApartments.Controls.Add(this.button1);
+            this.panelApartments.Controls.Add(this.buttonWantToBuy);
             this.panelApartments.Controls.Add(this.label9);
             this.panelApartments.Controls.Add(this.labelSize);
             this.panelApartments.Controls.Add(this.labelClientID);
@@ -156,6 +156,26 @@
             this.panelApartments.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panelApartments.Size = new System.Drawing.Size(945, 573);
             this.panelApartments.TabIndex = 8;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(751, 703);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 31);
+            this.label10.TabIndex = 39;
+            this.label10.Text = ":מחיר";
+            // 
+            // labelPrice
+            // 
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.Location = new System.Drawing.Point(672, 709);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(72, 23);
+            this.labelPrice.TabIndex = 38;
+            this.labelPrice.Text = "label5";
             // 
             // labelClientProductID
             // 
@@ -199,15 +219,15 @@
             this.labelCatagory.Text = "קטגוריה";
             this.labelCatagory.Visible = false;
             // 
-            // button1
+            // buttonWantToBuy
             // 
-            this.button1.Location = new System.Drawing.Point(146, 571);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 38);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "! רוצה לקנות";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonWantToBuy.Location = new System.Drawing.Point(146, 571);
+            this.buttonWantToBuy.Name = "buttonWantToBuy";
+            this.buttonWantToBuy.Size = new System.Drawing.Size(125, 38);
+            this.buttonWantToBuy.TabIndex = 33;
+            this.buttonWantToBuy.Text = "! רוצה לקנות";
+            this.buttonWantToBuy.UseVisualStyleBackColor = true;
+            this.buttonWantToBuy.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
@@ -472,26 +492,6 @@
             this.pictureBoxProperty0.TabIndex = 2;
             this.pictureBoxProperty0.TabStop = false;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(751, 703);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 31);
-            this.label10.TabIndex = 39;
-            this.label10.Text = ":מחיר";
-            // 
-            // labelPrice
-            // 
-            this.labelPrice.AutoSize = true;
-            this.labelPrice.Location = new System.Drawing.Point(672, 709);
-            this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(72, 23);
-            this.labelPrice.TabIndex = 38;
-            this.labelPrice.Text = "label5";
-            // 
             // FormToRent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -554,7 +554,7 @@
         private System.Windows.Forms.Label labelClientID;
         private System.Windows.Forms.Label labelSize;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonWantToBuy;
         private System.Windows.Forms.Label labelCatagory;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Label label5;

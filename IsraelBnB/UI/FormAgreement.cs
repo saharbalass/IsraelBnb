@@ -22,7 +22,7 @@ namespace IsraelBnB
 
 
         }
-      
+
         private void FillListView(Client client, Product product)
         {
             ClientArr clientArr = new ClientArr();
@@ -41,7 +41,7 @@ namespace IsraelBnB
             listViewProducts.Items.Add(listViewItem);
             if (product.Catagory.ID == 1)
             {
-                listViewItem = new ListViewItem(new[] { client1.FullName, "בית", product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size),Convert.ToString(product.Price)});
+                listViewItem = new ListViewItem(new[] { client1.FullName, "בית", product.City.Name, product.Adress + " " + product.StreetNo, Convert.ToString(product.Size), Convert.ToString(product.Price) });
             }
             else
             {
@@ -49,7 +49,39 @@ namespace IsraelBnB
             }
             listViewProducts.Items.Add(listViewItem);
 
-
+            richTextBox1.Text = " ההסכם :"
+                +
+"שנערך ונחתם ביום " +
+                Convert.ToString(DateTime.Today.Day)
+            +
+            " בחודש: "
+            +
+            Convert.ToString(DateTime.Today.Month)
+            +
+            " ובשנת: "
+            +
+            Convert.ToString(DateTime.Today.Year)
+            +
+            " בין:"
+            +
+            " 1. " + client1.FullName
+            +
+            " 2. " + client.FullName
+            +
+            " שניהם מעיר: " + client1.City.Name + " ו " + client.City.Name
+            +
+            " מצד שני; " + "הואיל והמכורים הינם הבעלים והמחזיקים הבלעדיים של הנכס בעיר " + product.City.Name +
+            " וברחוב; " + product.Adress +
+            " במספר; " + product.StreetNo +
+            ", אשר זכויות המוכרים בה רשומות בלשכת רישום המקרקעין. "
+            +
+            "\n"
+            +
+            " הסכם זה הינו הסכם דיגיטלי בין המוכר: "
+            + client1.FullName
+            + " והקונה: "
+            + client.FullName
+            ;
         }
 
         private void printDocument1_PrintPage_1(object sender, System.Drawing.Printing.PrintPageEventArgs e)

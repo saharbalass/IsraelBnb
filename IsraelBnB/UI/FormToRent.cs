@@ -78,6 +78,14 @@ namespace IsraelBnB
             {
                 richTextBox2.Text = product.Adress + " מספר רחוב:" + Convert.ToString(product.StreetNo) + " מספר קומה:" + Convert.ToString(product.Floor + " מספר דירה:" + Convert.ToString(product.AptNo));
             }
+            if (product.IsSold == 1)
+            {
+                buttonWantToBuy.Visible = false;
+            }
+            else
+            {
+                buttonWantToBuy.Visible = true;
+            }
             labelCity.Text = product.City.Name;
             richTextBox1.Text = product.Descreption;
             labelProductID.Text = Convert.ToString(product.ID);

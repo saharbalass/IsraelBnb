@@ -30,7 +30,7 @@ namespace IsraelBnB
             InizializeChartSales();
         }
 
-        const string DEFAULT_PIC = "DefaultPic.png";
+        const string DEFAULT_PIC = "DefaultPic.jfif";
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -918,7 +918,8 @@ namespace IsraelBnB
                 productArr.Fill();
                 //houses
 
-                productArr = productArr.Filter(textBoxSearch.Text, (int)(comboBoxSearch.SelectedValue));
+
+                productArr = productArr.Filter(textBoxSearch.Text, (int)(comboBoxSearch.SelectedValue),Convert.ToInt32(textBoxPriceFrom.Text),Convert.ToInt32(textBoxPriceTill.Text));
 
                 listBoxProperties.DataSource = productArr;
                 if (listBoxProperties.Items.Count < 1)
@@ -1264,5 +1265,7 @@ namespace IsraelBnB
             Client client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text);
             return client;
         }
+    
+    //item size = close tabs in tabpage
     }
 }

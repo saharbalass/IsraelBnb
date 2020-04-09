@@ -35,6 +35,7 @@
             this.CitycolumnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AdresscolumnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonPrint = new System.Windows.Forms.Button();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
@@ -43,7 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,7 +65,7 @@
             this.listViewProducts.Margin = new System.Windows.Forms.Padding(4);
             this.listViewProducts.Name = "listViewProducts";
             this.listViewProducts.RightToLeftLayout = true;
-            this.listViewProducts.Size = new System.Drawing.Size(628, 208);
+            this.listViewProducts.Size = new System.Drawing.Size(616, 111);
             this.listViewProducts.TabIndex = 0;
             this.listViewProducts.UseCompatibleStateImageBehavior = false;
             this.listViewProducts.View = System.Windows.Forms.View.Details;
@@ -93,14 +94,19 @@
             // 
             this.columnHeaderSize.Text = "גודל";
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "מחיר";
+            this.columnHeader1.Width = 66;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
             this.panel1.Controls.Add(this.buttonPrint);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 401);
+            this.panel1.Location = new System.Drawing.Point(0, 463);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 100);
+            this.panel1.Size = new System.Drawing.Size(615, 100);
             this.panel1.TabIndex = 1;
             // 
             // buttonPrint
@@ -142,7 +148,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(628, 88);
+            this.panel2.Size = new System.Drawing.Size(615, 88);
             this.panel2.TabIndex = 59;
             // 
             // label1
@@ -181,16 +187,20 @@
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
-            // columnHeader1
+            // richTextBox1
             // 
-            this.columnHeader1.Text = "מחיר";
-            this.columnHeader1.Width = 66;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 206);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(616, 251);
+            this.richTextBox1.TabIndex = 61;
+            this.richTextBox1.Text = "\n";
             // 
             // FormAgreement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 501);
+            this.ClientSize = new System.Drawing.Size(615, 563);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listViewProducts);
@@ -225,5 +235,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

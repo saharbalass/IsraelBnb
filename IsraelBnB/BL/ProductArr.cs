@@ -150,30 +150,106 @@ namespace ClientSahar
             return productArr;
         }
 
-        public ProductArr Filter(string adress, int catagory)
+        public ProductArr Filter(string adress, int catagory, int priceFrom, int priceTill)
         {
             ProductArr productArr = new ProductArr();
 
-            for (int i = 0; i < this.Count; i++)
+            if (priceFrom != 0 && priceTill != 0)
             {
-
-                //הצבת המוצר הנוכחי במשתנה עזר - מוצר
-
-                Product product = (this[i] as Product);
-                if (
-
-                //סינון לפי שם המוצר
-                 product.Adress.StartsWith(adress) && product.Catagory.ID == catagory
-                )
+                for (int i = 0; i < this.Count; i++)
                 {
 
-                    //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+                    //הצבת המוצר הנוכחי במשתנה עזר - מוצר
 
-                    productArr.Add(product);
-                    break;
+                    Product product = (this[i] as Product);
+                    if (
 
+                     //סינון לפי שם המוצר
+                     product.Adress.StartsWith(adress) && product.Catagory.ID == catagory && product.Price > priceFrom && product.Price < priceTill
+                    )
+                    {
+
+                        //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                        productArr.Add(product);
+                        break;
+
+                    }
                 }
             }
+
+            if (priceFrom == 0 && priceTill != 0)
+            {
+                for (int i = 0; i < this.Count; i++)
+                {
+
+                    //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                    Product product = (this[i] as Product);
+                    if (
+
+                     //סינון לפי שם המוצר
+                     product.Adress.StartsWith(adress) && product.Catagory.ID == catagory && product.Price < priceTill
+                    )
+                    {
+
+                        //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                        productArr.Add(product);
+                        break;
+
+                    }
+                }
+            }
+
+            if (priceFrom != 0 && priceTill == 0)
+            {
+                for (int i = 0; i < this.Count; i++)
+                {
+
+                    //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                    Product product = (this[i] as Product);
+                    if (
+
+                     //סינון לפי שם המוצר
+                     product.Adress.StartsWith(adress) && product.Catagory.ID == catagory && product.Price > priceFrom
+                    )
+                    {
+
+                        //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                        productArr.Add(product);
+                        break;
+
+                    }
+                }
+            }
+            if (priceFrom == 0 && priceTill == 0)
+            {
+                for (int i = 0; i < this.Count; i++)
+                {
+
+                    //הצבת המוצר הנוכחי במשתנה עזר - מוצר
+
+                    Product product = (this[i] as Product);
+                    if (
+
+                     //סינון לפי שם המוצר
+                     product.Adress.StartsWith(adress) && product.Catagory.ID == catagory
+                    )
+                    {
+
+                        //המוצר ענה לדרישות החיפוש - הוספה שלו לאוסף המוחזר
+
+                        productArr.Add(product);
+                        break;
+
+                    }
+                }
+            }
+
+
             return productArr;
         }
         public Product FilterWithID(int id)
@@ -191,33 +267,6 @@ namespace ClientSahar
             return null;
         }
 
-        public Product GetProductWithNumber(int place)
-        {
-            return this[place] as Product; ;
-        }
-        public bool IsContain(string productName)
-        {
-
-            //בדיקה האם יש ישוב עם אותו שם
-            //הסרת האותיות י', ו' משם היישוב לבדיקה - כדיי לשפר מניעת כפילות
-
-            productName = productName.Replace("י", "");
-            productName = productName.Replace("ו", "");
-            string curproductName;
-            for (int i = 0; i < this.Count; i++)
-            {
-                curproductName = (this[i] as Product).Adress;
-
-                //הסרת האותיות י', ו' משם היישוב הנוכחי - כדיי לשפר מניעת כפילות
-
-                productName = productName.Replace("י", "");
-                productName = productName.Replace("ו", "");
-                if (curproductName == productName)
-                    return true;
-
-            }
-            return false;
-        }
         public Product GetproductWithMaxID()
         {
 
@@ -298,7 +347,7 @@ namespace ClientSahar
             return dictionary;
         }
 
-        public SortedDictionary<string, int> GetSortedDictionaryForSales ()
+        public SortedDictionary<string, int> GetSortedDictionaryForSales()
         {
 
             // מחזירה משתנה מסוג מילון ממוין עם ערכים רלוונטיים לדוח
@@ -323,7 +372,7 @@ namespace ClientSahar
             return curCityArr;
         }
 
-        public ProductArr FilterForSales (City city)
+        public ProductArr FilterForSales(City city)
         {
             ProductArr productArr = new ProductArr();
             for (int i = 0; i < this.Count; i++)

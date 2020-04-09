@@ -36,6 +36,7 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -66,7 +67,8 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
-            this.columnHeader6});
+            this.columnHeader6,
+            this.columnHeader7});
             this.listViewProducts.HideSelection = false;
             this.listViewProducts.Location = new System.Drawing.Point(0, 81);
             this.listViewProducts.Margin = new System.Windows.Forms.Padding(4);
@@ -103,7 +105,16 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "מספר קומה/קומות";
-            this.columnHeader6.Width = 119;
+            this.columnHeader6.Width = 89;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "מחיר";
+            this.columnHeader7.Width = 85;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage_1);
             // 
             // printPreviewDialog1
             // 
@@ -162,6 +173,7 @@
             this.buttonPrint.Text = "הורד פרטים";
             this.buttonPrint.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonPrint.UseVisualStyleBackColor = true;
+            this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
             // 
             // panel1
             // 
@@ -262,5 +274,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

@@ -5,6 +5,8 @@ using System.Data.SqlClient;
 
 class Dal
 {
+    // הDB שמירה /עדכון
+    //מבצע את הSQL ומחזיר אמת אם עבר ושקר אם לא
     public static bool ExecuteSql(string sql)
     {
         //מקשר
