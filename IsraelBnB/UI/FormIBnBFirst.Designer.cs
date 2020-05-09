@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend22 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea23 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend23 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea24 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend24 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            BunifuAnimatorNS.Animation animation15 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormIBnBFirst));
-            BunifuAnimatorNS.Animation animation16 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -60,189 +60,190 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.buttonSaveSignUp = new System.Windows.Forms.Button();
-            this.tabHouses = new System.Windows.Forms.TabControl();
-            this.tabPageSignIn = new System.Windows.Forms.TabPage();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.MailPicture = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBoxEnterSignIn = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBoxSignInMail = new System.Windows.Forms.TextBox();
-            this.txtIconPassWord = new System.Windows.Forms.PictureBox();
-            this.txtIconMail = new System.Windows.Forms.PictureBox();
-            this.tabPageSignUp = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.labelPassTrue = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBoxPassWordNew = new System.Windows.Forms.TextBox();
-            this.addCityButton = new System.Windows.Forms.Button();
-            this.comboBox_City = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.AreaCodeLabel = new System.Windows.Forms.Label();
-            this.labelIDClient = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.errorIDLabel = new System.Windows.Forms.Label();
-            this.errorEmailLabel = new System.Windows.Forms.Label();
-            this.errorPhoneNumLabel = new System.Windows.Forms.Label();
-            this.errorLastNameLabel = new System.Windows.Forms.Label();
-            this.errorFirstNameLabel = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.IDtextBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox_CellPhone = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.emailTextBox4 = new System.Windows.Forms.TextBox();
-            this.textBox_CellPhone = new System.Windows.Forms.TextBox();
-            this.textBox_LastName = new System.Windows.Forms.TextBox();
-            this.textBox_FirstName = new System.Windows.Forms.TextBox();
-            this.label_Id = new System.Windows.Forms.Label();
-            this.tabPageApartments = new System.Windows.Forms.TabPage();
-            this.panelApartments = new System.Windows.Forms.Panel();
-            this.labelShowAllAparments = new System.Windows.Forms.Label();
-            this.pictureBoxApr3 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxApr2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxApr1 = new System.Windows.Forms.PictureBox();
-            this.tabPageWantToHost = new System.Windows.Forms.TabPage();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.textBoxPrice = new System.Windows.Forms.TextBox();
-            this.labelIsSold = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.labelDochForRent = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.labelFloor = new System.Windows.Forms.Label();
-            this.textBoxFloor = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBoxAprtNo = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBoxStreetNo = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBoxSize = new System.Windows.Forms.TextBox();
-            this.changePic3 = new System.Windows.Forms.Button();
-            this.changePic2 = new System.Windows.Forms.Button();
-            this.changePic1 = new System.Windows.Forms.Button();
-            this.buttonAddCity = new System.Windows.Forms.Button();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.comboBoxCityToRent = new System.Windows.Forms.ComboBox();
-            this.pictureBoxAdd3 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAdd2 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.richTextBoxDescreptionToRent = new System.Windows.Forms.RichTextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBoxAdd1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.comboBoxCatagoryToRent = new System.Windows.Forms.ComboBox();
-            this.textBoxAdressToRent = new System.Windows.Forms.TextBox();
-            this.tabPageHouses = new System.Windows.Forms.TabPage();
-            this.panelHouses = new System.Windows.Forms.Panel();
-            this.labelShowAllHouses = new System.Windows.Forms.Label();
-            this.pictureBoxHouse3 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHouse2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHouse1 = new System.Windows.Forms.PictureBox();
-            this.tabPageSearch = new System.Windows.Forms.TabPage();
-            this.pictureBoxPropertySearch = new System.Windows.Forms.PictureBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.comboBoxSearch = new System.Windows.Forms.ComboBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.listBoxProperties = new System.Windows.Forms.ListBox();
-            this.buttonSearch = new System.Windows.Forms.Button();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.tabPageIntro = new System.Windows.Forms.TabPage();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.tabPageUpdate = new System.Windows.Forms.TabPage();
-            this.label37 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.tabPageDochot = new System.Windows.Forms.TabPage();
-            this.chartSales = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label42 = new System.Windows.Forms.Label();
-            this.chartIntrestForTime = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label41 = new System.Windows.Forms.Label();
-            this.chartPropertyCitys = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label40 = new System.Windows.Forms.Label();
             this.openFileDialog_Picture1 = new System.Windows.Forms.OpenFileDialog();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.label20 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
+            this.tabPageDochot = new System.Windows.Forms.TabPage();
+            this.label40 = new System.Windows.Forms.Label();
+            this.chartPropertyCitys = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label41 = new System.Windows.Forms.Label();
+            this.chartIntrestForTime = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label42 = new System.Windows.Forms.Label();
+            this.chartSales = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPageUpdateProperty = new System.Windows.Forms.TabPage();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.tabPageIntro = new System.Windows.Forms.TabPage();
+            this.label36 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.tabPageSearch = new System.Windows.Forms.TabPage();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.listBoxProperties = new System.Windows.Forms.ListBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.comboBoxSearch = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.pictureBoxPropertySearch = new System.Windows.Forms.PictureBox();
             this.textBoxPriceFrom = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.textBoxPriceTill = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.tabPageHouses = new System.Windows.Forms.TabPage();
+            this.panelHouses = new System.Windows.Forms.Panel();
+            this.pictureBoxHouse1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHouse2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHouse3 = new System.Windows.Forms.PictureBox();
+            this.labelShowAllHouses = new System.Windows.Forms.Label();
+            this.tabPageWantToHost = new System.Windows.Forms.TabPage();
+            this.textBoxAdressToRent = new System.Windows.Forms.TextBox();
+            this.comboBoxCatagoryToRent = new System.Windows.Forms.ComboBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAdd1 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.richTextBoxDescreptionToRent = new System.Windows.Forms.RichTextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBoxAdd2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAdd3 = new System.Windows.Forms.PictureBox();
+            this.comboBoxCityToRent = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.buttonAddCity = new System.Windows.Forms.Button();
+            this.changePic1 = new System.Windows.Forms.Button();
+            this.changePic2 = new System.Windows.Forms.Button();
+            this.changePic3 = new System.Windows.Forms.Button();
+            this.textBoxSize = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBoxStreetNo = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.textBoxAprtNo = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBoxFloor = new System.Windows.Forms.TextBox();
+            this.labelFloor = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.labelDochForRent = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.labelIsSold = new System.Windows.Forms.Label();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.tabPageApartments = new System.Windows.Forms.TabPage();
+            this.panelApartments = new System.Windows.Forms.Panel();
+            this.pictureBoxApr1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxApr2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxApr3 = new System.Windows.Forms.PictureBox();
+            this.labelShowAllAparments = new System.Windows.Forms.Label();
+            this.tabPageSignUp = new System.Windows.Forms.TabPage();
+            this.label_Id = new System.Windows.Forms.Label();
+            this.textBox_FirstName = new System.Windows.Forms.TextBox();
+            this.textBox_LastName = new System.Windows.Forms.TextBox();
+            this.textBox_CellPhone = new System.Windows.Forms.TextBox();
+            this.emailTextBox4 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox_CellPhone = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.IDtextBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.errorFirstNameLabel = new System.Windows.Forms.Label();
+            this.errorLastNameLabel = new System.Windows.Forms.Label();
+            this.errorPhoneNumLabel = new System.Windows.Forms.Label();
+            this.errorEmailLabel = new System.Windows.Forms.Label();
+            this.errorIDLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.labelIDClient = new System.Windows.Forms.Label();
+            this.AreaCodeLabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox_City = new System.Windows.Forms.ComboBox();
+            this.addCityButton = new System.Windows.Forms.Button();
+            this.textBoxPassWordNew = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.labelPassTrue = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPageSignIn = new System.Windows.Forms.TabPage();
+            this.txtIconMail = new System.Windows.Forms.PictureBox();
+            this.txtIconPassWord = new System.Windows.Forms.PictureBox();
+            this.textBoxSignInMail = new System.Windows.Forms.TextBox();
+            this.textBoxPassWord = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEnterSignIn = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.MailPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.tabHouses = new System.Windows.Forms.TabControl();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.tabHouses.SuspendLayout();
-            this.tabPageSignIn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MailPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnterSignIn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIconPassWord)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIconMail)).BeginInit();
-            this.tabPageSignUp.SuspendLayout();
-            this.tabPageApartments.SuspendLayout();
-            this.panelApartments.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr1)).BeginInit();
-            this.tabPageWantToHost.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.tabPageHouses.SuspendLayout();
-            this.panelHouses.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse1)).BeginInit();
-            this.tabPageSearch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPropertySearch)).BeginInit();
+            this.tabPageDochot.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPropertyCitys)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartIntrestForTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSales)).BeginInit();
+            this.tabPageUpdateProperty.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.tabPageIntro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.tabPageUpdate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.tabPageDochot.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSales)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartIntrestForTime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartPropertyCitys)).BeginInit();
+            this.tabPageSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPropertySearch)).BeginInit();
+            this.tabPageHouses.SuspendLayout();
+            this.panelHouses.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse3)).BeginInit();
+            this.tabPageWantToHost.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd3)).BeginInit();
+            this.tabPageApartments.SuspendLayout();
+            this.panelApartments.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr3)).BeginInit();
+            this.tabPageSignUp.SuspendLayout();
+            this.tabPageSignIn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIconMail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIconPassWord)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnterSignIn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MailPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabHouses.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -563,631 +564,610 @@
             this.buttonSaveSignUp.UseVisualStyleBackColor = true;
             this.buttonSaveSignUp.Click += new System.EventHandler(this.buttonSaveSignUp_Click);
             // 
-            // tabHouses
-            // 
-            this.tabHouses.Controls.Add(this.tabPageSignIn);
-            this.tabHouses.Controls.Add(this.tabPageSignUp);
-            this.tabHouses.Controls.Add(this.tabPageApartments);
-            this.tabHouses.Controls.Add(this.tabPageWantToHost);
-            this.tabHouses.Controls.Add(this.tabPageHouses);
-            this.tabHouses.Controls.Add(this.tabPageSearch);
-            this.tabHouses.Controls.Add(this.tabPageIntro);
-            this.tabHouses.Controls.Add(this.tabPageUpdate);
-            this.tabHouses.Controls.Add(this.tabPageDochot);
-            this.bunifuTransition2.SetDecoration(this.tabHouses, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabHouses, BunifuAnimatorNS.DecorationType.None);
-            this.tabHouses.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabHouses.ItemSize = new System.Drawing.Size(50, 30);
-            this.tabHouses.Location = new System.Drawing.Point(0, 142);
-            this.tabHouses.Name = "tabHouses";
-            this.tabHouses.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabHouses.RightToLeftLayout = true;
-            this.tabHouses.SelectedIndex = 0;
-            this.tabHouses.ShowToolTips = true;
-            this.tabHouses.Size = new System.Drawing.Size(1009, 416);
-            this.tabHouses.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabHouses.TabIndex = 3;
-            // 
-            // tabPageSignIn
-            // 
-            this.tabPageSignIn.Controls.Add(this.pictureBox3);
-            this.tabPageSignIn.Controls.Add(this.pictureBox2);
-            this.tabPageSignIn.Controls.Add(this.MailPicture);
-            this.tabPageSignIn.Controls.Add(this.label11);
-            this.tabPageSignIn.Controls.Add(this.pictureBoxEnterSignIn);
-            this.tabPageSignIn.Controls.Add(this.pictureBox4);
-            this.tabPageSignIn.Controls.Add(this.textBox1);
-            this.tabPageSignIn.Controls.Add(this.textBoxSignInMail);
-            this.tabPageSignIn.Controls.Add(this.txtIconPassWord);
-            this.tabPageSignIn.Controls.Add(this.txtIconMail);
-            this.bunifuTransition2.SetDecoration(this.tabPageSignIn, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabPageSignIn, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageSignIn.Location = new System.Drawing.Point(4, 34);
-            this.tabPageSignIn.Name = "tabPageSignIn";
-            this.tabPageSignIn.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSignIn.Size = new System.Drawing.Size(1001, 378);
-            this.tabPageSignIn.TabIndex = 0;
-            this.tabPageSignIn.Text = "tabPage1";
-            this.tabPageSignIn.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox3
-            // 
-            this.bunifuTransition1.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(731, 198);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(925, 196);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.label12_Click);
-            // 
-            // MailPicture
-            // 
-            this.bunifuTransition1.SetDecoration(this.MailPicture, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.MailPicture, BunifuAnimatorNS.DecorationType.None);
-            this.MailPicture.Image = ((System.Drawing.Image)(resources.GetObject("MailPicture.Image")));
-            this.MailPicture.Location = new System.Drawing.Point(731, 133);
-            this.MailPicture.Name = "MailPicture";
-            this.MailPicture.Size = new System.Drawing.Size(44, 25);
-            this.MailPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MailPicture.TabIndex = 7;
-            this.MailPicture.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.label11.Location = new System.Drawing.Point(801, 284);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(48, 23);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "כניסה";
-            // 
-            // pictureBoxEnterSignIn
-            // 
-            this.pictureBoxEnterSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxEnterSignIn, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxEnterSignIn, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxEnterSignIn.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEnterSignIn.Image")));
-            this.pictureBoxEnterSignIn.Location = new System.Drawing.Point(790, 239);
-            this.pictureBoxEnterSignIn.Name = "pictureBoxEnterSignIn";
-            this.pictureBoxEnterSignIn.Size = new System.Drawing.Size(68, 42);
-            this.pictureBoxEnterSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxEnterSignIn.TabIndex = 5;
-            this.pictureBoxEnterSignIn.TabStop = false;
-            this.pictureBoxEnterSignIn.Click += new System.EventHandler(this.pictureBoxEnterSignIn_Click);
-            // 
-            // pictureBox4
-            // 
-            this.bunifuTransition1.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(790, 69);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(67, 43);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuTransition1.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox1.Location = new System.Drawing.Point(743, 198);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 25);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "סיסמא";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBoxSignInMail
-            // 
-            this.textBoxSignInMail.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBoxSignInMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuTransition1.SetDecoration(this.textBoxSignInMail, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxSignInMail, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxSignInMail.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxSignInMail.Location = new System.Drawing.Point(743, 133);
-            this.textBoxSignInMail.Name = "textBoxSignInMail";
-            this.textBoxSignInMail.Size = new System.Drawing.Size(157, 25);
-            this.textBoxSignInMail.TabIndex = 2;
-            this.textBoxSignInMail.Text = "אימייל";
-            // 
-            // txtIconPassWord
-            // 
-            this.bunifuTransition1.SetDecoration(this.txtIconPassWord, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.txtIconPassWord, BunifuAnimatorNS.DecorationType.None);
-            this.txtIconPassWord.Image = ((System.Drawing.Image)(resources.GetObject("txtIconPassWord.Image")));
-            this.txtIconPassWord.Location = new System.Drawing.Point(724, 181);
-            this.txtIconPassWord.Name = "txtIconPassWord";
-            this.txtIconPassWord.Size = new System.Drawing.Size(195, 57);
-            this.txtIconPassWord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.txtIconPassWord.TabIndex = 1;
-            this.txtIconPassWord.TabStop = false;
-            // 
-            // txtIconMail
-            // 
-            this.bunifuTransition1.SetDecoration(this.txtIconMail, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.txtIconMail, BunifuAnimatorNS.DecorationType.None);
-            this.txtIconMail.Image = ((System.Drawing.Image)(resources.GetObject("txtIconMail.Image")));
-            this.txtIconMail.Location = new System.Drawing.Point(724, 118);
-            this.txtIconMail.Name = "txtIconMail";
-            this.txtIconMail.Size = new System.Drawing.Size(195, 57);
-            this.txtIconMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.txtIconMail.TabIndex = 0;
-            this.txtIconMail.TabStop = false;
-            // 
-            // tabPageSignUp
-            // 
-            this.tabPageSignUp.Controls.Add(this.label2);
-            this.tabPageSignUp.Controls.Add(this.labelPassTrue);
-            this.tabPageSignUp.Controls.Add(this.label13);
-            this.tabPageSignUp.Controls.Add(this.textBoxPassWordNew);
-            this.tabPageSignUp.Controls.Add(this.addCityButton);
-            this.tabPageSignUp.Controls.Add(this.comboBox_City);
-            this.tabPageSignUp.Controls.Add(this.label8);
-            this.tabPageSignUp.Controls.Add(this.AreaCodeLabel);
-            this.tabPageSignUp.Controls.Add(this.labelIDClient);
-            this.tabPageSignUp.Controls.Add(this.label5);
-            this.tabPageSignUp.Controls.Add(this.errorIDLabel);
-            this.tabPageSignUp.Controls.Add(this.errorEmailLabel);
-            this.tabPageSignUp.Controls.Add(this.errorPhoneNumLabel);
-            this.tabPageSignUp.Controls.Add(this.errorLastNameLabel);
-            this.tabPageSignUp.Controls.Add(this.errorFirstNameLabel);
-            this.tabPageSignUp.Controls.Add(this.label7);
-            this.tabPageSignUp.Controls.Add(this.IDtextBox1);
-            this.tabPageSignUp.Controls.Add(this.label6);
-            this.tabPageSignUp.Controls.Add(this.comboBox_CellPhone);
-            this.tabPageSignUp.Controls.Add(this.label4);
-            this.tabPageSignUp.Controls.Add(this.label3);
-            this.tabPageSignUp.Controls.Add(this.label9);
-            this.tabPageSignUp.Controls.Add(this.label10);
-            this.tabPageSignUp.Controls.Add(this.emailTextBox4);
-            this.tabPageSignUp.Controls.Add(this.textBox_CellPhone);
-            this.tabPageSignUp.Controls.Add(this.textBox_LastName);
-            this.tabPageSignUp.Controls.Add(this.textBox_FirstName);
-            this.tabPageSignUp.Controls.Add(this.label_Id);
-            this.tabPageSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition2.SetDecoration(this.tabPageSignUp, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabPageSignUp, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageSignUp.Location = new System.Drawing.Point(4, 34);
-            this.tabPageSignUp.Name = "tabPageSignUp";
-            this.tabPageSignUp.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSignUp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabPageSignUp.Size = new System.Drawing.Size(1001, 378);
-            this.tabPageSignUp.TabIndex = 1;
-            this.tabPageSignUp.Text = "tabPage2";
-            this.tabPageSignUp.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 334);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 30);
-            this.label2.TabIndex = 85;
-            this.label2.Text = "הראה פרטים אישיים";
-            this.label2.Visible = false;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // labelPassTrue
-            // 
-            this.labelPassTrue.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.labelPassTrue, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.labelPassTrue, BunifuAnimatorNS.DecorationType.None);
-            this.labelPassTrue.ForeColor = System.Drawing.Color.Red;
-            this.labelPassTrue.Location = new System.Drawing.Point(954, 176);
-            this.labelPassTrue.Name = "labelPassTrue";
-            this.labelPassTrue.Size = new System.Drawing.Size(19, 23);
-            this.labelPassTrue.TabIndex = 84;
-            this.labelPassTrue.Text = "*";
-            this.labelPassTrue.Visible = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
-            this.label13.Location = new System.Drawing.Point(894, 182);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 23);
-            this.label13.TabIndex = 83;
-            this.label13.Text = "סיסמא";
-            // 
-            // textBoxPassWordNew
-            // 
-            this.bunifuTransition1.SetDecoration(this.textBoxPassWordNew, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxPassWordNew, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxPassWordNew.Location = new System.Drawing.Point(716, 173);
-            this.textBoxPassWordNew.MaxLength = 9;
-            this.textBoxPassWordNew.Name = "textBoxPassWordNew";
-            this.textBoxPassWordNew.Size = new System.Drawing.Size(100, 32);
-            this.textBoxPassWordNew.TabIndex = 82;
-            // 
-            // addCityButton
-            // 
-            this.bunifuTransition1.SetDecoration(this.addCityButton, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.addCityButton, BunifuAnimatorNS.DecorationType.None);
-            this.addCityButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCityButton.Location = new System.Drawing.Point(675, 238);
-            this.addCityButton.Name = "addCityButton";
-            this.addCityButton.Size = new System.Drawing.Size(23, 24);
-            this.addCityButton.TabIndex = 81;
-            this.addCityButton.Text = "+";
-            this.addCityButton.UseVisualStyleBackColor = true;
-            this.addCityButton.Click += new System.EventHandler(this.buttonAddCity_Click_1);
-            // 
-            // comboBox_City
-            // 
-            this.comboBox_City.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox_City.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.bunifuTransition2.SetDecoration(this.comboBox_City, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.comboBox_City, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox_City.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_City.FormattingEnabled = true;
-            this.comboBox_City.Location = new System.Drawing.Point(716, 234);
-            this.comboBox_City.Name = "comboBox_City";
-            this.comboBox_City.Size = new System.Drawing.Size(116, 31);
-            this.comboBox_City.TabIndex = 80;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(954, 234);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(19, 23);
-            this.label8.TabIndex = 79;
-            this.label8.Text = "*";
-            this.label8.Visible = false;
-            // 
-            // AreaCodeLabel
-            // 
-            this.AreaCodeLabel.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.AreaCodeLabel, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.AreaCodeLabel, BunifuAnimatorNS.DecorationType.None);
-            this.AreaCodeLabel.Location = new System.Drawing.Point(913, 239);
-            this.AreaCodeLabel.Name = "AreaCodeLabel";
-            this.AreaCodeLabel.Size = new System.Drawing.Size(39, 23);
-            this.AreaCodeLabel.TabIndex = 78;
-            this.AreaCodeLabel.Text = "ישוב";
-            // 
-            // labelIDClient
-            // 
-            this.labelIDClient.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.labelIDClient, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.labelIDClient, BunifuAnimatorNS.DecorationType.None);
-            this.labelIDClient.Location = new System.Drawing.Point(764, 16);
-            this.labelIDClient.Name = "labelIDClient";
-            this.labelIDClient.Size = new System.Drawing.Size(21, 23);
-            this.labelIDClient.TabIndex = 77;
-            this.labelIDClient.Text = "0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Location = new System.Drawing.Point(848, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 23);
-            this.label5.TabIndex = 76;
-            this.label5.Text = "מספר סידורי";
-            // 
-            // errorIDLabel
-            // 
-            this.errorIDLabel.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.errorIDLabel, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.errorIDLabel, BunifuAnimatorNS.DecorationType.None);
-            this.errorIDLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorIDLabel.Location = new System.Drawing.Point(954, 207);
-            this.errorIDLabel.Name = "errorIDLabel";
-            this.errorIDLabel.Size = new System.Drawing.Size(19, 23);
-            this.errorIDLabel.TabIndex = 75;
-            this.errorIDLabel.Text = "*";
-            this.errorIDLabel.Visible = false;
-            // 
-            // errorEmailLabel
-            // 
-            this.errorEmailLabel.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.errorEmailLabel, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.errorEmailLabel, BunifuAnimatorNS.DecorationType.None);
-            this.errorEmailLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorEmailLabel.Location = new System.Drawing.Point(954, 142);
-            this.errorEmailLabel.Name = "errorEmailLabel";
-            this.errorEmailLabel.Size = new System.Drawing.Size(19, 23);
-            this.errorEmailLabel.TabIndex = 74;
-            this.errorEmailLabel.Text = "*";
-            this.errorEmailLabel.Visible = false;
-            // 
-            // errorPhoneNumLabel
-            // 
-            this.errorPhoneNumLabel.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.errorPhoneNumLabel, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.errorPhoneNumLabel, BunifuAnimatorNS.DecorationType.None);
-            this.errorPhoneNumLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorPhoneNumLabel.Location = new System.Drawing.Point(953, 114);
-            this.errorPhoneNumLabel.Name = "errorPhoneNumLabel";
-            this.errorPhoneNumLabel.Size = new System.Drawing.Size(19, 23);
-            this.errorPhoneNumLabel.TabIndex = 73;
-            this.errorPhoneNumLabel.Text = "*";
-            this.errorPhoneNumLabel.Visible = false;
-            // 
-            // errorLastNameLabel
-            // 
-            this.errorLastNameLabel.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.errorLastNameLabel, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.errorLastNameLabel, BunifuAnimatorNS.DecorationType.None);
-            this.errorLastNameLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorLastNameLabel.Location = new System.Drawing.Point(953, 86);
-            this.errorLastNameLabel.Name = "errorLastNameLabel";
-            this.errorLastNameLabel.Size = new System.Drawing.Size(19, 23);
-            this.errorLastNameLabel.TabIndex = 72;
-            this.errorLastNameLabel.Text = "*";
-            this.errorLastNameLabel.Visible = false;
-            // 
-            // errorFirstNameLabel
-            // 
-            this.errorFirstNameLabel.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.errorFirstNameLabel, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.errorFirstNameLabel, BunifuAnimatorNS.DecorationType.None);
-            this.errorFirstNameLabel.ForeColor = System.Drawing.Color.Red;
-            this.errorFirstNameLabel.Location = new System.Drawing.Point(953, 58);
-            this.errorFirstNameLabel.Name = "errorFirstNameLabel";
-            this.errorFirstNameLabel.Size = new System.Drawing.Size(19, 23);
-            this.errorFirstNameLabel.TabIndex = 71;
-            this.errorFirstNameLabel.Text = "*";
-            this.errorFirstNameLabel.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.Location = new System.Drawing.Point(920, 213);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 23);
-            this.label7.TabIndex = 70;
-            this.label7.Text = "ת\"ז";
-            // 
-            // IDtextBox1
-            // 
-            this.bunifuTransition1.SetDecoration(this.IDtextBox1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.IDtextBox1, BunifuAnimatorNS.DecorationType.None);
-            this.IDtextBox1.Location = new System.Drawing.Point(716, 204);
-            this.IDtextBox1.MaxLength = 9;
-            this.IDtextBox1.Name = "IDtextBox1";
-            this.IDtextBox1.Size = new System.Drawing.Size(100, 32);
-            this.IDtextBox1.TabIndex = 69;
-            this.IDtextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.Location = new System.Drawing.Point(699, 115);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(17, 23);
-            this.label6.TabIndex = 68;
-            this.label6.Text = "-";
-            // 
-            // comboBox_CellPhone
-            // 
-            this.bunifuTransition2.SetDecoration(this.comboBox_CellPhone, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.comboBox_CellPhone, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox_CellPhone.FormattingEnabled = true;
-            this.comboBox_CellPhone.Items.AddRange(new object[] {
-            "052",
-            "054",
-            "050"});
-            this.comboBox_CellPhone.Location = new System.Drawing.Point(640, 111);
-            this.comboBox_CellPhone.Name = "comboBox_CellPhone";
-            this.comboBox_CellPhone.Size = new System.Drawing.Size(58, 31);
-            this.comboBox_CellPhone.TabIndex = 67;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Location = new System.Drawing.Point(849, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 23);
-            this.label4.TabIndex = 66;
-            this.label4.Text = "דואל אלקטורני";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.Location = new System.Drawing.Point(880, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 23);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "מס\' טלפון";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.label9.Location = new System.Drawing.Point(865, 95);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 23);
-            this.label9.TabIndex = 64;
-            this.label9.Text = "שם משפחה";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
-            this.label10.Location = new System.Drawing.Point(885, 67);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 23);
-            this.label10.TabIndex = 63;
-            this.label10.Text = "שם פרטי";
-            // 
-            // emailTextBox4
-            // 
-            this.bunifuTransition1.SetDecoration(this.emailTextBox4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.emailTextBox4, BunifuAnimatorNS.DecorationType.None);
-            this.emailTextBox4.Location = new System.Drawing.Point(716, 142);
-            this.emailTextBox4.Name = "emailTextBox4";
-            this.emailTextBox4.Size = new System.Drawing.Size(100, 32);
-            this.emailTextBox4.TabIndex = 62;
-            // 
-            // textBox_CellPhone
-            // 
-            this.bunifuTransition1.SetDecoration(this.textBox_CellPhone, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBox_CellPhone, BunifuAnimatorNS.DecorationType.None);
-            this.textBox_CellPhone.Location = new System.Drawing.Point(716, 114);
-            this.textBox_CellPhone.MaxLength = 7;
-            this.textBox_CellPhone.Name = "textBox_CellPhone";
-            this.textBox_CellPhone.Size = new System.Drawing.Size(100, 32);
-            this.textBox_CellPhone.TabIndex = 61;
-            this.textBox_CellPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
-            // 
-            // textBox_LastName
-            // 
-            this.bunifuTransition1.SetDecoration(this.textBox_LastName, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBox_LastName, BunifuAnimatorNS.DecorationType.None);
-            this.textBox_LastName.Location = new System.Drawing.Point(716, 86);
-            this.textBox_LastName.Name = "textBox_LastName";
-            this.textBox_LastName.Size = new System.Drawing.Size(100, 32);
-            this.textBox_LastName.TabIndex = 60;
-            // 
-            // textBox_FirstName
-            // 
-            this.bunifuTransition1.SetDecoration(this.textBox_FirstName, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBox_FirstName, BunifuAnimatorNS.DecorationType.None);
-            this.textBox_FirstName.Location = new System.Drawing.Point(716, 58);
-            this.textBox_FirstName.Name = "textBox_FirstName";
-            this.textBox_FirstName.Size = new System.Drawing.Size(100, 32);
-            this.textBox_FirstName.TabIndex = 59;
-            // 
-            // label_Id
-            // 
-            this.label_Id.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label_Id, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label_Id, BunifuAnimatorNS.DecorationType.None);
-            this.label_Id.Location = new System.Drawing.Point(577, -34);
-            this.label_Id.Name = "label_Id";
-            this.label_Id.Size = new System.Drawing.Size(21, 23);
-            this.label_Id.TabIndex = 58;
-            this.label_Id.Text = "0";
-            // 
-            // tabPageApartments
-            // 
-            this.tabPageApartments.Controls.Add(this.panelApartments);
-            this.bunifuTransition2.SetDecoration(this.tabPageApartments, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabPageApartments, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageApartments.Location = new System.Drawing.Point(4, 34);
-            this.tabPageApartments.Name = "tabPageApartments";
-            this.tabPageApartments.Size = new System.Drawing.Size(1001, 378);
-            this.tabPageApartments.TabIndex = 2;
-            this.tabPageApartments.Text = "tabPage1";
-            this.tabPageApartments.UseVisualStyleBackColor = true;
-            // 
-            // panelApartments
-            // 
-            this.panelApartments.AutoScroll = true;
-            this.panelApartments.AutoScrollMargin = new System.Drawing.Size(0, 35);
-            this.panelApartments.Controls.Add(this.labelShowAllAparments);
-            this.panelApartments.Controls.Add(this.pictureBoxApr3);
-            this.panelApartments.Controls.Add(this.pictureBoxApr2);
-            this.panelApartments.Controls.Add(this.pictureBoxApr1);
-            this.bunifuTransition2.SetDecoration(this.panelApartments, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.panelApartments, BunifuAnimatorNS.DecorationType.None);
-            this.panelApartments.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelApartments.Location = new System.Drawing.Point(0, 0);
-            this.panelApartments.Name = "panelApartments";
-            this.panelApartments.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelApartments.Size = new System.Drawing.Size(1001, 378);
-            this.panelApartments.TabIndex = 0;
-            // 
-            // labelShowAllAparments
-            // 
-            this.labelShowAllAparments.AutoSize = true;
-            this.labelShowAllAparments.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.labelShowAllAparments, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.labelShowAllAparments, BunifuAnimatorNS.DecorationType.None);
-            this.labelShowAllAparments.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelShowAllAparments.Location = new System.Drawing.Point(22, 333);
-            this.labelShowAllAparments.Name = "labelShowAllAparments";
-            this.labelShowAllAparments.Size = new System.Drawing.Size(192, 30);
-            this.labelShowAllAparments.TabIndex = 6;
-            this.labelShowAllAparments.Text = "ראה את כל הדירות";
-            this.labelShowAllAparments.Click += new System.EventHandler(this.labelShowAllAparments_Click);
-            // 
-            // pictureBoxApr3
-            // 
-            this.pictureBoxApr3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxApr3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxApr3, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxApr3.Location = new System.Drawing.Point(617, 476);
-            this.pictureBoxApr3.Name = "pictureBoxApr3";
-            this.pictureBoxApr3.Size = new System.Drawing.Size(267, 161);
-            this.pictureBoxApr3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxApr3.TabIndex = 4;
-            this.pictureBoxApr3.TabStop = false;
-            this.pictureBoxApr3.Click += new System.EventHandler(this.pictureBoxProperty_Click);
-            // 
-            // pictureBoxApr2
-            // 
-            this.pictureBoxApr2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxApr2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxApr2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxApr2.Location = new System.Drawing.Point(617, 237);
-            this.pictureBoxApr2.Name = "pictureBoxApr2";
-            this.pictureBoxApr2.Size = new System.Drawing.Size(267, 161);
-            this.pictureBoxApr2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxApr2.TabIndex = 3;
-            this.pictureBoxApr2.TabStop = false;
-            this.pictureBoxApr2.Click += new System.EventHandler(this.pictureBoxProperty_Click);
-            // 
-            // pictureBoxApr1
-            // 
-            this.pictureBoxApr1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxApr1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxApr1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxApr1, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxApr1.Location = new System.Drawing.Point(617, 25);
-            this.pictureBoxApr1.Name = "pictureBoxApr1";
-            this.pictureBoxApr1.Size = new System.Drawing.Size(267, 161);
-            this.pictureBoxApr1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxApr1.TabIndex = 2;
-            this.pictureBoxApr1.TabStop = false;
-            this.pictureBoxApr1.Click += new System.EventHandler(this.pictureBoxProperty_Click);
+            // openFileDialog_Picture1
+            // 
+            this.openFileDialog_Picture1.FileName = "openFileDialog1";
+            // 
+            // bunifuTransition1
+            // 
+            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
+            this.bunifuTransition1.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 20;
+            animation3.Padding = new System.Windows.Forms.Padding(30);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation3;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 50;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuTransition2
+            // 
+            this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlideAndRotate;
+            this.bunifuTransition2.Cursor = null;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(50);
+            animation4.RotateCoeff = 0.3F;
+            animation4.RotateLimit = 0.2F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.bunifuTransition2.DefaultAnimation = animation4;
+            // 
+            // tabPageDochot
+            // 
+            this.tabPageDochot.AutoScroll = true;
+            this.tabPageDochot.Controls.Add(this.chartSales);
+            this.tabPageDochot.Controls.Add(this.label42);
+            this.tabPageDochot.Controls.Add(this.chartIntrestForTime);
+            this.tabPageDochot.Controls.Add(this.label41);
+            this.tabPageDochot.Controls.Add(this.chartPropertyCitys);
+            this.tabPageDochot.Controls.Add(this.label40);
+            this.bunifuTransition2.SetDecoration(this.tabPageDochot, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageDochot, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageDochot.Location = new System.Drawing.Point(4, 34);
+            this.tabPageDochot.Name = "tabPageDochot";
+            this.tabPageDochot.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDochot.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tabPageDochot.Size = new System.Drawing.Size(1001, 378);
+            this.tabPageDochot.TabIndex = 8;
+            this.tabPageDochot.Text = "tabPageDochot";
+            this.tabPageDochot.UseVisualStyleBackColor = true;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label40, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label40, BunifuAnimatorNS.DecorationType.None);
+            this.label40.Location = new System.Drawing.Point(639, 23);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(176, 23);
+            this.label40.TabIndex = 0;
+            this.label40.Text = "התפלגות הנכסים בכל עיר";
+            // 
+            // chartPropertyCitys
+            // 
+            chartArea6.Name = "ChartArea1";
+            this.chartPropertyCitys.ChartAreas.Add(chartArea6);
+            this.bunifuTransition2.SetDecoration(this.chartPropertyCitys, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.chartPropertyCitys, BunifuAnimatorNS.DecorationType.None);
+            legend6.Name = "Legend1";
+            this.chartPropertyCitys.Legends.Add(legend6);
+            this.chartPropertyCitys.Location = new System.Drawing.Point(506, 49);
+            this.chartPropertyCitys.Name = "chartPropertyCitys";
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chartPropertyCitys.Series.Add(series6);
+            this.chartPropertyCitys.Size = new System.Drawing.Size(451, 323);
+            this.chartPropertyCitys.TabIndex = 1;
+            this.chartPropertyCitys.Text = "chart1";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label41, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label41, BunifuAnimatorNS.DecorationType.None);
+            this.label41.Location = new System.Drawing.Point(484, 384);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(331, 23);
+            this.label41.TabIndex = 2;
+            this.label41.Text = "רמת התעניינות ביחס לזמן בכל עיר שיש התעניינות";
+            // 
+            // chartIntrestForTime
+            // 
+            chartArea5.Name = "ChartArea1";
+            this.chartIntrestForTime.ChartAreas.Add(chartArea5);
+            this.bunifuTransition2.SetDecoration(this.chartIntrestForTime, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.chartIntrestForTime, BunifuAnimatorNS.DecorationType.None);
+            legend5.Name = "Legend1";
+            this.chartIntrestForTime.Legends.Add(legend5);
+            this.chartIntrestForTime.Location = new System.Drawing.Point(506, 410);
+            this.chartIntrestForTime.Name = "chartIntrestForTime";
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chartIntrestForTime.Series.Add(series5);
+            this.chartIntrestForTime.Size = new System.Drawing.Size(451, 323);
+            this.chartIntrestForTime.TabIndex = 3;
+            this.chartIntrestForTime.Text = "chart2";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label42, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label42, BunifuAnimatorNS.DecorationType.None);
+            this.label42.Location = new System.Drawing.Point(706, 768);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(109, 23);
+            this.label42.TabIndex = 4;
+            this.label42.Text = "מכירות בכל עיר";
+            // 
+            // chartSales
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chartSales.ChartAreas.Add(chartArea4);
+            this.bunifuTransition2.SetDecoration(this.chartSales, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.chartSales, BunifuAnimatorNS.DecorationType.None);
+            legend4.Name = "Legend1";
+            this.chartSales.Legends.Add(legend4);
+            this.chartSales.Location = new System.Drawing.Point(506, 794);
+            this.chartSales.Name = "chartSales";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chartSales.Series.Add(series4);
+            this.chartSales.Size = new System.Drawing.Size(451, 323);
+            this.chartSales.TabIndex = 5;
+            this.chartSales.Text = "chart2";
+            // 
+            // tabPageUpdateProperty
+            // 
+            this.tabPageUpdateProperty.AutoScroll = true;
+            this.tabPageUpdateProperty.AutoScrollMargin = new System.Drawing.Size(0, 100);
+            this.tabPageUpdateProperty.Controls.Add(this.label37);
+            this.tabPageUpdateProperty.Controls.Add(this.pictureBox11);
+            this.tabPageUpdateProperty.Controls.Add(this.pictureBox12);
+            this.tabPageUpdateProperty.Controls.Add(this.pictureBox13);
+            this.tabPageUpdateProperty.Controls.Add(this.pictureBox10);
+            this.tabPageUpdateProperty.Controls.Add(this.pictureBox9);
+            this.tabPageUpdateProperty.Controls.Add(this.pictureBox8);
+            this.bunifuTransition2.SetDecoration(this.tabPageUpdateProperty, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageUpdateProperty, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageUpdateProperty.Location = new System.Drawing.Point(4, 34);
+            this.tabPageUpdateProperty.Name = "tabPageUpdateProperty";
+            this.tabPageUpdateProperty.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageUpdateProperty.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tabPageUpdateProperty.Size = new System.Drawing.Size(1001, 378);
+            this.tabPageUpdateProperty.TabIndex = 7;
+            this.tabPageUpdateProperty.Text = "tabPage1";
+            this.tabPageUpdateProperty.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBox8, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox8, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox8.Location = new System.Drawing.Point(616, 28);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(267, 161);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox9.Location = new System.Drawing.Point(616, 256);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(267, 161);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 5;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBox10, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox10, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox10.Location = new System.Drawing.Point(616, 466);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(267, 161);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 6;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBox13, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox13, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox13.Location = new System.Drawing.Point(119, 28);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(267, 161);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 7;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBox12, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox12, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox12.Location = new System.Drawing.Point(119, 256);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(267, 161);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 8;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBox11, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox11, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox11.Location = new System.Drawing.Point(119, 466);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(267, 161);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 9;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.label37, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label37, BunifuAnimatorNS.DecorationType.None);
+            this.label37.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(412, 351);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(187, 34);
+            this.label37.TabIndex = 10;
+            this.label37.Text = "דוח נכסים אישיים";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
+            // tabPageIntro
+            // 
+            this.tabPageIntro.Controls.Add(this.pictureBox14);
+            this.tabPageIntro.Controls.Add(this.label36);
+            this.bunifuTransition2.SetDecoration(this.tabPageIntro, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageIntro, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageIntro.Location = new System.Drawing.Point(4, 34);
+            this.tabPageIntro.Name = "tabPageIntro";
+            this.tabPageIntro.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageIntro.Size = new System.Drawing.Size(1001, 378);
+            this.tabPageIntro.TabIndex = 6;
+            this.tabPageIntro.Text = "tabPage1";
+            this.tabPageIntro.UseVisualStyleBackColor = true;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.label36.Font = new System.Drawing.Font("Magneto", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(484, 3);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(521, 192);
+            this.label36.TabIndex = 13;
+            this.label36.Text = resources.GetString("label36.Text");
+            // 
+            // pictureBox14
+            // 
+            this.bunifuTransition1.SetDecoration(this.pictureBox14, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox14, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(480, 372);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 14;
+            this.pictureBox14.TabStop = false;
+            // 
+            // tabPageSearch
+            // 
+            this.tabPageSearch.Controls.Add(this.label47);
+            this.tabPageSearch.Controls.Add(this.label48);
+            this.tabPageSearch.Controls.Add(this.textBoxPriceTill);
+            this.tabPageSearch.Controls.Add(this.label20);
+            this.tabPageSearch.Controls.Add(this.label46);
+            this.tabPageSearch.Controls.Add(this.textBoxPriceFrom);
+            this.tabPageSearch.Controls.Add(this.pictureBoxPropertySearch);
+            this.tabPageSearch.Controls.Add(this.label35);
+            this.tabPageSearch.Controls.Add(this.label34);
+            this.tabPageSearch.Controls.Add(this.label33);
+            this.tabPageSearch.Controls.Add(this.comboBoxSearch);
+            this.tabPageSearch.Controls.Add(this.label32);
+            this.tabPageSearch.Controls.Add(this.listBoxProperties);
+            this.tabPageSearch.Controls.Add(this.buttonSearch);
+            this.tabPageSearch.Controls.Add(this.textBoxSearch);
+            this.bunifuTransition2.SetDecoration(this.tabPageSearch, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageSearch, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageSearch.Location = new System.Drawing.Point(4, 34);
+            this.tabPageSearch.Name = "tabPageSearch";
+            this.tabPageSearch.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSearch.Size = new System.Drawing.Size(1001, 378);
+            this.tabPageSearch.TabIndex = 5;
+            this.tabPageSearch.Text = "tabPage1";
+            this.tabPageSearch.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSearch
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxSearch, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxSearch, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxSearch.Location = new System.Drawing.Point(773, 49);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(139, 32);
+            this.textBoxSearch.TabIndex = 0;
+            // 
+            // buttonSearch
+            // 
+            this.bunifuTransition1.SetDecoration(this.buttonSearch, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.buttonSearch, BunifuAnimatorNS.DecorationType.None);
+            this.buttonSearch.Location = new System.Drawing.Point(614, 133);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(101, 38);
+            this.buttonSearch.TabIndex = 1;
+            this.buttonSearch.Text = "חפש";
+            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
+            // listBoxProperties
+            // 
+            this.listBoxProperties.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition2.SetDecoration(this.listBoxProperties, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.listBoxProperties, BunifuAnimatorNS.DecorationType.None);
+            this.listBoxProperties.FormattingEnabled = true;
+            this.listBoxProperties.ItemHeight = 23;
+            this.listBoxProperties.Location = new System.Drawing.Point(721, 133);
+            this.listBoxProperties.Name = "listBoxProperties";
+            this.listBoxProperties.Size = new System.Drawing.Size(277, 253);
+            this.listBoxProperties.TabIndex = 2;
+            this.listBoxProperties.DoubleClick += new System.EventHandler(this.listBoxProperties_DoubleClick);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
+            this.label32.Location = new System.Drawing.Point(918, 49);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(41, 23);
+            this.label32.TabIndex = 3;
+            this.label32.Text = "רחוב";
+            // 
+            // comboBoxSearch
+            // 
+            this.bunifuTransition2.SetDecoration(this.comboBoxSearch, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.comboBoxSearch, BunifuAnimatorNS.DecorationType.None);
+            this.comboBoxSearch.FormattingEnabled = true;
+            this.comboBoxSearch.Location = new System.Drawing.Point(773, 6);
+            this.comboBoxSearch.Name = "comboBoxSearch";
+            this.comboBoxSearch.Size = new System.Drawing.Size(139, 31);
+            this.comboBoxSearch.TabIndex = 8;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
+            this.label33.Location = new System.Drawing.Point(918, 6);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(63, 23);
+            this.label33.TabIndex = 9;
+            this.label33.Text = "קטגוריה";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Location = new System.Drawing.Point(979, 9);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(19, 23);
+            this.label34.TabIndex = 72;
+            this.label34.Text = "*";
+            this.label34.Visible = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.label35.ForeColor = System.Drawing.Color.Red;
+            this.label35.Location = new System.Drawing.Point(979, 52);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(19, 23);
+            this.label35.TabIndex = 73;
+            this.label35.Text = "*";
+            this.label35.Visible = false;
+            // 
+            // pictureBoxPropertySearch
+            // 
+            this.pictureBoxPropertySearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxPropertySearch, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxPropertySearch, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxPropertySearch.Location = new System.Drawing.Point(135, 49);
+            this.pictureBoxPropertySearch.Name = "pictureBoxPropertySearch";
+            this.pictureBoxPropertySearch.Size = new System.Drawing.Size(338, 286);
+            this.pictureBoxPropertySearch.TabIndex = 74;
+            this.pictureBoxPropertySearch.TabStop = false;
+            this.pictureBoxPropertySearch.Click += new System.EventHandler(this.pictureBoxProperty_Click);
+            // 
+            // textBoxPriceFrom
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxPriceFrom, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxPriceFrom, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxPriceFrom.Location = new System.Drawing.Point(773, 89);
+            this.textBoxPriceFrom.Name = "textBoxPriceFrom";
+            this.textBoxPriceFrom.Size = new System.Drawing.Size(139, 32);
+            this.textBoxPriceFrom.TabIndex = 75;
+            this.textBoxPriceFrom.Text = "0";
+            this.textBoxPriceFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label46, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label46, BunifuAnimatorNS.DecorationType.None);
+            this.label46.Location = new System.Drawing.Point(918, 89);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(52, 23);
+            this.label46.TabIndex = 76;
+            this.label46.Text = "ממחיר";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(979, 92);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(19, 23);
+            this.label20.TabIndex = 77;
+            this.label20.Text = "*";
+            this.label20.Visible = false;
+            // 
+            // textBoxPriceTill
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxPriceTill, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxPriceTill, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxPriceTill.Location = new System.Drawing.Point(538, 86);
+            this.textBoxPriceTill.Name = "textBoxPriceTill";
+            this.textBoxPriceTill.Size = new System.Drawing.Size(139, 32);
+            this.textBoxPriceTill.TabIndex = 78;
+            this.textBoxPriceTill.Text = "0";
+            this.textBoxPriceTill.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label48, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label48, BunifuAnimatorNS.DecorationType.None);
+            this.label48.Location = new System.Drawing.Point(683, 86);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(62, 23);
+            this.label48.TabIndex = 79;
+            this.label48.Text = "עד מחיר";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label47, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label47, BunifuAnimatorNS.DecorationType.None);
+            this.label47.ForeColor = System.Drawing.Color.Red;
+            this.label47.Location = new System.Drawing.Point(744, 89);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(19, 23);
+            this.label47.TabIndex = 80;
+            this.label47.Text = "*";
+            this.label47.Visible = false;
+            // 
+            // tabPageHouses
+            // 
+            this.tabPageHouses.Controls.Add(this.panelHouses);
+            this.bunifuTransition2.SetDecoration(this.tabPageHouses, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageHouses, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageHouses.Location = new System.Drawing.Point(4, 34);
+            this.tabPageHouses.Name = "tabPageHouses";
+            this.tabPageHouses.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageHouses.Size = new System.Drawing.Size(1001, 378);
+            this.tabPageHouses.TabIndex = 4;
+            this.tabPageHouses.Text = "tabPageHouse";
+            this.tabPageHouses.UseVisualStyleBackColor = true;
+            // 
+            // panelHouses
+            // 
+            this.panelHouses.AutoScroll = true;
+            this.panelHouses.AutoScrollMargin = new System.Drawing.Size(0, 35);
+            this.panelHouses.Controls.Add(this.labelShowAllHouses);
+            this.panelHouses.Controls.Add(this.pictureBoxHouse3);
+            this.panelHouses.Controls.Add(this.pictureBoxHouse2);
+            this.panelHouses.Controls.Add(this.pictureBoxHouse1);
+            this.bunifuTransition2.SetDecoration(this.panelHouses, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panelHouses, BunifuAnimatorNS.DecorationType.None);
+            this.panelHouses.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHouses.Location = new System.Drawing.Point(3, 3);
+            this.panelHouses.Name = "panelHouses";
+            this.panelHouses.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panelHouses.Size = new System.Drawing.Size(995, 372);
+            this.panelHouses.TabIndex = 1;
+            // 
+            // pictureBoxHouse1
+            // 
+            this.pictureBoxHouse1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxHouse1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxHouse1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxHouse1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxHouse1.Location = new System.Drawing.Point(617, 25);
+            this.pictureBoxHouse1.Name = "pictureBoxHouse1";
+            this.pictureBoxHouse1.Size = new System.Drawing.Size(267, 161);
+            this.pictureBoxHouse1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxHouse1.TabIndex = 2;
+            this.pictureBoxHouse1.TabStop = false;
+            this.pictureBoxHouse1.Click += new System.EventHandler(this.pictureBoxProperty_Click);
+            // 
+            // pictureBoxHouse2
+            // 
+            this.pictureBoxHouse2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxHouse2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxHouse2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxHouse2.Location = new System.Drawing.Point(617, 237);
+            this.pictureBoxHouse2.Name = "pictureBoxHouse2";
+            this.pictureBoxHouse2.Size = new System.Drawing.Size(267, 161);
+            this.pictureBoxHouse2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxHouse2.TabIndex = 3;
+            this.pictureBoxHouse2.TabStop = false;
+            this.pictureBoxHouse2.Click += new System.EventHandler(this.pictureBoxProperty_Click);
+            // 
+            // pictureBoxHouse3
+            // 
+            this.pictureBoxHouse3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxHouse3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxHouse3, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxHouse3.Location = new System.Drawing.Point(617, 476);
+            this.pictureBoxHouse3.Name = "pictureBoxHouse3";
+            this.pictureBoxHouse3.Size = new System.Drawing.Size(267, 161);
+            this.pictureBoxHouse3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxHouse3.TabIndex = 4;
+            this.pictureBoxHouse3.TabStop = false;
+            this.pictureBoxHouse3.Click += new System.EventHandler(this.pictureBoxProperty_Click);
+            // 
+            // labelShowAllHouses
+            // 
+            this.labelShowAllHouses.AutoSize = true;
+            this.labelShowAllHouses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.labelShowAllHouses, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.labelShowAllHouses, BunifuAnimatorNS.DecorationType.None);
+            this.labelShowAllHouses.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShowAllHouses.Location = new System.Drawing.Point(25, 324);
+            this.labelShowAllHouses.Name = "labelShowAllHouses";
+            this.labelShowAllHouses.Size = new System.Drawing.Size(191, 30);
+            this.labelShowAllHouses.TabIndex = 5;
+            this.labelShowAllHouses.Text = "ראה את כל הבתים";
+            this.labelShowAllHouses.Click += new System.EventHandler(this.labelShowAllHouses_Click);
             // 
             // tabPageWantToHost
             // 
+            this.tabPageWantToHost.Controls.Add(this.label49);
             this.tabPageWantToHost.Controls.Add(this.label44);
             this.tabPageWantToHost.Controls.Add(this.label45);
             this.tabPageWantToHost.Controls.Add(this.textBoxPrice);
@@ -1242,268 +1222,264 @@
             this.tabPageWantToHost.Text = "tabPageWantToRent";
             this.tabPageWantToHost.UseVisualStyleBackColor = true;
             // 
-            // label44
+            // textBoxAdressToRent
             // 
-            this.label44.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label44, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label44, BunifuAnimatorNS.DecorationType.None);
-            this.label44.ForeColor = System.Drawing.Color.Red;
-            this.label44.Location = new System.Drawing.Point(670, 335);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(19, 23);
-            this.label44.TabIndex = 99;
-            this.label44.Text = "*";
-            this.label44.Visible = false;
+            this.bunifuTransition1.SetDecoration(this.textBoxAdressToRent, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxAdressToRent, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxAdressToRent.Location = new System.Drawing.Point(696, 94);
+            this.textBoxAdressToRent.Name = "textBoxAdressToRent";
+            this.textBoxAdressToRent.Size = new System.Drawing.Size(139, 32);
+            this.textBoxAdressToRent.TabIndex = 0;
             // 
-            // label45
+            // comboBoxCatagoryToRent
             // 
-            this.label45.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label45, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label45, BunifuAnimatorNS.DecorationType.None);
-            this.label45.Location = new System.Drawing.Point(577, 335);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(80, 23);
-            this.label45.TabIndex = 98;
-            this.label45.Text = "מחיר הנכס";
+            this.bunifuTransition2.SetDecoration(this.comboBoxCatagoryToRent, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.comboBoxCatagoryToRent, BunifuAnimatorNS.DecorationType.None);
+            this.comboBoxCatagoryToRent.FormattingEnabled = true;
+            this.comboBoxCatagoryToRent.Location = new System.Drawing.Point(696, 16);
+            this.comboBoxCatagoryToRent.Name = "comboBoxCatagoryToRent";
+            this.comboBoxCatagoryToRent.Size = new System.Drawing.Size(139, 31);
+            this.comboBoxCatagoryToRent.TabIndex = 1;
+            this.comboBoxCatagoryToRent.TextChanged += new System.EventHandler(this.comboBoxCatagoryToRent_TextChanged);
             // 
-            // textBoxPrice
+            // pictureBox5
             // 
-            this.bunifuTransition1.SetDecoration(this.textBoxPrice, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxPrice, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxPrice.Location = new System.Drawing.Point(432, 332);
-            this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(139, 32);
-            this.textBoxPrice.TabIndex = 97;
+            this.bunifuTransition1.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox5.Location = new System.Drawing.Point(27, 42);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(200, 144);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
             // 
-            // labelIsSold
+            // label12
             // 
-            this.labelIsSold.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.labelIsSold, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.labelIsSold, BunifuAnimatorNS.DecorationType.None);
-            this.labelIsSold.Location = new System.Drawing.Point(405, 265);
-            this.labelIsSold.Name = "labelIsSold";
-            this.labelIsSold.Size = new System.Drawing.Size(21, 23);
-            this.labelIsSold.TabIndex = 96;
-            this.labelIsSold.Text = "0";
-            this.labelIsSold.Visible = false;
+            this.label12.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
+            this.label12.Location = new System.Drawing.Point(841, 99);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(53, 23);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "כתובת";
             // 
-            // label43
+            // label14
             // 
-            this.label43.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label43, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label43, BunifuAnimatorNS.DecorationType.None);
-            this.label43.Location = new System.Drawing.Point(432, 265);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(79, 23);
-            this.label43.TabIndex = 95;
-            this.label43.Text = "האם נמכר:";
-            this.label43.Visible = false;
+            this.label14.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label14, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label14, BunifuAnimatorNS.DecorationType.None);
+            this.label14.Location = new System.Drawing.Point(841, 16);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(63, 23);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "קטגוריה";
             // 
-            // label39
+            // pictureBox6
             // 
-            this.label39.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label39, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label39, BunifuAnimatorNS.DecorationType.None);
-            this.label39.Location = new System.Drawing.Point(412, 4);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(21, 23);
-            this.label39.TabIndex = 94;
-            this.label39.Text = "0";
-            this.label39.Visible = false;
+            this.bunifuTransition1.SetDecoration(this.pictureBox6, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox6, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox6.Location = new System.Drawing.Point(233, 42);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(200, 144);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 8;
+            this.pictureBox6.TabStop = false;
             // 
-            // label38
+            // pictureBox7
             // 
-            this.label38.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
-            this.label38.Location = new System.Drawing.Point(439, 4);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(43, 23);
-            this.label38.TabIndex = 93;
-            this.label38.Text = "זהות:";
-            this.label38.Visible = false;
+            this.bunifuTransition1.SetDecoration(this.pictureBox7, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox7, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox7.Location = new System.Drawing.Point(439, 42);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(200, 144);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 9;
+            this.pictureBox7.TabStop = false;
             // 
-            // labelDochForRent
+            // pictureBoxAdd1
             // 
-            this.labelDochForRent.AutoSize = true;
-            this.labelDochForRent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.labelDochForRent, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.labelDochForRent, BunifuAnimatorNS.DecorationType.None);
-            this.labelDochForRent.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDochForRent.Location = new System.Drawing.Point(27, 315);
-            this.labelDochForRent.Name = "labelDochForRent";
-            this.labelDochForRent.Size = new System.Drawing.Size(141, 33);
-            this.labelDochForRent.TabIndex = 92;
-            this.labelDochForRent.Text = "דוח על הנכס";
-            this.labelDochForRent.Click += new System.EventHandler(this.labelDochForRent_Click);
+            this.pictureBoxAdd1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxAdd1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxAdd1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxAdd1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdd1.Image")));
+            this.pictureBoxAdd1.Location = new System.Drawing.Point(513, 101);
+            this.pictureBoxAdd1.Name = "pictureBoxAdd1";
+            this.pictureBoxAdd1.Size = new System.Drawing.Size(49, 45);
+            this.pictureBoxAdd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAdd1.TabIndex = 12;
+            this.pictureBoxAdd1.TabStop = false;
+            this.pictureBoxAdd1.Tag = "pictureBox7";
+            this.pictureBoxAdd1.Click += new System.EventHandler(this.Add_Picture_Click);
             // 
-            // label31
+            // label15
             // 
-            this.label31.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
-            this.label31.ForeColor = System.Drawing.Color.Red;
-            this.label31.Location = new System.Drawing.Point(934, 335);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(19, 23);
-            this.label31.TabIndex = 91;
-            this.label31.Text = "*";
-            this.label31.Visible = false;
+            this.label15.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
+            this.label15.Location = new System.Drawing.Point(494, 149);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(99, 23);
+            this.label15.TabIndex = 13;
+            this.label15.Text = "הוספת תמונה";
             // 
-            // labelFloor
+            // label16
             // 
-            this.labelFloor.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.labelFloor, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.labelFloor, BunifuAnimatorNS.DecorationType.None);
-            this.labelFloor.Location = new System.Drawing.Point(841, 335);
-            this.labelFloor.Name = "labelFloor";
-            this.labelFloor.Size = new System.Drawing.Size(85, 23);
-            this.labelFloor.TabIndex = 90;
-            this.labelFloor.Text = "מספר קומה";
+            this.label16.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label16, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label16, BunifuAnimatorNS.DecorationType.None);
+            this.label16.Location = new System.Drawing.Point(289, 149);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(99, 23);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "הוספת תמונה";
             // 
-            // textBoxFloor
+            // label17
             // 
-            this.bunifuTransition1.SetDecoration(this.textBoxFloor, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxFloor, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxFloor.Location = new System.Drawing.Point(696, 332);
-            this.textBoxFloor.Name = "textBoxFloor";
-            this.textBoxFloor.Size = new System.Drawing.Size(139, 32);
-            this.textBoxFloor.TabIndex = 89;
-            this.textBoxFloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            this.label17.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label17, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label17, BunifuAnimatorNS.DecorationType.None);
+            this.label17.Location = new System.Drawing.Point(81, 149);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(99, 23);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "הוספת תמונה";
             // 
-            // label29
+            // richTextBoxDescreptionToRent
             // 
-            this.label29.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label29, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label29, BunifuAnimatorNS.DecorationType.None);
-            this.label29.ForeColor = System.Drawing.Color.Red;
-            this.label29.Location = new System.Drawing.Point(921, 179);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(19, 23);
-            this.label29.TabIndex = 88;
-            this.label29.Text = "*";
-            this.label29.Visible = false;
+            this.bunifuTransition2.SetDecoration(this.richTextBoxDescreptionToRent, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.richTextBoxDescreptionToRent, BunifuAnimatorNS.DecorationType.None);
+            this.richTextBoxDescreptionToRent.Location = new System.Drawing.Point(696, 216);
+            this.richTextBoxDescreptionToRent.Name = "richTextBoxDescreptionToRent";
+            this.richTextBoxDescreptionToRent.Size = new System.Drawing.Size(139, 72);
+            this.richTextBoxDescreptionToRent.TabIndex = 16;
+            this.richTextBoxDescreptionToRent.Text = "";
             // 
-            // label30
+            // label18
             // 
-            this.label30.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
-            this.label30.Location = new System.Drawing.Point(841, 179);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(80, 23);
-            this.label30.TabIndex = 87;
-            this.label30.Text = "מספר דירה";
+            this.label18.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label18, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label18, BunifuAnimatorNS.DecorationType.None);
+            this.label18.Location = new System.Drawing.Point(837, 241);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(47, 23);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "תיאור";
             // 
-            // textBoxAprtNo
+            // pictureBoxAdd2
             // 
-            this.bunifuTransition1.SetDecoration(this.textBoxAprtNo, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxAprtNo, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxAprtNo.Location = new System.Drawing.Point(696, 176);
-            this.textBoxAprtNo.Name = "textBoxAprtNo";
-            this.textBoxAprtNo.Size = new System.Drawing.Size(139, 32);
-            this.textBoxAprtNo.TabIndex = 86;
-            this.textBoxAprtNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            this.pictureBoxAdd2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxAdd2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxAdd2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxAdd2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdd2.Image")));
+            this.pictureBoxAdd2.Location = new System.Drawing.Point(309, 101);
+            this.pictureBoxAdd2.Name = "pictureBoxAdd2";
+            this.pictureBoxAdd2.Size = new System.Drawing.Size(49, 45);
+            this.pictureBoxAdd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAdd2.TabIndex = 18;
+            this.pictureBoxAdd2.TabStop = false;
+            this.pictureBoxAdd2.Tag = "pictureBox7";
+            this.pictureBoxAdd2.Click += new System.EventHandler(this.Add_Picture_Click);
             // 
-            // label27
+            // pictureBoxAdd3
             // 
-            this.label27.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
-            this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(922, 138);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(19, 23);
-            this.label27.TabIndex = 85;
-            this.label27.Text = "*";
-            this.label27.Visible = false;
+            this.pictureBoxAdd3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxAdd3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxAdd3, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxAdd3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdd3.Image")));
+            this.pictureBoxAdd3.Location = new System.Drawing.Point(97, 101);
+            this.pictureBoxAdd3.Name = "pictureBoxAdd3";
+            this.pictureBoxAdd3.Size = new System.Drawing.Size(49, 45);
+            this.pictureBoxAdd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAdd3.TabIndex = 19;
+            this.pictureBoxAdd3.TabStop = false;
+            this.pictureBoxAdd3.Tag = "pictureBox7";
+            this.pictureBoxAdd3.Click += new System.EventHandler(this.Add_Picture_Click);
             // 
-            // label28
+            // comboBoxCityToRent
             // 
-            this.label28.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
-            this.label28.Location = new System.Drawing.Point(841, 138);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(82, 23);
-            this.label28.TabIndex = 84;
-            this.label28.Text = "מספר רחוב";
+            this.bunifuTransition2.SetDecoration(this.comboBoxCityToRent, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.comboBoxCityToRent, BunifuAnimatorNS.DecorationType.None);
+            this.comboBoxCityToRent.FormattingEnabled = true;
+            this.comboBoxCityToRent.Location = new System.Drawing.Point(696, 53);
+            this.comboBoxCityToRent.Name = "comboBoxCityToRent";
+            this.comboBoxCityToRent.Size = new System.Drawing.Size(139, 31);
+            this.comboBoxCityToRent.TabIndex = 20;
             // 
-            // textBoxStreetNo
+            // label19
             // 
-            this.bunifuTransition1.SetDecoration(this.textBoxStreetNo, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxStreetNo, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxStreetNo.Location = new System.Drawing.Point(696, 135);
-            this.textBoxStreetNo.Name = "textBoxStreetNo";
-            this.textBoxStreetNo.Size = new System.Drawing.Size(139, 32);
-            this.textBoxStreetNo.TabIndex = 83;
-            this.textBoxStreetNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            this.label19.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label19, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label19, BunifuAnimatorNS.DecorationType.None);
+            this.label19.Location = new System.Drawing.Point(841, 57);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(31, 23);
+            this.label19.TabIndex = 21;
+            this.label19.Text = "עיר";
             // 
-            // label25
+            // label21
             // 
-            this.label25.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.label25.ForeColor = System.Drawing.Color.Red;
-            this.label25.Location = new System.Drawing.Point(922, 297);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(19, 23);
-            this.label25.TabIndex = 82;
-            this.label25.Text = "*";
-            this.label25.Visible = false;
+            this.label21.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
+            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Location = new System.Drawing.Point(902, 57);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(19, 23);
+            this.label21.TabIndex = 72;
+            this.label21.Text = "*";
+            this.label21.Visible = false;
             // 
-            // label26
+            // label22
             // 
-            this.label26.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
-            this.label26.Location = new System.Drawing.Point(861, 297);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(36, 23);
-            this.label26.TabIndex = 81;
-            this.label26.Text = "גודל";
+            this.label22.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(902, 99);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(19, 23);
+            this.label22.TabIndex = 73;
+            this.label22.Text = "*";
+            this.label22.Visible = false;
             // 
-            // textBoxSize
+            // label23
             // 
-            this.bunifuTransition1.SetDecoration(this.textBoxSize, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxSize, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxSize.Location = new System.Drawing.Point(696, 294);
-            this.textBoxSize.Name = "textBoxSize";
-            this.textBoxSize.Size = new System.Drawing.Size(139, 32);
-            this.textBoxSize.TabIndex = 80;
-            this.textBoxSize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            this.label23.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
+            this.label23.ForeColor = System.Drawing.Color.Red;
+            this.label23.Location = new System.Drawing.Point(902, 19);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(19, 23);
+            this.label23.TabIndex = 74;
+            this.label23.Text = "*";
+            this.label23.Visible = false;
             // 
-            // changePic3
+            // label24
             // 
-            this.changePic3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
-            this.bunifuTransition1.SetDecoration(this.changePic3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.changePic3, BunifuAnimatorNS.DecorationType.None);
-            this.changePic3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changePic3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.changePic3.Location = new System.Drawing.Point(81, 192);
-            this.changePic3.Name = "changePic3";
-            this.changePic3.Size = new System.Drawing.Size(94, 34);
-            this.changePic3.TabIndex = 79;
-            this.changePic3.Text = "שנה תמונה";
-            this.changePic3.UseVisualStyleBackColor = false;
-            this.changePic3.Visible = false;
-            this.changePic3.Click += new System.EventHandler(this.changePic3_Click);
+            this.label24.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(902, 241);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(19, 23);
+            this.label24.TabIndex = 75;
+            this.label24.Text = "*";
+            this.label24.Visible = false;
             // 
-            // changePic2
+            // buttonAddCity
             // 
-            this.changePic2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
-            this.bunifuTransition1.SetDecoration(this.changePic2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.changePic2, BunifuAnimatorNS.DecorationType.None);
-            this.changePic2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changePic2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.changePic2.Location = new System.Drawing.Point(290, 192);
-            this.changePic2.Name = "changePic2";
-            this.changePic2.Size = new System.Drawing.Size(94, 34);
-            this.changePic2.TabIndex = 78;
-            this.changePic2.Text = "שנה תמונה";
-            this.changePic2.UseVisualStyleBackColor = false;
-            this.changePic2.Visible = false;
-            this.changePic2.Click += new System.EventHandler(this.changePic2_Click);
+            this.bunifuTransition1.SetDecoration(this.buttonAddCity, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.buttonAddCity, BunifuAnimatorNS.DecorationType.None);
+            this.buttonAddCity.Location = new System.Drawing.Point(656, 59);
+            this.buttonAddCity.Name = "buttonAddCity";
+            this.buttonAddCity.Size = new System.Drawing.Size(34, 29);
+            this.buttonAddCity.TabIndex = 76;
+            this.buttonAddCity.Text = "+";
+            this.buttonAddCity.UseVisualStyleBackColor = true;
+            this.buttonAddCity.Click += new System.EventHandler(this.buttonAddCity_Click_1);
             // 
             // changePic1
             // 
@@ -1521,865 +1497,903 @@
             this.changePic1.Visible = false;
             this.changePic1.Click += new System.EventHandler(this.changePic1_Click);
             // 
-            // buttonAddCity
-            // 
-            this.bunifuTransition1.SetDecoration(this.buttonAddCity, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.buttonAddCity, BunifuAnimatorNS.DecorationType.None);
-            this.buttonAddCity.Location = new System.Drawing.Point(656, 59);
-            this.buttonAddCity.Name = "buttonAddCity";
-            this.buttonAddCity.Size = new System.Drawing.Size(34, 29);
-            this.buttonAddCity.TabIndex = 76;
-            this.buttonAddCity.Text = "+";
-            this.buttonAddCity.UseVisualStyleBackColor = true;
-            this.buttonAddCity.Click += new System.EventHandler(this.buttonAddCity_Click_1);
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
-            this.label24.ForeColor = System.Drawing.Color.Red;
-            this.label24.Location = new System.Drawing.Point(902, 241);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(19, 23);
-            this.label24.TabIndex = 75;
-            this.label24.Text = "*";
-            this.label24.Visible = false;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
-            this.label23.ForeColor = System.Drawing.Color.Red;
-            this.label23.Location = new System.Drawing.Point(902, 19);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(19, 23);
-            this.label23.TabIndex = 74;
-            this.label23.Text = "*";
-            this.label23.Visible = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
-            this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(902, 99);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(19, 23);
-            this.label22.TabIndex = 73;
-            this.label22.Text = "*";
-            this.label22.Visible = false;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
-            this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(902, 57);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(19, 23);
-            this.label21.TabIndex = 72;
-            this.label21.Text = "*";
-            this.label21.Visible = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label19, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label19, BunifuAnimatorNS.DecorationType.None);
-            this.label19.Location = new System.Drawing.Point(841, 57);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(31, 23);
-            this.label19.TabIndex = 21;
-            this.label19.Text = "עיר";
-            // 
-            // comboBoxCityToRent
-            // 
-            this.bunifuTransition2.SetDecoration(this.comboBoxCityToRent, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.comboBoxCityToRent, BunifuAnimatorNS.DecorationType.None);
-            this.comboBoxCityToRent.FormattingEnabled = true;
-            this.comboBoxCityToRent.Location = new System.Drawing.Point(696, 53);
-            this.comboBoxCityToRent.Name = "comboBoxCityToRent";
-            this.comboBoxCityToRent.Size = new System.Drawing.Size(139, 31);
-            this.comboBoxCityToRent.TabIndex = 20;
-            // 
-            // pictureBoxAdd3
-            // 
-            this.pictureBoxAdd3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxAdd3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxAdd3, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxAdd3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdd3.Image")));
-            this.pictureBoxAdd3.Location = new System.Drawing.Point(97, 101);
-            this.pictureBoxAdd3.Name = "pictureBoxAdd3";
-            this.pictureBoxAdd3.Size = new System.Drawing.Size(49, 45);
-            this.pictureBoxAdd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAdd3.TabIndex = 19;
-            this.pictureBoxAdd3.TabStop = false;
-            this.pictureBoxAdd3.Tag = "pictureBox7";
-            this.pictureBoxAdd3.Click += new System.EventHandler(this.Add_Picture_Click);
-            // 
-            // pictureBoxAdd2
-            // 
-            this.pictureBoxAdd2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxAdd2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxAdd2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxAdd2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdd2.Image")));
-            this.pictureBoxAdd2.Location = new System.Drawing.Point(309, 101);
-            this.pictureBoxAdd2.Name = "pictureBoxAdd2";
-            this.pictureBoxAdd2.Size = new System.Drawing.Size(49, 45);
-            this.pictureBoxAdd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAdd2.TabIndex = 18;
-            this.pictureBoxAdd2.TabStop = false;
-            this.pictureBoxAdd2.Tag = "pictureBox7";
-            this.pictureBoxAdd2.Click += new System.EventHandler(this.Add_Picture_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label18, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label18, BunifuAnimatorNS.DecorationType.None);
-            this.label18.Location = new System.Drawing.Point(837, 241);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(47, 23);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "תיאור";
-            // 
-            // richTextBoxDescreptionToRent
-            // 
-            this.bunifuTransition2.SetDecoration(this.richTextBoxDescreptionToRent, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.richTextBoxDescreptionToRent, BunifuAnimatorNS.DecorationType.None);
-            this.richTextBoxDescreptionToRent.Location = new System.Drawing.Point(696, 216);
-            this.richTextBoxDescreptionToRent.Name = "richTextBoxDescreptionToRent";
-            this.richTextBoxDescreptionToRent.Size = new System.Drawing.Size(139, 72);
-            this.richTextBoxDescreptionToRent.TabIndex = 16;
-            this.richTextBoxDescreptionToRent.Text = "";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label17, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label17, BunifuAnimatorNS.DecorationType.None);
-            this.label17.Location = new System.Drawing.Point(81, 149);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(99, 23);
-            this.label17.TabIndex = 15;
-            this.label17.Text = "הוספת תמונה";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label16, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label16, BunifuAnimatorNS.DecorationType.None);
-            this.label16.Location = new System.Drawing.Point(289, 149);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 23);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "הוספת תמונה";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
-            this.label15.Location = new System.Drawing.Point(494, 149);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(99, 23);
-            this.label15.TabIndex = 13;
-            this.label15.Text = "הוספת תמונה";
-            // 
-            // pictureBoxAdd1
-            // 
-            this.pictureBoxAdd1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxAdd1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxAdd1, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxAdd1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAdd1.Image")));
-            this.pictureBoxAdd1.Location = new System.Drawing.Point(513, 101);
-            this.pictureBoxAdd1.Name = "pictureBoxAdd1";
-            this.pictureBoxAdd1.Size = new System.Drawing.Size(49, 45);
-            this.pictureBoxAdd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxAdd1.TabIndex = 12;
-            this.pictureBoxAdd1.TabStop = false;
-            this.pictureBoxAdd1.Tag = "pictureBox7";
-            this.pictureBoxAdd1.Click += new System.EventHandler(this.Add_Picture_Click);
-            // 
-            // pictureBox7
-            // 
-            this.bunifuTransition1.SetDecoration(this.pictureBox7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox7, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox7.Location = new System.Drawing.Point(439, 42);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(200, 144);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 9;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.bunifuTransition1.SetDecoration(this.pictureBox6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox6, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox6.Location = new System.Drawing.Point(233, 42);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(200, 144);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label14, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label14, BunifuAnimatorNS.DecorationType.None);
-            this.label14.Location = new System.Drawing.Point(841, 16);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 23);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "קטגוריה";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label12, BunifuAnimatorNS.DecorationType.None);
-            this.label12.Location = new System.Drawing.Point(841, 99);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 23);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "כתובת";
-            // 
-            // pictureBox5
-            // 
-            this.bunifuTransition1.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox5, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox5.Location = new System.Drawing.Point(27, 42);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(200, 144);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // comboBoxCatagoryToRent
-            // 
-            this.bunifuTransition2.SetDecoration(this.comboBoxCatagoryToRent, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.comboBoxCatagoryToRent, BunifuAnimatorNS.DecorationType.None);
-            this.comboBoxCatagoryToRent.FormattingEnabled = true;
-            this.comboBoxCatagoryToRent.Location = new System.Drawing.Point(696, 16);
-            this.comboBoxCatagoryToRent.Name = "comboBoxCatagoryToRent";
-            this.comboBoxCatagoryToRent.Size = new System.Drawing.Size(139, 31);
-            this.comboBoxCatagoryToRent.TabIndex = 1;
-            this.comboBoxCatagoryToRent.TextChanged += new System.EventHandler(this.comboBoxCatagoryToRent_TextChanged);
-            // 
-            // textBoxAdressToRent
-            // 
-            this.bunifuTransition1.SetDecoration(this.textBoxAdressToRent, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxAdressToRent, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxAdressToRent.Location = new System.Drawing.Point(696, 94);
-            this.textBoxAdressToRent.Name = "textBoxAdressToRent";
-            this.textBoxAdressToRent.Size = new System.Drawing.Size(139, 32);
-            this.textBoxAdressToRent.TabIndex = 0;
-            // 
-            // tabPageHouses
-            // 
-            this.tabPageHouses.Controls.Add(this.panelHouses);
-            this.bunifuTransition2.SetDecoration(this.tabPageHouses, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabPageHouses, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageHouses.Location = new System.Drawing.Point(4, 34);
-            this.tabPageHouses.Name = "tabPageHouses";
-            this.tabPageHouses.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHouses.Size = new System.Drawing.Size(1001, 378);
-            this.tabPageHouses.TabIndex = 4;
-            this.tabPageHouses.Text = "tabPageHouse";
-            this.tabPageHouses.UseVisualStyleBackColor = true;
-            // 
-            // panelHouses
-            // 
-            this.panelHouses.AutoScroll = true;
-            this.panelHouses.AutoScrollMargin = new System.Drawing.Size(0, 35);
-            this.panelHouses.Controls.Add(this.labelShowAllHouses);
-            this.panelHouses.Controls.Add(this.pictureBoxHouse3);
-            this.panelHouses.Controls.Add(this.pictureBoxHouse2);
-            this.panelHouses.Controls.Add(this.pictureBoxHouse1);
-            this.bunifuTransition2.SetDecoration(this.panelHouses, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.panelHouses, BunifuAnimatorNS.DecorationType.None);
-            this.panelHouses.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHouses.Location = new System.Drawing.Point(3, 3);
-            this.panelHouses.Name = "panelHouses";
-            this.panelHouses.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelHouses.Size = new System.Drawing.Size(995, 372);
-            this.panelHouses.TabIndex = 1;
-            // 
-            // labelShowAllHouses
-            // 
-            this.labelShowAllHouses.AutoSize = true;
-            this.labelShowAllHouses.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.labelShowAllHouses, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.labelShowAllHouses, BunifuAnimatorNS.DecorationType.None);
-            this.labelShowAllHouses.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelShowAllHouses.Location = new System.Drawing.Point(25, 324);
-            this.labelShowAllHouses.Name = "labelShowAllHouses";
-            this.labelShowAllHouses.Size = new System.Drawing.Size(191, 30);
-            this.labelShowAllHouses.TabIndex = 5;
-            this.labelShowAllHouses.Text = "ראה את כל הבתים";
-            this.labelShowAllHouses.Click += new System.EventHandler(this.labelShowAllHouses_Click);
-            // 
-            // pictureBoxHouse3
-            // 
-            this.pictureBoxHouse3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxHouse3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxHouse3, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxHouse3.Location = new System.Drawing.Point(617, 476);
-            this.pictureBoxHouse3.Name = "pictureBoxHouse3";
-            this.pictureBoxHouse3.Size = new System.Drawing.Size(267, 161);
-            this.pictureBoxHouse3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxHouse3.TabIndex = 4;
-            this.pictureBoxHouse3.TabStop = false;
-            this.pictureBoxHouse3.Click += new System.EventHandler(this.pictureBoxProperty_Click);
-            // 
-            // pictureBoxHouse2
-            // 
-            this.pictureBoxHouse2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxHouse2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxHouse2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxHouse2.Location = new System.Drawing.Point(617, 237);
-            this.pictureBoxHouse2.Name = "pictureBoxHouse2";
-            this.pictureBoxHouse2.Size = new System.Drawing.Size(267, 161);
-            this.pictureBoxHouse2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxHouse2.TabIndex = 3;
-            this.pictureBoxHouse2.TabStop = false;
-            this.pictureBoxHouse2.Click += new System.EventHandler(this.pictureBoxProperty_Click);
-            // 
-            // pictureBoxHouse1
-            // 
-            this.pictureBoxHouse1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxHouse1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxHouse1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxHouse1, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxHouse1.Location = new System.Drawing.Point(617, 25);
-            this.pictureBoxHouse1.Name = "pictureBoxHouse1";
-            this.pictureBoxHouse1.Size = new System.Drawing.Size(267, 161);
-            this.pictureBoxHouse1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxHouse1.TabIndex = 2;
-            this.pictureBoxHouse1.TabStop = false;
-            this.pictureBoxHouse1.Click += new System.EventHandler(this.pictureBoxProperty_Click);
-            // 
-            // tabPageSearch
-            // 
-            this.tabPageSearch.Controls.Add(this.label47);
-            this.tabPageSearch.Controls.Add(this.label48);
-            this.tabPageSearch.Controls.Add(this.textBoxPriceTill);
-            this.tabPageSearch.Controls.Add(this.label20);
-            this.tabPageSearch.Controls.Add(this.label46);
-            this.tabPageSearch.Controls.Add(this.textBoxPriceFrom);
-            this.tabPageSearch.Controls.Add(this.pictureBoxPropertySearch);
-            this.tabPageSearch.Controls.Add(this.label35);
-            this.tabPageSearch.Controls.Add(this.label34);
-            this.tabPageSearch.Controls.Add(this.label33);
-            this.tabPageSearch.Controls.Add(this.comboBoxSearch);
-            this.tabPageSearch.Controls.Add(this.label32);
-            this.tabPageSearch.Controls.Add(this.listBoxProperties);
-            this.tabPageSearch.Controls.Add(this.buttonSearch);
-            this.tabPageSearch.Controls.Add(this.textBoxSearch);
-            this.bunifuTransition2.SetDecoration(this.tabPageSearch, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabPageSearch, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageSearch.Location = new System.Drawing.Point(4, 34);
-            this.tabPageSearch.Name = "tabPageSearch";
-            this.tabPageSearch.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSearch.Size = new System.Drawing.Size(1001, 378);
-            this.tabPageSearch.TabIndex = 5;
-            this.tabPageSearch.Text = "tabPage1";
-            this.tabPageSearch.UseVisualStyleBackColor = true;
-            // 
-            // pictureBoxPropertySearch
-            // 
-            this.pictureBoxPropertySearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBoxPropertySearch, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBoxPropertySearch, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBoxPropertySearch.Location = new System.Drawing.Point(135, 49);
-            this.pictureBoxPropertySearch.Name = "pictureBoxPropertySearch";
-            this.pictureBoxPropertySearch.Size = new System.Drawing.Size(338, 286);
-            this.pictureBoxPropertySearch.TabIndex = 74;
-            this.pictureBoxPropertySearch.TabStop = false;
-            this.pictureBoxPropertySearch.Click += new System.EventHandler(this.pictureBoxProperty_Click);
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
-            this.label35.ForeColor = System.Drawing.Color.Red;
-            this.label35.Location = new System.Drawing.Point(979, 52);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(19, 23);
-            this.label35.TabIndex = 73;
-            this.label35.Text = "*";
-            this.label35.Visible = false;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
-            this.label34.ForeColor = System.Drawing.Color.Red;
-            this.label34.Location = new System.Drawing.Point(979, 9);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(19, 23);
-            this.label34.TabIndex = 72;
-            this.label34.Text = "*";
-            this.label34.Visible = false;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
-            this.label33.Location = new System.Drawing.Point(918, 6);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(63, 23);
-            this.label33.TabIndex = 9;
-            this.label33.Text = "קטגוריה";
-            // 
-            // comboBoxSearch
-            // 
-            this.bunifuTransition2.SetDecoration(this.comboBoxSearch, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.comboBoxSearch, BunifuAnimatorNS.DecorationType.None);
-            this.comboBoxSearch.FormattingEnabled = true;
-            this.comboBoxSearch.Location = new System.Drawing.Point(773, 6);
-            this.comboBoxSearch.Name = "comboBoxSearch";
-            this.comboBoxSearch.Size = new System.Drawing.Size(139, 31);
-            this.comboBoxSearch.TabIndex = 8;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
-            this.label32.Location = new System.Drawing.Point(918, 49);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 23);
-            this.label32.TabIndex = 3;
-            this.label32.Text = "רחוב";
-            // 
-            // listBoxProperties
-            // 
-            this.listBoxProperties.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuTransition2.SetDecoration(this.listBoxProperties, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.listBoxProperties, BunifuAnimatorNS.DecorationType.None);
-            this.listBoxProperties.FormattingEnabled = true;
-            this.listBoxProperties.ItemHeight = 23;
-            this.listBoxProperties.Location = new System.Drawing.Point(721, 133);
-            this.listBoxProperties.Name = "listBoxProperties";
-            this.listBoxProperties.Size = new System.Drawing.Size(277, 253);
-            this.listBoxProperties.TabIndex = 2;
-            this.listBoxProperties.DoubleClick += new System.EventHandler(this.listBoxProperties_DoubleClick);
-            // 
-            // buttonSearch
-            // 
-            this.bunifuTransition1.SetDecoration(this.buttonSearch, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.buttonSearch, BunifuAnimatorNS.DecorationType.None);
-            this.buttonSearch.Location = new System.Drawing.Point(614, 133);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(101, 38);
-            this.buttonSearch.TabIndex = 1;
-            this.buttonSearch.Text = "חפש";
-            this.buttonSearch.UseVisualStyleBackColor = true;
-            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
-            // 
-            // textBoxSearch
-            // 
-            this.bunifuTransition1.SetDecoration(this.textBoxSearch, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxSearch, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxSearch.Location = new System.Drawing.Point(773, 49);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(139, 32);
-            this.textBoxSearch.TabIndex = 0;
-            // 
-            // tabPageIntro
-            // 
-            this.tabPageIntro.Controls.Add(this.pictureBox14);
-            this.tabPageIntro.Controls.Add(this.label36);
-            this.bunifuTransition2.SetDecoration(this.tabPageIntro, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabPageIntro, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageIntro.Location = new System.Drawing.Point(4, 34);
-            this.tabPageIntro.Name = "tabPageIntro";
-            this.tabPageIntro.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageIntro.Size = new System.Drawing.Size(1001, 378);
-            this.tabPageIntro.TabIndex = 6;
-            this.tabPageIntro.Text = "tabPage1";
-            this.tabPageIntro.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox14
-            // 
-            this.bunifuTransition1.SetDecoration(this.pictureBox14, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox14, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(8, 6);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(480, 372);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 14;
-            this.pictureBox14.TabStop = false;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
-            this.label36.Font = new System.Drawing.Font("Magneto", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(484, 3);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(526, 192);
-            this.label36.TabIndex = 13;
-            this.label36.Text = resources.GetString("label36.Text");
-            // 
-            // tabPageUpdate
-            // 
-            this.tabPageUpdate.AutoScroll = true;
-            this.tabPageUpdate.AutoScrollMargin = new System.Drawing.Size(0, 100);
-            this.tabPageUpdate.Controls.Add(this.label37);
-            this.tabPageUpdate.Controls.Add(this.pictureBox11);
-            this.tabPageUpdate.Controls.Add(this.pictureBox12);
-            this.tabPageUpdate.Controls.Add(this.pictureBox13);
-            this.tabPageUpdate.Controls.Add(this.pictureBox10);
-            this.tabPageUpdate.Controls.Add(this.pictureBox9);
-            this.tabPageUpdate.Controls.Add(this.pictureBox8);
-            this.bunifuTransition2.SetDecoration(this.tabPageUpdate, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabPageUpdate, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageUpdate.Location = new System.Drawing.Point(4, 34);
-            this.tabPageUpdate.Name = "tabPageUpdate";
-            this.tabPageUpdate.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPageUpdate.Size = new System.Drawing.Size(1001, 378);
-            this.tabPageUpdate.TabIndex = 7;
-            this.tabPageUpdate.Text = "tabPage1";
-            this.tabPageUpdate.UseVisualStyleBackColor = true;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.label37, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label37, BunifuAnimatorNS.DecorationType.None);
-            this.label37.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(412, 351);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(187, 34);
-            this.label37.TabIndex = 10;
-            this.label37.Text = "דוח נכסים אישיים";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBox11, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox11, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox11.Location = new System.Drawing.Point(119, 466);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(267, 161);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 9;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBox12, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox12, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox12.Location = new System.Drawing.Point(119, 256);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(267, 161);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 8;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBox13, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox13, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox13.Location = new System.Drawing.Point(119, 28);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(267, 161);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 7;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBox10, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox10, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox10.Location = new System.Drawing.Point(616, 466);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(267, 161);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 6;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox9.Location = new System.Drawing.Point(616, 256);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(267, 161);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 5;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.pictureBox8, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.pictureBox8, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox8.Location = new System.Drawing.Point(616, 28);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(267, 161);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBoxUpdateProduct);
-            // 
-            // tabPageDochot
-            // 
-            this.tabPageDochot.AutoScroll = true;
-            this.tabPageDochot.Controls.Add(this.chartSales);
-            this.tabPageDochot.Controls.Add(this.label42);
-            this.tabPageDochot.Controls.Add(this.chartIntrestForTime);
-            this.tabPageDochot.Controls.Add(this.label41);
-            this.tabPageDochot.Controls.Add(this.chartPropertyCitys);
-            this.tabPageDochot.Controls.Add(this.label40);
-            this.bunifuTransition2.SetDecoration(this.tabPageDochot, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.tabPageDochot, BunifuAnimatorNS.DecorationType.None);
-            this.tabPageDochot.Location = new System.Drawing.Point(4, 34);
-            this.tabPageDochot.Name = "tabPageDochot";
-            this.tabPageDochot.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDochot.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPageDochot.Size = new System.Drawing.Size(1001, 378);
-            this.tabPageDochot.TabIndex = 8;
-            this.tabPageDochot.Text = "tabPageDochot";
-            this.tabPageDochot.UseVisualStyleBackColor = true;
-            // 
-            // chartSales
-            // 
-            chartArea22.Name = "ChartArea1";
-            this.chartSales.ChartAreas.Add(chartArea22);
-            this.bunifuTransition2.SetDecoration(this.chartSales, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.chartSales, BunifuAnimatorNS.DecorationType.None);
-            legend22.Name = "Legend1";
-            this.chartSales.Legends.Add(legend22);
-            this.chartSales.Location = new System.Drawing.Point(506, 794);
-            this.chartSales.Name = "chartSales";
-            series22.ChartArea = "ChartArea1";
-            series22.Legend = "Legend1";
-            series22.Name = "Series1";
-            this.chartSales.Series.Add(series22);
-            this.chartSales.Size = new System.Drawing.Size(451, 323);
-            this.chartSales.TabIndex = 5;
-            this.chartSales.Text = "chart2";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label42, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label42, BunifuAnimatorNS.DecorationType.None);
-            this.label42.Location = new System.Drawing.Point(706, 768);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(109, 23);
-            this.label42.TabIndex = 4;
-            this.label42.Text = "מכירות בכל עיר";
-            // 
-            // chartIntrestForTime
-            // 
-            chartArea23.Name = "ChartArea1";
-            this.chartIntrestForTime.ChartAreas.Add(chartArea23);
-            this.bunifuTransition2.SetDecoration(this.chartIntrestForTime, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.chartIntrestForTime, BunifuAnimatorNS.DecorationType.None);
-            legend23.Name = "Legend1";
-            this.chartIntrestForTime.Legends.Add(legend23);
-            this.chartIntrestForTime.Location = new System.Drawing.Point(506, 410);
-            this.chartIntrestForTime.Name = "chartIntrestForTime";
-            series23.ChartArea = "ChartArea1";
-            series23.Legend = "Legend1";
-            series23.Name = "Series1";
-            this.chartIntrestForTime.Series.Add(series23);
-            this.chartIntrestForTime.Size = new System.Drawing.Size(451, 323);
-            this.chartIntrestForTime.TabIndex = 3;
-            this.chartIntrestForTime.Text = "chart2";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label41, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label41, BunifuAnimatorNS.DecorationType.None);
-            this.label41.Location = new System.Drawing.Point(484, 384);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(331, 23);
-            this.label41.TabIndex = 2;
-            this.label41.Text = "רמת העתניינות ביחס לזמן בכל עיר שיש התעניינות";
-            // 
-            // chartPropertyCitys
-            // 
-            chartArea24.Name = "ChartArea1";
-            this.chartPropertyCitys.ChartAreas.Add(chartArea24);
-            this.bunifuTransition2.SetDecoration(this.chartPropertyCitys, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.chartPropertyCitys, BunifuAnimatorNS.DecorationType.None);
-            legend24.Name = "Legend1";
-            this.chartPropertyCitys.Legends.Add(legend24);
-            this.chartPropertyCitys.Location = new System.Drawing.Point(506, 49);
-            this.chartPropertyCitys.Name = "chartPropertyCitys";
-            series24.ChartArea = "ChartArea1";
-            series24.Legend = "Legend1";
-            series24.Name = "Series1";
-            this.chartPropertyCitys.Series.Add(series24);
-            this.chartPropertyCitys.Size = new System.Drawing.Size(451, 323);
-            this.chartPropertyCitys.TabIndex = 1;
-            this.chartPropertyCitys.Text = "chart1";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label40, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label40, BunifuAnimatorNS.DecorationType.None);
-            this.label40.Location = new System.Drawing.Point(639, 23);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(176, 23);
-            this.label40.TabIndex = 0;
-            this.label40.Text = "התפלגות הנכסים בכל עיר";
-            // 
-            // openFileDialog_Picture1
-            // 
-            this.openFileDialog_Picture1.FileName = "openFileDialog1";
-            // 
-            // bunifuTransition1
-            // 
-            this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
-            this.bunifuTransition1.Cursor = null;
-            animation15.AnimateOnlyDifferences = true;
-            animation15.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.BlindCoeff")));
-            animation15.LeafCoeff = 0F;
-            animation15.MaxTime = 1F;
-            animation15.MinTime = 0F;
-            animation15.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicCoeff")));
-            animation15.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicShift")));
-            animation15.MosaicSize = 20;
-            animation15.Padding = new System.Windows.Forms.Padding(30);
-            animation15.RotateCoeff = 0F;
-            animation15.RotateLimit = 0F;
-            animation15.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.ScaleCoeff")));
-            animation15.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.SlideCoeff")));
-            animation15.TimeCoeff = 0F;
-            animation15.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation15;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 50;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuTransition2
-            // 
-            this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlideAndRotate;
-            this.bunifuTransition2.Cursor = null;
-            animation16.AnimateOnlyDifferences = true;
-            animation16.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.BlindCoeff")));
-            animation16.LeafCoeff = 0F;
-            animation16.MaxTime = 1F;
-            animation16.MinTime = 0F;
-            animation16.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicCoeff")));
-            animation16.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicShift")));
-            animation16.MosaicSize = 0;
-            animation16.Padding = new System.Windows.Forms.Padding(50);
-            animation16.RotateCoeff = 0.3F;
-            animation16.RotateLimit = 0.2F;
-            animation16.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.ScaleCoeff")));
-            animation16.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.SlideCoeff")));
-            animation16.TimeCoeff = 0F;
-            animation16.TransparencyCoeff = 0F;
-            this.bunifuTransition2.DefaultAnimation = animation16;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
-            this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(979, 92);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(19, 23);
-            this.label20.TabIndex = 77;
-            this.label20.Text = "*";
-            this.label20.Visible = false;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label46, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label46, BunifuAnimatorNS.DecorationType.None);
-            this.label46.Location = new System.Drawing.Point(918, 89);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(52, 23);
-            this.label46.TabIndex = 76;
-            this.label46.Text = "ממחיר";
-            // 
-            // textBoxPriceFrom
-            // 
-            this.bunifuTransition1.SetDecoration(this.textBoxPriceFrom, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxPriceFrom, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxPriceFrom.Location = new System.Drawing.Point(773, 89);
-            this.textBoxPriceFrom.Name = "textBoxPriceFrom";
-            this.textBoxPriceFrom.Size = new System.Drawing.Size(139, 32);
-            this.textBoxPriceFrom.TabIndex = 75;
-            this.textBoxPriceFrom.Text = "0";
-            this.textBoxPriceFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label47, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label47, BunifuAnimatorNS.DecorationType.None);
-            this.label47.ForeColor = System.Drawing.Color.Red;
-            this.label47.Location = new System.Drawing.Point(744, 89);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(19, 23);
-            this.label47.TabIndex = 80;
-            this.label47.Text = "*";
-            this.label47.Visible = false;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label48, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.label48, BunifuAnimatorNS.DecorationType.None);
-            this.label48.Location = new System.Drawing.Point(683, 86);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(62, 23);
-            this.label48.TabIndex = 79;
-            this.label48.Text = "עד מחיר";
-            // 
-            // textBoxPriceTill
-            // 
-            this.bunifuTransition1.SetDecoration(this.textBoxPriceTill, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.textBoxPriceTill, BunifuAnimatorNS.DecorationType.None);
-            this.textBoxPriceTill.Location = new System.Drawing.Point(538, 86);
-            this.textBoxPriceTill.Name = "textBoxPriceTill";
-            this.textBoxPriceTill.Size = new System.Drawing.Size(139, 32);
-            this.textBoxPriceTill.TabIndex = 78;
-            this.textBoxPriceTill.Text = "0";
-            this.textBoxPriceTill.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // changePic2
+            // 
+            this.changePic2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(211)))));
+            this.bunifuTransition1.SetDecoration(this.changePic2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.changePic2, BunifuAnimatorNS.DecorationType.None);
+            this.changePic2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changePic2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.changePic2.Location = new System.Drawing.Point(290, 192);
+            this.changePic2.Name = "changePic2";
+            this.changePic2.Size = new System.Drawing.Size(94, 34);
+            this.changePic2.TabIndex = 78;
+            this.changePic2.Text = "שנה תמונה";
+            this.changePic2.UseVisualStyleBackColor = false;
+            this.changePic2.Visible = false;
+            this.changePic2.Click += new System.EventHandler(this.changePic2_Click);
+            // 
+            // changePic3
+            // 
+            this.changePic3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.bunifuTransition1.SetDecoration(this.changePic3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.changePic3, BunifuAnimatorNS.DecorationType.None);
+            this.changePic3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.changePic3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.changePic3.Location = new System.Drawing.Point(81, 192);
+            this.changePic3.Name = "changePic3";
+            this.changePic3.Size = new System.Drawing.Size(94, 34);
+            this.changePic3.TabIndex = 79;
+            this.changePic3.Text = "שנה תמונה";
+            this.changePic3.UseVisualStyleBackColor = false;
+            this.changePic3.Visible = false;
+            this.changePic3.Click += new System.EventHandler(this.changePic3_Click);
+            // 
+            // textBoxSize
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxSize, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxSize, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxSize.Location = new System.Drawing.Point(696, 294);
+            this.textBoxSize.Name = "textBoxSize";
+            this.textBoxSize.Size = new System.Drawing.Size(139, 32);
+            this.textBoxSize.TabIndex = 80;
+            this.textBoxSize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
+            this.label26.Location = new System.Drawing.Point(861, 297);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(36, 23);
+            this.label26.TabIndex = 81;
+            this.label26.Text = "גודל";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
+            this.label25.ForeColor = System.Drawing.Color.Red;
+            this.label25.Location = new System.Drawing.Point(922, 297);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(19, 23);
+            this.label25.TabIndex = 82;
+            this.label25.Text = "*";
+            this.label25.Visible = false;
+            // 
+            // textBoxStreetNo
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxStreetNo, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxStreetNo, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxStreetNo.Location = new System.Drawing.Point(696, 135);
+            this.textBoxStreetNo.Name = "textBoxStreetNo";
+            this.textBoxStreetNo.Size = new System.Drawing.Size(139, 32);
+            this.textBoxStreetNo.TabIndex = 83;
+            this.textBoxStreetNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
+            this.label28.Location = new System.Drawing.Point(841, 138);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(82, 23);
+            this.label28.TabIndex = 84;
+            this.label28.Text = "מספר רחוב";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
+            this.label27.ForeColor = System.Drawing.Color.Red;
+            this.label27.Location = new System.Drawing.Point(922, 138);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(19, 23);
+            this.label27.TabIndex = 85;
+            this.label27.Text = "*";
+            this.label27.Visible = false;
+            // 
+            // textBoxAprtNo
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxAprtNo, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxAprtNo, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxAprtNo.Location = new System.Drawing.Point(696, 176);
+            this.textBoxAprtNo.Name = "textBoxAprtNo";
+            this.textBoxAprtNo.Size = new System.Drawing.Size(139, 32);
+            this.textBoxAprtNo.TabIndex = 86;
+            this.textBoxAprtNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label30, BunifuAnimatorNS.DecorationType.None);
+            this.label30.Location = new System.Drawing.Point(841, 179);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(80, 23);
+            this.label30.TabIndex = 87;
+            this.label30.Text = "מספר דירה";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label29, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label29, BunifuAnimatorNS.DecorationType.None);
+            this.label29.ForeColor = System.Drawing.Color.Red;
+            this.label29.Location = new System.Drawing.Point(921, 179);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(19, 23);
+            this.label29.TabIndex = 88;
+            this.label29.Text = "*";
+            this.label29.Visible = false;
+            // 
+            // textBoxFloor
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxFloor, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxFloor, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxFloor.Location = new System.Drawing.Point(696, 332);
+            this.textBoxFloor.Name = "textBoxFloor";
+            this.textBoxFloor.Size = new System.Drawing.Size(139, 32);
+            this.textBoxFloor.TabIndex = 89;
+            this.textBoxFloor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // labelFloor
+            // 
+            this.labelFloor.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.labelFloor, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.labelFloor, BunifuAnimatorNS.DecorationType.None);
+            this.labelFloor.Location = new System.Drawing.Point(841, 335);
+            this.labelFloor.Name = "labelFloor";
+            this.labelFloor.Size = new System.Drawing.Size(85, 23);
+            this.labelFloor.TabIndex = 90;
+            this.labelFloor.Text = "מספר קומה";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label31, BunifuAnimatorNS.DecorationType.None);
+            this.label31.ForeColor = System.Drawing.Color.Red;
+            this.label31.Location = new System.Drawing.Point(934, 335);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(19, 23);
+            this.label31.TabIndex = 91;
+            this.label31.Text = "*";
+            this.label31.Visible = false;
+            // 
+            // labelDochForRent
+            // 
+            this.labelDochForRent.AutoSize = true;
+            this.labelDochForRent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.labelDochForRent, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.labelDochForRent, BunifuAnimatorNS.DecorationType.None);
+            this.labelDochForRent.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDochForRent.Location = new System.Drawing.Point(27, 315);
+            this.labelDochForRent.Name = "labelDochForRent";
+            this.labelDochForRent.Size = new System.Drawing.Size(141, 33);
+            this.labelDochForRent.TabIndex = 92;
+            this.labelDochForRent.Text = "דוח על הנכס";
+            this.labelDochForRent.Click += new System.EventHandler(this.labelDochForRent_Click);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
+            this.label38.Location = new System.Drawing.Point(439, 4);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(43, 23);
+            this.label38.TabIndex = 93;
+            this.label38.Text = "זהות:";
+            this.label38.Visible = false;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label39, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label39, BunifuAnimatorNS.DecorationType.None);
+            this.label39.Location = new System.Drawing.Point(412, 4);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(21, 23);
+            this.label39.TabIndex = 94;
+            this.label39.Text = "0";
+            this.label39.Visible = false;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label43, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label43, BunifuAnimatorNS.DecorationType.None);
+            this.label43.Location = new System.Drawing.Point(432, 265);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(79, 23);
+            this.label43.TabIndex = 95;
+            this.label43.Text = "האם נמכר:";
+            this.label43.Visible = false;
+            // 
+            // labelIsSold
+            // 
+            this.labelIsSold.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.labelIsSold, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.labelIsSold, BunifuAnimatorNS.DecorationType.None);
+            this.labelIsSold.Location = new System.Drawing.Point(405, 265);
+            this.labelIsSold.Name = "labelIsSold";
+            this.labelIsSold.Size = new System.Drawing.Size(21, 23);
+            this.labelIsSold.TabIndex = 96;
+            this.labelIsSold.Text = "0";
+            this.labelIsSold.Visible = false;
+            // 
+            // textBoxPrice
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxPrice, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxPrice, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxPrice.Location = new System.Drawing.Point(432, 332);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(139, 32);
+            this.textBoxPrice.TabIndex = 97;
+            this.textBoxPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label45, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label45, BunifuAnimatorNS.DecorationType.None);
+            this.label45.Location = new System.Drawing.Point(577, 335);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(80, 23);
+            this.label45.TabIndex = 98;
+            this.label45.Text = "מחיר הנכס";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label44, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label44, BunifuAnimatorNS.DecorationType.None);
+            this.label44.ForeColor = System.Drawing.Color.Red;
+            this.label44.Location = new System.Drawing.Point(670, 335);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(19, 23);
+            this.label44.TabIndex = 99;
+            this.label44.Text = "*";
+            this.label44.Visible = false;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label49, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label49, BunifuAnimatorNS.DecorationType.None);
+            this.label49.Location = new System.Drawing.Point(480, 19);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(120, 23);
+            this.label49.TabIndex = 100;
+            this.label49.Text = "התמונה הראשית";
+            // 
+            // tabPageApartments
+            // 
+            this.tabPageApartments.Controls.Add(this.panelApartments);
+            this.bunifuTransition2.SetDecoration(this.tabPageApartments, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageApartments, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageApartments.Location = new System.Drawing.Point(4, 34);
+            this.tabPageApartments.Name = "tabPageApartments";
+            this.tabPageApartments.Size = new System.Drawing.Size(1001, 378);
+            this.tabPageApartments.TabIndex = 2;
+            this.tabPageApartments.Text = "tabPage1";
+            this.tabPageApartments.UseVisualStyleBackColor = true;
+            // 
+            // panelApartments
+            // 
+            this.panelApartments.AutoScroll = true;
+            this.panelApartments.AutoScrollMargin = new System.Drawing.Size(0, 35);
+            this.panelApartments.Controls.Add(this.labelShowAllAparments);
+            this.panelApartments.Controls.Add(this.pictureBoxApr3);
+            this.panelApartments.Controls.Add(this.pictureBoxApr2);
+            this.panelApartments.Controls.Add(this.pictureBoxApr1);
+            this.bunifuTransition2.SetDecoration(this.panelApartments, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panelApartments, BunifuAnimatorNS.DecorationType.None);
+            this.panelApartments.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelApartments.Location = new System.Drawing.Point(0, 0);
+            this.panelApartments.Name = "panelApartments";
+            this.panelApartments.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panelApartments.Size = new System.Drawing.Size(1001, 378);
+            this.panelApartments.TabIndex = 0;
+            // 
+            // pictureBoxApr1
+            // 
+            this.pictureBoxApr1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxApr1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxApr1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxApr1, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxApr1.Location = new System.Drawing.Point(617, 25);
+            this.pictureBoxApr1.Name = "pictureBoxApr1";
+            this.pictureBoxApr1.Size = new System.Drawing.Size(267, 161);
+            this.pictureBoxApr1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxApr1.TabIndex = 2;
+            this.pictureBoxApr1.TabStop = false;
+            this.pictureBoxApr1.Click += new System.EventHandler(this.pictureBoxProperty_Click);
+            // 
+            // pictureBoxApr2
+            // 
+            this.pictureBoxApr2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxApr2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxApr2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxApr2.Location = new System.Drawing.Point(617, 237);
+            this.pictureBoxApr2.Name = "pictureBoxApr2";
+            this.pictureBoxApr2.Size = new System.Drawing.Size(267, 161);
+            this.pictureBoxApr2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxApr2.TabIndex = 3;
+            this.pictureBoxApr2.TabStop = false;
+            this.pictureBoxApr2.Click += new System.EventHandler(this.pictureBoxProperty_Click);
+            // 
+            // pictureBoxApr3
+            // 
+            this.pictureBoxApr3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxApr3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxApr3, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxApr3.Location = new System.Drawing.Point(617, 476);
+            this.pictureBoxApr3.Name = "pictureBoxApr3";
+            this.pictureBoxApr3.Size = new System.Drawing.Size(267, 161);
+            this.pictureBoxApr3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxApr3.TabIndex = 4;
+            this.pictureBoxApr3.TabStop = false;
+            this.pictureBoxApr3.Click += new System.EventHandler(this.pictureBoxProperty_Click);
+            // 
+            // labelShowAllAparments
+            // 
+            this.labelShowAllAparments.AutoSize = true;
+            this.labelShowAllAparments.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.labelShowAllAparments, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.labelShowAllAparments, BunifuAnimatorNS.DecorationType.None);
+            this.labelShowAllAparments.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShowAllAparments.Location = new System.Drawing.Point(22, 333);
+            this.labelShowAllAparments.Name = "labelShowAllAparments";
+            this.labelShowAllAparments.Size = new System.Drawing.Size(192, 30);
+            this.labelShowAllAparments.TabIndex = 6;
+            this.labelShowAllAparments.Text = "ראה את כל הדירות";
+            this.labelShowAllAparments.Click += new System.EventHandler(this.labelShowAllAparments_Click);
+            // 
+            // tabPageSignUp
+            // 
+            this.tabPageSignUp.Controls.Add(this.label2);
+            this.tabPageSignUp.Controls.Add(this.labelPassTrue);
+            this.tabPageSignUp.Controls.Add(this.label13);
+            this.tabPageSignUp.Controls.Add(this.textBoxPassWordNew);
+            this.tabPageSignUp.Controls.Add(this.addCityButton);
+            this.tabPageSignUp.Controls.Add(this.comboBox_City);
+            this.tabPageSignUp.Controls.Add(this.label8);
+            this.tabPageSignUp.Controls.Add(this.AreaCodeLabel);
+            this.tabPageSignUp.Controls.Add(this.labelIDClient);
+            this.tabPageSignUp.Controls.Add(this.label5);
+            this.tabPageSignUp.Controls.Add(this.errorIDLabel);
+            this.tabPageSignUp.Controls.Add(this.errorEmailLabel);
+            this.tabPageSignUp.Controls.Add(this.errorPhoneNumLabel);
+            this.tabPageSignUp.Controls.Add(this.errorLastNameLabel);
+            this.tabPageSignUp.Controls.Add(this.errorFirstNameLabel);
+            this.tabPageSignUp.Controls.Add(this.label7);
+            this.tabPageSignUp.Controls.Add(this.IDtextBox1);
+            this.tabPageSignUp.Controls.Add(this.label6);
+            this.tabPageSignUp.Controls.Add(this.comboBox_CellPhone);
+            this.tabPageSignUp.Controls.Add(this.label4);
+            this.tabPageSignUp.Controls.Add(this.label3);
+            this.tabPageSignUp.Controls.Add(this.label9);
+            this.tabPageSignUp.Controls.Add(this.label10);
+            this.tabPageSignUp.Controls.Add(this.emailTextBox4);
+            this.tabPageSignUp.Controls.Add(this.textBox_CellPhone);
+            this.tabPageSignUp.Controls.Add(this.textBox_LastName);
+            this.tabPageSignUp.Controls.Add(this.textBox_FirstName);
+            this.tabPageSignUp.Controls.Add(this.label_Id);
+            this.tabPageSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition2.SetDecoration(this.tabPageSignUp, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageSignUp, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageSignUp.Location = new System.Drawing.Point(4, 34);
+            this.tabPageSignUp.Name = "tabPageSignUp";
+            this.tabPageSignUp.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSignUp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tabPageSignUp.Size = new System.Drawing.Size(1001, 378);
+            this.tabPageSignUp.TabIndex = 1;
+            this.tabPageSignUp.Text = "tabPage2";
+            this.tabPageSignUp.UseVisualStyleBackColor = true;
+            // 
+            // label_Id
+            // 
+            this.label_Id.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label_Id, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label_Id, BunifuAnimatorNS.DecorationType.None);
+            this.label_Id.Location = new System.Drawing.Point(577, -34);
+            this.label_Id.Name = "label_Id";
+            this.label_Id.Size = new System.Drawing.Size(21, 23);
+            this.label_Id.TabIndex = 58;
+            this.label_Id.Text = "0";
+            // 
+            // textBox_FirstName
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBox_FirstName, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBox_FirstName, BunifuAnimatorNS.DecorationType.None);
+            this.textBox_FirstName.Location = new System.Drawing.Point(716, 58);
+            this.textBox_FirstName.Name = "textBox_FirstName";
+            this.textBox_FirstName.Size = new System.Drawing.Size(100, 32);
+            this.textBox_FirstName.TabIndex = 59;
+            // 
+            // textBox_LastName
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBox_LastName, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBox_LastName, BunifuAnimatorNS.DecorationType.None);
+            this.textBox_LastName.Location = new System.Drawing.Point(716, 86);
+            this.textBox_LastName.Name = "textBox_LastName";
+            this.textBox_LastName.Size = new System.Drawing.Size(100, 32);
+            this.textBox_LastName.TabIndex = 60;
+            // 
+            // textBox_CellPhone
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBox_CellPhone, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBox_CellPhone, BunifuAnimatorNS.DecorationType.None);
+            this.textBox_CellPhone.Location = new System.Drawing.Point(716, 114);
+            this.textBox_CellPhone.MaxLength = 7;
+            this.textBox_CellPhone.Name = "textBox_CellPhone";
+            this.textBox_CellPhone.Size = new System.Drawing.Size(100, 32);
+            this.textBox_CellPhone.TabIndex = 61;
+            this.textBox_CellPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // emailTextBox4
+            // 
+            this.bunifuTransition1.SetDecoration(this.emailTextBox4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.emailTextBox4, BunifuAnimatorNS.DecorationType.None);
+            this.emailTextBox4.Location = new System.Drawing.Point(716, 142);
+            this.emailTextBox4.Name = "emailTextBox4";
+            this.emailTextBox4.Size = new System.Drawing.Size(100, 32);
+            this.emailTextBox4.TabIndex = 62;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label10, BunifuAnimatorNS.DecorationType.None);
+            this.label10.Location = new System.Drawing.Point(885, 67);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 23);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "שם פרטי";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.label9.Location = new System.Drawing.Point(865, 95);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 23);
+            this.label9.TabIndex = 64;
+            this.label9.Text = "שם משפחה";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.label3.Location = new System.Drawing.Point(880, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 23);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "מס\' טלפון";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.label4.Location = new System.Drawing.Point(849, 142);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 23);
+            this.label4.TabIndex = 66;
+            this.label4.Text = "דואל אלקטורני";
+            // 
+            // comboBox_CellPhone
+            // 
+            this.bunifuTransition2.SetDecoration(this.comboBox_CellPhone, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.comboBox_CellPhone, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox_CellPhone.FormattingEnabled = true;
+            this.comboBox_CellPhone.Items.AddRange(new object[] {
+            "052",
+            "054",
+            "050"});
+            this.comboBox_CellPhone.Location = new System.Drawing.Point(640, 111);
+            this.comboBox_CellPhone.Name = "comboBox_CellPhone";
+            this.comboBox_CellPhone.Size = new System.Drawing.Size(58, 31);
+            this.comboBox_CellPhone.TabIndex = 67;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.label6.Location = new System.Drawing.Point(699, 115);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 23);
+            this.label6.TabIndex = 68;
+            this.label6.Text = "-";
+            // 
+            // IDtextBox1
+            // 
+            this.bunifuTransition1.SetDecoration(this.IDtextBox1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.IDtextBox1, BunifuAnimatorNS.DecorationType.None);
+            this.IDtextBox1.Location = new System.Drawing.Point(716, 204);
+            this.IDtextBox1.MaxLength = 9;
+            this.IDtextBox1.Name = "IDtextBox1";
+            this.IDtextBox1.Size = new System.Drawing.Size(100, 32);
+            this.IDtextBox1.TabIndex = 69;
+            this.IDtextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyNumbers);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.label7.Location = new System.Drawing.Point(920, 213);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 23);
+            this.label7.TabIndex = 70;
+            this.label7.Text = "ת\"ז";
+            // 
+            // errorFirstNameLabel
+            // 
+            this.errorFirstNameLabel.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.errorFirstNameLabel, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.errorFirstNameLabel, BunifuAnimatorNS.DecorationType.None);
+            this.errorFirstNameLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorFirstNameLabel.Location = new System.Drawing.Point(953, 58);
+            this.errorFirstNameLabel.Name = "errorFirstNameLabel";
+            this.errorFirstNameLabel.Size = new System.Drawing.Size(19, 23);
+            this.errorFirstNameLabel.TabIndex = 71;
+            this.errorFirstNameLabel.Text = "*";
+            this.errorFirstNameLabel.Visible = false;
+            // 
+            // errorLastNameLabel
+            // 
+            this.errorLastNameLabel.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.errorLastNameLabel, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.errorLastNameLabel, BunifuAnimatorNS.DecorationType.None);
+            this.errorLastNameLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorLastNameLabel.Location = new System.Drawing.Point(953, 86);
+            this.errorLastNameLabel.Name = "errorLastNameLabel";
+            this.errorLastNameLabel.Size = new System.Drawing.Size(19, 23);
+            this.errorLastNameLabel.TabIndex = 72;
+            this.errorLastNameLabel.Text = "*";
+            this.errorLastNameLabel.Visible = false;
+            // 
+            // errorPhoneNumLabel
+            // 
+            this.errorPhoneNumLabel.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.errorPhoneNumLabel, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.errorPhoneNumLabel, BunifuAnimatorNS.DecorationType.None);
+            this.errorPhoneNumLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorPhoneNumLabel.Location = new System.Drawing.Point(953, 114);
+            this.errorPhoneNumLabel.Name = "errorPhoneNumLabel";
+            this.errorPhoneNumLabel.Size = new System.Drawing.Size(19, 23);
+            this.errorPhoneNumLabel.TabIndex = 73;
+            this.errorPhoneNumLabel.Text = "*";
+            this.errorPhoneNumLabel.Visible = false;
+            // 
+            // errorEmailLabel
+            // 
+            this.errorEmailLabel.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.errorEmailLabel, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.errorEmailLabel, BunifuAnimatorNS.DecorationType.None);
+            this.errorEmailLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorEmailLabel.Location = new System.Drawing.Point(954, 142);
+            this.errorEmailLabel.Name = "errorEmailLabel";
+            this.errorEmailLabel.Size = new System.Drawing.Size(19, 23);
+            this.errorEmailLabel.TabIndex = 74;
+            this.errorEmailLabel.Text = "*";
+            this.errorEmailLabel.Visible = false;
+            // 
+            // errorIDLabel
+            // 
+            this.errorIDLabel.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.errorIDLabel, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.errorIDLabel, BunifuAnimatorNS.DecorationType.None);
+            this.errorIDLabel.ForeColor = System.Drawing.Color.Red;
+            this.errorIDLabel.Location = new System.Drawing.Point(954, 207);
+            this.errorIDLabel.Name = "errorIDLabel";
+            this.errorIDLabel.Size = new System.Drawing.Size(19, 23);
+            this.errorIDLabel.TabIndex = 75;
+            this.errorIDLabel.Text = "*";
+            this.errorIDLabel.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Location = new System.Drawing.Point(848, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 23);
+            this.label5.TabIndex = 76;
+            this.label5.Text = "מספר סידורי";
+            // 
+            // labelIDClient
+            // 
+            this.labelIDClient.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.labelIDClient, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.labelIDClient, BunifuAnimatorNS.DecorationType.None);
+            this.labelIDClient.Location = new System.Drawing.Point(764, 16);
+            this.labelIDClient.Name = "labelIDClient";
+            this.labelIDClient.Size = new System.Drawing.Size(21, 23);
+            this.labelIDClient.TabIndex = 77;
+            this.labelIDClient.Text = "0";
+            // 
+            // AreaCodeLabel
+            // 
+            this.AreaCodeLabel.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.AreaCodeLabel, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.AreaCodeLabel, BunifuAnimatorNS.DecorationType.None);
+            this.AreaCodeLabel.Location = new System.Drawing.Point(913, 239);
+            this.AreaCodeLabel.Name = "AreaCodeLabel";
+            this.AreaCodeLabel.Size = new System.Drawing.Size(39, 23);
+            this.AreaCodeLabel.TabIndex = 78;
+            this.AreaCodeLabel.Text = "ישוב";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(954, 234);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(19, 23);
+            this.label8.TabIndex = 79;
+            this.label8.Text = "*";
+            this.label8.Visible = false;
+            // 
+            // comboBox_City
+            // 
+            this.comboBox_City.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox_City.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.bunifuTransition2.SetDecoration(this.comboBox_City, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.comboBox_City, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox_City.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_City.FormattingEnabled = true;
+            this.comboBox_City.Location = new System.Drawing.Point(716, 234);
+            this.comboBox_City.Name = "comboBox_City";
+            this.comboBox_City.Size = new System.Drawing.Size(116, 31);
+            this.comboBox_City.TabIndex = 80;
+            // 
+            // addCityButton
+            // 
+            this.bunifuTransition1.SetDecoration(this.addCityButton, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.addCityButton, BunifuAnimatorNS.DecorationType.None);
+            this.addCityButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCityButton.Location = new System.Drawing.Point(675, 238);
+            this.addCityButton.Name = "addCityButton";
+            this.addCityButton.Size = new System.Drawing.Size(23, 24);
+            this.addCityButton.TabIndex = 81;
+            this.addCityButton.Text = "+";
+            this.addCityButton.UseVisualStyleBackColor = true;
+            this.addCityButton.Click += new System.EventHandler(this.buttonAddCity_Click_1);
+            // 
+            // textBoxPassWordNew
+            // 
+            this.bunifuTransition1.SetDecoration(this.textBoxPassWordNew, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxPassWordNew, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxPassWordNew.Location = new System.Drawing.Point(716, 173);
+            this.textBoxPassWordNew.MaxLength = 9;
+            this.textBoxPassWordNew.Name = "textBoxPassWordNew";
+            this.textBoxPassWordNew.Size = new System.Drawing.Size(100, 32);
+            this.textBoxPassWordNew.TabIndex = 82;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
+            this.label13.Location = new System.Drawing.Point(894, 182);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(54, 23);
+            this.label13.TabIndex = 83;
+            this.label13.Text = "סיסמא";
+            // 
+            // labelPassTrue
+            // 
+            this.labelPassTrue.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.labelPassTrue, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.labelPassTrue, BunifuAnimatorNS.DecorationType.None);
+            this.labelPassTrue.ForeColor = System.Drawing.Color.Red;
+            this.labelPassTrue.Location = new System.Drawing.Point(954, 176);
+            this.labelPassTrue.Name = "labelPassTrue";
+            this.labelPassTrue.Size = new System.Drawing.Size(19, 23);
+            this.labelPassTrue.TabIndex = 84;
+            this.labelPassTrue.Text = "*";
+            this.labelPassTrue.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 334);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(207, 30);
+            this.label2.TabIndex = 85;
+            this.label2.Text = "הראה פרטים אישיים";
+            this.label2.Visible = false;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // tabPageSignIn
+            // 
+            this.tabPageSignIn.Controls.Add(this.pictureBox3);
+            this.tabPageSignIn.Controls.Add(this.pictureBox2);
+            this.tabPageSignIn.Controls.Add(this.MailPicture);
+            this.tabPageSignIn.Controls.Add(this.label11);
+            this.tabPageSignIn.Controls.Add(this.pictureBoxEnterSignIn);
+            this.tabPageSignIn.Controls.Add(this.pictureBox4);
+            this.tabPageSignIn.Controls.Add(this.textBoxPassWord);
+            this.tabPageSignIn.Controls.Add(this.textBoxSignInMail);
+            this.tabPageSignIn.Controls.Add(this.txtIconPassWord);
+            this.tabPageSignIn.Controls.Add(this.txtIconMail);
+            this.bunifuTransition2.SetDecoration(this.tabPageSignIn, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabPageSignIn, BunifuAnimatorNS.DecorationType.None);
+            this.tabPageSignIn.Location = new System.Drawing.Point(4, 34);
+            this.tabPageSignIn.Name = "tabPageSignIn";
+            this.tabPageSignIn.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSignIn.Size = new System.Drawing.Size(1001, 378);
+            this.tabPageSignIn.TabIndex = 0;
+            this.tabPageSignIn.Text = "tabPage1";
+            this.tabPageSignIn.UseVisualStyleBackColor = true;
+            // 
+            // txtIconMail
+            // 
+            this.bunifuTransition1.SetDecoration(this.txtIconMail, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.txtIconMail, BunifuAnimatorNS.DecorationType.None);
+            this.txtIconMail.Image = ((System.Drawing.Image)(resources.GetObject("txtIconMail.Image")));
+            this.txtIconMail.Location = new System.Drawing.Point(724, 118);
+            this.txtIconMail.Name = "txtIconMail";
+            this.txtIconMail.Size = new System.Drawing.Size(195, 57);
+            this.txtIconMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtIconMail.TabIndex = 0;
+            this.txtIconMail.TabStop = false;
+            // 
+            // txtIconPassWord
+            // 
+            this.bunifuTransition1.SetDecoration(this.txtIconPassWord, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.txtIconPassWord, BunifuAnimatorNS.DecorationType.None);
+            this.txtIconPassWord.Image = ((System.Drawing.Image)(resources.GetObject("txtIconPassWord.Image")));
+            this.txtIconPassWord.Location = new System.Drawing.Point(724, 181);
+            this.txtIconPassWord.Name = "txtIconPassWord";
+            this.txtIconPassWord.Size = new System.Drawing.Size(195, 57);
+            this.txtIconPassWord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtIconPassWord.TabIndex = 1;
+            this.txtIconPassWord.TabStop = false;
+            // 
+            // textBoxSignInMail
+            // 
+            this.textBoxSignInMail.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBoxSignInMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.textBoxSignInMail, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxSignInMail, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxSignInMail.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxSignInMail.Location = new System.Drawing.Point(743, 133);
+            this.textBoxSignInMail.Name = "textBoxSignInMail";
+            this.textBoxSignInMail.Size = new System.Drawing.Size(157, 25);
+            this.textBoxSignInMail.TabIndex = 2;
+            this.textBoxSignInMail.Text = "אימייל";
+            // 
+            // textBoxPassWord
+            // 
+            this.textBoxPassWord.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBoxPassWord.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuTransition1.SetDecoration(this.textBoxPassWord, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBoxPassWord, BunifuAnimatorNS.DecorationType.None);
+            this.textBoxPassWord.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxPassWord.Location = new System.Drawing.Point(743, 198);
+            this.textBoxPassWord.Name = "textBoxPassWord";
+            this.textBoxPassWord.Size = new System.Drawing.Size(157, 25);
+            this.textBoxPassWord.TabIndex = 3;
+            this.textBoxPassWord.Text = "סיסמא";
+            this.textBoxPassWord.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // pictureBox4
+            // 
+            this.bunifuTransition1.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox4, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(790, 69);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(67, 43);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBoxEnterSignIn
+            // 
+            this.pictureBoxEnterSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBoxEnterSignIn, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBoxEnterSignIn, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBoxEnterSignIn.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxEnterSignIn.Image")));
+            this.pictureBoxEnterSignIn.Location = new System.Drawing.Point(790, 239);
+            this.pictureBoxEnterSignIn.Name = "pictureBoxEnterSignIn";
+            this.pictureBoxEnterSignIn.Size = new System.Drawing.Size(68, 42);
+            this.pictureBoxEnterSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxEnterSignIn.TabIndex = 5;
+            this.pictureBoxEnterSignIn.TabStop = false;
+            this.pictureBoxEnterSignIn.Click += new System.EventHandler(this.pictureBoxEnterSignIn_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.label11.Location = new System.Drawing.Point(801, 284);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 23);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "כניסה";
+            // 
+            // MailPicture
+            // 
+            this.bunifuTransition1.SetDecoration(this.MailPicture, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.MailPicture, BunifuAnimatorNS.DecorationType.None);
+            this.MailPicture.Image = ((System.Drawing.Image)(resources.GetObject("MailPicture.Image")));
+            this.MailPicture.Location = new System.Drawing.Point(731, 133);
+            this.MailPicture.Name = "MailPicture";
+            this.MailPicture.Size = new System.Drawing.Size(44, 25);
+            this.MailPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MailPicture.TabIndex = 7;
+            this.MailPicture.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(925, 196);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 31);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // pictureBox3
+            // 
+            this.bunifuTransition1.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox3, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(731, 198);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(44, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // tabHouses
+            // 
+            this.tabHouses.Controls.Add(this.tabPageIntro);
+            this.tabHouses.Controls.Add(this.tabPageSignIn);
+            this.tabHouses.Controls.Add(this.tabPageSignUp);
+            this.tabHouses.Controls.Add(this.tabPageApartments);
+            this.tabHouses.Controls.Add(this.tabPageWantToHost);
+            this.tabHouses.Controls.Add(this.tabPageHouses);
+            this.tabHouses.Controls.Add(this.tabPageSearch);
+            this.tabHouses.Controls.Add(this.tabPageUpdateProperty);
+            this.tabHouses.Controls.Add(this.tabPageDochot);
+            this.bunifuTransition2.SetDecoration(this.tabHouses, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.tabHouses, BunifuAnimatorNS.DecorationType.None);
+            this.tabHouses.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabHouses.ItemSize = new System.Drawing.Size(50, 30);
+            this.tabHouses.Location = new System.Drawing.Point(0, 142);
+            this.tabHouses.Name = "tabHouses";
+            this.tabHouses.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tabHouses.RightToLeftLayout = true;
+            this.tabHouses.SelectedIndex = 0;
+            this.tabHouses.ShowToolTips = true;
+            this.tabHouses.Size = new System.Drawing.Size(1009, 416);
+            this.tabHouses.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabHouses.TabIndex = 3;
             // 
             // FormIBnBFirst
             // 
@@ -2395,63 +2409,63 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormIBnBFirst";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "טופס ראשי";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.tabHouses.ResumeLayout(false);
-            this.tabPageSignIn.ResumeLayout(false);
-            this.tabPageSignIn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MailPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnterSignIn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIconPassWord)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtIconMail)).EndInit();
-            this.tabPageSignUp.ResumeLayout(false);
-            this.tabPageSignUp.PerformLayout();
-            this.tabPageApartments.ResumeLayout(false);
-            this.panelApartments.ResumeLayout(false);
-            this.panelApartments.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr1)).EndInit();
-            this.tabPageWantToHost.ResumeLayout(false);
-            this.tabPageWantToHost.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.tabPageHouses.ResumeLayout(false);
-            this.panelHouses.ResumeLayout(false);
-            this.panelHouses.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse1)).EndInit();
-            this.tabPageSearch.ResumeLayout(false);
-            this.tabPageSearch.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPropertySearch)).EndInit();
+            this.tabPageDochot.ResumeLayout(false);
+            this.tabPageDochot.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPropertyCitys)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartIntrestForTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSales)).EndInit();
+            this.tabPageUpdateProperty.ResumeLayout(false);
+            this.tabPageUpdateProperty.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.tabPageIntro.ResumeLayout(false);
             this.tabPageIntro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.tabPageUpdate.ResumeLayout(false);
-            this.tabPageUpdate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.tabPageDochot.ResumeLayout(false);
-            this.tabPageDochot.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartSales)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartIntrestForTime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartPropertyCitys)).EndInit();
+            this.tabPageSearch.ResumeLayout(false);
+            this.tabPageSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPropertySearch)).EndInit();
+            this.tabPageHouses.ResumeLayout(false);
+            this.panelHouses.ResumeLayout(false);
+            this.panelHouses.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHouse3)).EndInit();
+            this.tabPageWantToHost.ResumeLayout(false);
+            this.tabPageWantToHost.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdd3)).EndInit();
+            this.tabPageApartments.ResumeLayout(false);
+            this.panelApartments.ResumeLayout(false);
+            this.panelApartments.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxApr3)).EndInit();
+            this.tabPageSignUp.ResumeLayout(false);
+            this.tabPageSignUp.PerformLayout();
+            this.tabPageSignIn.ResumeLayout(false);
+            this.tabPageSignIn.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIconMail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIconPassWord)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnterSignIn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MailPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabHouses.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2471,11 +2485,33 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button buttonSaveSignUp;
+        private System.Windows.Forms.Button buttonHouses;
+        private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.Button buttonExitLogIn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog_Picture1;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition2;
+        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonUpdatePersenol;
+        private System.Windows.Forms.Button buttonCharts;
         private System.Windows.Forms.TabControl tabHouses;
         private System.Windows.Forms.TabPage tabPageSignIn;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox MailPicture;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBoxEnterSignIn;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox textBoxPassWord;
+        private System.Windows.Forms.TextBox textBoxSignInMail;
+        private System.Windows.Forms.PictureBox txtIconPassWord;
+        private System.Windows.Forms.PictureBox txtIconMail;
         private System.Windows.Forms.TabPage tabPageSignUp;
-        private System.Windows.Forms.Label label_Id;
-        private System.Windows.Forms.Button buttonHouses;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelPassTrue;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBoxPassWordNew;
         private System.Windows.Forms.Button addCityButton;
         private System.Windows.Forms.ComboBox comboBox_City;
         private System.Windows.Forms.Label label8;
@@ -2499,58 +2535,26 @@
         private System.Windows.Forms.TextBox textBox_CellPhone;
         private System.Windows.Forms.TextBox textBox_LastName;
         private System.Windows.Forms.TextBox textBox_FirstName;
-        private System.Windows.Forms.PictureBox txtIconMail;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBoxSignInMail;
-        private System.Windows.Forms.PictureBox txtIconPassWord;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBoxEnterSignIn;
-        private System.Windows.Forms.PictureBox MailPicture;
-        private System.Windows.Forms.Label labelWelcome;
-        private System.Windows.Forms.Label labelPassTrue;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBoxPassWordNew;
-        private System.Windows.Forms.Button buttonExitLogIn;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label_Id;
         private System.Windows.Forms.TabPage tabPageApartments;
         private System.Windows.Forms.Panel panelApartments;
+        private System.Windows.Forms.Label labelShowAllAparments;
         private System.Windows.Forms.PictureBox pictureBoxApr3;
         private System.Windows.Forms.PictureBox pictureBoxApr2;
         private System.Windows.Forms.PictureBox pictureBoxApr1;
         private System.Windows.Forms.TabPage tabPageWantToHost;
-        private System.Windows.Forms.OpenFileDialog openFileDialog_Picture1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.ComboBox comboBoxCatagoryToRent;
-        private System.Windows.Forms.TextBox textBoxAdressToRent;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.PictureBox pictureBoxAdd1;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.RichTextBox richTextBoxDescreptionToRent;
-        private System.Windows.Forms.PictureBox pictureBoxAdd3;
-        private System.Windows.Forms.PictureBox pictureBoxAdd2;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBoxCityToRent;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button buttonAddCity;
-        private System.Windows.Forms.TabPage tabPageHouses;
-        private System.Windows.Forms.Panel panelHouses;
-        private System.Windows.Forms.PictureBox pictureBoxHouse3;
-        private System.Windows.Forms.PictureBox pictureBoxHouse2;
-        private System.Windows.Forms.PictureBox pictureBoxHouse1;
-        private System.Windows.Forms.Button changePic3;
-        private System.Windows.Forms.Button changePic2;
-        private System.Windows.Forms.Button changePic1;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.Label labelIsSold;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label labelDochForRent;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label labelFloor;
+        private System.Windows.Forms.TextBox textBoxFloor;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox textBoxAprtNo;
@@ -2560,60 +2564,71 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBoxSize;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label labelFloor;
-        private System.Windows.Forms.TextBox textBoxFloor;
-        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private BunifuAnimatorNS.BunifuTransition bunifuTransition2;
-        private System.Windows.Forms.TabPage tabPageSearch;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBoxSearch;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ListBox listBoxProperties;
-        private System.Windows.Forms.Button buttonSearch;
-        private System.Windows.Forms.TextBox textBoxSearch;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.PictureBox pictureBoxPropertySearch;
-        private System.Windows.Forms.TabPage tabPageIntro;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Button changePic3;
+        private System.Windows.Forms.Button changePic2;
+        private System.Windows.Forms.Button changePic1;
+        private System.Windows.Forms.Button buttonAddCity;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox comboBoxCityToRent;
+        private System.Windows.Forms.PictureBox pictureBoxAdd3;
+        private System.Windows.Forms.PictureBox pictureBoxAdd2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.RichTextBox richTextBoxDescreptionToRent;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBoxAdd1;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.ComboBox comboBoxCatagoryToRent;
+        private System.Windows.Forms.TextBox textBoxAdressToRent;
+        private System.Windows.Forms.TabPage tabPageHouses;
+        private System.Windows.Forms.Panel panelHouses;
         private System.Windows.Forms.Label labelShowAllHouses;
-        private System.Windows.Forms.Label labelShowAllAparments;
-        private System.Windows.Forms.Label labelDochForRent;
-        private System.Windows.Forms.TabPage tabPageUpdate;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Button buttonUpdatePersenol;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabPage tabPageDochot;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartIntrestForTime;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartPropertyCitys;
-        private System.Windows.Forms.Button buttonCharts;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label labelIsSold;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSales;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.PictureBox pictureBoxHouse3;
+        private System.Windows.Forms.PictureBox pictureBoxHouse2;
+        private System.Windows.Forms.PictureBox pictureBoxHouse1;
+        private System.Windows.Forms.TabPage tabPageSearch;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox textBoxPriceTill;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.TextBox textBoxPriceFrom;
+        private System.Windows.Forms.PictureBox pictureBoxPropertySearch;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.ComboBox comboBoxSearch;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.ListBox listBoxProperties;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.TabPage tabPageIntro;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TabPage tabPageUpdateProperty;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.TabPage tabPageDochot;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSales;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartIntrestForTime;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPropertyCitys;
+        private System.Windows.Forms.Label label40;
     }
 }
 

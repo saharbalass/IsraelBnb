@@ -108,11 +108,11 @@
     <Compile Include="UI\FormAllProperties.Designer.cs">
       <DependentUpon>FormAllProperties.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FormDialog.cs">
+    <Compile Include="UI\FormIntrestInProperty.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FormDialog.Designer.cs">
-      <DependentUpon>FormDialog.cs</DependentUpon>
+    <Compile Include="UI\FormIntrestInProperty.Designer.cs">
+      <DependentUpon>FormIntrestInProperty.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FormIBnBFirst.cs">
       <SubType>Form</SubType>
@@ -173,8 +173,8 @@
     <EmbeddedResource Include="UI\FormAllProperties.resx">
       <DependentUpon>FormAllProperties.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FormDialog.resx">
-      <DependentUpon>FormDialog.cs</DependentUpon>
+    <EmbeddedResource Include="UI\FormIntrestInProperty.resx">
+      <DependentUpon>FormIntrestInProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormIBnBFirst.resx">
       <DependentUpon>FormIBnBFirst.cs</DependentUpon>

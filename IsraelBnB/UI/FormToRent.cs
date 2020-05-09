@@ -232,7 +232,7 @@ namespace IsraelBnB
         }
         private void label5_Click(object sender, EventArgs e)
         {
-            FormDialog formDialog = new FormDialog();
+            FormIntrestInProperty formDialog = new FormIntrestInProperty();
 
             ClientProductArr clientProductArr = new ClientProductArr();
             clientProductArr.Fill();

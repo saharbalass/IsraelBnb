@@ -37,7 +37,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
             this.labelClientProductID = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelIntrest = new System.Windows.Forms.Label();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.labelCatagory = new System.Windows.Forms.Label();
             this.buttonWantToBuy = new System.Windows.Forms.Button();
@@ -121,7 +121,7 @@
             this.panelApartments.Controls.Add(this.label10);
             this.panelApartments.Controls.Add(this.labelPrice);
             this.panelApartments.Controls.Add(this.labelClientProductID);
-            this.panelApartments.Controls.Add(this.label5);
+            this.panelApartments.Controls.Add(this.labelIntrest);
             this.panelApartments.Controls.Add(this.richTextBox2);
             this.panelApartments.Controls.Add(this.labelCatagory);
             this.panelApartments.Controls.Add(this.buttonWantToBuy);
@@ -187,16 +187,16 @@
             this.labelClientProductID.Text = "label10";
             this.labelClientProductID.Visible = false;
             // 
-            // label5
+            // labelIntrest
             // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Location = new System.Drawing.Point(165, 478);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 23);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "מעוניין בנכס";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.labelIntrest.AutoSize = true;
+            this.labelIntrest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelIntrest.Location = new System.Drawing.Point(165, 478);
+            this.labelIntrest.Name = "labelIntrest";
+            this.labelIntrest.Size = new System.Drawing.Size(88, 23);
+            this.labelIntrest.TabIndex = 36;
+            this.labelIntrest.Text = "מעוניין בנכס";
+            this.labelIntrest.Click += new System.EventHandler(this.label5_Click);
             // 
             // richTextBox2
             // 
@@ -505,7 +505,9 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormToRent";
-            this.Text = "FormToRent";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeftLayout = true;
+            this.Text = "טופס התעניינות/קניית נכס";
             this.Load += new System.EventHandler(this.FormToRent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -557,7 +559,7 @@
         private System.Windows.Forms.Button buttonWantToBuy;
         private System.Windows.Forms.Label labelCatagory;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelIntrest;
         private System.Windows.Forms.Label labelClientProductID;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label labelPrice;

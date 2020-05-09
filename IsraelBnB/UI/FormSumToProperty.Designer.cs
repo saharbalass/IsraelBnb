@@ -240,7 +240,7 @@
             this.Name = "FormSumToProperty";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "FormSumToProperty";
+            this.Text = "טופס סיכום נכס";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

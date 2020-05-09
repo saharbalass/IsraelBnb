@@ -519,7 +519,7 @@ namespace IsraelBnB
             ClientArr clientArr = new ClientArr();
             clientArr.Fill();
             Client client;
-            if (clientArr.FilterMailAndPassWord(textBoxSignInMail.Text, textBox1.Text) && clientArr.FilterMailAndPassWord(textBoxSignInMail.Text, textBox1.Text))
+            if (clientArr.FilterMailAndPassWord(textBoxSignInMail.Text, textBoxPassWord.Text) && clientArr.FilterMailAndPassWord(textBoxSignInMail.Text, textBoxPassWord.Text))
             {
                 client = GetClientFromForm();
                 //buttonSaveSignUp.Enabled = false;
@@ -543,12 +543,12 @@ namespace IsraelBnB
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.PasswordChar = '*';
+            textBoxPassWord.PasswordChar = '*';
         }
 
         private void label12_Click(object sender, EventArgs e)
         {
-            textBox1.PasswordChar = char.MinValue;
+            textBoxPassWord.PasswordChar = char.MinValue;
         }
 
         private void buttonExitLogIn_Click(object sender, EventArgs e)
@@ -1066,7 +1066,7 @@ namespace IsraelBnB
                 }
 
 
-                tabHouses.SelectedTab = tabPageUpdate;
+                tabHouses.SelectedTab = tabPageUpdateProperty;
             }
         }
 
@@ -1265,7 +1265,7 @@ namespace IsraelBnB
             Client client = clientArr.ReturnClientWithMail(textBoxSignInMail.Text);
             return client;
         }
-    
-    //item size = close tabs in tabpage
+
+        //item size = close tabs in tabpage
     }
 }

@@ -213,7 +213,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormAddCity";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Text = "FormAddCity";
+            this.Text = "טופס הוספת עיר";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -14,6 +14,7 @@ namespace IsraelBnB.UI
 {
     public partial class FormPersenolProperty : Form
     {
+        Bitmap m_bitmap;
         public FormPersenolProperty(Client client)
         {
             InitializeComponent();
@@ -53,6 +54,36 @@ namespace IsraelBnB.UI
                     listViewProducts.Items.Add(listViewItem);
                 }
             }
+        }
+        private void CaptureScreen()
+        {
+
+            //תפיסת החלק של הטופס להדפסה כולל הרשימה והכותרת שמעליה - לתוך תמונת הסיביות
+
+            int addAboveListView = 30;
+            int moveLeft = 150;
+            Graphics graphics = listViewProducts.CreateGraphics();
+            Size curSize = listViewProducts.Size;
+            curSize.Height += addAboveListView;
+            curSize.Width += moveLeft;
+            m_bitmap = new Bitmap(curSize.Width, curSize.Height, graphics);
+            graphics = Graphics.FromImage(m_bitmap);
+            Point panelLocation = PointToScreen(listViewProducts.Location);
+            graphics.CopyFromScreen(panelLocation.X, panelLocation.Y - addAboveListView,
+            moveLeft, 0, curSize);
+        }
+        private void document_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+            //מגדיר את העמוד שיודפס - כולל מרחק מהשמאל ומלמעלה
+
+            e.Graphics.DrawImage(m_bitmap, 100, 100);
+        }
+        private void buttonPrint_Click(object sender, EventArgs e)
+        {
+            CaptureScreen();
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
         }
     }
 }

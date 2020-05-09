@@ -44,6 +44,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.FiltiringLabelName = new System.Windows.Forms.Label();
             this.FiltiringLabelCompany = new System.Windows.Forms.Label();
             this.textBox_FilterName = new System.Windows.Forms.TextBox();
@@ -58,7 +59,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -189,6 +189,10 @@
             this.columnHeader4.Text = "מחיר";
             this.columnHeader4.Width = 76;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "נכסים";
+            // 
             // FiltiringLabelName
             // 
             this.FiltiringLabelName.AutoSize = true;
@@ -314,15 +318,11 @@
             // 
             this.button1.Location = new System.Drawing.Point(0, 131);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 23);
+            this.button1.Size = new System.Drawing.Size(217, 23);
             this.button1.TabIndex = 91;
             this.button1.Text = "הראה נכסים ללא סינון";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "נכסים";
             // 
             // FormAllProperties
             // 
@@ -348,7 +348,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormAllProperties";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Text = "FormAllHouses";
+            this.Text = "טופס כל הנכסים";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

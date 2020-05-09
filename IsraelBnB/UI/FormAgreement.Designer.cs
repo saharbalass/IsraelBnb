@@ -209,7 +209,7 @@
             this.Name = "FormAgreement";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
-            this.Text = "FormAgreement";
+            this.Text = "טופס הסכם";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
